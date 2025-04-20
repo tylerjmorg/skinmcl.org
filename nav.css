@@ -9,17 +9,22 @@ header a {
 }
 
 header {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-color: #bd4d86dd;
+  border-width: 2px;
   position: sticky;
   top: 5px;
   margin-left: 5px;
   margin-right: 5px;
   padding: 0 20px;
-  background-color: #cd5d96;
+  background-color: #cd5d96dd;
   border-radius: 25px;
   color: white;
   height: 50px;
   display: flex;
   justify-content: space-between;
+  backdrop-filter: blur(5px);
 }
 
 #brand {
@@ -62,7 +67,7 @@ header ul li {
   border-radius: 3px;
   background-color: white;
   margin: 6px 0;
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
 .open .bar1 {
@@ -79,22 +84,33 @@ header ul li {
 
 .open .mobile-menu {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: opacity 0.5s ease;
 }
 
 .mobile-menu {
+  visibility: hidden;
+  pointer-events: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-color: #bd4d86;
+  border-width: 2px;
   padding: 20px 0;
-  display: none;
+  display: flex;
+  opacity: 0;
   position: absolute;
   top: 50px;
   left: 0;
   height: fit-content;
   width: 100%;
-  background-color: #cd5d96dd;
-  backdrop-filter: blur(2px);
+  background-color: #cd5d96;
   border-radius: 25px;
+  transition: opacity 0.5s ease, visibility 0.5s linear 0.5s;
 }
 
 @media only screen and (max-width: 600px) {
