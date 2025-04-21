@@ -31,6 +31,7 @@ main {
 }
 
 .colored-div {
+  margin-top: 20px;
   background-color: #f4f3ef;
   border-radius: 25px;
 }
@@ -75,4 +76,33 @@ footer ul a:hover {
   font-weight: 400;
   text-align: center;
   margin-top: 20px;
+}
+
+.top-20 {
+  margin-top: 20px;
+}
+
+.pink-button {
+  background-color: #bd4d86;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 1.2rem;
+  transition: all 0.2s ease;
+  text-align: center;
+  width: 150px;
+  margin: auto;
+}
+
+.pink-button:hover {
+  background-color: #3b0320;
+  color: white;
+}
+
+.pink-button a {
+  color: white;
+  text-decoration: none;
 }
