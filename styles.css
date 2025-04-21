@@ -1,0 +1,30 @@
+:root {
+  font-family: 'Jost', sans-serif;
+}
+
+main {
+  margin-top: 20px;
+  width: 95%;
+  margin: auto;
+}
+
+.inner-main {
+  margin-top: 20px;
+}
+
+.inner-colored-div{
+  padding: 10px;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s ease;
+}
+footer ul a:hover {
+  color: #3b0320;
+}
+
+.italic {
+  font-style: italic;
+}
