@@ -91,7 +91,7 @@ header ul li {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.2s ease;
 }
 
 .mobile-menu {
@@ -114,7 +114,7 @@ header ul li {
   width: 100%;
   background-color: #cd5d96;
   border-radius: 25px;
-  transition: opacity 0.5s ease, visibility 0.5s linear 0.5s;
+  transition: opacity 0.2s ease, visibility 0.2s linear 0.2s;
 }
 
 @media only screen and (max-width: 650px) {
