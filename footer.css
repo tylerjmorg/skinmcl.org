@@ -74,10 +74,35 @@ footer ul {
   footer li {
     text-align: center;
   }
+  .find-us-on {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .remove-top-20-footer {
+    margin-top: 0px;
+  }
 }
 
 .disclaimer {
   text-align: center;
   margin-top: 20px;
   font-size: 0.75rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.col-gap-10 {
+  column-gap: 10px;
+}
+
+.white-link {
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.white-link:hover {
+  color: #3b0320;
 }

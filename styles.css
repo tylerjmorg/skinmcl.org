@@ -82,6 +82,14 @@ footer ul a:hover {
   margin-top: 20px;
 }
 
+.top-60 {
+  margin-top: 60px;
+}
+
+.bottom-60 {
+  margin-bottom: 60px;
+}
+
 .pink-button {
   background-color: #bd4d86;
   color: white;
@@ -105,4 +113,8 @@ footer ul a:hover {
 .pink-button a {
   color: white;
   text-decoration: none;
+}
+
+.text-20 {
+  font-size: 1.25rem;
 }
