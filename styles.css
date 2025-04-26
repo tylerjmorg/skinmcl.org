@@ -140,6 +140,17 @@ main {
   .span-two-rows {
     grid-row: span 2;
   }
+
+  .justify-right {
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+    margin: auto;
+  }
+  
+  .margin-top-15 {
+    margin-top: 15px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -168,6 +179,20 @@ main {
   .contact-grid div ul {
     text-align: center;
   }
+
+  .remove-margin-top {
+    margin-top: 0px !important;
+  }
+
+  .contact-socials {
+    justify-content: center;
+  }
+}
+
+.contact-grid {
+  background-color: #f4f3ef;
+  border-radius: 20px;
+  padding: 20px;
 }
 
 .contact-grid ul {
@@ -190,6 +215,10 @@ main {
 .contact-location {
   margin-top: 30px;
   text-align: center;
+  background-color: #f4f3ef;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 12px;
 }
 
 .google-map {
@@ -229,5 +258,4 @@ main {
 .privacy-policy-main ul {
   padding-left: 20px;
   list-style: disc;
-
 }
