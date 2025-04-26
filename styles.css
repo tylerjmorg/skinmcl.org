@@ -166,6 +166,10 @@ footer ul a:hover {
     text-align: center;
   }
 
+  .contact-grid div p {
+    text-align: center;
+  }
+
   .contact-grid div:not(:first-child) {
     margin-top: 20px;
   }
