@@ -251,8 +251,12 @@ main {
   margin: auto;
   justify-content: center;
   max-width: 900px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: #f4f3ef;
+  border-radius: 20px;
 }
 
 .privacy-policy-main ul {
