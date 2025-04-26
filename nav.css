@@ -54,6 +54,30 @@ header ul a:hover {
   color: #3b0320;
 }
 
+.absolute-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 12px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute-center a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.absolute-center a:hover {
+  color: #3b0320;
+}
+
 header ul li {
   padding: 5px;
   margin-left: 10px;
@@ -117,7 +141,7 @@ header ul li {
   transition: opacity 0.2s ease, visibility 0.2s linear 0.2s;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 1025px) {
   header nav {
     display: none;
   }
