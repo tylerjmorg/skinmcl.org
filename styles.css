@@ -42,7 +42,7 @@ main {
 
 .quote {
   width: 50%;
-  min-width: 300px;
+  min-width: 275px;
   margin: auto;
   text-align: center;
   font-style: italic;
@@ -121,4 +121,103 @@ footer ul a:hover {
 
 .text-20 {
   font-size: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .contact-lefty {
+    text-align: right;
+  }
+
+  .contact-lefty h2 {
+    text-align: right !important;
+  }
+
+  .contact-grid {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 100%;
+    column-gap: 25px;
+  }
+  
+  .contact-grid div h2 {
+    text-align: left;
+  }
+  
+  .span-two-rows {
+    grid-row: span 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-grid {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  .contact-grid div h2 {
+    text-align: center;
+  }
+
+  .contact-grid div:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  .contact-grid div ul {
+    text-align: center;
+  }
+}
+
+.contact-grid ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  text-wrap: pretty;
+}
+
+.contact-grid a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.2s ease;
+}
+
+.contact-grid a:hover {
+  color: #bd4d86;;
+}
+
+.contact-location {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.google-map {
+  width: 95%;
+  height: 450px;
+  margin-top: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: auto;
+  display: block;
+  padding: 3px;
+  background-color: #bd4d86dd;
+}
+
+.google-map-container {
+  margin-top: 20px;
+}
+
+.normal-link {
+  text-decoration: none;
+  color: black;
+  transition: all 0.2s ease;
+}
+.normal-link:hover {
+  color: #bd4d86;
 }
