@@ -58,7 +58,7 @@ header ul a:hover {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 12px;
+  top: 11px;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -141,7 +141,7 @@ header ul li {
   transition: opacity 0.2s ease, visibility 0.2s linear 0.2s;
 }
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1125px) {
   header nav {
     display: none;
   }
