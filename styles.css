@@ -101,7 +101,7 @@ footer ul a:hover {
   font-size: 1.2rem;
   transition: all 0.2s ease;
   text-align: center;
-  width: 150px;
+  width: 200px;
   margin: auto;
 }
 
@@ -113,6 +113,10 @@ footer ul a:hover {
 .pink-button a {
   color: white;
   text-decoration: none;
+}
+
+.text-img {
+  vertical-align:baseline;
 }
 
 .text-20 {

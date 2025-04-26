@@ -70,6 +70,7 @@ footer ul {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    justify-content: center;
   }
   footer li {
     text-align: center;
@@ -91,6 +92,11 @@ footer ul {
 
 .flex {
   display: flex;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
 }
 
 .col-gap-10 {
