@@ -53,15 +53,6 @@ main {
   padding: 10px;
 }
 
-footer ul a {
-  text-decoration: none;
-  color: white;
-  transition: all 0.2s ease;
-}
-footer ul a:hover {
-  color: #3b0320;
-}
-
 .italic {
   font-style: italic;
 }
@@ -224,4 +215,19 @@ footer ul a:hover {
 }
 .normal-link:hover {
   color: #bd4d86;
+}
+
+.privacy-policy-main {
+  display: block;
+  margin: auto;
+  justify-content: center;
+  max-width: 900px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.privacy-policy-main ul {
+  padding-left: 20px;
+  list-style: disc;
+
 }
