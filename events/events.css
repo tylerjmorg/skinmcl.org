@@ -1,8 +1,9 @@
 #desktop-products, #mobile-products, #desktop-services, #mobile-services, #desktop-home, #mobile-home, #desktop-about, #mobile-about, #desktop-contact, #mobile-contact {
   box-shadow: inset 0 0 0 0 #3b0320;
+  border-radius: 5px;
   color: #fff;
 	padding: 0 .25rem;
-	margin: 0 -.25rem;
+	margin: 0 -.5rem;
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 #desktop-products:hover, #mobile-products:hover, #desktop-services:hover, #mobile-services:hover, #desktop-home:hover, #mobile-home:hover, #desktop-about:hover, #mobile-about:hover, #desktop-contact:hover, #mobile-contact:hover {
@@ -11,7 +12,8 @@
 
 #desktop-events, #mobile-events {
   box-shadow: inset 0 23px 0 0 #3b0320;
+  border-radius: 5px;
   color: #fff;
 	padding: 0 .25rem;
-	margin: 0 -.25rem;
+	margin: 0 -.5rem;
 }
