@@ -263,3 +263,7 @@ main {
   padding-left: 20px;
   list-style: disc;
 }
+
+.margin-bottom-250 {
+  margin-bottom: 250px;
+}
