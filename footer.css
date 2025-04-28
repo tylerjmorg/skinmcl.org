@@ -91,6 +91,15 @@ footer ul a:hover {
   .remove-top-20-footer {
     margin-top: 0px;
   }
+
+  .footer-start-p {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footer-p {
+    text-align: center;
+  }
 }
 
 .disclaimer {
