@@ -43,6 +43,7 @@ header ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  column-gap: 5px;
 }
 
 header ul a {
