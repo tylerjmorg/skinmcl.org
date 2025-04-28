@@ -11,14 +11,14 @@ header a {
 header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-style: solid;
-  border-color: #bd4d86dd;
+  border-color: #b74780dd;
   border-width: 2px;
   position: sticky;
   top: 0;
   margin-left: 5px;
   margin-right: 5px;
   padding: 0 20px;
-  background-color: #cd5d96dd;
+  background-color: #aa3a73dd;
   border-bottom-right-radius: 25px;
   border-bottom-left-radius: 25px;
   color: white;
