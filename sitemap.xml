@@ -1,26 +1,26 @@
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
+<urlset xmlns="http://www.urls.org/schemas/url/0.9">
+  <url>
     <loc>https://skinmcl.org/</loc>
-  </sitemap>
-  <sitemap>
+  </url>
+  <url>
     <loc>https://skinmcl.org/about/</loc>
-  </sitemap>
-  <sitemap>
+  </url>
+  <url>
     <loc>https://skinmcl.org/contact/</loc>
-  </sitemap>
-  <sitemap>
+  </url>
+  <url>
     <loc>https://skinmcl.org/events/</loc>
-  </sitemap>
-  <sitemap>
+  </url>
+  <url>
     <loc>https://skinmcl.org/privacy-policy/</loc>
-  </sitemap>
-  <sitemap>
+  </url>
+  <url>
     <loc>https://skinmcl.org/products/</loc>
-  </sitemap>
-  <sitemap>
+  </url>
+  <url>
     <loc>https://skinmcl.org/services/</loc>
-  </sitemap>
-  <sitemap>
+  </url>
+  <url>
     <loc>https://skinmcl.org/terms-of-service/</loc>
-  </sitemap>
-</sitemapindex>
+  </url>
+</urlset>
