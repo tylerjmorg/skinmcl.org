@@ -40,6 +40,10 @@ main {
   text-align: center;
 }
 
+.text-16 {
+  font-size: 1rem;
+}
+
 .quote {
   width: 50%;
   min-width: 275px;
@@ -267,4 +271,135 @@ main {
 
 .margin-bottom-250 {
   margin-bottom: 250px;
+}
+
+.max-width-500 {
+  max-width: 500px;
+  width: 95%;
+  margin: auto;
+}
+
+.profile-img {
+  border-radius: 150px;
+  margin: auto;
+  display: block;
+}
+  
+.about-me-socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  list-style: none;
+  column-gap: 10px;
+}
+
+@media (max-width: 767px) {
+  .about-grid {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+    padding-top: 10px;
+    padding-bottom: 70px;
+    width: 90%;
+    margin: auto;
+  }
+}
+@media (min-width: 768px) {
+  .about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 90%;
+    column-gap: 25px;
+    row-gap: 50px;
+    padding-top: 10px;
+    padding-bottom: 70px;
+    margin: auto;
+  }
+}
+
+.about-card {
+  background-color: #f4f3ef;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  width: 100%;
+  margin: auto;
+  height: 100%;
+}
+
+.about-card:hover {
+  transform: scale(1.02);
+}
+
+.about-card-subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: -10px;
+  color: black;
+}
+
+.about-card-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: -10px;
+  color: #bd4d86;
+}
+
+.about-background {
+  background-color: #f4f3ef;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  width: 95%;
+}
+
+.about-back-icon-top {
+  position: relative;
+  top: 10px;
+  left: 15px;
+  text-decoration: none;
+  color: black;
+  width: 20px;
+  height: 2px;
+  border-radius: 3px;
+  background-color: #666;
+  margin: 6px 0;
+  transform: rotate(-40deg) translate(-6px, 0px);
+}
+.about-back-icon-bottom {
+  position: relative;
+  top: 21.5px;
+  left: 15px;
+  text-decoration: none;
+  color: black;
+  width: 20px;
+  height: 2px;
+  border-radius: 3px;
+  background-color: #666;
+  margin: 6px 0;
+  transform: rotate(40deg) translate(-6px, 0px);
+}
+
+.clickable-back {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  transition: all 0.2s ease;
+}
+.clickable-back:hover {
+  transform: scale(1.2);
 }
