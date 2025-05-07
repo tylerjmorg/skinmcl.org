@@ -538,7 +538,8 @@ main {
   border-radius: 22.5%;
   margin: auto;
   display: block;
-  margin-top: 30px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .repeatmd-iframe {
@@ -549,6 +550,17 @@ main {
   height: 88dvh;
   background-color: #fff;
   box-shadow: 0 0 30px rgba(50, 50, 50, 0.2);
+}
+
+.app-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  column-gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75px;
 }
 
 .download-on {
