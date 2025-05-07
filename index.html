@@ -70,7 +70,11 @@
           <p class="text-center">Make every visit count on <img class="repeatmd-logo" width="96" height="21" src="/elements/social/repeatmd_logo_black.svg" alt="RepeatMD">.</p>
           <p class="text-center">Earn Rewards with Us!</p>
           <div class="top-20">
-            <iframe class="repeatmd-iframe" src="https://loganmed.repeatmd.app/" title="Skin - RepeatMD" allow="camera"></iframe>
+            <button class="open-rewards-button" data-open-rewards>Log in or Sign up</button>
+            <dialog id="rewards-dialog" class="rewards-modal">
+              <div class="close-rewards-button" data-close-rewards>Close</div>
+              <iframe class="repeatmd-iframe" src="https://loganmed.repeatmd.app/" title="Skin - RepeatMD" allow="camera"></iframe>
+            </dialog>
           </div>
           <img class="myrepeat-app-icon" width="50" height="50" src="/elements/social/myrepeat_icon.svg" alt="MyRepeat app icon.">
           <p class="top-10 text-center">Download the MyRepeat app!</p>
@@ -128,5 +132,18 @@
     </footer>
     <script src="/nav.js"></script>
     <script src="https://tylermorgan.co/copyright_year.js"></script>
+    <script>
+      const openButton = document.querySelector('[data-open-rewards]');
+      const closeButton = document.querySelector('[data-close-rewards]');
+      const modal = document.querySelector('#rewards-dialog');
+      
+      openButton.addEventListener('click', () => {
+        modal.showModal();
+      });
+
+      closeButton.addEventListener('click', () => {
+        modal.close();
+      });
+    </script>
   </body>
 </html>
