@@ -97,12 +97,17 @@ main {
   transition: all 0.2s ease;
   text-align: center;
   width: 200px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #9d2d66;
   margin: auto;
+  box-shadow: 0 0 30px rgba(50, 50, 50, 0.4);
 }
 
 .pink-button:hover {
   scale: 1.05;
   background-color: #3b0320;
+  border-color: #1b0300;
   color: white;
 }
 
@@ -498,4 +503,56 @@ main {
 
 .top-10 {
   margin-top: 10px;
+}
+
+.top-30 {
+  margin-top: 30px;
+}
+
+.font-12 {
+  font-size: 0.75rem;
+}
+
+.repeatmd-logo {
+  vertical-align: text-bottom;
+}
+
+.rewards-stars {
+  vertical-align: baseline;
+}
+
+.myrepeat-app-icon {
+  margin-left: 15px;
+  border-radius: 22.5%;
+  margin: auto;
+  display: block;
+  margin-top: 30px;
+}
+
+.repeatmd-iframe {
+  width: 100%;
+  max-width: 639px;
+  height: 650px;
+  border-radius: 20px;
+  border-style: none;
+  margin: auto;
+  display: block;
+  box-shadow: 0 0 30px rgba(50, 50, 50, 0.2);
+}
+
+.download-on {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  text-align: center;
+  column-gap: 20px;
+}
+
+.app-store, .google-play {
+  transition: all 0.2s ease;
+}
+
+.app-store:hover, .google-play:hover {
+  transform: scale(1.05);
 }
