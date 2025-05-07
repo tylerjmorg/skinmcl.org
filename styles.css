@@ -468,3 +468,34 @@ main {
 .bottom-20 {
   margin-bottom: 10px;
 }
+
+.tip-button {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 5px 10px;
+  text-align: center;
+  display: block;
+  font-size: 1.2rem;
+  margin: auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #aaa;
+  width: 125px;
+  height: fit-content;
+  transition: all 0.2s ease;
+  line-height: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.tip-button:hover {
+  scale: 1.05;
+  background-color: #ffedf6;
+  border-color: #ffc7e3;
+  box-shadow: 0 0 30px #bd4d8688;
+}
+
+.top-10 {
+  margin-top: 10px;
+}
