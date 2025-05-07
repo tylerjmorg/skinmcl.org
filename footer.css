@@ -141,3 +141,11 @@ footer ul a:hover {
 .white-link:hover {
   color: #3b0320;
 }
+
+.social-media-icon {
+  transition: all 0.2s ease;
+}
+
+.social-media-icon:hover {
+  transform: scale(1.2);
+}
