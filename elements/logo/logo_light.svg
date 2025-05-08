@@ -1,4 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" width="1536" height="1024" role="img" aria-labelledby="skinmcl-logo-title skinmcl-logo-description">
+
+<!-- 
+  Copyright (c) 2025 Logan Medical Group, LLC. All rights reserved.
+
+  Contributers
+  Tyler Morgan <git@tylerjm.org>
+-->
+
   <title id="skinmcl-logo-title">SkinMCL Logo</title>
   <desc id="skinmcl-logo-description">An abstract face  with an eye and mouth, outlined in the shape of an S</desc>
   <path d="M301 249c-69 2-105 43-105 43s47-28 105-29c57-1 108 29 108 29s-40-44-108-43z"/>

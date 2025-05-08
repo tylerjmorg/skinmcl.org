@@ -1,4 +1,11 @@
-# robot.txt for https://skinmcl.org/. Generated on: 2025-04-27T23:24:00Z
+# 
+# robots.txt for https://skinmcl.org/. Generated on: 2025-05-08T04:53:00Z
+#
+# Copyright (c) 2025 Logan Medical Group, LLC. All rights reserved.
+#
+# Contributors
+# Tyler Morgan <git@tylerjm.org>
+#
 
 User-agent: GPTBot
 User-agent: MJ12Bot

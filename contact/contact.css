@@ -1,3 +1,10 @@
+/*
+ * Copyright (c) 2025 Logan Medical Group, LLC. All rights reserved.
+ *
+ * Contributors
+ * Tyler Morgan <git@tylerjm.org>
+ */
+
 #desktop-about, #mobile-about, #footer-about, #desktop-events, #mobile-events, #footer-events, #desktop-products, #mobile-products, #footer-products, #desktop-services, #mobile-services, #footer-services, #desktop-home, #mobile-home, #footer-home {
   box-shadow: inset 0 0 0 0 #3b0320;
   color: #fff;
