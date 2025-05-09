@@ -13,6 +13,7 @@
   width: 98%;
   max-width: 600px;
   height: fit-content;
+  display: flex;
   background-color: #ffedf6cc;
   backdrop-filter: blur(10px);
   border: 2px solid #ffc7e3dd;
@@ -22,7 +23,6 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 25px;
-  display: flex;
   flex-direction: column;
   box-shadow: 0 0 30px #bd4d8688;
   row-gap: 10px;
@@ -66,6 +66,7 @@
 
 [data-phone-platter].visible {
   bottom: 0;
+  display: flex;
 }
 
 .icon-platter-img {
