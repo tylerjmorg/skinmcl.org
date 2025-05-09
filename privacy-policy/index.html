@@ -24,14 +24,16 @@
   <link rel="stylesheet" href="/footer.css">
   <link rel="stylesheet" href="/fonts.css">
   <link rel="stylesheet" href="/misc_nav.css">
+  <link rel="stylesheet" href="/phone_platter.css">
   <meta name="theme-color" content="#cd5d96">
+  <meta name="format-detection" content="telephone=no">
   <link rel="canonical" href="https://skinmcl.org/privacy-policy/">
   <meta name="keywords" content="medical cosmetics, laser hair removal, skin care, Logan, Utah, medspa, beauty, aesthetics">
 </head>
 <body>
   <header>
     <div id="brand"><a href="/"><img height="35" width="60" src="/elements/logo/logo_white.svg" alt="Skin logo"></a></div>
-    <div class="absolute-center"><a href="tel:+14357168765">435-716-8765</a></div>
+    <div class="absolute-center"><p class="white-link pointer" data-phone-button>435-716-8765</p></div>
     <nav>
       <ul>
         <li><a id="desktop-home" href="/">HOME</a></li>
@@ -123,11 +125,22 @@
         <p>If you have questions about this Privacy Policy, please contact us at: admin@loganmed.org</p>
         <p class="text-center">Skin Medical Cosmetics & Laser</p>
         <p class="text-center">North Logan, Utah, USA</p>
-        <p class="text-center"><a class="normal-link" href="tel:+14357168765">435-716-8765</a></p>
+        <p class="text-center normal-link pointer" data-phone-button>435-716-8765</p>
         <p class="text-center"><a class="normal-link" href="mailto:admin@loganmed.org">admin@loganmed.org</a></p>
         <br>
         <h2>Terms of Service</h2>
         <p>For the full terms and policies of our services, please see: <a class="normal-link" href="/terms-of-service/">https://skinmcl.org/terms-of-service/</a>.</p>
+      </div>
+    </div>
+    <div data-phone-platter class="phone-platter">
+      <div data-close-platter class="close-phone-platter">
+        <p class="close-phone-platter-text">CLOSE</p>
+      </div>
+      <div>
+        <p><a class="normal-link call-phone-platter" href="tel:+14357168765"><img class="icon-platter-img" width="16" height="16" src="/elements/utility/icon/call_black.svg" alt="Call">&nbsp;CALL: 435-716-8765</a></p>
+      </div>
+      <div>
+        <p><a class="normal-link text-phone-platter" href="sms:+14357168765"><img class="icon-platter-img" width="16" height="16" src="/elements/utility/icon/chat_black.svg" alt="Text">&nbsp;TEXT: 435-716-8765</a></p>
       </div>
     </div>
   </main>
@@ -145,7 +158,7 @@
         </ul>
         <div>
           <p class="footer-start-p"><a class="white-link" target="_blank" href="https://maps.app.goo.gl/c6R3fychjjvEHcLd6">2150 N MAIN ST STE 4<br>NORTH LOGAN UT 84341-1740</a></p>
-          <p class="footer-p"><a class="white-link" href="tel:+14357168765">435-716-8765</a></p>
+          <p class="footer-p white-link pointer" data-phone-button>435-716-8765</p>
           <p class="footer-p"><a class="white-link" href="mailto:admin@loganmed.org">admin@loganmed.org</a></p>
         </div>
         <ul class="footer-hours">
@@ -178,5 +191,6 @@
   </footer>
   <script src="/nav.js"></script>
   <script src="https://tylermorgan.co/copyright_year.js"></script>
+  <script src="/phone_platter.js"></script>
 </body>
 </html>
