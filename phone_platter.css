@@ -12,12 +12,16 @@
   transform: translateX(-50%);
   width: 98%;
   max-width: 600px;
-  height: 165px;
-  background: #ffedf6;
-  border: 2px solid #ffc7e3;
+  height: fit-content;
+  background-color: #ffedf6cc;
+  backdrop-filter: blur(10px);
+  border: 2px solid #ffc7e3dd;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
   display: flex;
   flex-direction: column;
   box-shadow: 0 0 30px #bd4d8688;
@@ -42,9 +46,13 @@
   justify-content: center;
   border: solid 1px #bd4d86;
   border-radius: 10px;
-  padding: 3px 10px;
-  width: 250px;
+  padding: 20px 0;
+  max-width: 350px;
+  width: 95%;
   margin: auto;
+ }
+ .call-phone-platter:hover, .text-phone-platter:hover {
+  background-color: #efb7d333;
  }
 
 .close-phone-platter:hover {
