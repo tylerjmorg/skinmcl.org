@@ -9,6 +9,11 @@
   font-family: 'Jost', sans-serif;
 }
 
+img {
+  -webkit-user-select: none !important;
+  user-select: none !important;
+}
+
 h1 {
   font-size: 3rem;
 }
