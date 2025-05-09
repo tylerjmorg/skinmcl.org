@@ -4,7 +4,7 @@
  * Contributors
  * Tyler Morgan <git@tylerjm.org>
  */
- 
+
 :root {
   font-family: 'Jost', sans-serif;
 }
@@ -655,4 +655,8 @@ dialog[open] {
   background-color: #3b0320;
   border-color: #1b0300;
   color: white;
+}
+
+.pointer {
+  cursor: pointer;
 }

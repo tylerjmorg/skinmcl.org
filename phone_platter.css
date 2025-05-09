@@ -1,0 +1,66 @@
+/*
+ * Copyright (c) 2025 Logan Medical Group, LLC. All rights reserved.
+ *
+ * Contributors
+ * Tyler Morgan <git@tylerjm.org>
+ */
+
+ .phone-platter {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 98%;
+  max-width: 600px;
+  height: 150px;
+  background: #ffedf6;
+  border: 2px solid #ffc7e3;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 30px #bd4d8688;
+  row-gap: 10px;
+  z-index: 20;
+ }
+
+ .close-phone-platter {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  color: #666;
+  width: fit-content;
+  transition: all 0.2s ease;
+ }
+
+ .call-phone-platter, .text-phone-platter {
+  display: flex;
+  justify-content: center;
+  border: solid 1px #bd4d86;
+  border-radius: 10px;
+  padding: 3px 10px;
+  width: 250px;
+  margin: auto;
+ }
+
+.close-phone-platter:hover {
+  color: #bd4d86;
+}
+
+[data-phone-platter] {
+  bottom: -100%;
+  transition: bottom 0.5s ease-out;
+}
+
+[data-phone-platter].visible {
+  bottom: 0;
+}
+
+.icon-platter-img {
+  vertical-align: bottom;
+  margin-top: 3px;
+}
