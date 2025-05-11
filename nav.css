@@ -45,6 +45,10 @@ header {
   color: white;
 }
 
+#hamburger-button span {
+  display: block;
+}
+
 header ul {
   list-style: none;
   height: 100%;
@@ -92,13 +96,19 @@ header ul li {
   margin-left: 10px;
 }
 
+#hamburger-button {
+  font-family: 'Jost', sans-serif;
+  border-style: none;
+  background-color: transparent;
+}
+
 #hamburger-icon {
   margin: auto 0;
   display: none;
   cursor: pointer;
 }
 
-#hamburger-icon div {
+#hamburger-icon span {
   width: 30px;
   height: 3px;
   border-radius: 3px;
