@@ -1,0 +1,12 @@
+/*
+ * Copyright (c) 2025 Logan Medical Group, LLC. All rights reserved.
+ *
+ * Contributors
+ * Tyler Morgan <git@tylerjm.org>
+ */
+
+ .text-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }

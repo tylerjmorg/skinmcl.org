@@ -106,6 +106,7 @@ main {
 }
 
 .pink-button {
+  font-family: 'Jost', sans-serif;
   background-color: #bd4d86;
   color: white;
   border-radius: 25px;
@@ -274,6 +275,21 @@ main {
   transition: all 0.2s ease;
 }
 .normal-link:hover {
+  color: #bd4d86;
+}
+
+.text-button {
+  font-family: 'Jost', sans-serif;
+  background-color: transparent;
+  font-size: 1rem;
+  color: black;
+  border-style: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.text-button:hover {
   color: #bd4d86;
 }
 
@@ -614,7 +630,7 @@ main {
   overflow-y: hidden;
 }
 
-body:has(dialog[open]) {overflow: hidden}
+body:has(dialog[open]:not([data-phone-platter])) {overflow: hidden}
 
 .close-rewards-button {
   background-color: transparent;
@@ -626,7 +642,7 @@ body:has(dialog[open]) {overflow: hidden}
   font-size: 1rem;
 }
 
-dialog[open] {
+dialog[open]:not([data-phone-platter]) {
   animation: fadein 0.5s ease forwards;
 }
 
@@ -636,7 +652,6 @@ dialog[open] {
   }
   100%{
     opacity:1;
-    background-color: transparent;
   }
 }
 

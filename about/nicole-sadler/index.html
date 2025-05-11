@@ -33,7 +33,7 @@
 <body>
   <header>
     <div id="brand"><a href="/"><img height="35" width="60" src="/elements/logo/logo_white.svg" alt="Skin logo"></a></div>
-    <div class="absolute-center"><p class="white-link pointer" tabindex="0" data-phone-button>435-716-8765</p></div>
+    <div class="absolute-center"><button class="white-link pointer" data-phone-button>435-716-8765</button></div>
     <nav>
       <ul>
         <li><a id="desktop-home" href="/">HOME</a></li>
@@ -66,7 +66,7 @@
         <h1 class="about-name">Nicole&nbsp;Sadler, MSN,&nbsp;NP&#8209;C</h1>
         <p class="text-center text-16">Nurse Practitioner</p>
         <div class="top-20">
-          <p class="pink-button pointer" tabindex="0" data-phone-button><img class="text-img" width="14" height="14" src="/elements/utility/icon/call_white.svg" alt="Call">&nbsp;CALL&nbsp;<span class="font-12">OR</span>&nbsp;TEXT&nbsp;<img class="text-img" width="18" height="16" src="/elements/utility/icon/chat_white.svg" alt="Text"><br>435-716-8765</p>
+          <button class="pink-button pointer" data-phone-button><img class="text-img" width="14" height="14" src="/elements/utility/icon/call_white.svg" alt="Call">&nbsp;CALL&nbsp;<span class="font-12">OR</span>&nbsp;TEXT&nbsp;<img class="text-img" width="18" height="16" src="/elements/utility/icon/chat_white.svg" alt="Text"><br>435-716-8765</button>
         </div>
         <div class="max-width-500 text-center">
           <p class="top-20">Nicole is a family nurse practitioner providing family medicine services with an emphasis on endocrine and women's healthcare. She graduated in 2023 from South University in Savannah, GA.</p>
@@ -89,17 +89,19 @@
         </div>
       </div>
     </div>
-    <div data-phone-platter class="phone-platter">
-      <div data-close-platter class="close-phone-platter">
-        <p class="close-phone-platter-text">CLOSE</p>
+    <dialog data-phone-platter class="phone-platter" hidden>
+      <div class="close-phone-platter">
+        <button data-close-platter class="close-phone-platter-text">CLOSE</button>
       </div>
-      <div>
-        <p><a data-call-platter class="normal-link call-phone-platter" href="tel:+14357168765"><img class="icon-platter-img" width="16" height="16" src="/elements/utility/icon/call_black.svg" alt="Call">&nbsp;CALL: 435-716-8765</a></p>
+      <div class="phone-platter-actions">
+        <div>
+          <p><a data-call-platter class="normal-link call-phone-platter" href="tel:+14357168765"><img class="icon-platter-img" width="16" height="16" src="/elements/utility/icon/call_black.svg" alt="Call">&nbsp;CALL: 435-716-8765</a></p>
+        </div>
+        <div>
+          <p><a data-text-platter class="normal-link text-phone-platter" href="sms:+14357168765"><img class="icon-platter-img" width="16" height="16" src="/elements/utility/icon/chat_black.svg" alt="Text">&nbsp;TEXT: 435-716-8765</a></p>
+        </div>
       </div>
-      <div>
-        <p><a data-text-platter class="normal-link text-phone-platter" href="sms:+14357168765"><img class="icon-platter-img" width="16" height="16" src="/elements/utility/icon/chat_black.svg" alt="Text">&nbsp;TEXT: 435-716-8765</a></p>
-      </div>
-    </div>
+    </dialog>
   </main>
   <footer>
     <div class="inner-footer">
@@ -115,7 +117,7 @@
         </ul>
         <div>
           <p class="footer-start-p"><a class="white-link" target="_blank" href="https://maps.app.goo.gl/c6R3fychjjvEHcLd6">2150 N MAIN ST STE 4<br>NORTH LOGAN UT 84341-1740</a></p>
-          <p class="footer-p white-link pointer" tabindex="0" data-phone-button>435-716-8765</p>
+          <button class="footer-p white-link pointer footer-button" data-phone-button>435-716-8765</button>
           <p class="footer-p"><a class="white-link" href="mailto:admin@loganmed.org">admin@loganmed.org</a></p>
         </div>
         <ul class="footer-hours">
@@ -138,7 +140,7 @@
         </div>
       </div>
       <div class="disclaimer">
-        <p>©&nbsp;<span data-copyright-currentyear></span>&nbsp;<a class="white-link" target="_blank" href="https://loganmed.org">Logan&nbsp;Medical&nbsp;Group,&nbsp;LLC</a>. All&nbsp;rights&nbsp;reserved.</p>
+        <p>©&nbsp;<span data-copyright-currentyear></span>&nbsp;<a class="disclaimer-link" target="_blank" href="https://loganmed.org">Logan&nbsp;Medical&nbsp;Group,&nbsp;LLC</a>. All&nbsp;rights&nbsp;reserved.</p>
         <ul>
           <li><a href="/privacy-policy/" rel="privacy-policy">Privacy Policy</a></li>
           <li><a href="/terms-of-service/" rel="terms-of-service">Terms of Service</a></li>

@@ -42,7 +42,7 @@ footer li {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
     max-width: 100%;
-    
+    column-gap: 20px;
   }
   
   .disclaimer {
@@ -76,6 +76,7 @@ footer ul a:hover {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     max-width: 100%;
     row-gap: 25px;
+    column-gap: 20px;
   }
 }
 
@@ -86,6 +87,7 @@ footer ul a:hover {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     max-width: 100%;
     row-gap: 25px;
+    column-gap: 20px;
   }
 }
 
@@ -118,6 +120,13 @@ footer ul a:hover {
     margin-top: 20px;
   }
 
+  .footer-button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+
   .footer-p {
     text-align: center;
   }
@@ -148,12 +157,29 @@ footer ul a:hover {
 }
 
 .white-link {
+  font-family: 'Jost', sans-serif;
+  font-size: 1rem;
+  border-style: none;
+  background-color: transparent;
   color: white;
   text-decoration: none;
   transition: all 0.2s ease;
 }
 
 .white-link:hover {
+  color: #3b0320;
+}
+
+.disclaimer-link {
+  font-family: 'Jost', sans-serif;
+  border-style: none;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.disclaimer-link:hover {
   color: #3b0320;
 }
 

@@ -1,110 +1,58 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const platter = document.querySelector('[data-phone-platter]');
-  const callPlater = document.querySelector('[data-call-platter]');
-  const textPlatter = document.querySelector('[data-text-platter]');
-  const openButtons = document.querySelectorAll('[data-phone-button]');
-  const closeButton = document.querySelector('[data-close-platter]');
+const openPhonePlatterButtons = document.querySelectorAll('[data-phone-button]');
+const closePhonePlatterButton = document.querySelector('[data-close-platter]');
+const phonePlatterModal = document.querySelector('[data-phone-platter]');
 
-  // Store all potentially focusable elements outside the platter
-  const focusableSelectors = 'a, button, input, select, textarea, [tabindex]:not([tabindex="-1"])';
-  const allFocusable = Array.from(document.querySelectorAll(focusableSelectors));
-  const platterFocusable = Array.from(platter.querySelectorAll(focusableSelectors));
-
-  function isInsidePlatter(el) {
-    return platter.contains(el);
-  }
-
-  function disableOutsideFocus() {
-    allFocusable.forEach(el => {
-      if (!isInsidePlatter(el)) {
-        el.setAttribute('data-original-tabindex', el.getAttribute('tabindex') || '');
-        el.setAttribute('tabindex', '-1');
-      }
+// Open the modal
+openPhonePlatterButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    phonePlatterModal.showModal();
+    // Force reflow so transition triggers
+    requestAnimationFrame(() => {
+      phonePlatterModal.classList.add('visible');
     });
-  }
+  });
+});
 
-  function restoreOutsideFocus() {
-    allFocusable.forEach(el => {
-      if (!isInsidePlatter(el)) {
-        const original = el.getAttribute('data-original-tabindex');
-        if (original === '') {
-          el.removeAttribute('tabindex');
-        } else {
-          el.setAttribute('tabindex', original);
-        }
-        el.removeAttribute('data-original-tabindex');
-      }
-    });
-  }
+// Close with animation
+function closeWithAnimation() {
+  // Add inert temporarily to prevent focus inside
+  phonePlatterModal.setAttribute('inert', '');
 
-  function openPlatter() {
-    platter.classList.add('visible');
-    platter.setAttribute('aria-hidden', 'false');
-    callPlater.setAttribute('tabindex', '0');
-    textPlatter.setAttribute('tabindex', '0');
-    closeButton.setAttribute('tabindex', '0');
-    disableOutsideFocus();
-  }
+  // Start transition
+  phonePlatterModal.classList.remove('visible');
 
-  function closePlatter() {
-    platter.classList.remove('visible');
-    platter.setAttribute('aria-hidden', 'true');
-    callPlater.setAttribute('tabindex', '-1');
-    textPlatter.setAttribute('tabindex', '-1');
-    closeButton.setAttribute('tabindex', '-1');
-    restoreOutsideFocus();
-  }
-
-  function togglePlatter() {
-    if (platter.classList.contains('visible')) {
-      closePlatter();
-    } else {
-      openPlatter();
+  const onTransitionEnd = (e) => {
+    if (e.propertyName === 'bottom') {
+      phonePlatterModal.close();
+      phonePlatterModal.removeAttribute('inert');
+      phonePlatterModal.removeEventListener('transitionend', onTransitionEnd);
     }
+  };
+
+  phonePlatterModal.addEventListener('transitionend', onTransitionEnd);
+}
+
+// Close on button
+closePhonePlatterButton.addEventListener('click', closeWithAnimation);
+
+// Close on click outside
+phonePlatterModal.addEventListener('click', (event) => {
+  const rect = phonePlatterModal.getBoundingClientRect();
+  const isInDialog = (
+    event.clientX >= rect.left &&
+    event.clientX <= rect.right &&
+    event.clientY >= rect.top &&
+    event.clientY <= rect.bottom
+  );
+
+  if (!isInDialog) {
+    closeWithAnimation();
   }
+});
 
-  openButtons.forEach(button => {
-    button.addEventListener('click', (e) => {
-      e.stopPropagation();
-      togglePlatter();
-    });
-
-    button.addEventListener('keydown', (e) => {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        togglePlatter();
-      }
-    });
-  });
-
-  closeButton?.addEventListener('click', (e) => {
-    e.stopPropagation();
-    closePlatter();
-  });
-  
-  closeButton?.addEventListener('keydown', (e) => {
-    if (e.key === "Enter" || e.key === " ") {
-      e.preventDefault();
-      closePlatter();
-    }
-  });
-
-  document.addEventListener('click', function (e) {
-    const isClickInsidePlatter = platter.contains(e.target);
-    const isClickOnButton = [...openButtons].some(btn => btn.contains(e.target));
-    if (!isClickInsidePlatter && !isClickOnButton) {
-      closePlatter();
-    }
-  });
-
-  document.addEventListener('keydown', function (e) {
-    if (e.key === "Escape") closePlatter();
-  });
-
-  // Initial accessibility state
-  platter.setAttribute('aria-hidden', 'true');
-  platter.setAttribute('tabindex', '-1');
-  callPlater.setAttribute('tabindex', '-1');
-  textPlatter.setAttribute('tabindex', '-1');
-  closeButton.setAttribute('tabindex', '-1');
+// Close on Escape
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && phonePlatterModal.open) {
+    closeWithAnimation();
+  }
 });
