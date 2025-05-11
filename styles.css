@@ -823,3 +823,27 @@ dialog[open]:not([data-phone-platter]) {
   padding: 10px 20px;
   width: fit-content;
 }
+
+.block {
+  display: block;
+}
+
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
