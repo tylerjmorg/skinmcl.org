@@ -789,3 +789,37 @@ dialog[open]:not([data-phone-platter]) {
   border-radius: 3px;
   transform: translate(-10px, -2px) rotate(-35deg);
 }
+
+.bold {
+  font-weight: bold;
+}
+
+.normal-button {
+  font-family: 'Jost', sans-serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #666;
+  background-color: transparent;
+  border-style: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.normal-button:hover {
+  color: #bd4d86;
+}
+
+.uppercase-grey {
+  text-transform: uppercase;
+  color: #666;
+}
+
+.grey-border {
+  border: solid 1px #666;
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: fit-content;
+}
