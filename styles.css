@@ -722,3 +722,28 @@ dialog[open]:not([data-phone-platter]) {
 .certification-text {
   font-size: 0.8rem;
 }
+
+.about-cta {
+  margin-left: 8px;
+  color: #888;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.upper-about-arrow {
+  display: inline-block;
+  background-color: #888;
+  width: 13px;
+  height: 1px;
+  border-radius: 3px;
+  transform: translate(3px, -9px) rotate(35deg);
+}
+
+.lower-about-arrow {
+  display: inline-block;
+  background-color: #888;
+  width: 13px;
+  height: 1px;
+  border-radius: 3px;
+  transform: translate(-10px, -2px) rotate(-35deg);
+}
