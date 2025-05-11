@@ -682,3 +682,43 @@ dialog[open]:not([data-phone-platter]) {
 .pointer {
   cursor: pointer;
 }
+
+.certification-wrapper {
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: solid 1px #aaa;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  width: fit-content;
+  padding: 10px;
+  flex-direction: row;
+  column-gap: 7px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.certification-img-background {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(to bottom, #eee, #666);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(50, 50, 50, 0.5);
+}
+
+.certification-img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.certification-text {
+  font-size: 0.8rem;
+}
