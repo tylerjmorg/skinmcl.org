@@ -98,7 +98,7 @@
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  width: 98%;
+  width: 84%;
   max-width: 600px;
   height: fit-content;
   display: none;
