@@ -321,6 +321,13 @@ main {
   margin: auto;
 }
 
+.max-width-800 {
+  max-width: 800px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (max-width: 350px) {
   .profile-img {
     width: 230px;
@@ -526,6 +533,18 @@ main {
 
 .bottom-20 {
   margin-bottom: 10px;
+}
+
+.bottom-30 {
+  margin-bottom: 30px;
+}
+
+.bottom-40 {
+  margin-bottom: 40px;
+}
+
+.bottom-50 {
+  margin-bottom: 50px;
 }
 
 .tip-button {
@@ -750,6 +769,7 @@ dialog[open]:not([data-phone-platter]) {
   color: #888;
   font-weight: 300;
   font-size: 1rem;
+  text-align: center;
 }
 
 .upper-about-arrow {
