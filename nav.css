@@ -166,3 +166,7 @@ header ul li {
     display: block;
   }
 }
+
+[id] {
+  scroll-margin-top: 5rem;
+}
