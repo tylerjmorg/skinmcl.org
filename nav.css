@@ -142,6 +142,7 @@ nav {
 
 .mobile-menu {
   visibility: hidden;
+  cursor: default;
   pointer-events: none;
   flex-direction: column;
   align-items: center;
