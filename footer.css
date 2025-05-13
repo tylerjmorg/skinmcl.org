@@ -185,11 +185,13 @@ footer ul a:hover {
 }
 
 .social-media-icon {
+  filter: opacity(80%);
   transition: all 0.2s ease;
 }
 
 .social-media-icon:hover {
-  transform: scale(1.2);
+  filter: opacity(100%);
+  transform: scale(1.1);
 }
 
 .lunch-closed {

@@ -34,7 +34,7 @@
     <div id="brand"><a href="/"><img height="35" width="60" src="/elements/logo/logo_white.svg" alt="Skin logo"></a></div>
     <div class="absolute-center"><button class="white-link pointer" data-phone-button>435-716-8765</button></div>
     <nav>
-      <ul>
+      <ul class="desktop-menu">
         <li><a id="desktop-home" href="/">HOME</a></li>
         <li><a id="desktop-about" href="/about/">ABOUT</a></li>
         <li><a id="desktop-services" href="/services/">SERVICES</a></li>
@@ -42,22 +42,22 @@
         <li><a id="desktop-events" href="/events/">EVENTS</a></li>
         <li><a id="desktop-contact" href="/contact/">CONTACT</a></li>
       </ul>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <button id="hamburger-button" class="pointer" aria-label="Navigate Menu">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </button>
+        <ul class="mobile-menu">
+          <li><a id="mobile-home" href="/">HOME</a></li>
+          <li><a id="mobile-about" href="/about/">ABOUT</a></li>
+          <li><a id="mobile-services" href="/services/">SERVICES</a></li>
+          <li><a id="mobile-products" href="/products/">PRODUCTS</a></li>
+          <li><a id="mobile-events" href="/events/">EVENTS</a></li>
+          <li><a id="mobile-contact" href="/contact/">CONTACT</a></li>
+        </ul>
+      </div>
     </nav>
-    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-      <button id="hamburger-button" class="pointer">
-        <span class="bar1"></span>
-        <span class="bar2"></span>
-        <span class="bar3"></span>
-      </button>
-      <ul class="mobile-menu">
-        <li><a id="mobile-home" href="/">HOME</a></li>
-        <li><a id="mobile-about" href="/about/">ABOUT</a></li>
-        <li><a id="mobile-services" href="/services/">SERVICES</a></li>
-        <li><a id="mobile-products" href="/products/">PRODUCTS</a></li>
-        <li><a id="mobile-events" href="/events/">EVENTS</a></li>
-        <li><a id="mobile-contact" href="/contact/">CONTACT</a></li>
-      </ul>
-    </div>
   </header>
   <main>
     <div class="inner-main">
