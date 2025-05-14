@@ -131,6 +131,10 @@ footer ul a:hover {
   .footer-p {
     text-align: center;
   }
+
+  .footer-sections nav {
+    justify-content: center;
+  }
 }
 
 .footer-p {
