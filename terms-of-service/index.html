@@ -32,24 +32,29 @@
 </head>
 <body>
   <header>
-    <div id="brand"><a href="/"><img height="35" width="60" src="/elements/logo/logo_white.svg" alt="Skin logo"></a></div>
-    <div class="absolute-center"><button class="white-link pointer" data-phone-button>435-716-8765</button></div>
-    <nav>
-      <ul class="desktop-menu">
-        <li><a id="desktop-home" href="/">HOME</a></li>
-        <li><a id="desktop-about" href="/about/">ABOUT</a></li>
-        <li><a id="desktop-services" href="/services/">SERVICES</a></li>
-        <li><a id="desktop-products" href="/products/">PRODUCTS</a></li>
-        <li><a id="desktop-events" href="/events/">EVENTS</a></li>
-        <li><a id="desktop-contact" href="/contact/">CONTACT</a></li>
-      </ul>
-      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-        <button id="hamburger-button" class="pointer" aria-label="Navigate Menu">
-          <span class="bar1"></span>
-          <span class="bar2"></span>
-          <span class="bar3"></span>
-        </button>
-        <ul class="mobile-menu">
+      <div class="top-header-bar">
+        <div id="brand"><a href="/"><img height="35" width="60" src="/elements/logo/logo_white.svg" alt="Skin logo"></a></div>
+        <div class="absolute-center"><button class="white-link pointer" data-phone-button>435-716-8765</button></div>
+        <nav class="desktop-menu">
+          <ul>
+            <li><a id="desktop-home" href="/">HOME</a></li>
+            <li><a id="desktop-about" href="/about/">ABOUT</a></li>
+            <li><a id="desktop-services" href="/services/">SERVICES</a></li>
+            <li><a id="desktop-products" href="/products/">PRODUCTS</a></li>
+            <li><a id="desktop-events" href="/events/">EVENTS</a></li>
+            <li><a id="desktop-contact" href="/contact/">CONTACT</a></li>
+          </ul>
+        </nav>
+        <nav id="hamburger-icon" data-mobile-menu-button>
+          <button id="hamburger-button" class="pointer" aria-label="Navigate Menu">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+          </button>
+        </nav>
+      </div>
+      <nav class="mobile-nav">
+        <ul class="mobile-menu" data-mobile-menu>
           <li><a id="mobile-home" href="/">HOME</a></li>
           <li><a id="mobile-about" href="/about/">ABOUT</a></li>
           <li><a id="mobile-services" href="/services/">SERVICES</a></li>
@@ -57,9 +62,8 @@
           <li><a id="mobile-events" href="/events/">EVENTS</a></li>
           <li><a id="mobile-contact" href="/contact/">CONTACT</a></li>
         </ul>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
   <main>
     <div class="inner-main">
       <div class="privacy-policy-main">
@@ -136,14 +140,16 @@
     <div class="inner-footer">
       <div class="footer-sections">
         <a class="center-logo" href="/"><img width="150" height="100" src="/elements/logo/logo_white.svg" alt="Skin - Medical Cosmetics & Laser"></a>
-        <ul class="footer-hours">
-          <li><a id="footer-home" href="/">HOME</a></li>
-          <li><a id="footer-about" href="/about/">ABOUT</a></li>
-          <li><a id="footer-services" href="/services/">SERVICES</a></li>
-          <li><a id="footer-products" href="/products/">PRODUCTS</a></li>
-          <li><a id="footer-events" href="/events/">EVENTS</a></li>
-          <li><a id="footer-contact" href="/contact/">CONTACT</a></li>
-        </ul>
+        <nav>
+          <ul class="footer-hours">
+            <li><a id="footer-home" href="/">HOME</a></li>
+            <li><a id="footer-about" href="/about/">ABOUT</a></li>
+            <li><a id="footer-services" href="/services/">SERVICES</a></li>
+            <li><a id="footer-products" href="/products/">PRODUCTS</a></li>
+            <li><a id="footer-events" href="/events/">EVENTS</a></li>
+            <li><a id="footer-contact" href="/contact/">CONTACT</a></li>
+          </ul>
+        </nav>
         <div>
           <p class="footer-start-p"><a class="white-link" target="_blank" href="https://maps.app.goo.gl/c6R3fychjjvEHcLd6">2150 N MAIN ST STE 4<br>NORTH LOGAN UT 84341-1740</a></p>
           <button class="footer-p white-link pointer footer-button" data-phone-button>435-716-8765</button>

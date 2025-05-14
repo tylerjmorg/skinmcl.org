@@ -5,33 +5,35 @@
 // Tyler Morgan <git@tylerjm.org>
 //
 
-function toggleMobileMenu(menu) {
-  menu.classList.toggle('open');
+document.addEventListener('DOMContentLoaded', () => {
+  const button = document.querySelector('[data-mobile-menu-button]');
+  const menu = document.querySelector('[data-mobile-menu]');
+  const hambugerIcon = document.querySelector('#hamburger-icon');
 
-  function handleOutsideClick(event) {
-    if (!menu.contains(event.target)) {
+  if (button) {
+    button.addEventListener('click', () => {
+      menu.classList.toggle('open');
+      hambugerIcon.classList.toggle('open');
+    });
+  }
+
+  // Close the menu when clicking outside
+  document.addEventListener('click', (event) => {
+    const isClickInsideMenu = menu.contains(event.target);
+    const isClickOnButton = button.contains(event.target);
+
+    if (!isClickInsideMenu && !isClickOnButton && menu.classList.contains('open')) {
       menu.classList.remove('open');
-      removeListeners();
+      hambugerIcon.classList.remove('open');
     }
-  }
+  });
 
-  function handleEscapeKey(event) {
-    if (event.key === 'Escape') {
+  // Close the menu on Escape key
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && menu.classList.contains('open')) {
       menu.classList.remove('open');
-      removeListeners();
+      hambugerIcon.classList.remove('open');
     }
-  }
+  });
+});
 
-  function removeListeners() {
-    document.removeEventListener('click', handleOutsideClick);
-    document.removeEventListener('keydown', handleEscapeKey);
-  }
-
-  if (menu.classList.contains('open')) {
-    setTimeout(() => {
-      // Timeout to allow the original click to finish before listening
-      document.addEventListener('click', handleOutsideClick);
-      document.addEventListener('keydown', handleEscapeKey);
-    }, 0);
-  }
-}
