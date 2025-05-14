@@ -858,7 +858,7 @@ dialog[open]:not([data-phone-platter]) {
   font-size: 1.2rem;
   position: absolute;
   top: 30px;
-  right: 40px;
+  right: 30px;
   border: solid 1px #666;
   padding: 5px 10px;
   border-radius: 10px;
