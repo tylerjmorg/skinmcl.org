@@ -67,7 +67,7 @@
   <main>
     <div class="inner-main">
       <a class="product-clickable-back" href="/products/#zo-skin-health"><div><div class="products-list-back-icon-top"></div><div class="products-list-back-icon-bottom"></div></div><div class="products-top-back">BACK</div></a>
-      <button class="products-share-link-button uppercase" data-share-link="https://skinmcl.org/products/zo/"><img class="share-link-img" src="/elements/utility/icon/ios_share_666.svg" width="20" height="20">Share</button>
+      <button class="products-share-link-button uppercase" data-share-link="https://skinmcl.org/products/zo/"><img class="share-link-img" src="/elements/utility/icon/ios_share_666.svg" width="20" height="20" alt="Share Icon">Share</button>
       <h1 class="brand-h1-img"><img src="/elements/social/zo_wordmark.svg" alt="ZO® Skin Health"></h1>
       <div>
         <p class="max-width-500 text-center bottom-20">From correcting sun damage and hyperpigmentation to preventing future concerns, ZO<sup>®</sup> provides a wide range of advanced skincare products and protocols designed to promote healthier skin every day.</p>
@@ -254,6 +254,13 @@
         <div>
           <p><a data-text-platter class="normal-link text-phone-platter uppercase" href="sms:+14357168765"><img class="icon-platter-img" width="16" height="16" src="/elements/utility/icon/chat_black.svg" alt="Text">&nbsp;Text: 435-716-8765</a></p>
         </div>
+        <div>
+          <p><a class="normal-link text-phone-platter uppercase" href="/elements/contact/skin.vcf" download type="text/vcard"><img class="icon-platter-img" width="16" height="16" src="/elements/utility/icon/account_box_black.svg" alt="Contacts">&nbsp;Add to contacts</a></p>
+        </div>
+        <div class="phone-share-options-flex">
+          <button class="share-phone-buttons uppercase" data-share-phone><img class="share-phone-img" width="16" height="16" src="/elements/utility/icon/ios_share_black.svg" alt="Share Icon">Share Number</button>
+          <button class="share-phone-buttons uppercase" id="copyBtn" onclick="copyText()"><img class="share-phone-img" width="16" height="16" src="/elements/utility/icon/content_copy_black.svg" alt="Copy Icon"><span id="copyTrans">Copy Number</span></button>
+        </div>
       </div>
     </dialog>
   </main>
@@ -308,5 +315,7 @@
   <script src="https://tylermorgan.co/copyright_year.js"></script>
   <script src="/phone_platter.js"></script>
   <script src="/share_link.js"></script>
+  <script src="/share_phone.js"></script>
+  <script src="/copy_phone.js"></script>
 </body>
 </html>

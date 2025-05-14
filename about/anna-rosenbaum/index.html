@@ -68,7 +68,7 @@
     <div class="inner-main">
       <div class="about-background">
         <a class="clickable-back" href="/about/#anna-rosenbaum" title="Back"><div><div class="about-back-icon-top"></div><div class="about-back-icon-bottom"></div></div></a>
-        <button class="about-share-link-button uppercase" data-share-link="https://skinmcl.org/about/anna-rosenbaum/"><img class="share-link-img" src="/elements/utility/icon/ios_share_666.svg" width="20" height="20">Share</button>
+        <button class="about-share-link-button uppercase" data-share-link="https://skinmcl.org/about/anna-rosenbaum/"><img class="share-link-img" src="/elements/utility/icon/ios_share_666.svg" width="20" height="20" alt="Share Icon">Share</button>
         <img class="profile-img" src="/about/profile/anna-rosenbaum/anna_rosenbaum_x512.avif" alt="Anna Rosenbaum">
         <h1 class="about-name">Anna&nbsp;Rosenbaum</h1>
         <p class="text-center text-16">Licensed Master Esthetician</p>
@@ -125,6 +125,13 @@
         <div>
           <p><a data-text-platter class="normal-link text-phone-platter" href="sms:+14357168765"><img class="icon-platter-img" width="16" height="16" src="/elements/utility/icon/chat_black.svg" alt="Text">&nbsp;TEXT: 435-716-8765</a></p>
         </div>
+        <div>
+          <p><a class="normal-link text-phone-platter uppercase" href="/elements/contact/skin.vcf" download type="text/vcard"><img class="icon-platter-img" width="16" height="16" src="/elements/utility/icon/account_box_black.svg" alt="Contacts">&nbsp;Add to contacts</a></p>
+        </div>
+        <div class="phone-share-options-flex">
+          <button class="share-phone-buttons uppercase" data-share-phone><img class="share-phone-img" width="16" height="16" src="/elements/utility/icon/ios_share_black.svg" alt="Share Icon">Share Number</button>
+          <button class="share-phone-buttons uppercase" id="copyBtn" onclick="copyText()"><img class="share-phone-img" width="16" height="16" src="/elements/utility/icon/content_copy_black.svg" alt="Copy Icon"><span id="copyTrans">Copy Number</span></button>
+        </div>
       </div>
     </dialog>
   </main>
@@ -180,5 +187,7 @@
   <script src="/phone_platter.js"></script>
   <script async src="//www.instagram.com/embed.js"></script>
   <script src="/share_link.js"></script>
+  <script src="/share_phone.js"></script>
+  <script src="/copy_phone.js"></script>
 </body>
 </html>

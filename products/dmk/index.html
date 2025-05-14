@@ -82,6 +82,13 @@
         <div>
           <p><a data-text-platter class="normal-link text-phone-platter" href="sms:+14357168765"><img class="icon-platter-img" width="16" height="16" src="/elements/utility/icon/chat_black.svg" alt="Text">&nbsp;TEXT: 435-716-8765</a></p>
         </div>
+        <div>
+          <p><a class="normal-link text-phone-platter uppercase" href="/elements/contact/skin.vcf" download type="text/vcard"><img class="icon-platter-img" width="16" height="16" src="/elements/utility/icon/account_box_black.svg" alt="Contacts">&nbsp;Add to contacts</a></p>
+        </div>
+        <div class="phone-share-options-flex">
+          <button class="share-phone-buttons uppercase" data-share-phone><img class="share-phone-img" width="16" height="16" src="/elements/utility/icon/ios_share_black.svg" alt="Share Icon">Share Number</button>
+          <button class="share-phone-buttons uppercase" id="copyBtn" onclick="copyText()"><img class="share-phone-img" width="16" height="16" src="/elements/utility/icon/content_copy_black.svg" alt="Copy Icon"><span id="copyTrans">Copy Number</span></button>
+        </div>
       </div>
     </dialog>
   </main>
@@ -135,5 +142,7 @@
   <script src="/nav.js"></script>
   <script src="https://tylermorgan.co/copyright_year.js"></script>
   <script src="/phone_platter.js"></script>
+  <script src="/share_phone.js"></script>
+  <script src="/copy_phone.js"></script>
 </body>
 </html>
