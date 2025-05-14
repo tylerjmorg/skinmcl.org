@@ -210,3 +210,24 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.products-share-link-button {
+  font-family: 'Jost', sans-serif;
+  background-color: transparent;
+  color: #666;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 90px;
+  left: 96%;
+  width: 115px;
+  transform: translate(-100%);
+  border: solid 1px #666;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+.products-share-link-button:hover {
+  transform: translate(-100%) scale(1.05);
+}

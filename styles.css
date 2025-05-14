@@ -449,6 +449,7 @@ main {
 }
 
 .about-background {
+  position: relative;
   background-color: #f4f3ef;
   border-radius: 20px;
   padding: 20px;
@@ -846,4 +847,30 @@ dialog[open]:not([data-phone-platter]) {
 
 .justify-center {
   justify-content: center;
+}
+
+.about-share-link-button {
+  font-family: 'Jost', sans-serif;
+  background-color: transparent;
+  color: #666;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  border: solid 1px #666;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+.about-share-link-button:hover {
+  transform: scale(1.05);
+}
+
+.share-link-img {
+  vertical-align:text-top;
+  margin-top: 2px;
+  margin-right: 5px;
+
 }
