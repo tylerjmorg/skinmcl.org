@@ -1,10 +1,10 @@
 function copyText() {
-    const textToCopy = "This text is hardcoded in JavaScript.";
+    const textToCopy = "+1 (435) 716-8765";
     const button = document.getElementById('copyBtn');
     const copyTrans = document.getElementById('copyTrans');
     const originalText = button.textContent;
 
-    navigator.clipboard.writeText('+1 (435) 716-8765').then(() => {
+    navigator.clipboard.writeText(textToCopy).then(() => {
       copyTrans.textContent = "Copied!";
       copyTrans.style.opacity = 1;
 

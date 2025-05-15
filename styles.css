@@ -656,6 +656,7 @@ main {
 
 .rewards-modal::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
 }
 .rewards-modal {
   position: fixed;
@@ -811,6 +812,8 @@ dialog[open]:not([data-phone-platter]) {
 
 .normal-button:hover {
   color: #bd4d86;
+  background-color: #ffd7f333;
+  border-color: #bd4d86;
 }
 
 .uppercase-grey {
@@ -875,5 +878,29 @@ dialog[open]:not([data-phone-platter]) {
 }
 
 #copyBtn {
-      transition: opacity 0.5s ease;
-    }
+  transition: opacity 0.5s ease;
+}
+
+.top--10 {
+  margin-top: -10px;
+}
+
+.top--20 {
+  margin-top: -20px;
+}
+
+.top--30 {
+  margin-top: -30px;
+}
+
+.top--40 {
+  margin-top: -40px;
+}
+
+.top--50 {
+  margin-top: -50px;
+}
+
+.top--60 {
+  margin-top: -60px;
+}
