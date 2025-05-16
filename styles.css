@@ -9,9 +9,10 @@
   font-family: 'Jost', sans-serif;
 }
 
-*:focus-visible {
-  outline: 2px solid #6b3350;
-  border-radius: 4px;
+*::selection {
+  background-color: #fcdcec;
+  color: #3b0320;
+  border-radius: 20px;
 }
 
 img {
@@ -419,6 +420,10 @@ h3, h4, h5, h6 {
   box-shadow: 0 0 30px rgba(50, 50, 50, 0.2);
 }
 
+.about-card:focus-visible {
+  outline: solid 2px #3b0320;
+}
+
 .about-card:hover {
   transform: scale(1.02);
 }
@@ -687,9 +692,13 @@ body:has(dialog[open]:not([data-phone-platter])) {overflow: hidden}
   border-style: none;
   color: white;
   cursor: pointer;
-  padding: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
   font-family: 'Jost', sans-serif;
   font-size: 1rem;
+  margin-left: 6px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 dialog[open]:not([data-phone-platter]) {

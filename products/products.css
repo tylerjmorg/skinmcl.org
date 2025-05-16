@@ -38,6 +38,10 @@
   transition: all 0.2s ease;
 }
 
+.product-brand-selector:focus-visible {
+  outline: solid 2px #3b0320;
+}
+
 .product-brand-selector:hover {
   transform: scale(1.02);
 }
@@ -124,6 +128,10 @@
 
 .products-grid a:hover {
   transform: scale(1.02);
+}
+
+.products-grid a:focus-visible {
+  outline: solid 2px #3b0320;
 }
 
 .product-img {

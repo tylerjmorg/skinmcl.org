@@ -79,6 +79,10 @@
   color: #bd4d86;
 }
 
+.close-phone-platter-text:focus-visible {
+  outline: solid 2px #3b0320;
+}
+
 [data-phone-platter] {
   bottom: 0;
   transition: bottom 0.5s ease-out;
