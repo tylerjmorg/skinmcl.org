@@ -19,7 +19,6 @@
   border: 2px solid #ffc7e3dd;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 25px;
@@ -39,7 +38,7 @@
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: #666;
   width: fit-content;
   transition: all 0.2s ease;
@@ -50,6 +49,8 @@
   font-size: 1rem;
   color: #666;
   border-style: none;
+  padding: 3px 20px;
+  border-radius: 20px;
   background-color: transparent;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -64,7 +65,8 @@
   justify-content: center;
   border: solid 1px #bd4d86;
   border-radius: 20px;
-  padding: 12px 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
   max-width: 350px;
   width: 95%;
   margin: auto;
@@ -108,7 +110,10 @@
   border: 2px solid #ffc7e3dd;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  padding: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
   box-shadow: 0 0 30px #bd4d8688;
   z-index: 20;
 }
@@ -161,6 +166,8 @@ dialog[data-phone-platter].visible {
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.2s ease;
+  width: 100%;
+  text-align: center;
 }
 
 .share-phone-buttons:hover {
@@ -172,4 +179,22 @@ dialog[data-phone-platter].visible {
   vertical-align:text-top;
   margin-top: 2px;
   margin-right: 5px;
+}
+
+#copyBtn {
+  transition: all 0.2s ease;
+}
+
+.phone-platter-mini-bar {
+  margin: 0 auto;
+  max-width: 150px;
+  width: 100%;
+  background-color: #bd4d86;
+  border-radius: 3px;
+  height: 1px;
+  margin-bottom: 20px;
+}
+
+.phone-platter-number-text {
+  color: #8d1d56aa;
 }

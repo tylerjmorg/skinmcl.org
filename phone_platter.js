@@ -1,3 +1,10 @@
+//
+// Copyright (c) 2025 Logan Medical Group, LLC. All rights reserved.
+//
+// Contributers
+// Tyler Morgan <git@tylerjm.org>
+//
+
 const openPhonePlatterButtons = document.querySelectorAll('[data-phone-button]');
 const closePhonePlatterButton = document.querySelector('[data-close-platter]');
 const phonePlatterModal = document.querySelector('[data-phone-platter]');

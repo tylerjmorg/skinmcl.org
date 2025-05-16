@@ -9,6 +9,11 @@
   font-family: 'Jost', sans-serif;
 }
 
+*:focus-visible {
+  outline: 2px solid #6b3350;
+  border-radius: 4px;
+}
+
 img {
   -webkit-user-select: none !important;
   user-select: none !important;
@@ -30,12 +35,6 @@ h1, h2 {
 
 h3, h4, h5, h6 {
   font-family: 'Dancing Script', cursive;
-}
-
-main {
-  margin-top: 20px;
-  width: 95%;
-  margin: auto;
 }
 
 .inner-main {
@@ -532,6 +531,14 @@ main {
   margin-top: 30px;
 }
 
+.bottom-5 {
+  margin-bottom: 5px;
+}
+
+.bottom-10 {
+  margin-bottom: 10px;
+}
+
 .bottom-20 {
   margin-bottom: 10px;
 }
@@ -877,10 +884,6 @@ dialog[open]:not([data-phone-platter]) {
   margin-right: 5px;
 }
 
-#copyBtn {
-  transition: opacity 0.5s ease;
-}
-
 .top--10 {
   margin-top: -10px;
 }
@@ -903,4 +906,13 @@ dialog[open]:not([data-phone-platter]) {
 
 .top--60 {
   margin-top: -60px;
+}
+
+.small-row-line-break {
+  margin: 10px auto;
+  background-color: #888;
+  max-width: 500px;
+  width: 98%;
+  height: 1px;
+  border-radius: 3px;
 }
