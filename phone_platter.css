@@ -105,8 +105,8 @@
   left: 50%;
   transform: translateX(-50%);
   width: 84%;
-  max-width: 600px;
-  height: fit-content;
+  max-width: 500px;
+  height: 312px;
   display: none;
   flex-direction: column;
   background-color: #ffedf6cc;
@@ -138,12 +138,12 @@ dialog[data-phone-platter] {
   bottom: -100%;
   left: 50%;
   transform: translateX(-50%);
-  transition: bottom 0.5s ease-out;
+  transition: bottom 0.6s cubic-bezier(.47,1.64,.41,.8);
   /* rest of your styles */
 }
 
 dialog[data-phone-platter].visible {
-  bottom: 0;
+  bottom: -60px;
 }
 
 .phone-share-options-flex {
