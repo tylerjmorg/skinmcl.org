@@ -213,6 +213,8 @@
 .brand-subtitle {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
   display: block;
 }
 
@@ -240,4 +242,13 @@
 }
 .products-share-link-button:hover {
   transform: translate(-100%) scale(1.05);
+}
+
+.product-subtitle {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  width: 90%;
 }
