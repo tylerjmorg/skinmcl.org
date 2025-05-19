@@ -118,7 +118,7 @@ header {
   border-radius: 3px;
   background-color: white;
   margin: 6px 0;
-  transition: 0.2s;
+  transition: 0.3s cubic-bezier(.47,1.94,.1,.8);
 }
 
 nav {
