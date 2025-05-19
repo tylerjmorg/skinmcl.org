@@ -11,7 +11,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nicole Sadler - Skin</title>
-  <meta name="description" content="All about Nicole Sadler at Skin - Medical Cosmetics & Laser.">
+  <meta name="description" content="All about Nicole Sadler, our amazing nurse practitioner at Skin - Medical Cosmetics & Laser.">
   <link rel="icon" type="image/svg" media="(prefers-color-scheme: light)" href="/elements/logo/icon/icon_light.svg">
   <link rel="icon" type="image/svg" media="(prefers-color-scheme: dark)" href="/elements/logo/icon/icon_dark.svg">
   <link rel="icon" type="image/avif" media="(prefers-color-scheme: light)" href="/elements/logo/icon/icon_light_x180.avif">
@@ -67,13 +67,13 @@
   <main>
     <div class="inner-main">
       <div class="about-background">
-        <a class="clickable-back" href="/about/#nicole-sadler" title="Back"><div><div class="about-back-icon-top"></div><div class="about-back-icon-bottom"></div></div></a>
+        <button class="clickable-back" onclick="goBackOrRedirect()" title="Back"><div><div class="about-back-icon-top"></div><div class="about-back-icon-bottom"></div></div></button>
         <button class="about-share-link-button uppercase" data-share-link="https://skinmcl.org/about/nicole-sadler/"><img class="share-link-img" src="/elements/utility/icon/ios_share_666.svg" width="20" height="20" alt="Share Icon">Share</button>
         <img class="profile-img" src="/about/profile/nicole-sadler/nicole_sadler_x512.avif" alt="Nicole Sadler">
         <h1 class="about-name">Nicole&nbsp;Sadler, MSN,&nbsp;NP&#8209;C</h1>
         <p class="text-center text-16">Nurse Practitioner</p>
-        <div class="top-20">
-          <button class="pink-button pointer" data-phone-button><img class="text-img" width="14" height="14" src="/elements/utility/icon/call_white.svg" alt="Call">&nbsp;CALL&nbsp;<span class="font-12">OR</span>&nbsp;TEXT&nbsp;<img class="text-img" width="18" height="16" src="/elements/utility/icon/chat_white.svg" alt="Text"><br>435-716-8765</button>
+        <div class="top-20" data-nosnippet>
+          <button class="pink-button pointer uppercase" data-phone-button><img class="text-img" width="14" height="14" src="/elements/utility/icon/call_white.svg" alt="Call">&nbsp;Call&nbsp;<span class="font-12">or</span>&nbsp;Text&nbsp;<img class="text-img" width="18" height="16" src="/elements/utility/icon/chat_white.svg" alt="Text"><br>435-716-8765</button>
         </div>
         <div class="max-width-500 text-center">
           <p class="top-20">Nicole is a family nurse practitioner providing family medicine services with an emphasis on endocrine and women's healthcare. She graduated in 2023 from South University in Savannah, GA.</p>
@@ -92,7 +92,7 @@
           </ul>
         </div>
         <div class="top-20">
-          <a class="bottom-about-back-button" href="/about/#nicole-sadler">BACK</a>
+          <button class="bottom-about-back-button uppercase" onclick="goBackOrRedirect()">Back</button>
         </div>
       </div>
     </div>
@@ -166,6 +166,15 @@
   </footer>
   <script src="/nav.js"></script>
   <script src="https://tylermorgan.co/copyright_year.js"></script>
+  <script>
+    function goBackOrRedirect() {
+      if (document.referrer && document.referrer !== window.location.href) {
+        window.history.back();
+      } else {
+        window.location.href = '/about/';
+      }
+    }
+  </script>
   <script src="/phone_platter.js"></script>
   <script src="/share_link.js"></script>
   <script src="/share_phone.js"></script>

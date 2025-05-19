@@ -70,6 +70,7 @@
   max-width: 700px;
   width: 80%;
   height: auto;
+  margin-top: -17px;
   padding: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -146,9 +147,15 @@
 }
 
 .product-clickable-back {
+  font-family: 'Jost', sans-serif;
   display: inline-block;
   text-decoration: none;
+  background-color: transparent;
+  border-style: none;
   font-size: 1.2rem;
+  margin-top: 17px;
+  margin-left: 5px;
+  cursor: pointer;
   color: black;
   transition: all 0.2s ease;
 }
@@ -168,7 +175,7 @@
   border-radius: 3px;
   background-color: #666;
   margin: 6px 0;
-  transform: rotate(-40deg) translate(-14.5px, 10px);
+  transform: rotate(-40deg) translate(-8.5px, -8px);
 }
 .products-list-back-icon-bottom {
   position: relative;
@@ -181,14 +188,14 @@
   border-radius: 3px;
   background-color: #666;
   margin: 6px 0;
-  transform: rotate(40deg) translate(2.5px, 10px);
+  transform: rotate(40deg) translate(-14.5px, 1px);
 }
 
 .products-top-back {
   margin-left: 40px;
   color: #666;
   text-decoration: none;
-  transform: translate(-4px, 5px);
+  transform: translate(-10px, -13px);
 }
 
 .product-h1 {

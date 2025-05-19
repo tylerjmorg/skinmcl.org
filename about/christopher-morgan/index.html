@@ -11,7 +11,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chris Morgan - Skin</title>
-  <meta name="description" content="All about Chris Morgan at Skin - Medical Cosmetics & Laser.">
+  <meta name="description" content="All about Chris Morgan, our phenominal CEO and nurse practitioner at Skin - Medical Cosmetics & Laser.">
   <link rel="icon" type="image/svg" media="(prefers-color-scheme: light)" href="/elements/logo/icon/icon_light.svg">
   <link rel="icon" type="image/svg" media="(prefers-color-scheme: dark)" href="/elements/logo/icon/icon_dark.svg">
   <link rel="icon" type="image/avif" media="(prefers-color-scheme: light)" href="/elements/logo/icon/icon_light_x180.avif">
@@ -67,14 +67,14 @@
   <main>
     <div class="inner-main">
       <div class="about-background">
-        <a class="clickable-back" href="/about/#christopher-morgan" title="Back"><div><div class="about-back-icon-top"></div><div class="about-back-icon-bottom"></div></div></a>
+        <button class="clickable-back" onclick="goBackOrRedirect()" title="Back"><div><div class="about-back-icon-top"></div><div class="about-back-icon-bottom"></div></div></button>
         <button class="about-share-link-button uppercase" data-share-link="https://skinmcl.org/about/christopher-morgan/"><img class="share-link-img" src="/elements/utility/icon/ios_share_666.svg" width="20" height="20" alt="Share Icon">Share</button>
         <img class="profile-img" src="/about/profile/christopher-morgan/christopher_morgan_x512.avif" alt="Chris Morgan">
         <h1 class="about-name">Christopher&nbsp;Morgan, DNP,&nbsp;NP&#8209;C</h1>
         <p class="text-center text-16">CEO</p>
         <p class="text-center text-16">Medical Director</p>
-        <div class="top-20">
-          <button class="pink-button pointer" data-phone-button><img class="text-img" width="14" height="14" src="/elements/utility/icon/call_white.svg" alt="Call">&nbsp;CALL&nbsp;<span class="font-12">OR</span>&nbsp;TEXT&nbsp;<img class="text-img" width="18" height="16" src="/elements/utility/icon/chat_white.svg" alt="Text"><br>435-716-8765</button>
+        <div class="top-20" data-nosnippet>
+          <button class="pink-button pointer uppercase" data-phone-button><img class="text-img" width="14" height="14" src="/elements/utility/icon/call_white.svg" alt="Call">&nbsp;Call&nbsp;<span class="font-12">or</span>&nbsp;Text&nbsp;<img class="text-img" width="18" height="16" src="/elements/utility/icon/chat_white.svg" alt="Text"><br>435-716-8765</button>
         </div>
         <div class="max-width-500 text-center">
           <p class="top-20">Chris completed a dual specialization in Family and Emergency Medicine at the University of South Alabama in 2010, followed by additional specialty training in Emergency and Trauma Medicine through the same institution's residency program in 2013.</p>
@@ -93,8 +93,8 @@
             <li><a target="_blank" href="mailto:chris@loganmed.org"><img class="social-media-icon" width="30" height="30" title="Email - chris@loganmed.org" src="/elements/utility/icon/mail_black.svg" alt="Email - chris@loganmed.org"></a></li>
           </ul>
         </div>
-        <div class="top-20">
-          <a class="bottom-about-back-button" href="/about/#christopher-morgan">BACK</a>
+        <div class="top-20" data-nosnippet>
+          <button class="bottom-about-back-button uppercase" onclick="goBackOrRedirect()">Back</button>
         </div>
       </div>
     </div>
@@ -168,6 +168,15 @@
   </footer>
   <script src="/nav.js"></script>
   <script src="https://tylermorgan.co/copyright_year.js"></script>
+  <script>
+    function goBackOrRedirect() {
+      if (document.referrer && document.referrer !== window.location.href) {
+        window.history.back();
+      } else {
+        window.location.href = '/about/';
+      }
+    }
+  </script>
   <script src="/phone_platter.js"></script>
   <script src="/share_link.js"></script>
   <script src="/share_phone.js"></script>

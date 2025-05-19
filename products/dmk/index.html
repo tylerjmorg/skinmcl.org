@@ -66,7 +66,7 @@
   </header>
   <main>
     <div class="inner-main">
-      <a class="product-clickable-back" href="/products/#dmk-skincare"><div><div class="products-list-back-icon-top"></div><div class="products-list-back-icon-bottom"></div></div><div class="products-top-back">BACK</div></a>
+      <button class="product-clickable-back" onclick="goBackOrRedirect()"><div><div class="products-list-back-icon-top"></div><div class="products-list-back-icon-bottom"></div></div><div class="products-top-back uppercase">Back</div></button>
       <button class="products-share-link-button uppercase" data-share-link="https://skinmcl.org/products/dmk/"><img class="share-link-img" src="/elements/utility/icon/ios_share_666.svg" width="20" height="20" alt="Share Icon">Share</button>
       <h1 class="brand-h1-img top--10"><img src="/elements/social/dmk_wordmark.svg" alt="DMK - Danné Montague-King®"></h1>
       <div class="top--40">
@@ -75,7 +75,7 @@
             <div class="certification-img-background">
               <img class="certification-img" src="/elements/social/dmk_logo.svg" alt="DMK Skincare">
             </div>
-            <p class="certification-text">DMK SKIN REVISION THERAPISTS</p>
+            <p class="certification-text uppercase">DMK Skin Revision Therapists</p>
           </div>
           <div class="bottom-20 top-10">
             <a class="normal-link text-center block block-center uppercase grey-border" href="/about/cosette-bailey/">Cosette Bailey</a>
@@ -193,7 +193,7 @@
         </a>
         <a id="melanotech-drops" href="/products/dmk/melanotech-drops/">
           <img class="product-img" src="/products/dmk/product-image/melanotech_drops_30ml.avif" alt="Melanotech® Drops">
-          <p class="product-name">Melanotech<sup>®</sup> Drops</p>
+          <p class="product-name">Melanotech<span class="trademark">®</span> Drops</p>
           <p class="about-cta top-20">Learn more&nbsp;<span><span class="upper-about-arrow"></span><span class="lower-about-arrow"></span></span></p>
         </a>
         <a id="milk-cleanser" href="/products/dmk/milk-cleanser/">
@@ -221,7 +221,7 @@
         <button data-phone-button class="pink-button pointer uppercase">Call or text for availability</button>
       </div>
       <div class="top-20">
-        <a class="bottom-about-back-button uppercase" href="/products/#dmk-skincare">Back</a>
+        <button class="bottom-about-back-button uppercase" onclick="goBackOrRedirect()">Back</button>
       </div>
     </div>
     <dialog data-phone-platter class="phone-platter" hidden>
@@ -294,6 +294,15 @@
   </footer>
   <script src="/nav.js"></script>
   <script src="https://tylermorgan.co/copyright_year.js"></script>
+  <script>
+    function goBackOrRedirect() {
+      if (document.referrer && document.referrer !== window.location.href) {
+        window.history.back();
+      } else {
+        window.location.href = '/products/';
+      }
+    }
+  </script>
   <script src="/phone_platter.js"></script>
   <script src="/share_link.js"></script>
   <script src="/share_phone.js"></script>

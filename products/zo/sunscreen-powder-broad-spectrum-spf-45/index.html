@@ -67,14 +67,14 @@
   <main>
     <div class="inner-main">
       <div class="about-background">
-        <a class="clickable-back" href="/products/zo/#sunscreen-powder-broad-spectrum-spf-45" title="Back"><div><div class="about-back-icon-top"></div><div class="about-back-icon-bottom"></div></div></a>
+        <button class="clickable-back" onclick="goBackOrRedirect()" title="Back"><div><div class="about-back-icon-top"></div><div class="about-back-icon-bottom"></div></div></button>
         <button class="about-share-link-button uppercase" data-share-link="https://skinmcl.org/products/zo/sunscreen-powder-broad-spectrum-spf-45/"><img class="share-link-img" src="/elements/utility/icon/ios_share_666.svg" width="20" height="20" alt="Share Icon">Share</button>
         <img width="200" height="273" class="hero-img top-20" src="/products/zo/product-image/sunscreen_powder_broad_spectrum_spf_45.avif" alt="Sunscreen + Powder Broad-Spectrum SPF 45">
         <h1 class="product-h1">Sunscreen + Powder Broad-Spectrum SPF 45</h1>
         <img class="brand-subtitle" width="60" height="15" src="/elements/social/zox12_logo_grey.svg" alt="ZOX12® Logo">
         <img class="brand-subtitle" width="120" height="30" src="/elements/social/zo_wordmark.svg" alt="ZO® Skin Health">
         <h2 class="product-h2 top-30">Description</h2>
-        <p class="text-center">Sunscreen + Powder SPF 45 is powered by Triple-Spectrum Protection<sup>®</sup> and exclusive ZO<sup>®</sup> antioxidant technology to deliver superior skin defense with a hint of advanced color pigments.</p>
+        <p class="text-center">Sunscreen + Powder SPF 45 is powered by Triple-Spectrum Protection<span class="trademark">®</span> and exclusive ZO<span class="trademark">®</span> antioxidant technology to deliver superior skin defense with a hint of advanced color pigments.</p>
         <h2 class="product-h2 top-20">Size</h2>
         <p class="text-center">Net Wt. 2.7 g / 0.09 Oz.</p>
         <button class="grey-border top-30 normal-button" data-phone-button>
@@ -82,7 +82,7 @@
           <p class="uppercase text-center">435-716-8765</p>
         </button>
         <div class="top-20">
-          <a class="bottom-about-back-button" href="/products/zo/#sunscreen-powder-broad-spectrum-spf-45">BACK</a>
+          <button class="bottom-about-back-button uppercase" onclick="goBackOrRedirect()">Back</button>
         </div>
       </div>
     </div>
@@ -156,6 +156,15 @@
   </footer>
   <script src="/nav.js"></script>
   <script src="https://tylermorgan.co/copyright_year.js"></script>
+  <script>
+    function goBackOrRedirect() {
+      if (document.referrer && document.referrer !== window.location.href) {
+        window.history.back();
+      } else {
+        window.location.href = '/products/zo/';
+      }
+    }
+  </script>
   <script src="/phone_platter.js"></script>
   <script src="/share_link.js"></script>
   <script src="/share_phone.js"></script>

@@ -66,16 +66,16 @@
   </header>
   <main>
     <div class="inner-main">
-      <a class="product-clickable-back" href="/products/#zo-skin-health"><div><div class="products-list-back-icon-top"></div><div class="products-list-back-icon-bottom"></div></div><div class="products-top-back">BACK</div></a>
+      <button class="product-clickable-back" onclick="goBackOrRedirect()"><div><div class="products-list-back-icon-top"></div><div class="products-list-back-icon-bottom"></div></div><div class="products-top-back uppercase">Back</div></button>
       <button class="products-share-link-button uppercase" data-share-link="https://skinmcl.org/products/zo/"><img class="share-link-img" src="/elements/utility/icon/ios_share_666.svg" width="20" height="20" alt="Share Icon">Share</button>
       <h1 class="brand-h1-img"><img src="/elements/social/zo_wordmark.svg" alt="ZO® Skin Health"></h1>
       <div class="top--10">
         <div class="grey-border bottom-30">
           <div class="certification-wrapper">
             <div class="certification-img-background">
-              <img class="certification-img" src="/elements/social/zo_logo.svg" alt="Zo® Skin Health Logo">
+              <img class="certification-img" src="/elements/social/zo_logo.svg" alt="ZO® Skin Health Logo">
             </div>
-            <p class="certification-text">ZO<sup>®</sup> EXPERTS</p>
+            <p class="certification-text uppercase">ZO<span class="trademark">®</span> Experts</p>
           </div>
           <div class="bottom-20 top-10">
             <a class="normal-link text-center block block-center uppercase grey-border" href="/about/nicole-price/">Nicole Price</a>
@@ -98,7 +98,7 @@
         </a>
         <a id="brightalive" href="/products/zo/brightalive/">
           <img class="product-img" src="/products/zo/product-image/brightalive.avif" alt="Brightalive®">
-          <p class="product-name">Brightalive<sup>®</sup></p>
+          <p class="product-name">Brightalive<span class="trademark">®</span></p>
           <p class="about-cta top-20">Learn more&nbsp;<span><span class="upper-about-arrow"></span><span class="lower-about-arrow"></span></span></p>
         </a>
         <a id="retinol-skin-brightener-05" href="/products/zo/retinol-skin-brightener-05/">
@@ -173,7 +173,7 @@
         </a>
         <a id="rozatrol" href="/products/zo/rozatrol/">
           <img class="product-img" src="/products/zo/product-image/rozatrol.avif" alt="Rozatrol®">
-          <p class="product-name">Rozatrol<sup>®</sup></p>
+          <p class="product-name">Rozatrol<span class="trademark">®</span></p>
           <p class="about-cta top-20">Learn more&nbsp;<span><span class="upper-about-arrow"></span><span class="lower-about-arrow"></span></span></p>
         </a>
         <a id="daily-power-defense" href="/products/zo/daily-power-defense/">
@@ -241,7 +241,7 @@
         <button data-phone-button class="pink-button pointer uppercase">Call or text for availability</button>
       </div>
       <div class="top-20">
-        <a class="bottom-about-back-button uppercase" href="/products/#zo-skin-health">Back</a>
+        <button class="bottom-about-back-button uppercase" onclick="goBackOrRedirect()">Back</button>
       </div>
     </div>
     <dialog data-phone-platter class="phone-platter" hidden>
@@ -314,6 +314,15 @@
   </footer>
   <script src="/nav.js"></script>
   <script src="https://tylermorgan.co/copyright_year.js"></script>
+  <script>
+    function goBackOrRedirect() {
+      if (document.referrer && document.referrer !== window.location.href) {
+        window.history.back();
+      } else {
+        window.location.href = '/products/';
+      }
+    }
+  </script>
   <script src="/phone_platter.js"></script>
   <script src="/share_link.js"></script>
   <script src="/share_phone.js"></script>
