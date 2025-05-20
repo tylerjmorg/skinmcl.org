@@ -1,4 +1,11 @@
 <svg width="1536" height="1024" aria-labelledby="skinmcl-logo-title skinmcl-logo-description" role="img" version="1.1" viewBox="0 0 1536 1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<!-- 
+  Copyright (c) 2025 Logan Medical Group, LLC. All rights reserved.
+
+  Contributers
+  Tyler Morgan <git@tylerjm.org>
+-->
+
   <defs>
     <linearGradient id="linearGradient19" x1="767.5" x2="767.5" y1="-204.5" y2="1228.5" gradientUnits="userSpaceOnUse">
       <stop stop-color="#f30000" offset=".19469"/>
@@ -14,12 +21,6 @@
       <stop offset=".83776"/>
     </linearGradient>
   </defs>
-  <!-- 
-  Copyright (c) 2025 Logan Medical Group, LLC. All rights reserved.
-
-  Contributers
-  Tyler Morgan <git@tylerjm.org>
--->
   <title id="skinmcl-logo-title">SkinMCL Logo</title>
   <desc id="skinmcl-logo-description">An abstract face  with an eye and mouth, outlined in the shape of an S</desc>
   <rect width="1536" height="1024" fill="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="34.075"/>

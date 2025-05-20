@@ -6,14 +6,13 @@
 //
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Change this to switch the JS file you're serving
-  const relativeJsPath = ""; // ← switch this path
 
-  // Create and insert the script tag
+  const relativeJsPath = "";
+
   const script = document.createElement("script");
   script.src = relativeJsPath;
 
-  console.log("Promo header loaded!"); 
+  console.log("Theme loaded!"); 
 
   document.body.appendChild(script);
 });

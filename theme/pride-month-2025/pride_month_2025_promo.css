@@ -1,5 +1,11 @@
+/*
+ * Copyright (c) 2025 Logan Medical Group, LLC. All rights reserved.
+ *
+ * Contributors
+ * Tyler Morgan <git@tylerjm.org>
+ */
+
 .promo-pride-header {
-  background-image: linear-gradient(to right, #ffb3ba, #ffdfba, #ffffba, #baffc9, #bae1ff, #dbdcff);
   height: 42px;
   margin-right: 5px;
   margin-left: 5px;
@@ -81,17 +87,6 @@
   text-transform: uppercase;
 }
 
-.promo-pride-header-anchor-text-behind {
-  font-family: 'Jost';
-  color: transparent;
-  text-shadow: 0 0 5px #00000088;
-  white-space: nowrap;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .promo-pride-header-anchor-text {
   font-family: 'Jost';
   width: 240px;
@@ -101,4 +96,37 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.promo-pride-header-rings-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  max-width: 900px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: row;
+}
+
+.promo-pride-header-left-ring {
+  width: 25px;
+  height: 25px;
+  background-color: #ffe03177;
+  border: 3px solid #a945d0cc;
+  border-radius: 50%;
+  box-shadow: 0 0 30px #FFD800;
+}
+
+.promo-pride-header-right-ring {
+  width: 25px;
+  height: 25px;
+  background-color: #ffe03177;
+  border: 3px solid #a945d0cc;
+  border-radius: 50%;
+  box-shadow: 0 0 30px #FFD800;
 }
