@@ -1,0 +1,104 @@
+.promo-pride-header {
+  background-image: linear-gradient(to right, #ffb3ba, #ffdfba, #ffffba, #baffc9, #bae1ff, #dbdcff);
+  height: 42px;
+  margin-right: 5px;
+  margin-left: 5px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.promo-pride-header-stripe-white {
+  background-color: #ffffff;
+  height: 8.4px;
+  width: 100%;
+}
+
+.promo-pride-header-stripe-lightblue {
+  background-color: #5BCEFA;
+  height: 8.4px;
+  width: 100%;
+}
+
+.promo-pride-header-stripe-pink {
+  background-color: #F5A9B8;
+  height: 8.4px;
+  width: 100%;
+}
+
+.promo-pride-header-stripe-red {
+  background-color: #ffb3ba;
+  height: 7px;
+  width: 100%;
+}
+
+.promo-pride-header-stripe-orange {
+  background-color: #ffdfba;
+  height: 7px;
+  width: 100%;
+}
+
+.promo-pride-header-stripe-yellow {
+  background-color: #ffffba;
+  height: 7px;
+  width: 100%;
+}
+
+.promo-pride-header-stripe-green {
+  background-color: #baffc9;
+  height: 7px;
+  width: 100%;
+}
+
+.promo-pride-header-stripe-blue {
+  background-color: #bae1ff;
+  height: 7px;
+  width: 100%;
+}
+
+.promo-pride-header-stripe-purple {
+  background-color: #cbb7eb;
+  height: 7px;
+  width: 100%;
+}
+
+.promo-pride-header-anchor {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: #bd4d86cc;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.promo-pride-header-anchor-text-behind {
+  font-family: 'Jost';
+  color: transparent;
+  text-shadow: 0 0 5px #00000088;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.promo-pride-header-anchor-text {
+  font-family: 'Jost';
+  width: 240px;
+  color: white;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
