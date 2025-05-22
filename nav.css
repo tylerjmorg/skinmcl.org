@@ -218,3 +218,8 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
+
+[data-nav-header]{
+  position: sticky;
+  display: contents;
+}

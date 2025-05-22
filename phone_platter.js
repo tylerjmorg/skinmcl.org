@@ -5,6 +5,7 @@
 // Tyler Morgan <git@tylerjm.org>
 //
 
+document.addEventListener("DOMContentLoaded", function () {
 const openPhonePlatterButtons = document.querySelectorAll('[data-phone-button]');
 const closePhonePlatterButton = document.querySelector('[data-close-platter]');
 const phonePlatterModal = document.querySelector('[data-phone-platter]');
@@ -62,4 +63,5 @@ document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape' && phonePlatterModal.open) {
     closeWithAnimation();
   }
+});
 });

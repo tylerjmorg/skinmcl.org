@@ -33,37 +33,7 @@
   <body>
     <header>
       <div data-promo-header></div>
-      <div class="top-header-bar">
-        <div id="brand"><a href="/"><img height="35" width="60" src="/elements/logo/logo_white.svg" alt="Skin logo"></a></div>
-        <div class="absolute-center"><button class="white-link pointer" data-phone-button>435-716-8765</button></div>
-        <nav class="desktop-menu">
-          <ul>
-            <li><a id="desktop-home" href="/">HOME</a></li>
-            <li><a id="desktop-about" href="/about/">ABOUT</a></li>
-            <li><a id="desktop-services" href="/services/">SERVICES</a></li>
-            <li><a id="desktop-products" href="/products/">PRODUCTS</a></li>
-            <li><a id="desktop-events" href="/events/">EVENTS</a></li>
-            <li><a id="desktop-contact" href="/contact/">CONTACT</a></li>
-          </ul>
-        </nav>
-        <nav id="hamburger-icon" data-mobile-menu-button>
-          <button id="hamburger-button" class="pointer" aria-label="Navigate Menu">
-            <span class="bar1"></span>
-            <span class="bar2"></span>
-            <span class="bar3"></span>
-          </button>
-        </nav>
-      </div>
-      <nav class="mobile-nav">
-        <ul class="mobile-menu" data-mobile-menu>
-          <li><a id="mobile-home" href="/">HOME</a></li>
-          <li><a id="mobile-about" href="/about/">ABOUT</a></li>
-          <li><a id="mobile-services" href="/services/">SERVICES</a></li>
-          <li><a id="mobile-products" href="/products/">PRODUCTS</a></li>
-          <li><a id="mobile-events" href="/events/">EVENTS</a></li>
-          <li><a id="mobile-contact" href="/contact/">CONTACT</a></li>
-        </ul>
-      </nav>
+      <div data-nav-header></div>
     </header>
     <main>
       <div class="inner-main">
@@ -105,7 +75,7 @@
       </div>
     <dialog data-phone-platter class="phone-platter" hidden>
       <div class="close-phone-platter">
-        <button data-close-platter class="close-phone-platter-text">CLOSE</button>
+        <button data-close-platter class="close-phone-platter-text uppercase">Close</button>
       </div>
       <div class="phone-platter-mini-bar"></div>
       <p class="text-center bottom-5 phone-platter-number-text">435-716-8765</p>
@@ -129,13 +99,13 @@
         <div class="footer-sections">
           <a class="center-logo" href="/"><img width="150" height="100" src="/elements/logo/logo_wordmark_white.svg" alt="Skin - Medical Cosmetics & Laser"></a>
           <nav>
-            <ul class="footer-hours">
-              <li><a id="footer-home" href="/">HOME</a></li>
-              <li><a id="footer-about" href="/about/">ABOUT</a></li>
-              <li><a id="footer-services" href="/services/">SERVICES</a></li>
-              <li><a id="footer-products" href="/products/">PRODUCTS</a></li>
-              <li><a id="footer-events" href="/events/">EVENTS</a></li>
-              <li><a id="footer-contact" href="/contact/">CONTACT</a></li>
+            <ul class="footer-hours uppercase">
+              <li><a id="footer-home" href="/">Home</a></li>
+              <li><a id="footer-about" href="/about/">About</a></li>
+              <li><a id="footer-services" href="/services/">Services</a></li>
+              <li><a id="footer-products" href="/products/">Products</a></li>
+              <li><a id="footer-events" href="/events/">Events</a></li>
+              <li><a id="footer-contact" href="/contact/">Contact</a></li>
             </ul>
           </nav>
           <div>
@@ -143,18 +113,18 @@
             <button class="footer-p white-link pointer footer-button" data-phone-button>435-716-8765</button>
             <p class="footer-p"><a class="white-link" href="mailto:admin@loganmed.org">admin@loganmed.org</a></p>
           </div>
-          <ul class="footer-hours">
-            <li>SUN: <span class="italic">CLOSED</span></li>
-            <li>MON: 8AM — 6PM MT</li>
-            <li>TUE: 8AM — 6PM MT</li>
-            <li>WED: 8AM — 6PM MT</li>
-            <li>THU: 8AM — 6PM MT</li>
-            <li>FRI: 8AM — 6PM MT</li>
-            <li>SAT: <span class="italic">CLOSED</span></li>
-            <li class="lunch-closed">CLOSED: 12PM — 1PM MT<br>EVERY WEEKDAY</li>
+          <ul class="footer-hours uppercase">
+            <li>Sun: <span class="italic">Closed</span></li>
+            <li>Mon: 8AM — 6PM MT</li>
+            <li>Tue: 8AM — 6PM MT</li>
+            <li>Wed: 8AM — 6PM MT</li>
+            <li>Thu: 8AM — 6PM MT</li>
+            <li>Fri: 8AM — 6PM MT</li>
+            <li>Sat: <span class="italic">Closed</span></li>
+            <li class="lunch-closed">Closed: 12PM — 1PM MT<br>Every weekday</li>
           </ul>
           <div>
-            <p class="find-us-on">FIND US ON</p>
+            <p class="find-us-on uppercase">Find us on</p>
             <ul class="flex-row col-gap-10 remove-top-20-footer">
               <li><a target="_blank" href="https://www.facebook.com/SkinMCL/"><img class="social-media-icon" width="30" height="30" title="Facebook" src="/elements/social/facebook_white.svg" alt="Facebook"></a></li>
               <li><a target="_blank" href="https://g.co/kgs/ZkBckvr"><img class="social-media-icon" width="30" height="30" title="Google" src="/elements/social/google_white.svg" alt="Google"></a></li>
@@ -171,6 +141,7 @@
         </div>
       </div>
     </footer>
+    <script src="/nav_loader.js"></script>
     <script src="/nav.js"></script>
     <script src="https://tylermorgan.co/copyright_year.js"></script>
     <script>
