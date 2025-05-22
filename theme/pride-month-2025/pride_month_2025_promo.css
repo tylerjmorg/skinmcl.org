@@ -7,8 +7,6 @@
 
 .promo-pride-header {
   height: 42px;
-  margin-right: 5px;
-  margin-left: 5px;
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -85,9 +83,31 @@
   color: #bd4d86cc;
   font-size: 1.4rem;
   text-transform: uppercase;
+  opacity: 0;
+  background-image: linear-gradient(to right, #ffb3ba66, #ffdfba66, #ffffba66, #baffc966, #bae1ff66, #cbb7eb66);
+  transition: all 0.3s ease;
 }
 
-.promo-pride-header-anchor-text {
+.promo-pride-header-anchor:hover {
+  opacity: 1;
+}
+
+.promo-pride-header-anchor-above {
+  font-family: 'Jost';
+  width: 240px;
+  color: white;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.promo-pride-header-anchor-wrapper:hover .promo-pride-header-anchor {
+  opacity: 1;
+}
+
+.promo-pride-header-anchor-img {
   font-family: 'Jost';
   width: 240px;
   color: white;

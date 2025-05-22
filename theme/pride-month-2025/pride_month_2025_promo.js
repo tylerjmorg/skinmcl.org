@@ -33,17 +33,27 @@ const rightRing = document.createElement('div');
 rightRing.className = 'promo-pride-header-right-ring';
 ringsContainer.appendChild(rightRing);
 
+const anchorWrapper = document.createElement('div');
+anchorWrapper.className = 'promo-pride-header-anchor-wrapper';
+promoHeader.appendChild(anchorWrapper);
 
 const anchor = document.createElement('a');
 anchor.className = 'promo-pride-header-anchor';
-anchor.href = '/about/';
-promoHeader.appendChild(anchor);
+anchor.href = '/pride/';
+anchor.setAttribute('aria-hidden', 'true');
+anchor.setAttribute('tabindex', '-1');
+anchorWrapper.appendChild(anchor);
 
-const anchorText = document.createElement('img');
-anchorText.src = '/elements/logo/pride_month_header_title.svg';
-anchorText.alt = 'Happy Pride Month';
-anchorText.className = 'promo-pride-header-anchor-text';
-anchor.appendChild(anchorText);
+const anchorAbove = document.createElement('a');
+anchorAbove.className = 'promo-pride-header-anchor-above';
+anchorAbove.href = '/pride/';
+anchorWrapper.appendChild(anchorAbove);
+
+const anchorImg = document.createElement('img');
+anchorImg.src = '/elements/logo/pride_month_header_title.svg';
+anchorImg.alt = 'Happy Pride Month';
+anchorImg.className = 'promo-pride-header-anchor-img';
+anchorAbove.appendChild(anchorImg);
 
 const logos = document.querySelectorAll('img[src="/elements/logo/logo_wordmark_light.svg"]');
 logos.forEach(img => {
