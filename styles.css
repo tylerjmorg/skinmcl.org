@@ -1067,3 +1067,31 @@ dialog[open]:not([data-phone-platter]) {
   color: #333;
   font-size: 1.3rem;
 }
+
+.basic-card {
+  display: block;
+  max-width: fit-content;
+  width: 90%;
+  background-color: #f4f3ef;
+  border-radius: 20px;
+  padding: 20px 30px;
+  margin-top: 20px;
+  box-shadow: 0 0 30px rgba(50, 50, 50, 0.2);
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.basic-card:hover {
+  transform: scale(1.02);
+  color: #bd4d86;
+}
+
+.diversity-cta-title-text {
+  color: transparent;
+  background-image: linear-gradient(to right, #bd4d86, #3b0320);
+  background-clip: text;
+  font-size: 1.3rem;
+}
