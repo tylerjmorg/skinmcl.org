@@ -242,7 +242,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Disclaimer
   const disclaimer = createEl("div", { class: "disclaimer" }, [
     createEl("p", {}, [
-      document.createTextNode("© "),
+      document.createTextNode("Copyright © "),
       createEl("span", { "data-copyright-currentyear": "" }),
       document.createTextNode(" "),
       createEl("a", {
