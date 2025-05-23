@@ -1,0 +1,177 @@
+/*
+ * Copyright (c) 2025 Logan Medical Group, LLC. All rights reserved.
+ *
+ * Contributors
+ * Tyler Morgan <git@tylerjm.org>
+ */
+
+
+ @media (min-width: 868px) {
+    .pride-hero-img {
+        max-height: 550px;
+    }
+    .pride-hero-logo-img {
+        max-width: 200px;
+        bottom: 60px;
+    }
+  }
+
+  @media (max-width: 867px) and (min-width: 500px) {
+    .pride-hero-img {
+        max-height: 350px;
+    }
+    .pride-hero-logo-img {
+        max-width: 150px;
+        bottom: 40px;
+    }
+  }
+
+  @media (max-width: 499px) {
+    .pride-hero-img {
+        max-height: 250px;
+    }
+    .pride-hero-logo-img {
+        max-width: 100px;
+        bottom: 30px;
+    }
+  }
+
+ .pride-hero-img {
+    object-fit: cover;
+    margin-top: -50px;
+    width: 100%;
+    z-index: 1;
+ }
+
+ .pride-hero-logo-img {
+    width: 90%;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+ }
+
+ .pride-hero-container {
+    position: relative;
+ }
+
+ .pride-title-container {
+  box-shadow: 0 0 50px #ffffffff;
+ }
+
+ main{
+  width: 100%;
+ }
+
+.pride-hero-img-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(-45deg, #E4030322, #E4030322, #FF8C0022, #FFED0022, #00802611, #004CFF22, #73298222, #73298222);
+}
+
+.pride-hero-separator {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 15%;
+}
+
+.pride-h1 {
+  font-family: 'Jost';
+  font-size: 2.5rem;
+  color: transparent;
+  background-image: linear-gradient(to right, #F5A9B8, #5BCEFA);
+  background-clip: text;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+  text-align: center;
+}
+
+.pride-subtitle {
+  font-size: 1.3rem;
+  color: #555;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  text-align: center;
+}
+
+.pride-grid-wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 668px) {
+  .pride-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 20px;
+    row-gap: 30px;
+    list-style: none;
+  }
+  .pride-grid li {
+    height: 500px;
+  }
+}
+
+@media (max-width: 667px) {
+  .pride-grid {
+    margin-top: 20px;
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    list-style: none;
+    height: fit-content;
+  }
+}
+
+.pride-grid li {
+  width: 100%;
+  background-image: linear-gradient(-45deg, #ffb3ba, #ffdfba, #ffffba, #baffc9, #bae1ff, #cbb7eb);
+  padding: 20px 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(50, 50, 50, 0.2);
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  justify-content: top;
+}
+
+.pride-grid-img-div {
+  position: relative;
+}
+.pride-grid-img {
+  border-radius: 20px;
+  object-fit: cover;
+  max-height: 300px;
+  width: 100%
+}
+
+.trans-color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  background-image: linear-gradient(to left, #F5A9B844, #5BCEFA44);
+}
+
+.pride-color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #ffb3ba33, #ffdfba33, #ffffba33, #baffc933, #bae1ff33, #cbb7eb33);
+}

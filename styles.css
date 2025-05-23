@@ -18,6 +18,7 @@
 img {
   -webkit-user-select: none !important;
   user-select: none !important;
+  object-fit: cover;
 }
 
 h1 {
@@ -40,6 +41,10 @@ h3, h4, h5, h6 {
 
 .inner-main {
   margin-top: 20px;
+}
+
+.jost {
+  font-family: 'Jost', sans-serif;
 }
 
 .colored-div {
@@ -1094,4 +1099,9 @@ dialog[open]:not([data-phone-platter]) {
   background-image: linear-gradient(to right, #bd4d86, #3b0320);
   background-clip: text;
   font-size: 1.3rem;
+}
+
+.width-300 {
+  max-width: 300px;
+  width: 90%;
 }
