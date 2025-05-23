@@ -59,3 +59,18 @@ const logos = document.querySelectorAll('img[src="/elements/logo/logo_wordmark_l
 logos.forEach(img => {
   img.src = '/elements/logo/logo_light_pride.svg';
 });
+
+const promoHomeCta= document.querySelector('[data-promo-home-cta]');
+promoHomeCta.classList.add('promo-pride-home-cta');
+promoHomeCta.classList.add('uppercase');
+
+const promoHomeCtaTitle = document.createElement('a');
+promoHomeCtaTitle.className = 'promo-pride-home-cta-title';
+promoHomeCtaTitle.href = '/pride/';
+promoHomeCtaTitle.textContent = 'Happy Pride Month';
+promoHomeCta.appendChild(promoHomeCtaTitle);
+
+const promoHomeCtaText = document.createElement('p');
+promoHomeCtaText.className = 'promo-pride-home-cta-text';
+promoHomeCtaText.textContent = 'See Pride Offers';
+promoHomeCtaTitle.appendChild(promoHomeCtaText);
