@@ -1105,3 +1105,19 @@ dialog[open]:not([data-phone-platter]) {
   max-width: 300px;
   width: 90%;
 }
+
+.about-card-pronouns {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: -20px;
+  font-style: italic;
+}
+
+.about-pronouns {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
