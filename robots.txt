@@ -1,5 +1,5 @@
 # 
-# robots.txt for https://skinmcl.org/. Generated on: 2025-05-08T04:53:00Z
+# robots.txt for https://skinmcl.org/. Generated on: 2025-05-24T14:54:00Z
 #
 # Copyright (c) 2025 Logan Medical Group, LLC. All rights reserved.
 #
@@ -171,6 +171,6 @@ User-agent: zyborg
 Disallow: /
 
 User-agent: *
-Allow: /
+Disallow: /elements/contact/skin.vcf
 
 Sitemap: https://skinmcl.org/sitemap.xml
