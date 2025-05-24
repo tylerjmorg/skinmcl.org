@@ -5,14 +5,14 @@
 // Tyler Morgan <git@tylerjm.org>
 //
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function () {
 
-  const relativeJsPath = "";
+  const relativeJsPath = '';
 
-  const script = document.createElement("script");
+  const script = document.createElement('script');
   script.src = relativeJsPath;
 
-  console.log("Theme loaded!"); 
+  console.log('Theme loaded!'); 
 
   document.body.appendChild(script);
 });

@@ -68,12 +68,14 @@
     promoHomeCtaTitle.className = 'promo-pride-home-cta-title';
     promoHomeCtaTitle.href = '/pride/';
     promoHomeCtaTitle.textContent = 'Happy Pride Month';
-    promoHomeCta.appendChild(promoHomeCtaTitle);
 
     const promoHomeCtaText = document.createElement('p');
     promoHomeCtaText.className = 'promo-pride-home-cta-text';
     promoHomeCtaText.textContent = 'See Pride Offers';
+
     promoHomeCtaTitle.appendChild(promoHomeCtaText);
+
+    promoHomeCta.appendChild(promoHomeCtaTitle);
   }
 
   // --- Services CTA
@@ -85,12 +87,14 @@
     promoServicesCtaTitle.className = 'promo-pride-home-cta-title';
     promoServicesCtaTitle.href = '/pride/';
     promoServicesCtaTitle.textContent = 'Happy Pride Month';
-    promoServicesCta.appendChild(promoServicesCtaTitle);
 
     const promoServicesCtaText = document.createElement('p');
     promoServicesCtaText.className = 'promo-pride-home-cta-text';
     promoServicesCtaText.textContent = 'See Pride Offers';
+
     promoServicesCtaTitle.appendChild(promoServicesCtaText);
+
+    promoServicesCta.appendChild(promoServicesCtaTitle);
   }
 
   const promoProductsCta = document.querySelector('[data-promo-products-cta]');
@@ -101,12 +105,14 @@
     promoProductsCtaTitle.className = 'promo-pride-home-cta-title';
     promoProductsCtaTitle.href = '/pride/';
     promoProductsCtaTitle.textContent = 'Happy Pride Month';
-    promoProductsCta.appendChild(promoProductsCtaTitle);
 
     const promoProductsCtaText = document.createElement('p');
     promoProductsCtaText.className = 'promo-pride-home-cta-text';
     promoProductsCtaText.textContent = 'See Pride Offers';
+
     promoProductsCtaTitle.appendChild(promoProductsCtaText);
+
+    promoProductsCta.appendChild(promoProductsCtaTitle);
   }
 
   const promo404Cta = document.querySelector('[data-promo-404-cta]');
@@ -117,12 +123,14 @@
     promo404CtaTitle.className = 'promo-pride-home-cta-title';
     promo404CtaTitle.href = '/pride/';
     promo404CtaTitle.textContent = 'Happy Pride Month';
-    promo404Cta.appendChild(promo404CtaTitle);
 
     const promo404CtaText = document.createElement('p');
     promo404CtaText.className = 'promo-pride-home-cta-text';
     promo404CtaText.textContent = 'See Pride Offers';
+
     promo404CtaTitle.appendChild(promo404CtaText);
+
+    promo404Cta.appendChild(promo404CtaTitle);
   }
 
   const promoEventsCta = document.querySelector('[data-promo-events-cta]');
@@ -133,11 +141,13 @@
     promoEventsCtaTitle.className = 'promo-pride-home-cta-title';
     promoEventsCtaTitle.href = '/pride/';
     promoEventsCtaTitle.textContent = 'Happy Pride Month';
-    promoEventsCta.appendChild(promoEventsCtaTitle);
 
     const promoEventsCtaText = document.createElement('p');
     promoEventsCtaText.className = 'promo-pride-home-cta-text';
     promoEventsCtaText.textContent = 'See Pride Offers';
+    
     promoEventsCtaTitle.appendChild(promoEventsCtaText);
+
+    promoEventsCta.appendChild(promoEventsCtaTitle);
   }
 })();
