@@ -152,34 +152,39 @@
 }
 
 .promo-pride-home-cta {
-  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+  width: fit-content;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.promo-pride-home-cta-anchor {
+  display: block;
   text-align: center;
-  background-image: linear-gradient(-45deg, #ffb3ba, #ffdfba, #ffffba, #baffc9, #bae1ff, #cbb7eb);
-  max-width: 350px;
-  height: 100px;
-  border-radius: 25px;
-  border: solid 1px #33333355;
+  text-decoration: none;
   padding: 20px 30px;
+  background-image: linear-gradient(45deg, #ffb3ba, #ffdfba, #ffffba, #baffc9, #bae1ff, #cbb7eb);
+  border-radius: 25px;
+  border: solid 1px #66666666;
   transition: all 0.2s ease;
 }
 
-.promo-pride-home-cta:hover {
+.promo-pride-home-cta-anchor:hover {
   transform: scale(1.05);
 }
 
 .promo-pride-home-cta-title {
-  text-decoration: none;
   color: #fff;
-  text-shadow: 0 0 10px #000000aa;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
+  text-shadow: 0 0 10px rgba(50, 50, 50, 0.8);;
 }
+
 .promo-pride-home-cta-text {
-  text-decoration: none;
-  color: #33333388;
-  text-shadow: none;
-  font-size: 1rem;
-  font-weight: normal;
+  display: block;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #666666aa;
+  font-weight: 400;
 }
