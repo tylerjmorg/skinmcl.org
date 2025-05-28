@@ -1,0 +1,226 @@
+{
+  "zo_products": [
+    {
+      "id": "daily-skincare-program",
+      "name": "Daily Skincare Program",
+      "img": "/products/zo/product-image/daily_skincare_program.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["Exfoliating Cleanser", "Exfoliating Polish", "Complexion Renewal Pads", "Daily Power Defense", "Travel Size", "Skin Care"]
+    },
+    {
+      "id": "anti-aging-program",
+      "name": "Anti-Aging Program",
+      "img": "/products/zo/product-image/anti_aging_program.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["Exfoliating Cleanser", "Exfoliating Polish", "Complexion Renewal Pads", "Daily Power Defense", "Growth Factor Serum", "Travel Size", "Anti Aging"]
+    },
+    {
+      "id": "brightalive",
+      "name": "Brightalive®",
+      "clinically_proven": true,
+      "img": "/products/zo/product-image/brightalive.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["Skin Brightener", "non retinol", "Non hydroquinone", "dark spots"]
+    },
+    {
+      "id": "retinol-skin-brightener-05",
+      "name": "Retinol Skin Brightener 0.5%",
+      "img": "/products/zo/product-image/retinol_skin_brightener_05.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["Retinol", "Skin Brightener", "Dark Spots", "uneven skin"]
+    },
+    {
+      "id": "firming-serum",
+      "name": "Firming Serum",
+      "clinically_proven": true,
+      "img": "/products/zo/product-image/firming_serum.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["anti-aging", "anti aging", "sensitive skin"]
+    },
+    {
+      "id": "growth-factor-serum",
+      "name": "Growth Factor Serum",
+      "clinically_proven": true,
+      "img": "/products/zo/product-image/growth_factor_serum.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["restoration", "plant"]
+    },
+    {
+      "id": "grwth-factor-eye-serum",
+      "name": "Growth Factor Eye Serum",
+      "clinically_proven": true,
+      "img": "/products/zo/product-image/growth_factor_eye_serum.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["tired eyes", "expression lines"]
+    },
+    {
+      "id": "dual-action-scrub",
+      "name": "Dual Action Scrub",
+      "img": "/products/zo/product-image/dual_action_scrub.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["exfoliate", "breakouts"]
+    },
+    {
+      "id": "exfoliating-polish",
+      "name": "Exfoliating Polish",
+      "img": "/products/zo/product-image/exfoliating_polish.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["exfoliate", "dead skin"]
+    },
+    {
+      "id": "complexion-renewal-pads",
+      "name": "Complexion Renewal Pads",
+      "img": "/products/zo/product-image/complexion_renewal_pads.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["oily skin", "plant-based", "plant based", "pores"]
+    },
+    {
+      "id": "oil-control-pads",
+      "name": "Oil Control Pads",
+      "img": "/products/zo/product-image/oil_control_pads.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["oily skin", "Salicylic Acid", "pores", "plant-based", "plant based"]
+    },
+    {
+      "id": "calming-toner",
+      "name": "Calming Toner",
+      "img": "/products/zo/product-image/calming_toner.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["ph balancer"]
+    },
+    {
+      "id": "wrinkle-texture-repair",
+      "name": "Wrinkle + Texture Repair",
+      "clinically_proven": true,
+      "img": "/products/zo/product-image/wrinkle_texture_repair.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["retinol", "microemulsion"]
+    },
+    {
+      "id": "retinol-acne-complex",
+      "name": "Retinol + Acne Complex",
+      "clinically_proven": true,
+      "img": "/products/zo/product-image/retinol_acne_complex.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["acne", "scarring", "pigmentation"]
+    },
+    {
+      "id": "complexion-clarifying-serum",
+      "name": "Complexion Clarifying Serum",
+      "clinically_proven": true,
+      "img": "/products/zo/product-image/complexion_clarifying_serum.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["water-based", "water based", "Z-SEB3", "fragrance free", "fragrance-free", "alcohol free", "alcohol-free", "oily skin", "sebum", "redness"]
+    },
+    {
+      "id": "complexion-clearing-masque",
+      "name": "Complexion Clearing Masque",
+      "img": "/products/zo/product-image/complexion_clearing_masque.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["clay-based", "clay based", "oily skin", "pores", "dryness"]
+    },
+    {
+      "id": "illuminating-aox-serum",
+      "name": "Illuminating AOX Serum (50\u00A0mL or\u00A030\u00A0mL)",
+      "clinically_proven": true,
+      "img": "/products/zo/product-image/illuminating_aox_serum.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["antioxidant", "brightening", "pollution", "anti-aging", "anti aging", "travel size"]
+    },
+    {
+      "id": "rozatrol",
+      "name": "Rozatrol®",
+      "img": "/products/zo/product-image/rozatrol.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["rosacea", "redness", "ZPOLY"]
+    },
+    {
+      "id": "daily-power-defense",
+      "name": "Daily Power Defense",
+      "clinically_proven": true,
+      "img": "/products/zo/product-image/daily_power_defense.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["ZPOLY", "anti-aging", "anti aging"]
+    },
+    {
+      "id": "hydrating-creme",
+      "name": "Hydrating Crème",
+      "clinically_proven": true,
+      "img": "/products/zo/product-image/hydrating_creme.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["dry skin", "moisturizer", "moisturiser", "hydration"]
+    },
+    {
+      "id": "enzymatic-peel",
+      "name": "Enzymatic Peel",
+      "img": "/products/zo/product-image/enzymatic_peel.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["brightening"]
+    },
+    {
+      "id": "exfoliation-accelerator",
+      "name": "Exfoliation Accelerator",
+      "img": "/products/zo/product-image/exfoliation_accelerator.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["exfoliate", "Glycolic Acid", "lactic acid", "dead skin", "aloe", "green tea", "chamomile"]
+    },
+    {
+      "id": "recovery-creme",
+      "name": "Recovery Crème",
+      "clinically_proven": true,
+      "img": "/products/zo/product-image/recovery_creme.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["hydrate", "hydration", "dry skin", "redness", "neck", "anti-aging", "anti aging"]
+    },
+    {
+      "id": "renewal-creme",
+      "name": "Renewal Crème",
+      "clinically_proven": true,
+      "img": "/products/zo/product-image/renewal_creme.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["dry skin", "hydration", "moisturizer", "moisturiser", "anti-aging", "anti aging", "redness"]
+    },
+    {
+      "id": "sunscreen-primer-broad-spectrum-spf-30",
+      "name": "Sunscreen + Primer Broad-Spectrum SPF 30",
+      "img": "/products/zo/product-image/sunscreen_primer_broad_spectrum_spf_30.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["broad spectrum", "makeup", "zox12", "uva", "uvb", "sun", "ira", "ir-a", "hev"]
+    },
+    {
+      "id": "sheer-fluid-broad-spectrum-sunscreen-spf-50",
+      "name": "Sheer Fluid Broad-Spectrum Sunscreen SPF 50",
+      "img": "/products/zo/product-image/sheer_fluid_broad_spectrum_sunscreen_spf_50.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["broad spectrum", "zox12", "uva", "uvb", "sun", "ira", "ir-a", "hev"]
+    },
+    {
+      "id": "smart-tone-broad-spectrum-spf-50",
+      "name": "Smart Tone Broad-Spectrum SPF 50",
+      "img": "/products/zo/product-image/smart_tone_broad_spectrum_spf_50.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["broad spectrum", "zox12", "uva", "uvb", "sun", "ira", "ir-a", "hev", "sunscreen"]
+    },
+    {
+      "id": "sunscreen-powder-broad-spectrum-spf-45",
+      "name": "Sunscreen + Powder Broad-Spectrum SPF 45",
+      "img": "/products/zo/product-image/sunscreen_powder_broad_spectrum_spf_45.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["broad spectrum", "zox12", "uva", "uvb", "sun", "ira", "ir-a", "hev", "powder", "light", "medium", "deep", "makeup"]
+    },
+    {
+      "id": "gentle-cleanser",
+      "name": "Gentle Cleanser",
+      "img": "/products/zo/product-image/gentle_cleanser.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["impurities", "all skin types"]
+    },
+    {
+      "id": "hydrating-cleanser",
+      "name": "Hydrating Cleanser",
+      "img": "/products/zo/product-image/hydrating_cleanser.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["normal skin", "dry skin", "irritation", "moisturizing", "moisturising", "hydration"]
+    }
+  ]
+}
