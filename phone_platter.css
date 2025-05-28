@@ -105,21 +105,20 @@
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  width: 84%;
+  width: 86%;
   max-width: 500px;
-  height: 312px;
+  height: fit-content;
   display: none;
   flex-direction: column;
   background-color: #ffedf6cc;
   backdrop-filter: blur(10px);
   border: 2px solid #ffc7e3dd;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  border-radius: 30px;
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
-  box-shadow: 0 0 30px #bd4d8688;
+  box-shadow: 0 0 30px #ad3d7688;
   z-index: 20;
 }
 
@@ -139,12 +138,12 @@ dialog[data-phone-platter] {
   bottom: -100%;
   left: 50%;
   transform: translateX(-50%);
-  transition: bottom 0.6s cubic-bezier(.47,1.64,.41,.8);
+  transition: bottom 0.4s cubic-bezier(0.47,1.64,0.41,0.8);
   /* rest of your styles */
 }
 
 dialog[data-phone-platter].visible {
-  bottom: -60px;
+  bottom: 5px;
 }
 
 .phone-share-options-flex {
