@@ -274,6 +274,32 @@ h3, h4, h5, h6 {
   margin-top: 20px;
 }
 
+.contact-payment-methods {
+  margin-top: 30px;
+  text-align: center;
+  background-color: #f4f3ef;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 12px;
+  box-shadow: 0 0 30px rgba(50, 50, 50, 0.2);
+}
+@media (min-width: 768px) {
+  .payment-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    margin-top: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+    max-width: 500px;
+    list-style: none;
+  }
+}
+
+.payment-grid {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .normal-link {
   text-decoration: none;
   color: black;
