@@ -295,6 +295,18 @@ h3, h4, h5, h6 {
   }
 }
 
+@media (max-width: 767px) {
+  .payment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+    max-width: 300px;
+    list-style: none;
+  }
+}
+
 .payment-grid {
   margin-left: auto;
   margin-right: auto;
