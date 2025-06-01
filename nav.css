@@ -58,12 +58,14 @@ header {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  column-gap: 5px;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 15px;
 }
 
 .top-header-bar ul a {
   color: white;
+  display: flex;
   transition: all 0.2s ease;
 }
 
@@ -97,7 +99,6 @@ header {
 
 .top-header-bar ul li {
   padding: 5px;
-  margin-left: 10px;
 }
 
 #hamburger-button {
@@ -223,3 +224,108 @@ main {
   position: sticky;
   display: contents;
 }
+
+.desktop-dropdown-left-arrow {
+  display: inline-block;
+  width: 10px;
+  height: 1.5px;
+  border-radius: 2px;
+  background-color: white;
+  transform: translate(5px, -5px) rotate(50deg);
+}
+.desktop-dropdown-right-arrow {
+  display: inline-block;
+  width: 10px;
+  height: 1.5px;
+  border-radius: 2px;
+  background-color: white;
+  transform: translate(0.5px, -5px) rotate(-50deg);
+}
+.desktop-dropdown-left-arrow,
+.desktop-dropdown-right-arrow {
+  transition: transform 0.2s ease;
+}
+.desktop-dropdown:has(> .desktop-dropdown-arrow) {
+  cursor: pointer;
+  margin-right: -3px !important;
+  margin-left: -3px !important;
+}
+
+.desktop-dropdown {
+  position: relative;
+}
+
+.desktop-dropdown-arrow {
+  display: inline-block;
+  margin-left: -1px;
+}
+
+.desktop-dropdown:hover .desktop-dropdown-left-arrow {
+  transform: translate(10px, -5px) rotate(230deg);
+}
+
+.desktop-dropdown:hover .desktop-dropdown-right-arrow {
+  transform: translate(-5.5px, -5px) rotate(130deg);
+}
+
+.desktop-dropdown.open .desktop-dropdown-left-arrow {
+  transform: translate(10px, -5px) rotate(230deg);
+}
+
+.desktop-dropdown.open .desktop-dropdown-right-arrow {
+  transform: translate(-5.5px, -5px) rotate(130deg);
+}
+
+
+.desktop-dropdown-content {
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column !important;
+  top: 30px;
+  right: 0;
+  height: fit-content !important;
+  justify-content: center !important;
+  text-align: center;
+  background-color: #ba4a83ee;
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: solid 1px #7e7d7edd;
+  padding: 10px;
+  opacity: 0;
+  min-width: 200px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+ }
+  .desktop-dropdown-content ul li {
+    display: block;
+    width: 100%;
+    height: fit-content !important;
+  }
+ .desktop-dropdown:hover .desktop-dropdown-content {
+  visibility: visible;
+  opacity: 1;
+  z-index: 20;
+ }
+
+ .desktop-dropdown.open .desktop-dropdown-content {
+  visibility: visible;
+  opacity: 1;
+  z-index: 20;
+ }
+
+ .desktop-dropdown-arrow ~ .desktop-dropdown-content {
+  top: 25px !important;
+ }
+
+ .desktop-dropdown-toggle {
+  font-family: 'Jost', sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  color: white;
+  border-style: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+ }

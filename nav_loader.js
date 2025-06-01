@@ -46,23 +46,80 @@ document.addEventListener("DOMContentLoaded", function () {
   desktopMenuList.className = 'uppercase';
   desktopMenu.appendChild(desktopMenuList);
 
+  // Desktop menu items
   fetch('/navigation.json')
   .then(response => response.json())
   .then(data => {
     data.forEach(item => {
       const desktopHeaderNavListItem = document.createElement('li');
       desktopMenuList.appendChild(desktopHeaderNavListItem);
-      if(item.dropdown_items) {
-        desktopHeaderNavListItem.classList.add(`desktop-dropdown`);
+
+      if (item.dropdown_items) {
+        desktopHeaderNavListItem.classList.add('desktop-dropdown');
       }
 
-      const anchorDesktopHeaderNavListItem = document.createElement('a');
-      anchorDesktopHeaderNavListItem.href = item.href;
-      anchorDesktopHeaderNavListItem.id = `desktop-${item.id}`;
-      anchorDesktopHeaderNavListItem.textContent = item.text;
-      desktopHeaderNavListItem.appendChild(anchorDesktopHeaderNavListItem);
+      if (item.href) {
+        const anchor = document.createElement('a');
+        anchor.href = item.href;
+        anchor.id = `desktop-${item.id}`;
+        appendTextWithTrademark(anchor, item.text);
+        desktopHeaderNavListItem.appendChild(anchor);
+      } else {
+        const dropdownToggle = document.createElement('button');
+        dropdownToggle.type = 'button';
+        dropdownToggle.id = `desktop-${item.id}`;
+        dropdownToggle.className = 'desktop-dropdown-toggle';
+        appendTextWithTrademark(dropdownToggle, item.text);
+        desktopHeaderNavListItem.appendChild(dropdownToggle);
+
+        const desktopHeaderNavListItemDropdownArrow = document.createElement('span');
+        desktopHeaderNavListItemDropdownArrow.className = 'desktop-dropdown-arrow';
+        const desktopHeaderNavListItemDropdownLeftArrow = document.createElement('span');
+        desktopHeaderNavListItemDropdownLeftArrow.className = 'desktop-dropdown-left-arrow';
+        desktopHeaderNavListItemDropdownArrow.appendChild(desktopHeaderNavListItemDropdownLeftArrow);
+
+        const desktopHeaderNavListItemDropdownRightArrow = document.createElement('span');
+        desktopHeaderNavListItemDropdownRightArrow.className = 'desktop-dropdown-right-arrow';
+        desktopHeaderNavListItemDropdownArrow.appendChild(desktopHeaderNavListItemDropdownRightArrow);
+
+        dropdownToggle.appendChild(desktopHeaderNavListItemDropdownArrow);
+        dropdownToggle.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter') {
+            desktopHeaderNavListItem.classList.toggle('open');
+          }
+        });
+      }
+
+      if (item.dropdown_items) {
+        const desktopDropdownMenu = document.createElement('ul');
+        desktopDropdownMenu.className = 'desktop-dropdown-content';
+        desktopHeaderNavListItem.appendChild(desktopDropdownMenu);
+        item.dropdown_items.forEach(dropdownItem => {
+          const dropdownListItem = document.createElement('li');
+          const dropdownAnchor = document.createElement('a');
+          dropdownAnchor.href = dropdownItem.href;
+          dropdownAnchor.id = `desktop-${dropdownItem.id}`;
+          appendTextWithTrademark(dropdownAnchor, dropdownItem.text);
+          dropdownListItem.appendChild(dropdownAnchor);
+          desktopDropdownMenu.appendChild(dropdownListItem);
+        });
+      }
     });
   });
+
+function appendTextWithTrademark(parent, text) {
+  const parts = text.split('®');
+  parts.forEach((part, index) => {
+    parent.appendChild(document.createTextNode(part));
+    if (index < parts.length - 1) {
+      const span = document.createElement('span');
+      span.className = 'trademark';
+      span.textContent = '®';
+      parent.appendChild(span);
+    }
+  });
+}
+
 
   const mobileMenuIcon = document.createElement('nav');
   mobileMenuIcon.id = 'hamburger-icon'; 
@@ -97,6 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
   mobileMenuList.setAttribute('data-mobile-menu', '');
   mobileMenu.appendChild(mobileMenuList);
 
+  // Mobile menu items
   fetch('/navigation.json')
   .then(response => response.json())
   .then(data => {
@@ -145,7 +203,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Nav links
   const navList = createEl("ul", { class: "footer-hours uppercase" });
-fetch('/navigation.json')
+  fetch('/navigation.json')
   .then(response => response.json())
   .then(data => {
     data.forEach(item => {
