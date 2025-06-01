@@ -46,24 +46,22 @@ document.addEventListener("DOMContentLoaded", function () {
   desktopMenuList.className = 'uppercase';
   desktopMenu.appendChild(desktopMenuList);
 
-  const desktopMenuItems = [
-    { text: 'Home', href: '/', id: 'desktop-home' },
-    { text: 'About', href: '/about/', id: 'desktop-about' },
-    { text: 'Services', href: '/services/', id: 'desktop-services' },
-    { text: 'Products', href: '/products/', id: 'desktop-products' },
-    { text: 'Events', href: '/events/', id: 'desktop-events' },
-    { text: 'Contact', href: '/contact/', id: 'desktop-contact' }
-  ];
+  fetch('/navigation.json')
+  .then(response => response.json())
+  .then(data => {
+    data.forEach(item => {
+      const desktopHeaderNavListItem = document.createElement('li');
+      desktopMenuList.appendChild(desktopHeaderNavListItem);
+      if(item.dropdown_items) {
+        desktopHeaderNavListItem.classList.add(`desktop-dropdown`);
+      }
 
-  desktopMenuItems.forEach(item => {
-    const desktopHeaderNavListItem = document.createElement('li');
-    desktopMenuList.appendChild(desktopHeaderNavListItem);
-
-    const anchorDesktopHeaderNavListItem = document.createElement('a');
-    anchorDesktopHeaderNavListItem.href = item.href;
-    anchorDesktopHeaderNavListItem.id = item.id;
-    anchorDesktopHeaderNavListItem.textContent = item.text;
-    desktopHeaderNavListItem.appendChild(anchorDesktopHeaderNavListItem);
+      const anchorDesktopHeaderNavListItem = document.createElement('a');
+      anchorDesktopHeaderNavListItem.href = item.href;
+      anchorDesktopHeaderNavListItem.id = `desktop-${item.id}`;
+      anchorDesktopHeaderNavListItem.textContent = item.text;
+      desktopHeaderNavListItem.appendChild(anchorDesktopHeaderNavListItem);
+    });
   });
 
   const mobileMenuIcon = document.createElement('nav');
@@ -99,24 +97,22 @@ document.addEventListener("DOMContentLoaded", function () {
   mobileMenuList.setAttribute('data-mobile-menu', '');
   mobileMenu.appendChild(mobileMenuList);
 
-  const mobileMenuItems = [
-    { text: 'Home', href: '/', id: 'mobile-home' },
-    { text: 'About', href: '/about/', id: 'mobile-about' },
-    { text: 'Services', href: '/services/', id: 'mobile-services' },
-    { text: 'Products', href: '/products/', id: 'mobile-products' },
-    { text: 'Events', href: '/events/', id: 'mobile-events' },
-    { text: 'Contact', href: '/contact/', id: 'mobile-contact' }
-  ];
+  fetch('/navigation.json')
+  .then(response => response.json())
+  .then(data => {
+    data.forEach(item => {
+      const mobileHeaderNavListItem = document.createElement('li');
+      mobileMenuList.appendChild(mobileHeaderNavListItem);
+      if(item.dropdown_items) {
+        mobileHeaderNavListItem.classList.add(`mobile-dropdown`);
+      }
 
-  mobileMenuItems.forEach(item => {
-    const mobileHeaderNavListItem = document.createElement('li');
-    mobileMenuList.appendChild(mobileHeaderNavListItem);
-
-    const anchorMobileHeaderNavListItem = document.createElement('a');
-    anchorMobileHeaderNavListItem.href = item.href;
-    anchorMobileHeaderNavListItem.id = item.id;
-    anchorMobileHeaderNavListItem.textContent = item.text;
-    mobileHeaderNavListItem.appendChild(anchorMobileHeaderNavListItem);
+      const anchorMobileHeaderNavListItem = document.createElement('a');
+      anchorMobileHeaderNavListItem.href = item.href;
+      anchorMobileHeaderNavListItem.id = `mobile-${item.id}`;
+      anchorMobileHeaderNavListItem.textContent = item.text;
+      mobileHeaderNavListItem.appendChild(anchorMobileHeaderNavListItem);
+    });
   });
 
   const footer = document.querySelector('[data-main-footer]');
@@ -148,22 +144,28 @@ document.addEventListener("DOMContentLoaded", function () {
   ]);
 
   // Nav links
-  const navLinks = [
-    ["Home", "/", "footer-home"],
-    ["About", "/about/", "footer-about"],
-    ["Services", "/services/", "footer-services"],
-    ["Products", "/products/", "footer-products"],
-    ["Events", "/events/", "footer-events"],
-    ["Contact", "/contact/", "footer-contact"]
-  ];
-  const navList = createEl("ul", { class: "footer-hours uppercase" },
-    navLinks.map(([text, href, id]) =>
-      createEl("li", {}, [
-        createEl("a", { href, id, text })
-      ])
-    )
-  );
-  const nav = createEl("nav", {}, [navList]);
+  const navList = createEl("ul", { class: "footer-hours uppercase" });
+fetch('/navigation.json')
+  .then(response => response.json())
+  .then(data => {
+    data.forEach(item => {
+      const footerNavListItem = document.createElement('li');
+      if (item.dropdown_items) {
+        footerNavListItem.classList.add('footer-dropdown');
+      }
+
+      const anchorFooterNavListItem = document.createElement('a');
+      anchorFooterNavListItem.href = item.href;
+      anchorFooterNavListItem.id = `footer-${item.id}`;
+      anchorFooterNavListItem.textContent = item.text;
+
+      footerNavListItem.appendChild(anchorFooterNavListItem);
+      navList.appendChild(footerNavListItem);
+    });
+  });
+
+const nav = createEl("nav", {}, [navList]);
+
 
   // Contact info
   const contactBlock = createEl("div", {}, [
@@ -248,7 +250,7 @@ document.addEventListener("DOMContentLoaded", function () {
       createEl("a", {
         class: "disclaimer-link",
         target: "_blank",
-        href: "https://loganmed.org",
+        href: "https://www.loganmed.org/",
         html: "Logan&nbsp;Medical&nbsp;Group,&nbsp;LLC"
       }),
       createEl("span", { html: ". All&nbsp;rights&nbsp;reserved." })
