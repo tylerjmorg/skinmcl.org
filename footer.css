@@ -59,6 +59,28 @@ footer li {
     justify-content: space-around;
     column-gap: 15px;
   }
+
+  .footer-dropdown-content {
+    font-size: 0.75rem;
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+
+  .footer-dropdown-content li a {
+    color: #ffffffbb;
+  }
+
+  .footer-dropdown {
+    margin-left: -15px;
+    border: solid 1px #ffffffbb;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-bottom: 5px;
+    margin-top: 3px;
+  }
 }
 
 footer ul a {
@@ -79,6 +101,27 @@ footer ul a:hover {
     row-gap: 25px;
     column-gap: 20px;
   }
+  .footer-dropdown-content {
+    font-size: 0.75rem;
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+
+  .footer-dropdown-content li a {
+    color: #ffffffbb;
+  }
+
+  .footer-dropdown {
+    margin-left: -15px;
+    border: solid 1px #ffffffbb;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-bottom: 5px;
+    margin-top: 3px;
+  }
 }
 
 @media (max-width: 768px) and (min-width: 525px) {
@@ -89,6 +132,27 @@ footer ul a:hover {
     max-width: 100%;
     row-gap: 25px;
     column-gap: 20px;
+  }
+  .footer-dropdown-content {
+    font-size: 0.75rem;
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+
+  .footer-dropdown-content li a {
+    color: #ffffffbb;
+  }
+
+  .footer-dropdown {
+    margin-left: -15px;
+    border: solid 1px #ffffffbb;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-bottom: 5px;
+    margin-top: 3px;
   }
 }
 
@@ -134,6 +198,27 @@ footer ul a:hover {
 
   .footer-sections nav {
     justify-content: center;
+  }
+  .footer-dropdown-content {
+    font-size: 0.75rem;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+
+  .footer-dropdown-content li a {
+    color: #ffffffbb;
+  }
+
+  .footer-dropdown {
+    border: solid 1px #ffffffbb;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 5px;
+    margin-top: 3px;
   }
 }
 

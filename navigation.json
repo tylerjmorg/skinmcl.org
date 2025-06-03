@@ -2,7 +2,13 @@
   { "text": "Home", "href": "/", "id": "home" },
   { "text": "About", "href": "/about/", "id": "about" },
   { "text": "Services", "href": "/services/", "id": "services" },
-  { "text": "Products", "href": "/products/", "id": "products" },
+  { "text": "Products", "id": "products", 
+    "dropdown_items": [
+      { "text": "All Products", "href": "/products/", "id": "products-all" },
+      { "text": "ZO® Skin Health", "href": "/products/zo/", "id": "products-zo" },
+      { "text": "DMK SKincare", "href": "/products/dmk/", "id": "products-dmk" }
+    ]
+  },
   { "text": "Events", "href": "/events/", "id": "events" },
   { "text": "Contact", "href": "/contact/", "id": "contact" }
 ]
