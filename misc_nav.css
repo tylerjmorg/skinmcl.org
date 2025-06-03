@@ -4,6 +4,7 @@
  * Contributors
  * Tyler Morgan <git@tylerjm.org>
  */
+ 
 @media (hover: hover) {
   #desktop-more, #mobile-more, #desktop-about, #mobile-about, #footer-about, #desktop-contact, #mobile-contact, #footer-contact, #desktop-events, #mobile-events, #footer-events, #desktop-products, #mobile-products, #footer-products, #desktop-services, #mobile-services, #footer-services, #desktop-home, #mobile-home, #footer-home {
     box-shadow: inset 0 0 0 0 #3b0320aa;
