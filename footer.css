@@ -213,10 +213,11 @@ footer ul a:hover {
   .footer-dropdown {
     border: solid 1px #ffffffbb;
     border-radius: 15px;
+    width: 175px;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-bottom: 5px;
     margin-top: 3px;
   }
