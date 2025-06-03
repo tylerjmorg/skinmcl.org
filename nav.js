@@ -35,5 +35,39 @@ document.addEventListener('DOMContentLoaded', () => {
       hambugerIcon.classList.remove('open');
     }
   });
+  
+  
+  const extraPadding = 3;
+
+  const dropdown = document.querySelector('.mobile-menu');
+  const main = document.querySelector('main');
+  const desktopMenu = document.querySelector('.desktop-menu');
+
+  function isDesktopMenuHidden() {
+    return window.getComputedStyle(desktopMenu).display === 'none';
+  }
+
+  function updateMainOffset() {
+    if (!dropdown || !desktopMenu || !main) return;
+
+    if (isDesktopMenuHidden()) {
+      const offset = dropdown.offsetHeight + extraPadding;
+      main.style.marginTop = `-${offset}px`;
+    } else {
+      main.style.marginTop = '0';
+    }
+  }
+
+  // Resize observer for the dropdown height
+  const observer = new ResizeObserver(updateMainOffset);
+
+  // Listen for browser resize to check media query changes
+  window.addEventListener('resize', updateMainOffset);
+  window.addEventListener('load', updateMainOffset); // ensure it's set on initial load
+
+  if (dropdown && desktopMenu) {
+    observer.observe(dropdown);
+  }
+
 });
 

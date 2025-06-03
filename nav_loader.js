@@ -65,12 +65,12 @@ document.addEventListener("DOMContentLoaded", function () {
         appendTextWithTrademark(anchor, item.text);
         desktopHeaderNavListItem.appendChild(anchor);
       } else {
-        const dropdownToggle = document.createElement('button');
-        dropdownToggle.type = 'button';
-        dropdownToggle.id = `desktop-${item.id}`;
-        dropdownToggle.className = 'desktop-dropdown-toggle';
-        appendTextWithTrademark(dropdownToggle, item.text);
-        desktopHeaderNavListItem.appendChild(dropdownToggle);
+        const desktopDropdownToggle = document.createElement('button');
+        desktopDropdownToggle.type = 'button';
+        desktopDropdownToggle.id = `desktop-${item.id}`;
+        desktopDropdownToggle.className = 'desktop-dropdown-toggle';
+        appendTextWithTrademark(desktopDropdownToggle, item.text);
+        desktopHeaderNavListItem.appendChild(desktopDropdownToggle);
 
         const desktopHeaderNavListItemDropdownArrow = document.createElement('span');
         desktopHeaderNavListItemDropdownArrow.className = 'desktop-dropdown-arrow';
@@ -82,8 +82,8 @@ document.addEventListener("DOMContentLoaded", function () {
         desktopHeaderNavListItemDropdownRightArrow.className = 'desktop-dropdown-right-arrow';
         desktopHeaderNavListItemDropdownArrow.appendChild(desktopHeaderNavListItemDropdownRightArrow);
 
-        dropdownToggle.appendChild(desktopHeaderNavListItemDropdownArrow);
-        dropdownToggle.addEventListener('keydown', (e) => {
+        desktopDropdownToggle.appendChild(desktopHeaderNavListItemDropdownArrow);
+        desktopDropdownToggle.addEventListener('keydown', (e) => {
           if (e.key === 'Enter') {
             desktopHeaderNavListItem.classList.toggle('open');
           }
@@ -95,13 +95,13 @@ document.addEventListener("DOMContentLoaded", function () {
         desktopDropdownMenu.className = 'desktop-dropdown-content';
         desktopHeaderNavListItem.appendChild(desktopDropdownMenu);
         item.dropdown_items.forEach(dropdownItem => {
-          const dropdownListItem = document.createElement('li');
-          const dropdownAnchor = document.createElement('a');
-          dropdownAnchor.href = dropdownItem.href;
-          dropdownAnchor.id = `desktop-${dropdownItem.id}`;
-          appendTextWithTrademark(dropdownAnchor, dropdownItem.text);
-          dropdownListItem.appendChild(dropdownAnchor);
-          desktopDropdownMenu.appendChild(dropdownListItem);
+          const desktopDropdownListItem = document.createElement('li');
+          const desktopDropdownAnchor = document.createElement('a');
+          desktopDropdownAnchor.href = dropdownItem.href;
+          desktopDropdownAnchor.id = `desktop-${dropdownItem.id}`;
+          appendTextWithTrademark(desktopDropdownAnchor, dropdownItem.text);
+          desktopDropdownListItem.appendChild(desktopDropdownAnchor);
+          desktopDropdownMenu.appendChild(desktopDropdownListItem);
         });
       }
     });
@@ -161,15 +161,59 @@ function appendTextWithTrademark(parent, text) {
     data.forEach(item => {
       const mobileHeaderNavListItem = document.createElement('li');
       mobileMenuList.appendChild(mobileHeaderNavListItem);
-      if(item.dropdown_items) {
-        mobileHeaderNavListItem.classList.add(`mobile-dropdown`);
+
+      if (item.dropdown_items) {
+        mobileHeaderNavListItem.classList.add('mobile-dropdown');
       }
 
-      const anchorMobileHeaderNavListItem = document.createElement('a');
-      anchorMobileHeaderNavListItem.href = item.href;
-      anchorMobileHeaderNavListItem.id = `mobile-${item.id}`;
-      anchorMobileHeaderNavListItem.textContent = item.text;
-      mobileHeaderNavListItem.appendChild(anchorMobileHeaderNavListItem);
+      if (item.href) {
+        const anchor = document.createElement('a');
+        anchor.href = item.href;
+        anchor.id = `mobile-${item.id}`;
+        appendTextWithTrademark(anchor, item.text);
+        mobileHeaderNavListItem.appendChild(anchor);
+      } else {
+        const mobileDropdownToggle = document.createElement('button');
+        mobileDropdownToggle.type = 'button';
+        mobileDropdownToggle.id = `mobile-${item.id}`;
+        mobileDropdownToggle.className = 'mobile-dropdown-toggle';
+        appendTextWithTrademark(mobileDropdownToggle, item.text);
+        mobileHeaderNavListItem.appendChild(mobileDropdownToggle);
+
+        const mobileHeaderNavListItemDropdownArrow = document.createElement('span');
+        mobileHeaderNavListItemDropdownArrow.className = 'mobile-dropdown-arrow';
+        const mobileHeaderNavListItemDropdownLeftArrow = document.createElement('span');
+        mobileHeaderNavListItemDropdownLeftArrow.className = 'mobile-dropdown-x-arrow';
+        mobileHeaderNavListItemDropdownArrow.appendChild(mobileHeaderNavListItemDropdownLeftArrow);
+
+        const mobileHeaderNavListItemDropdownRightArrow = document.createElement('span');
+        mobileHeaderNavListItemDropdownRightArrow.className = 'mobile-dropdown-y-arrow';
+        mobileHeaderNavListItemDropdownArrow.appendChild(mobileHeaderNavListItemDropdownRightArrow);
+
+        mobileDropdownToggle.appendChild(mobileHeaderNavListItemDropdownArrow);
+
+        if (item.dropdown_items) {
+          const mobileDropdownMenu = document.createElement('ul');
+          mobileDropdownMenu.className = 'mobile-dropdown-content';
+          mobileHeaderNavListItem.appendChild(mobileDropdownMenu);
+
+          item.dropdown_items.forEach(dropdownItem => {
+            const mobileDropdownListItem = document.createElement('li');
+            const mobileDropdownAnchor = document.createElement('a');
+            mobileDropdownAnchor.href = dropdownItem.href;
+            mobileDropdownAnchor.id = `mobile-${dropdownItem.id}`;
+            appendTextWithTrademark(mobileDropdownAnchor, dropdownItem.text);
+            mobileDropdownListItem.appendChild(mobileDropdownAnchor);
+            mobileDropdownMenu.appendChild(mobileDropdownListItem);
+          });
+
+          // Toggle on click
+          mobileDropdownToggle.addEventListener('click', () => {
+            mobileHeaderNavListItem.classList.toggle('open');
+            mobileDropdownMenu.classList.toggle('open');
+          });
+        }
+      }
     });
   });
 
