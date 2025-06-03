@@ -753,6 +753,10 @@ h3, h4, h5, h6 {
 
 body:has(dialog[open]:not([data-phone-platter])) {overflow: hidden}
 
+body {
+  background-color: white;
+}
+
 .close-rewards-button {
   background-color: transparent;
   border-style: none;

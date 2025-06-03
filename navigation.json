@@ -1,11 +1,6 @@
 [
   { "text": "Home", "href": "/", "id": "home" },
-  { "text": "About", "id": "about",
-    "dropdown_items": [
-      { "text": "Our Staff", "href": "/about/", "id": "about-staff" },
-      { "text": "Inclusion & Diversity", "href": "/diversity/", "id": "about-diversity" }
-    ]
-  },
+  { "text": "About", "href": "/about/", "id": "about" },
   { "text": "Services", "href": "/services/", "id": "services" },
   { "text": "Products", "id": "products", 
     "dropdown_items": [
@@ -14,6 +9,12 @@
       { "text": "DMK SKincare", "href": "/products/dmk/", "id": "products-dmk" }
     ]
   },
-  { "text": "Events", "href": "/events/", "id": "events" },
-  { "text": "Contact", "href": "/contact/", "id": "contact" }
+  { "text": "Contact", "href": "/contact/", "id": "contact" },
+  { "text": "More", "id": "more",
+    "dropdown_items": [
+      { "text": "Events", "href": "/events/", "id": "more-events" },
+      { "text": "Pride Month", "href": "/pride/", "id": "more-pride" },
+      { "text": "Inclusion & Diversity", "href": "/diversity/", "id": "more-diversity" }
+    ]
+  }
 ]

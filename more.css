@@ -1,0 +1,22 @@
+@media (hover: hover) {
+  #desktop-home, #mobile-home, #footer-home, #desktop-about, #mobile-about, #footer-about, #desktop-contact, #mobile-contact, #footer-contact, #desktop-events, #mobile-events, #footer-events, #desktop-products, #mobile-products, #footer-products, #desktop-services, #mobile-services, #footer-services {
+    box-shadow: inset 0 0 0 0 #3b0320aa;
+    transition: color 150ms ease-in-out, box-shadow 150ms ease-in-out;
+  }
+  #desktop-home:hover, #mobile-home:hover, #footer-home:hover, #desktop-about:hover, #mobile-about:hover, #footer-about:hover, #desktop-contact:hover, #mobile-contact:hover, #footer-contact:hover, #desktop-events:hover, #mobile-events:hover, #footer-events:hover, #desktop-products:hover, #mobile-products:hover, #footer-products:hover, #desktop-services:hover, #mobile-services:hover, #footer-services:hover {
+    box-shadow: inset 0 -23px 0 0 #3b0320aa;
+  }
+}
+
+#desktop-home, #mobile-home, #footer-home, #desktop-about, #mobile-about, #footer-about, #desktop-contact, #mobile-contact, #footer-contact, #desktop-events, #mobile-events, #footer-events, #desktop-products, #mobile-products, #footer-products, #desktop-services, #mobile-services, #footer-services {
+  color: #fff;
+  padding: 0 0.25rem;
+  margin: 0 -0.5rem;
+}
+
+#desktop-more, #mobile-more {
+  box-shadow: inset 0 -23px 0 0 #3b0320aa;
+  color: #fff;
+	padding: 0 .25rem;
+	margin: 0 -.5rem;
+}
