@@ -304,8 +304,7 @@ const nav = createEl("nav", {}, [navList]);
     createEl("p", { class: "footer-start-p" }, [
       createEl("a", {
         class: "white-link",
-        target: "_blank",
-        href: "https://maps.app.goo.gl/c6R3fychjjvEHcLd6",
+        href: "/contact/#location",
         html: "2150 N MAIN ST STE 4<br>NORTH LOGAN UT 84341-1740"
       })
     ]),
