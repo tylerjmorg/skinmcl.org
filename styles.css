@@ -1283,7 +1283,7 @@ dialog[open]:not([data-phone-platter]) {
 
 .google-maps-icon {
   position: absolute;
-  left: 22px;
+  left: 22.535px;
   top: 50%;
   transform: translateY(-50%);
 }
