@@ -446,7 +446,7 @@ h3, h4, h5, h6 {
 }
 @media (max-width: 441px) {
   .instagram-embed {
-    min-height: 460px;
+    min-height: 470px;
   }
 }
 
