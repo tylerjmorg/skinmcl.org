@@ -88,8 +88,10 @@ footer ul a {
   color: white;
   transition: all 0.2s ease;
 }
-footer ul a:hover {
-  color: #3b0320;
+@media (hover: hover) {
+  footer ul a:hover {
+    color: #3b0320;
+  }
 }
 
 @media (max-width: 1250px) and (min-width: 768px) {
@@ -257,8 +259,10 @@ footer ul a:hover {
   transition: all 0.2s ease;
 }
 
-.white-link:hover {
-  color: #3b0320;
+@media (hover: hover) {
+  .white-link:hover {
+    color: #3b0320;
+  }
 }
 
 .disclaimer-link {
@@ -270,18 +274,21 @@ footer ul a:hover {
   transition: all 0.2s ease;
 }
 
-.disclaimer-link:hover {
-  color: #3b0320;
+@media (hover: hover) {
+  .disclaimer-link:hover {
+    color: #3b0320;
+  }
 }
 
-.social-media-icon {
-  filter: opacity(80%);
-  transition: all 0.2s ease;
-}
-
-.social-media-icon:hover {
-  filter: opacity(100%);
-  transform: scale(1.1);
+@media (hover: hover) {
+  .social-media-icon {
+    filter: opacity(80%);
+    transition: all 0.2s ease;
+  }
+  .social-media-icon:hover {
+    filter: opacity(100%);
+    transform: scale(1.1);
+  }
 }
 
 .lunch-closed {

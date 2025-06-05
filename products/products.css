@@ -47,8 +47,10 @@
   outline: solid 2px #3b0320;
 }
 
-.product-brand-selector:hover {
-  transform: scale(1.02);
+@media (hover: hover) {
+  .product-brand-selector:hover {
+    transform: scale(1.02);
+  }
 }
 
 .product-brand-selector-content {
@@ -132,9 +134,11 @@
   transform: all 0.2s ease;
 }
 
-.products-grid a:hover {
-  transform: scale(1.02);
-  background-color: #fff4fb;
+@media (hover: hover) {
+  .products-grid a:hover {
+    transform: scale(1.02);
+    background-color: #fff4fb;
+  }
 }
 
 .products-grid a:focus-visible {
@@ -163,8 +167,10 @@
   transition: all 0.2s ease;
 }
 
-.product-clickable-back:hover {
-  transform: scale(1.1);
+@media (hover: hover) {
+  .product-clickable-back:hover {
+    transform: scale(1.1);
+  }
 }
 
 .products-list-back-icon-top {
@@ -246,8 +252,11 @@
   border-radius: 10px;
   transition: all 0.2s ease;
 }
-.products-share-link-button:hover {
-  transform: scale(1.05);
+
+@media (hover: hover) {
+  .products-share-link-button:hover {
+    transform: scale(1.05);
+  }
 }
 
 .product-subtitle {

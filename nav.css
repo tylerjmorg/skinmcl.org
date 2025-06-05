@@ -305,11 +305,12 @@ main {
     color: #ffffffdd;
     font-size: 0.8rem;
   }
-      
- .desktop-dropdown:hover .desktop-dropdown-content {
-  visibility: visible;
-  opacity: 1;
-  z-index: 20;
+ @media (hover: hover) {
+  .desktop-dropdown:hover .desktop-dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    z-index: 20;
+  }
  }
 
  .desktop-dropdown.open .desktop-dropdown-content {
@@ -349,8 +350,10 @@ main {
   text-align: center;
  }
 
- .mobile-dropdown-toggle:hover {
-  box-shadow: none;
+ @media (hover: hover) {
+  .mobile-dropdown-toggle:hover {
+    box-shadow: none;
+  }
  }
 
  .mobile-dropdown {
@@ -418,6 +421,8 @@ main {
   font-size: 0.8rem;
 }
 
-.mobile-dropdown-content li a:hover {
-  color: #3b0320;
+@media (hover: hover) {
+  .mobile-dropdown-content li a:hover {
+    color: #3b0320;
+  }
 }
