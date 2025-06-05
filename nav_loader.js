@@ -331,7 +331,8 @@ const nav = createEl("nav", {}, [navList]);
     "Thu: 8AM — 6PM MT",
     "Fri: 8AM — 6PM MT",
     "Sat: <span class='italic'>Closed</span>",
-    "Closed: 12PM — 1PM MT<br>Every weekday"
+    "Closed: 12PM — 1PM MT<br>Every weekday",
+    "Closed: July 4th & 24th"
   ];
   const hoursList = createEl("ul", { class: "footer-hours uppercase" },
     hours.map((line, i) => {
