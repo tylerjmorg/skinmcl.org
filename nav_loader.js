@@ -51,6 +51,8 @@ document.addEventListener("DOMContentLoaded", function () {
   .then(response => response.json())
   .then(data => {
     data.forEach(item => {
+      if (item.hidden || item.header_hidden || item.desktop_header_hidden) return;
+
       const desktopHeaderNavListItem = document.createElement('li');
       desktopMenuList.appendChild(desktopHeaderNavListItem);
 
@@ -95,6 +97,8 @@ document.addEventListener("DOMContentLoaded", function () {
         desktopDropdownMenu.className = 'desktop-dropdown-content';
         desktopHeaderNavListItem.appendChild(desktopDropdownMenu);
         item.dropdown_items.forEach(dropdownItem => {
+          if (dropdownItem.hidden || dropdownItem.header_hidden || dropdownItem.desktop_header_hidden) return;
+
           const desktopDropdownListItem = document.createElement('li');
           const desktopDropdownAnchor = document.createElement('a');
           desktopDropdownAnchor.href = dropdownItem.href;
@@ -119,7 +123,6 @@ function appendTextWithTrademark(parent, text) {
     }
   });
 }
-
 
   const mobileMenuIcon = document.createElement('nav');
   mobileMenuIcon.id = 'hamburger-icon'; 
@@ -159,6 +162,8 @@ function appendTextWithTrademark(parent, text) {
   .then(response => response.json())
   .then(data => {
     data.forEach(item => {
+      if (item.hidden || item.header_hidden || item.mobile_header_hidden) return;
+
       const mobileHeaderNavListItem = document.createElement('li');
       mobileMenuList.appendChild(mobileHeaderNavListItem);
 
@@ -198,6 +203,8 @@ function appendTextWithTrademark(parent, text) {
           mobileHeaderNavListItem.appendChild(mobileDropdownMenu);
 
           item.dropdown_items.forEach(dropdownItem => {
+            if (dropdownItem.hidden || dropdownItem.header_hidden || dropdownItem.mobile_header_hidden) return;
+
             const mobileDropdownListItem = document.createElement('li');
             const mobileDropdownAnchor = document.createElement('a');
             mobileDropdownAnchor.href = dropdownItem.href;
@@ -251,6 +258,8 @@ function appendTextWithTrademark(parent, text) {
   .then(response => response.json())
   .then(data => {
     data.forEach(item => {
+      if (item.hidden || item.footer_hidden) return;
+
       const footerHeaderNavListItem = document.createElement('li');
       navList.appendChild(footerHeaderNavListItem);
 
@@ -273,6 +282,7 @@ function appendTextWithTrademark(parent, text) {
           footerHeaderNavListItem.appendChild(footerDropdownMenu);
 
           item.dropdown_items.forEach(dropdownItem => {
+            if (dropdownItem.hidden || dropdownItem.footer_hidden) return;
             const footerDropdownListItem = document.createElement('li');
             const footerDropdownAnchor = document.createElement('a');
             footerDropdownAnchor.href = dropdownItem.href;

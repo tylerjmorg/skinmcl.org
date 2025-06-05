@@ -2,7 +2,7 @@
   { "text": "Home", "href": "/", "id": "home" },
   { "text": "About", "href": "/about/", "id": "about" },
   { "text": "Services", "href": "/services/", "id": "services" },
-  { "text": "Products", "id": "products", 
+  { "text": "Products", "id": "products",
     "dropdown_items": [
       { "text": "All Products", "href": "/products/", "id": "products-all" },
       { "text": "ZO® Skin Health", "href": "/products/zo/", "id": "products-zo" },
@@ -13,7 +13,7 @@
   { "text": "More", "id": "more",
     "dropdown_items": [
       { "text": "Events", "href": "/events/", "id": "more-events" },
-      { "text": "Pride Month", "href": "/pride/", "id": "more-pride" },
+      { "text": "Pride Month", "href": "/pride/", "id": "more-pride", "hidden": false },
       { "text": "Inclusion & Diversity", "href": "/diversity/", "id": "more-diversity" }
     ]
   }

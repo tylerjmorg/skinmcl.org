@@ -929,6 +929,18 @@ dialog[open]:not([data-phone-platter]) {
   text-transform: uppercase;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.text-black {
+  color: black;
+}
+
 .align-center {
   display: flex;
   align-items: center;
@@ -1265,6 +1277,7 @@ dialog[open]:not([data-phone-platter]) {
   transform: scale(1.05);
   border-color: #bd4d86;
   color: #bd4d86;
+  background-color: #fcdcec66
 }
 
 .maps-text {
@@ -1290,6 +1303,13 @@ dialog[open]:not([data-phone-platter]) {
 .apple-maps-icon {
   position: absolute;
   left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.waze-maps-icon {
+  position: absolute;
+  left: 18.025px;
   top: 50%;
   transform: translateY(-50%);
 }
