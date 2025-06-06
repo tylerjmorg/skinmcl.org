@@ -227,6 +227,9 @@ footer ul a {
 
   .footer-sections nav {
     justify-content: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
   }
   .footer-dropdown-content {
     font-size: 0.75rem;
@@ -253,7 +256,7 @@ footer ul a {
   .footer-dropdown {
     border: solid 1px #ffffffbb;
     border-radius: 15px;
-    width: 175px;
+    width: 100%;
     padding: 5px !important;
     margin-bottom: 5px;
     margin-top: 3px;
@@ -331,6 +334,11 @@ footer ul a {
 }
 
 @media (min-width: 525px) {
+  .footer-nav-list {
+    max-height: 340px !important;
+    overflow-y: auto;
+    justify-content: start;
+  }
   .footer-nav-no-nest {
     margin-left: 11px !important;
   }
@@ -382,6 +390,11 @@ footer ul a {
 }
 
 @media (max-width: 524px) {
+  .footer-nav-list {
+    max-height: 440px !important;
+    overflow-y: auto;
+    justify-content: start;
+  }
   .footer-dropdown-toggle {
     font-family: 'Jost', sans-serif;
     text-align: center;
@@ -440,12 +453,6 @@ footer ul a {
   .footer-dropdown-content a:hover {
     background-color: #5b234033;
   }
-}
-
-.footer-nav-list {
-  max-height: 340px !important;
-  overflow-y: auto;
-  justify-content: start;
 }
 
 .external-footer-svg {
