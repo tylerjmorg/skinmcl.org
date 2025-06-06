@@ -280,9 +280,9 @@ main {
   display: flex;
   flex-direction: column !important;
   top: 30px;
-  right: 0;
+  right: -20px;
   height: fit-content !important;
-  text-align: center;
+  text-align: right;
   background-color: #ba4a83dd;
   backdrop-filter: blur(10px);
   border-radius: 25px;
@@ -290,9 +290,11 @@ main {
   border: solid 1px #7e7d7edd;
   max-height: 70dvh;
   overflow-y: auto;
-  padding: 10px;
+  padding: 10px 10px;
   opacity: 0;
-  min-width: 200px;
+  min-width: 185px;
+  width: fit-content !important;
+
   font-size: 0.9rem;
   transition: all 0.2s ease;
  }
@@ -301,9 +303,30 @@ main {
     width: 100%;
     height: fit-content !important;
   }
+
+  .desktop-dropdown-content li {
+    display: block;
+    text-align: right;
+    margin-left: auto;
+    align-items: right;
+    width: 100%;
+    padding: 0 !important;
+  }
+  .desktop-dropdown-content a:hover {
+    background-color: #5b234033;
+  }
   .desktop-dropdown-content li a {
+    text-align: right;
     color: #ffffffdd;
     font-size: 0.8rem;
+  }
+  .desktop-dropdown-content a {
+    margin-left: auto !important;
+    text-align: right;
+    padding: 5px 10px;
+    border-radius: 10px;
+    justify-content: right;
+
   }
  @media (hover: hover) {
   .desktop-dropdown:hover .desktop-dropdown-content {

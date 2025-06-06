@@ -253,7 +253,7 @@ function appendTextWithTrademark(parent, text) {
   ]);
 
   // Nav links
-  const navList = createEl("ul", { class: "footer-hours uppercase" });
+  const navList = createEl("ul", { class: "footer-hours uppercase footer-nav-list" });
   fetch('/navigation.json')
   .then(response => response.json())
   .then(data => {
@@ -274,7 +274,24 @@ function appendTextWithTrademark(parent, text) {
         appendTextWithTrademark(anchor, item.text);
         footerHeaderNavListItem.appendChild(anchor);
       } else {
-        appendTextWithTrademark(footerHeaderNavListItem, item.text);
+        const footerDropdownToggle = document.createElement('button');
+        footerDropdownToggle.type = 'button';
+        footerDropdownToggle.id = `footer-${item.id}`;
+        footerDropdownToggle.className = 'footer-dropdown-toggle';
+        appendTextWithTrademark(footerDropdownToggle, item.text);
+        footerHeaderNavListItem.appendChild(footerDropdownToggle);
+
+        const footerHeaderNavListItemDropdownArrow = document.createElement('span');
+        footerHeaderNavListItemDropdownArrow.className = 'footer-dropdown-arrow';
+        const footerHeaderNavListItemDropdownLeftArrow = document.createElement('span');
+        footerHeaderNavListItemDropdownLeftArrow.className = 'footer-dropdown-x-arrow';
+        footerHeaderNavListItemDropdownArrow.appendChild(footerHeaderNavListItemDropdownLeftArrow);
+
+        const footerHeaderNavListItemDropdownRightArrow = document.createElement('span');
+        footerHeaderNavListItemDropdownRightArrow.className = 'footer-dropdown-y-arrow';
+        footerHeaderNavListItemDropdownArrow.appendChild(footerHeaderNavListItemDropdownRightArrow);
+
+        footerDropdownToggle.appendChild(footerHeaderNavListItemDropdownArrow);
 
         if (item.dropdown_items) {
           const footerDropdownMenu = document.createElement('ul');
@@ -290,6 +307,12 @@ function appendTextWithTrademark(parent, text) {
             appendTextWithTrademark(footerDropdownAnchor, dropdownItem.text);
             footerDropdownListItem.appendChild(footerDropdownAnchor);
             footerDropdownMenu.appendChild(footerDropdownListItem);
+          });
+
+          footerDropdownToggle.addEventListener('click', () => {
+            footerHeaderNavListItem.classList.toggle('open');
+            footerDropdownMenu.classList.toggle('open');
+            footerDropdownToggle.class
           });
         }
       }
