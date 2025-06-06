@@ -1,7 +1,19 @@
 [
   { "text": "Home", "href": "/", "id": "home" },
-  { "text": "About", "href": "/about/", "id": "about" },
-  { "text": "Services", "href": "/services/", "id": "services", "hidden": true },
+  { "text": "About", "id": "about",
+    "dropdown_items": [
+      { "text": "Meet our Team", "href": "/about/", "id": "about-team" },
+      { "text": "Contact Us", "href": "/contact/", "id": "about-contact" }
+    ]
+  },
+  { "text": "Services", "id": "services", "hidden": false,
+    "dropdown_items": [
+      { "text": "All Services", "href": "/services/", "id": "services-all" },
+      { "text": "Facials", "href": "/services/facials/", "id": "services-facials" },
+      { "text": "Skin Correction", "href": "/services/skin-correction/", "id": "services-skin-correction" },
+      { "text": "Skin Rejuvenation", "href": "/services/skin-rejuvenation/", "id": "services-skin-rejuvenation" }
+    ]
+  },
   { "text": "Products", "id": "products",
     "dropdown_items": [
       { "text": "All Products", "href": "/products/", "id": "products-all" },
@@ -9,7 +21,6 @@
       { "text": "DMK SKincare", "href": "/products/dmk/", "id": "products-dmk" }
     ]
   },
-  { "text": "Contact", "href": "/contact/", "id": "contact" },
   { "text": "More", "id": "more",
     "dropdown_items": [
       { "text": "Events", "href": "/events/", "id": "more-events", "hidden": true },
@@ -18,7 +29,7 @@
       { "text": "MyRepeat Rewards", "href": "https://loganmed.repeatmd.app/", "id": "more-myrepeat-rewards" },
       { "text": "Semaglutide Sign-Up", "href": "https://loganmed.hint.com/signup/glp-1", "id": "more-semaglutide-signup" },
       { "text": "Logan Medical Group", "href": "https://www.loganmed.org/", "id": "more-logan-medical-group" },
-      { "text": "Skin - MCL | South", "href": "https://skinmclsouth.square.site/", "id": "more-skin-mcl-south" }
+      { "text": "Skin - MCL | South", "href": "https://skinmclsouth.square.site/", "id": "more-skinmclsouth" }
     ]
   }
 ]
