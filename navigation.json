@@ -14,7 +14,8 @@
     "dropdown_items": [
       { "text": "Events", "href": "/events/", "id": "more-events", "hidden": true },
       { "text": "Pride Month", "href": "/pride/", "id": "more-pride", "hidden": false },
-      { "text": "Inclusion & Diversity", "href": "/diversity/", "id": "more-diversity" }
+      { "text": "Inclusion & Diversity", "href": "/diversity/", "id": "more-diversity" },
+      { "text": "Skin - MCL | South", "href": "https://skinmclsouth.square.site/", "id": "more-skin-mcl-south" }
     ]
   }
 ]

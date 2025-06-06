@@ -46,6 +46,26 @@ document.addEventListener("DOMContentLoaded", function () {
   desktopMenuList.className = 'uppercase';
   desktopMenu.appendChild(desktopMenuList);
 
+  function createExternalDesktopLinkIcon() {
+    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+    svg.setAttribute("viewBox", "0 -960 960 960");
+    svg.setAttribute("class", "external-desktop-svg");
+    svg.setAttribute("height", "13");
+    svg.setAttribute("role", "img");
+    svg.setAttribute("aria-labelledby", "external-link-title");
+    
+    const title = document.createElementNS("http://www.w3.org/2000/svg", "title");
+    title.setAttribute("id", "external-link-title");
+    title.textContent = "External Link";
+    const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    path.setAttribute("d", "M206.78-100.78q-44.3 0-75.15-30.85-30.85-30.85-30.85-75.15v-546.44q0-44.3 30.85-75.15 30.85-30.85 75.15-30.85H427q22.09 0 37.54 15.46Q480-828.3 480-806.22q0 22.09-15.46 37.55-15.45 15.45-37.54 15.45H206.78v546.44h546.44V-427q0-22.09 15.45-37.54Q784.13-480 806.22-480q22.08 0 37.54 15.46 15.46 15.45 15.46 37.54v220.22q0 44.3-30.85 75.15-30.85 30.85-75.15 30.85H206.78Zm546.44-578.91L442-368.48q-14.96 14.96-36.48 14.68-21.52-.29-36.48-15.24-14.95-14.96-14.95-36.77 0-21.8 14.95-36.76l310.65-310.65H613q-22.09 0-37.54-15.45Q560-784.13 560-806.22q0-22.08 15.46-37.54 15.45-15.46 37.54-15.46h193.22q22.08 0 37.54 15.46t15.46 37.54V-613q0 22.09-15.46 37.54Q828.3-560 806.22-560q-22.09 0-37.55-15.46-15.45-15.45-15.45-37.54v-66.69Z");
+
+    svg.appendChild(title);
+    svg.appendChild(path);
+    return svg;
+  }
+
   // Desktop menu items
   fetch('/navigation.json')
   .then(response => response.json())
@@ -65,6 +85,13 @@ document.addEventListener("DOMContentLoaded", function () {
         anchor.href = item.href;
         anchor.id = `desktop-${item.id}`;
         appendTextWithTrademark(anchor, item.text);
+        if (
+          !item.href.startsWith("/") &&
+          !item.href.startsWith("https://skinmcl.org/")
+        ) {
+          anchor.appendChild(createExternalDesktopLinkIcon());
+          anchor.target = "_blank";
+        }
         desktopHeaderNavListItem.appendChild(anchor);
       } else {
         const desktopDropdownToggle = document.createElement('button');
@@ -104,6 +131,13 @@ document.addEventListener("DOMContentLoaded", function () {
           desktopDropdownAnchor.href = dropdownItem.href;
           desktopDropdownAnchor.id = `desktop-${dropdownItem.id}`;
           appendTextWithTrademark(desktopDropdownAnchor, dropdownItem.text);
+          if (
+            !dropdownItem.href.startsWith("/") &&
+            !dropdownItem.href.startsWith("https://skinmcl.org/")
+          ) {
+            desktopDropdownAnchor.appendChild(createExternalDesktopLinkIcon());
+            desktopDropdownAnchor.target = "_blank";
+          }
           desktopDropdownListItem.appendChild(desktopDropdownAnchor);
           desktopDropdownMenu.appendChild(desktopDropdownListItem);
         });
@@ -157,6 +191,26 @@ function appendTextWithTrademark(parent, text) {
   mobileMenuList.setAttribute('data-mobile-menu', '');
   mobileMenu.appendChild(mobileMenuList);
 
+  function createExternalMobileLinkIcon() {
+    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+    svg.setAttribute("viewBox", "0 -960 960 960");
+    svg.setAttribute("class", "external-mobile-svg");
+    svg.setAttribute("height", "13");
+    svg.setAttribute("role", "img");
+    svg.setAttribute("aria-labelledby", "external-link-title");
+    
+    const title = document.createElementNS("http://www.w3.org/2000/svg", "title");
+    title.setAttribute("id", "external-link-title");
+    title.textContent = "External Link";
+    const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    path.setAttribute("d", "M206.78-100.78q-44.3 0-75.15-30.85-30.85-30.85-30.85-75.15v-546.44q0-44.3 30.85-75.15 30.85-30.85 75.15-30.85H427q22.09 0 37.54 15.46Q480-828.3 480-806.22q0 22.09-15.46 37.55-15.45 15.45-37.54 15.45H206.78v546.44h546.44V-427q0-22.09 15.45-37.54Q784.13-480 806.22-480q22.08 0 37.54 15.46 15.46 15.45 15.46 37.54v220.22q0 44.3-30.85 75.15-30.85 30.85-75.15 30.85H206.78Zm546.44-578.91L442-368.48q-14.96 14.96-36.48 14.68-21.52-.29-36.48-15.24-14.95-14.96-14.95-36.77 0-21.8 14.95-36.76l310.65-310.65H613q-22.09 0-37.54-15.45Q560-784.13 560-806.22q0-22.08 15.46-37.54 15.45-15.46 37.54-15.46h193.22q22.08 0 37.54 15.46t15.46 37.54V-613q0 22.09-15.46 37.54Q828.3-560 806.22-560q-22.09 0-37.55-15.46-15.45-15.45-15.45-37.54v-66.69Z");
+
+    svg.appendChild(title);
+    svg.appendChild(path);
+    return svg;
+  }
+
   // Mobile menu items
   fetch('/navigation.json')
   .then(response => response.json())
@@ -176,6 +230,13 @@ function appendTextWithTrademark(parent, text) {
         anchor.href = item.href;
         anchor.id = `mobile-${item.id}`;
         appendTextWithTrademark(anchor, item.text);
+        if (
+          !item.href.startsWith("/") &&
+          !item.href.startsWith("https://skinmcl.org/")
+        ) {
+          anchor.appendChild(createExternalMobileLinkIcon());
+          anchor.target = "_blank";
+        }
         mobileHeaderNavListItem.appendChild(anchor);
       } else {
         const mobileDropdownToggle = document.createElement('button');
@@ -210,6 +271,13 @@ function appendTextWithTrademark(parent, text) {
             mobileDropdownAnchor.href = dropdownItem.href;
             mobileDropdownAnchor.id = `mobile-${dropdownItem.id}`;
             appendTextWithTrademark(mobileDropdownAnchor, dropdownItem.text);
+            if (
+              !dropdownItem.href.startsWith("/") &&
+              !dropdownItem.href.startsWith("https://skinmcl.org/")
+            ) {
+              mobileDropdownAnchor.appendChild(createExternalMobileLinkIcon());
+              mobileDropdownAnchor.target = "_blank";
+            }
             mobileDropdownListItem.appendChild(mobileDropdownAnchor);
             mobileDropdownMenu.appendChild(mobileDropdownListItem);
           });
@@ -252,6 +320,26 @@ function appendTextWithTrademark(parent, text) {
     })
   ]);
 
+  function createExternalFooterLinkIcon() {
+    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+    svg.setAttribute("viewBox", "0 -960 960 960");
+    svg.setAttribute("class", "external-footer-svg");
+    svg.setAttribute("height", "13");
+    svg.setAttribute("role", "img");
+    svg.setAttribute("aria-labelledby", "external-link-title");
+    
+    const title = document.createElementNS("http://www.w3.org/2000/svg", "title");
+    title.setAttribute("id", "external-link-title");
+    title.textContent = "External Link";
+    const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    path.setAttribute("d", "M206.78-100.78q-44.3 0-75.15-30.85-30.85-30.85-30.85-75.15v-546.44q0-44.3 30.85-75.15 30.85-30.85 75.15-30.85H427q22.09 0 37.54 15.46Q480-828.3 480-806.22q0 22.09-15.46 37.55-15.45 15.45-37.54 15.45H206.78v546.44h546.44V-427q0-22.09 15.45-37.54Q784.13-480 806.22-480q22.08 0 37.54 15.46 15.46 15.45 15.46 37.54v220.22q0 44.3-30.85 75.15-30.85 30.85-75.15 30.85H206.78Zm546.44-578.91L442-368.48q-14.96 14.96-36.48 14.68-21.52-.29-36.48-15.24-14.95-14.96-14.95-36.77 0-21.8 14.95-36.76l310.65-310.65H613q-22.09 0-37.54-15.45Q560-784.13 560-806.22q0-22.08 15.46-37.54 15.45-15.46 37.54-15.46h193.22q22.08 0 37.54 15.46t15.46 37.54V-613q0 22.09-15.46 37.54Q828.3-560 806.22-560q-22.09 0-37.55-15.46-15.45-15.45-15.45-37.54v-66.69Z");
+
+    svg.appendChild(title);
+    svg.appendChild(path);
+    return svg;
+  }
+
   // Nav links
   const navList = createEl("ul", { class: "footer-hours uppercase footer-nav-list" });
   fetch('/navigation.json')
@@ -269,9 +357,17 @@ function appendTextWithTrademark(parent, text) {
 
       if (item.href) {
         const anchor = document.createElement('a');
+        anchor.classList.add('footer-nav-no-nest');
         anchor.href = item.href;
         anchor.id = `footer-${item.id}`;
         appendTextWithTrademark(anchor, item.text);
+        if (
+          !item.href.startsWith("/") &&
+          !item.href.startsWith("https://skinmcl.org/")
+        ) {
+          anchor.appendChild(createExternalFooterLinkIcon());
+          anchor.target = "_blank";
+        }
         footerHeaderNavListItem.appendChild(anchor);
       } else {
         const footerDropdownToggle = document.createElement('button');
@@ -305,6 +401,13 @@ function appendTextWithTrademark(parent, text) {
             footerDropdownAnchor.href = dropdownItem.href;
             footerDropdownAnchor.id = `footer-${dropdownItem.id}`;
             appendTextWithTrademark(footerDropdownAnchor, dropdownItem.text);
+            if (
+              !dropdownItem.href.startsWith("/") &&
+              !dropdownItem.href.startsWith("https://skinmcl.org/")
+            ) {
+              footerDropdownAnchor.appendChild(createExternalFooterLinkIcon());
+              footerDropdownAnchor.target = "_blank";
+            }
             footerDropdownListItem.appendChild(footerDropdownAnchor);
             footerDropdownMenu.appendChild(footerDropdownListItem);
           });

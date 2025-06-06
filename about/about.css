@@ -6,16 +6,16 @@
  */
 
 @media (hover: hover) {
-  #desktop-more, #mobile-more, #desktop-contact, #mobile-contact, #footer-contact, #desktop-events, #mobile-events, #footer-events, #desktop-products, #mobile-products, #footer-products, #desktop-services, #mobile-services, #footer-services, #desktop-home, #mobile-home, #footer-home {
+  #desktop-more, #mobile-more, #footer-more, #desktop-contact, #mobile-contact, #footer-contact, #desktop-events, #mobile-events, #footer-events, #desktop-products, #mobile-products, #footer-products, #desktop-services, #mobile-services, #footer-services, #desktop-home, #mobile-home, #footer-home {
     box-shadow: inset 0 0 0 0 #3b0320aa;
     transition: color 150ms ease-in-out, box-shadow 150ms ease-in-out;
   }
-  #desktop-more:hover, #mobile-more:hover, #desktop-contact:hover, #mobile-contact:hover, #footer-contact:hover, #desktop-events:hover, #mobile-events:hover, #footer-events:hover, #desktop-products:hover, #mobile-products:hover, #footer-products:hover, #desktop-services:hover, #mobile-services:hover, #footer-services:hover, #desktop-home:hover, #mobile-home:hover, #footer-home:hover {
+  #desktop-more:hover, #mobile-more:hover, #footer-more:hover,#desktop-contact:hover, #mobile-contact:hover, #footer-contact:hover, #desktop-events:hover, #mobile-events:hover, #footer-events:hover, #desktop-products:hover, #mobile-products:hover, #footer-products:hover, #desktop-services:hover, #mobile-services:hover, #footer-services:hover, #desktop-home:hover, #mobile-home:hover, #footer-home:hover {
     box-shadow: inset 0 -23px 0 0 #3b0320aa;
   }
 }
 
-#desktop-more, #mobile-more, #desktop-contact, #mobile-contact, #footer-contact, #desktop-events, #mobile-events, #footer-events, #desktop-products, #mobile-products, #footer-products, #desktop-services, #mobile-services, #footer-services, #desktop-home, #mobile-home, #footer-home {
+#desktop-more, #mobile-more, #footer-more, #desktop-contact, #mobile-contact, #footer-contact, #desktop-events, #mobile-events, #footer-events, #desktop-products, #mobile-products, #footer-products, #desktop-services, #mobile-services, #footer-services, #desktop-home, #mobile-home, #footer-home {
   color: #fff;
 	padding: 0 .25rem;
 	margin: 0 -.5rem;
