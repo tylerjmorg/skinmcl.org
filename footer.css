@@ -331,7 +331,7 @@ footer ul a {
 }
 
 @media (min-width: 525px) {
-  #footer-home, #footer-about, #footer-contact, #footer-products, #footer-services, #footer-contact {
+  #footer-home, #footer-about, #footer-contact, #footer-services, #footer-contact {
     margin-left: 11px !important;
   }
   .footer-dropdown-toggle {
