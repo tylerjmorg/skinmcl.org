@@ -26,3 +26,138 @@
 	padding: 0 .25rem;
 	margin: 0 -.5rem;
 }
+
+@media (max-width: 829px) {
+  .featured-grid {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 90%;
+    margin: auto;
+    list-style: none;
+  }
+}
+
+.featured-grid li {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 830px) and (max-width: 1239px) {
+  .featured-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 90%;
+    column-gap: 25px;
+    row-gap: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    list-style: none;
+  }
+}
+
+@media (min-width: 1240px) {
+  .featured-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    max-width: 90%;
+    column-gap: 25px;
+    row-gap: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    list-style: none;
+  }
+}
+
+.services-card {
+  position: relative;
+  background-color: #f4f3ef;
+  border-radius: 20px;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  box-shadow: 0 0 30px rgba(50, 50, 50, 0.2);
+}
+
+.services-card:focus-visible {
+  outline: solid 2px #3b0320;
+}
+
+@media (hover: hover) {
+  .services-card:hover {
+    transform: scale(1.02);
+  }
+}
+
+.services-card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 30px;
+  box-shadow: 0 0 20px #bd4d8655;
+}
+
+.category-insight {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 7px;
+}
+
+.category-insight li {
+  text-transform: uppercase;
+  display: block;
+  width: fit-content;
+  padding: 3px 6px;
+  border: solid 1px #bd4d86;
+  color: #bd4d86;
+  box-shadow: 0 0 20px #bd4d8655;
+  border-radius: 10px;
+  font-size: 0.7rem;
+}
+
+.services-h2 {
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #3b0320;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.services-h1 {
+  font-family: 'Jost', sans-serif;
+  font-weight: 450;
+  font-size: 2.5rem;
+  color: #3b0320;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.services-subtitle {
+  font-weight: 400;
+  font-size: 1.2rem;
+  max-width: 750px;
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+}
