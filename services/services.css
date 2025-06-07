@@ -133,6 +133,19 @@
   font-size: 0.7rem;
 }
 
+.category-insight-more {
+  text-transform: uppercase;
+  display: block;
+  width: fit-content;
+  padding: 3px 6px;
+  border: solid 1px #bd4d86;
+  color: #bd4d86;
+  margin-top: -20px;
+  box-shadow: 0 0 20px #bd4d8655;
+  border-radius: 10px;
+  font-size: 0.7rem;
+}
+
 .services-h2 {
   font-family: 'Jost', sans-serif;
   font-weight: 400;

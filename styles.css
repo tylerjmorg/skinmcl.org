@@ -989,6 +989,10 @@ dialog[open]:not([data-phone-platter]) {
   text-transform: uppercase;
 }
 
+.text-cap-normal {
+  text-transform: none;
+}
+
 .underline {
   text-decoration: underline;
 }
