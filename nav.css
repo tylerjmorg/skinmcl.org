@@ -384,6 +384,7 @@ main {
  }
 
  .mobile-dropdown-toggle {
+  position: relative;
   border-radius: 15px;
   width: 215px;
   font-family: 'Jost', sans-serif;
@@ -408,9 +409,15 @@ main {
  .mobile-dropdown {
   border: solid 1px #ffffffbb;
   border-radius: 15px;
-  padding: 5px 10px;
+  padding: 5px 13px;
   transition: all 0.2s ease;
   text-align: center;
+ }
+ .mobile-dropdown-arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
  }
 
  .mobile-dropdown-x-arrow {

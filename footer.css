@@ -84,7 +84,6 @@ footer li {
   }
 
   .footer-dropdown {
-    margin-left: -15px;
     border: solid 1px #ffffffbb;
     border-radius: 15px;
     padding: 5px !important;
@@ -136,7 +135,6 @@ footer ul a {
   }
 
   .footer-dropdown {
-    margin-left: -15px;
     border: solid 1px #ffffffbb;
     border-radius: 15px;
     padding: 5px !important;
@@ -177,7 +175,6 @@ footer ul a {
   }
 
   .footer-dropdown {
-    margin-left: -15px;
     border: solid 1px #ffffffbb;
     border-radius: 15px;
     padding: 5px !important;
@@ -352,7 +349,7 @@ footer ul a {
     color: white;
     border-radius: 15px;
     width: 100%;
-    padding: 0 10px !important;
+    padding: 0 9px !important;
     margin-left: auto !important;
     margin-right: auto !important;
     background-color: transparent;
@@ -397,6 +394,7 @@ footer ul a {
     justify-content: start;
   }
   .footer-dropdown-toggle {
+    position: relative;
     font-family: 'Jost', sans-serif;
     text-align: center;
     font-weight: normal;
@@ -412,24 +410,30 @@ footer ul a {
     border-style: none;
     text-transform: uppercase;
   }
+  .footer-dropdown-arrow {
+    position: absolute;
+    top: 50%;
+    right: 9px;
+    transform: translateY(-50%);
+  }
   .footer-dropdown-x-arrow {
     display: inline-block;
     width: 12px;
     height: 2px;
     border-radius: 3px;
-    transform: translate(6px, -5px);
+    transform: translate(10px, -5px);
     background-color: #fff;
     transition: all 0.2s ease;
   }
   .footer-dropdown.open .footer-dropdown-x-arrow{
-    transform: translate(6px, -5px) rotate(45deg);
+    transform: translate(10px, -5px) rotate(45deg);
   }
   .footer-dropdown.open .footer-dropdown-y-arrow {
-    transform: translate(-6px, -5px) rotate(135deg);
+    transform: translate(-2px, -5px) rotate(135deg);
   }
   .footer-dropdown-y-arrow {
     display: inline-block;
-    transform: translate(-6px, -5px) rotate(90deg);
+    transform: translate(-2px, -5px) rotate(90deg);
     width: 12px;
     height: 2px;
     border-radius: 3px;
