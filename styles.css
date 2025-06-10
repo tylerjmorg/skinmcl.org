@@ -15,6 +15,10 @@
   border-radius: 20px;
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 img {
   -webkit-user-select: none !important;
   user-select: none !important;
