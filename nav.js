@@ -69,46 +69,53 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(dropdown);
   }
   const header = document.querySelector('.top-header-bar');
-  let lastScrollY = window.scrollY;
-  let ticking = false;
-  let lastChangeTime = performance.now();
+let lastScrollY = window.scrollY;
+let ticking = false;
+let lastChangeTime = performance.now();
 
-  const scrollThreshold = 100; // How much scroll movement triggers a hide/show
+const scrollThreshold = 50; // How much scroll movement triggers a hide/show
 
-  function updateHeader(scrollY) {
-    const scrollDelta = scrollY - lastScrollY;
-    const now = performance.now();
-    const deltaTime = now - lastChangeTime;
+function updateHeader(scrollY) {
+  const scrollDelta = scrollY - lastScrollY;
+  const now = performance.now();
+  const deltaTime = now - lastChangeTime;
 
-    if (Math.abs(scrollDelta) < scrollThreshold) {
-      ticking = false;
-      return; // Do nothing if under threshold
-    }
-
-    const duration = Math.min(500, Math.max(50, deltaTime));
-    header.style.transition = `top ${duration * 0.0008}s ease`;
-
-    if (scrollDelta > 0 && scrollY > 50) {
-      // Scrolling down
-      header.style.top = `-${header.offsetHeight + 10}px`;
-    } else if (scrollDelta < 0) {
-      // Scrolling up
-      header.style.top = `10px`;
-    }
-
-    lastScrollY = scrollY;
-    lastChangeTime = now;
+  if (Math.abs(scrollDelta) < scrollThreshold) {
     ticking = false;
+    return; // Do nothing if under threshold
   }
 
-  window.addEventListener('scroll', () => {
-    if (!ticking) {
-      requestAnimationFrame(() => {
-        updateHeader(window.scrollY);
-      });
-      ticking = true;
-    }
-  });
+  const duration = Math.min(500, Math.max(50, deltaTime));
+  header.style.transition = `top ${duration * 0.0015}s ease`;
+
+  if (scrollDelta > 0 && scrollY > 50) {
+    // Scrolling down
+    header.style.top = `-${header.offsetHeight + 150}px`;
+  } else if (scrollDelta < 0) {
+    // Scrolling up
+    header.style.top = `10px`;
+  }
+
+  lastScrollY = scrollY;
+  lastChangeTime = now;
+  ticking = false;
+}
+
+window.addEventListener('scroll', () => {
+  const mobileMenu = document.querySelector('.mobile-menu');
+  if (mobileMenu && mobileMenu.classList.contains('open')) {
+    // Don't run scroll logic when menu is open
+    return;
+  }
+
+  if (!ticking) {
+    requestAnimationFrame(() => {
+      updateHeader(window.scrollY);
+    });
+    ticking = true;
+  }
+});
+
 
 });
 
