@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (scrollDelta > 0 && scrollY > 50) {
       // Scrolling down
-      header.style.top = `-${header.offsetHeight}px`;
+      header.style.top = `-${header.offsetHeight + 10}px`;
     } else if (scrollDelta < 0) {
       // Scrolling up
       header.style.top = `10px`;
