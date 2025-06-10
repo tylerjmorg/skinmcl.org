@@ -68,6 +68,47 @@ document.addEventListener('DOMContentLoaded', () => {
   if (dropdown && desktopMenu) {
     observer.observe(dropdown);
   }
+  const header = document.querySelector('.top-header-bar');
+  let lastScrollY = window.scrollY;
+  let ticking = false;
+  let lastChangeTime = performance.now();
+
+  const scrollThreshold = 100; // How much scroll movement triggers a hide/show
+
+  function updateHeader(scrollY) {
+    const scrollDelta = scrollY - lastScrollY;
+    const now = performance.now();
+    const deltaTime = now - lastChangeTime;
+
+    if (Math.abs(scrollDelta) < scrollThreshold) {
+      ticking = false;
+      return; // Do nothing if under threshold
+    }
+
+    const duration = Math.min(500, Math.max(50, deltaTime));
+    header.style.transition = `top ${duration * 0.0008}s ease`;
+
+    if (scrollDelta > 0 && scrollY > 50) {
+      // Scrolling down
+      header.style.top = `-${header.offsetHeight}px`;
+    } else if (scrollDelta < 0) {
+      // Scrolling up
+      header.style.top = `10px`;
+    }
+
+    lastScrollY = scrollY;
+    lastChangeTime = now;
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        updateHeader(window.scrollY);
+      });
+      ticking = true;
+    }
+  });
 
 });
 
