@@ -87,7 +87,7 @@
   position: fixed;
   margin-left: auto;
   margin-right: auto;
-  width: calc(100% - 74px);
+  width: calc(100% - 84px);
   list-style: none;
   max-width: 500px;
   height: fit-content;
