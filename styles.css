@@ -1271,7 +1271,6 @@ dialog[open]:not([data-phone-platter]) {
   font-family: 'Jost', sans-serif;
   font-size: 0.9rem;
   position: fixed;
-  bottom: 54px;
   right: 15px;
   background-color: #a4055788;
   backdrop-filter: blur(15px);

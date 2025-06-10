@@ -165,6 +165,9 @@ nav {
   .mobile-nav {
     display: none;
   }
+  .top-button {
+    bottom: 54px;
+  }
 }
 
 
@@ -224,6 +227,9 @@ nav {
   }
   #hamburger-icon {
     display: block;
+  }
+  .top-button {
+    bottom: 15px;
   }
 }
 
