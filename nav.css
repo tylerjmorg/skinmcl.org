@@ -21,22 +21,20 @@ header {
 
 .top-header-bar {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-style: solid;
-  border-color: #b74780dd;
-  border-width: 2px;
+  border: solid 1px #f787c0dd;
+  margin-top: 10px;
   position: sticky;
-  top: 0;
-  margin-left: 5px;
-  margin-right: 5px;
+  top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   padding: 0 20px;
-  background-color: #aa3a73dd;
-  border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px;
+  background-color: #a4055788;
+  border-radius: 27.5px;
   color: white;
-  height: 50px;
+  height: 55px;
   display: flex;
   justify-content: space-between;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(15px);
   z-index: 20;
 }
 
@@ -47,6 +45,12 @@ header {
 
 #brand a {
   color: white;
+  position: relative;
+}
+#brand img {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
 }
 
 #hamburger-button span {
@@ -76,8 +80,8 @@ header {
 .absolute-center {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
-  top: 11px;
+  transform: translate(-50%, -50%);
+  top: 50%;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -102,6 +106,10 @@ header {
 }
 
 #hamburger-button {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
   font-family: 'Jost', sans-serif;
   border-style: none;
   background-color: transparent;
@@ -111,6 +119,7 @@ header {
 #hamburger-icon {
   margin: auto 0;
   display: none;
+  position: relative;
 }
 
 #hamburger-icon span {
@@ -176,9 +185,7 @@ nav {
   align-items: center;
   justify-content: flex-start;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-style: solid;
-  border-color: #bd4d86;
-  border-width: 2px;
+  border: solid 1px #f787c0dd;
   list-style: none;
   padding: 20px 0;
   display: flex;
@@ -187,13 +194,13 @@ nav {
   height: fit-content;
   max-height: 70dvh;
   overflow-y: auto;
-  margin-left: 5px;
-  margin-right: 5px;
-  top: 53px;
+  margin-left: 10px;
+  margin-right: 10px;
+  top: 70px;
   margin-top: 3px;
-  background-color: #aa3a73cc;
-  backdrop-filter: blur(10px);
-  border-radius: 25px;
+  background-color: #a4055788;
+  backdrop-filter: blur(15px);
+  border-radius: 27.5px;
   z-index: 20;
   transition: opacity 0.2s ease, visibility 0.2s linear 0.2s;
 }
@@ -283,11 +290,11 @@ main {
   right: -20px;
   height: fit-content !important;
   text-align: right;
-  background-color: #ba4a83dd;
+  background-color: #d97faecc;
   backdrop-filter: blur(10px);
   border-radius: 25px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border: solid 1px #7e7d7edd;
+  border: solid 1px #f787c0dd;
   max-height: 70dvh;
   overflow-y: auto;
   padding: 10px 10px;

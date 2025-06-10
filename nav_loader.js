@@ -504,13 +504,7 @@ const nav = createEl("nav", {}, [navList]);
     createEl("p", {}, [
       document.createTextNode("Copyright © "),
       createEl("span", { "data-copyright-currentyear": "" }),
-      document.createTextNode(" "),
-      createEl("a", {
-        class: "disclaimer-link",
-        target: "_blank",
-        href: "https://www.loganmed.org/",
-        html: "Logan&nbsp;Medical&nbsp;Group,&nbsp;LLC"
-      }),
+      document.createTextNode(" Skin - Medical Cosmetics & Laser"),
       createEl("span", { html: ". All&nbsp;rights&nbsp;reserved." })
     ]),
     createEl("ul", {}, [

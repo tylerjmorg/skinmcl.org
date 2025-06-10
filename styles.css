@@ -1271,7 +1271,7 @@ dialog[open]:not([data-phone-platter]) {
   font-family: 'Jost', sans-serif;
   font-size: 0.9rem;
   position: fixed;
-  bottom: 40px;
+  bottom: 54px;
   right: 15px;
   background-color: #b74780cc;
   backdrop-filter: blur(5px);
@@ -1280,7 +1280,7 @@ dialog[open]:not([data-phone-platter]) {
   width: fit-content;
   height: fit-content;
   border: solid 1px white;
-  padding: 10px 15px;
+  padding: 8px 15px;
   cursor: pointer;
   display: block;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
