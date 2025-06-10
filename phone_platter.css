@@ -85,8 +85,8 @@
 [data-phone-platter] {
   all: unset; /* strips dialog default styles */
   position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-left: auto;
+  margin-right: auto;
   width: calc(100% - 64px);
   list-style: none;
   max-width: 500px;
@@ -102,6 +102,8 @@
   padding-right: 20px;
   padding-bottom: 20px;
   box-shadow: 0 0 8px #ad3d7655;
+  overflow-x: hidden;
+  overflow-y: auto;
   z-index: 20;
 }
 
