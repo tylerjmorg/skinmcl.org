@@ -122,11 +122,10 @@ dialog[data-phone-platter] {
   left: 50%;
   transform: translateX(-50%);
   transition: bottom 0.4s cubic-bezier(0.47,1.64,0.41,0.8);
-  /* rest of your styles */
 }
 
 dialog[data-phone-platter].visible {
-  bottom: 10px;
+  bottom: 20px;
 }
 
 .phone-share-options-flex {
