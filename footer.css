@@ -7,7 +7,9 @@
 
 footer {
   margin-top: 30px;
-  background-color: #bd4d86;
+  background-color: #a40557aa;
+  border: solid 1px #f787c0dd;
+  backdrop-filter: blur(15px);
   border-radius: 35px;
   color: white;
   margin-left: 10px;

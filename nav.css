@@ -108,11 +108,13 @@ header {
 #hamburger-button {
   position: absolute;
   top: 50%;
-  right: 5px;
-  transform: translateY(-50%);
+  right: 0;
+  transform: translateY(-50%) translateX(10px);
   font-family: 'Jost', sans-serif;
   border-style: none;
   background-color: transparent;
+  padding: 10px;
+  border-radius: 50%;
   cursor: pointer;
 }
 
@@ -123,11 +125,21 @@ header {
 }
 
 #hamburger-icon span {
-  width: 30px;
-  height: 3px;
+  width: 25px;
+  height: 2px;
   border-radius: 3px;
   background-color: white;
-  margin: 6px 0;
+  margin: 5px 0;
+  transition: 0.3s cubic-bezier(.47,1.94,.1,.8);
+}
+
+#hamburger-icon span.bar2 {
+  width: 20px;
+  height: 2px;
+  border-radius: 3px;
+  background-color: white;
+  margin: 5px 0;
+  margin-left: auto;
   transition: 0.3s cubic-bezier(.47,1.94,.1,.8);
 }
 
@@ -137,13 +149,13 @@ nav {
 }
 
 .open .bar1 {
-  transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-5px, 5px);
 }
 .open .bar2 {
   opacity: 0;
 }
 .open .bar3 {
-  transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 @media (min-width: 1126px) {

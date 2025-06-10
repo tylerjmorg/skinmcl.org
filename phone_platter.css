@@ -93,9 +93,9 @@
   height: fit-content;
   display: none;
   flex-direction: column;
-  background-color: #ffedf6aa;
-  backdrop-filter: blur(15px);
-  border: 2px solid #ffc7e3dd;
+  background-color: #ffedf688;
+  backdrop-filter: blur(20px);
+  border: 2px solid #ffc7e355;
   border-radius: 35px;
   padding-top: 10px;
   padding-left: 20px;
@@ -125,7 +125,7 @@ dialog[data-phone-platter] {
 }
 
 dialog[data-phone-platter].visible {
-  bottom: 20px;
+  bottom: 10px;
 }
 
 .phone-share-options-flex {

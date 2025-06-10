@@ -1273,13 +1273,13 @@ dialog[open]:not([data-phone-platter]) {
   position: fixed;
   bottom: 54px;
   right: 15px;
-  background-color: #b74780cc;
-  backdrop-filter: blur(5px);
+  background-color: #a4055788;
+  backdrop-filter: blur(15px);
   color: white;
   border-radius: 25px;
   width: fit-content;
   height: fit-content;
-  border: solid 1px white;
+  border: solid 1px #f787c0dd;
   padding: 8px 15px;
   cursor: pointer;
   display: block;
