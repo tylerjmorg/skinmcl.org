@@ -92,7 +92,7 @@
   position: fixed;
   margin-left: auto;
   margin-right: auto;
-  width: calc(100% - 84px);
+  width: calc(100% - 64px);
   list-style: none;
   max-width: 500px;
   height: fit-content;
@@ -132,7 +132,7 @@ dialog[data-phone-platter] {
 }
 
 dialog[data-phone-platter].visible {
-  bottom: 15px;
+  bottom: 10px;
 }
 
 .phone-share-options-flex {
@@ -149,8 +149,13 @@ dialog[data-phone-platter].visible {
 }
 
 .share-phone-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
   font-family: 'Jost', sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   border: solid 1px #bd4d86;
   background-color: transparent;
   color: black;
@@ -174,12 +179,24 @@ dialog[data-phone-platter].visible {
 }
 
 .share-phone-img {
-  vertical-align:text-top;
-  margin-top: 2px;
-  margin-right: 5px;
+  min-width: 16px;
   transition: all 0.2s ease;
 }
 
+.phone-platter-button-text {
+  display: inline-block;
+  margin-top: 2px;
+  text-align: center;
+  width: fit-content;
+}
+
+@media (max-width: 421px) {
+  .phone-platter-button-text {
+    width: min-content;
+    text-align: left;
+}
+}
+ 
 #copyBtn {
   transition: all 0.2s ease;
 }

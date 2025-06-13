@@ -199,17 +199,21 @@ document.addEventListener("DOMContentLoaded", function () {
   const shareBtn = document.createElement('button');
   shareBtn.className = 'share-phone-buttons uppercase';
   shareBtn.setAttribute('data-share-phone', '');
+  const shareSpan = document.createElement('span');
+  shareSpan.className = 'phone-platter-button-text';
+  shareSpan.textContent = 'Share number';
   shareBtn.appendChild(shareSVG());
-  shareBtn.appendChild(document.createTextNode('Share number'));
+  shareBtn.appendChild(shareSpan);
 
   const copyBtn = document.createElement('button');
   copyBtn.className = 'share-phone-buttons uppercase';
   copyBtn.id = 'copyBtn';
   copyBtn.onclick = () => copyText();
-  copyBtn.appendChild(copySVG());
   const copyTrans = document.createElement('span');
   copyTrans.id = 'copyTrans';
+  copyTrans.className = 'phone-platter-button-text';
   copyTrans.textContent = 'Copy number';
+  copyBtn.appendChild(copySVG());
   copyBtn.appendChild(copyTrans);
 
   flex2.appendChild(shareBtn);
