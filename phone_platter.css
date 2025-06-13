@@ -60,6 +60,10 @@
   .close-phone-platter:hover {
     color: #bd4d86;
   }
+
+  .text-phone-platter:hover .icon-platter-img {
+    fill: #bd4d86;
+  }
 }
 
 .close-phone-platter-text:focus-visible {
@@ -80,6 +84,7 @@
   vertical-align: bottom;
   margin-top: 3px;
   margin-right: 4px;
+  transition: all 0.2s ease;
 }
 
 [data-phone-platter] {
@@ -163,12 +168,16 @@ dialog[data-phone-platter].visible {
     background-color: #efb7d333;
     color: #bd4d86;
   }
+  .share-phone-buttons:hover .share-phone-img {
+    fill: #bd4d86;
+  }
 }
 
 .share-phone-img {
   vertical-align:text-top;
   margin-top: 2px;
   margin-right: 5px;
+  transition: all 0.2s ease;
 }
 
 #copyBtn {

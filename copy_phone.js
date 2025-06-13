@@ -9,7 +9,7 @@ function copyText() {
   const textToCopy = "+1 (435) 716-8765";
   const button = document.getElementById('copyBtn');
   const copyTrans = document.getElementById('copyTrans');
-  const originalText = button.textContent;
+  const originalText = 'Copy number';
 
   navigator.clipboard.writeText(textToCopy).then(() => {
     copyTrans.textContent = "Copied!";
