@@ -504,7 +504,7 @@ const nav = createEl("nav", {}, [navList]);
     createEl("p", {}, [
       document.createTextNode("Copyright © "),
       createEl("span", { "data-copyright-currentyear": "" }),
-      document.createTextNode(" Skin - Medical Cosmetics & Laser"),
+      document.createTextNode(" Skin\u00A0\u2011\u00A0Medical\u00A0Cosmetics\u00A0&\u00A0Laser"),
       createEl("span", { html: ". All&nbsp;rights&nbsp;reserved." })
     ]),
     createEl("ul", {}, [
