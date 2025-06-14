@@ -1432,6 +1432,7 @@ dialog[open]:not([data-phone-platter]) {
   border-radius: 20px;
   text-decoration: none;
   color: #666;
+  fill: #333;
   border: solid 1px #666;
   padding: 10px 20px;
   transition: all 0.2s ease;
@@ -1442,6 +1443,7 @@ dialog[open]:not([data-phone-platter]) {
     transform: scale(1.05);
     border-color: #bd4d86;
     color: #bd4d86;
+    fill: #bd4d86;
     background-color: #fcdcec66
   }
 }
@@ -1472,6 +1474,17 @@ dialog[open]:not([data-phone-platter]) {
   left: 18px;
   top: 50%;
   transform: translateY(-50%);
+}
+.google-maps-text {
+  transform: translateY(-43%) !important;
+}
+
+.apple-maps-text {
+  transform: translateY(-44%) !important;
+}
+
+.waze-text {
+  transform: translateY(-47%) !important;
 }
 
 .waze-maps-icon {
