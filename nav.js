@@ -68,54 +68,65 @@ document.addEventListener('DOMContentLoaded', () => {
   if (dropdown && desktopMenu) {
     observer.observe(dropdown);
   }
+
+  
   const header = document.querySelector('.top-header-bar');
-let lastScrollY = window.scrollY;
-let ticking = false;
-let lastChangeTime = performance.now();
+  let lastScrollY = window.scrollY;
+  let ticking = false;
+  let lastChangeTime = performance.now();
 
-const scrollThreshold = 50; // How much scroll movement triggers a hide/show
+  const scrollThreshold = 50; // How much scroll movement triggers a hide/show
+  let scrollEnabled = false;
 
-function updateHeader(scrollY) {
-  const scrollDelta = scrollY - lastScrollY;
-  const now = performance.now();
-  const deltaTime = now - lastChangeTime;
+  // Activate scroll behavior after 3 seconds
+  setTimeout(() => {
+    scrollEnabled = true;
+  }, 1500);
 
-  if (Math.abs(scrollDelta) < scrollThreshold) {
+  function updateHeader(scrollY) {
+    if (!scrollEnabled) {
+      ticking = false;
+      return; // Exit early if scroll behavior isn't ready yet
+    }
+
+    const scrollDelta = scrollY - lastScrollY;
+    const now = performance.now();
+    const deltaTime = now - lastChangeTime;
+
+    if (Math.abs(scrollDelta) < scrollThreshold) {
+      ticking = false;
+      return;
+    }
+
+    const duration = Math.min(500, Math.max(50, deltaTime));
+    header.style.transition = `top ${duration * 0.0015}s ease`;
+
+    if (scrollDelta > 0 && scrollY > 50) {
+      // Scrolling down
+      header.style.top = `-${header.offsetHeight + 150}px`;
+    } else if (scrollDelta < 0) {
+      // Scrolling up
+      header.style.top = `10px`;
+    }
+
+    lastScrollY = scrollY;
+    lastChangeTime = now;
     ticking = false;
-    return; // Do nothing if under threshold
   }
 
-  const duration = Math.min(500, Math.max(50, deltaTime));
-  header.style.transition = `top ${duration * 0.0015}s ease`;
+  window.addEventListener('scroll', () => {
+    const mobileMenu = document.querySelector('.mobile-menu');
+    if (mobileMenu && mobileMenu.classList.contains('open')) {
+      return;
+    }
 
-  if (scrollDelta > 0 && scrollY > 50) {
-    // Scrolling down
-    header.style.top = `-${header.offsetHeight + 150}px`;
-  } else if (scrollDelta < 0) {
-    // Scrolling up
-    header.style.top = `10px`;
-  }
-
-  lastScrollY = scrollY;
-  lastChangeTime = now;
-  ticking = false;
-}
-
-window.addEventListener('scroll', () => {
-  const mobileMenu = document.querySelector('.mobile-menu');
-  if (mobileMenu && mobileMenu.classList.contains('open')) {
-    // Don't run scroll logic when menu is open
-    return;
-  }
-
-  if (!ticking) {
-    requestAnimationFrame(() => {
-      updateHeader(window.scrollY);
-    });
-    ticking = true;
-  }
-});
-
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        updateHeader(window.scrollY);
+      });
+      ticking = true;
+    }
+  });
 
 });
 
