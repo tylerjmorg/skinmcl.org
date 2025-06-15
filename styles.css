@@ -1432,7 +1432,7 @@ dialog[open]:not([data-phone-platter]) {
   border-radius: 20px;
   text-decoration: none;
   color: #666;
-  fill: #333;
+  fill: #444;
   border: solid 1px #666;
   padding: 10px 20px;
   transition: all 0.2s ease;
