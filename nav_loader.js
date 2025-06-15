@@ -458,6 +458,7 @@ const nav = createEl("nav", {}, [navList]);
     "Fri:\u00A08AM\u00A0—\u00A06PM\u00A0MT",
     "Sat:\u00A0<span class='italic'>Closed</span>",
     "Closed:\u00A012PM\u00A0—\u00A01PM\u00A0MT<br>Every\u00A0weekday",
+    "Closed:\u00A0June\u00A020th\u00A0—\u00A024th",
     "Closed:\u00A0July\u00A04th\u00A0&\u00A024th"
   ];
   const hoursList = createEl("ul", { class: "footer-hours uppercase" },
