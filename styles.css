@@ -47,8 +47,11 @@ h3, h4, h5, h6 {
   margin-top: 20px;
 }
 
-.jost {
+.jost-h2 {
   font-family: 'Jost', sans-serif;
+  font-weight: 450;
+  text-transform: uppercase;
+  font-size: 1.5rem;
 }
 
 .colored-div {
@@ -67,6 +70,10 @@ h3, h4, h5, h6 {
 
 .text-center {
   text-align: center;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-16 {
@@ -170,6 +177,12 @@ h3, h4, h5, h6 {
 
 .bottom-60 {
   margin-bottom: 60px;
+}
+
+.contact-address {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .pink-button {
@@ -324,9 +337,31 @@ h3, h4, h5, h6 {
   box-shadow: 0 0 30px rgba(50, 50, 50, 0.2);
 }
 
+@media (min-width: 768px) {
+  .contact-location-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .contact-location-context {
+    width: 50%;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .google-map-container {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .google-map-container {
+    height: 450px;
+  }
+}
+
+
 .google-map {
   width: 95%;
-  height: 450px;
+  height: 100%;
   margin-top: 30px;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -334,10 +369,6 @@ h3, h4, h5, h6 {
   display: block;
   padding: 3px;
   background-color: #bd4d86dd;
-}
-
-.google-map-container {
-  margin-top: 20px;
 }
 
 .contact-payment-methods {
@@ -353,7 +384,7 @@ h3, h4, h5, h6 {
   .payment-grid {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
-    margin-top: 20px;
+    margin-top: 10px;
     column-gap: 10px;
     row-gap: 10px;
     max-width: 250px;
@@ -365,7 +396,7 @@ h3, h4, h5, h6 {
   .payment-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    margin-top: 20px;
+    margin-top: 10px;
     column-gap: 10px;
     row-gap: 10px;
     max-width: 150px;
@@ -401,6 +432,9 @@ h3, h4, h5, h6 {
   transition: all 0.2s ease;
 }
 
+.jost {
+  font-family: 'Jost', sans-serif;
+}
 @media (hover: hover) {
   .text-button:hover {
     color: #bd4d86;
@@ -501,6 +535,24 @@ h3, h4, h5, h6 {
 @media (max-width: 437px) {
   .tiktok-div {
     height: 421px;
+  }
+}
+
+@media (min-width: 768px) {
+  .social-media-embeds {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    width: 100%;
+  }
+
+  .instagram-embed {
+    width: 50%;
+  }
+  .tiktok-div {
+    width: 50%;
   }
 }
 
@@ -1401,16 +1453,6 @@ dialog[open]:not([data-phone-platter]) {
 [data-back-to-top].visible {
   opacity: 1;
   visibility: visible;
-}
-
-@media (min-width: 768px) {
-  .all-maps-container {
-    display:flex;
-    flex-direction: row;
-    width: 650px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 .maps-container {
