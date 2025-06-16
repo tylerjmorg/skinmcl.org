@@ -190,6 +190,7 @@ h3, h4, h5, h6 {
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
+  text-wrap: none;
 }
 
 .pink-button {
