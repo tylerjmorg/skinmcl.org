@@ -210,7 +210,8 @@
   font-family: 'Jost', sans-serif;
   display: inline-block;
   text-decoration: none;
-  background-color: #f4f3ef;
+  background-color: #ffffffaa;
+  backdrop-filter: blur(10px);
   border-style: none;
   font-size: 1.2rem;
   margin-top: 10px;
@@ -327,7 +328,8 @@
   color: #666;
   text-decoration: none;
   cursor: pointer;
-  background-color: #f4f3ef;
+  background-color: #ffffffaa;
+  backdrop-filter: blur(10px);
   font-size: 1.2rem;
   width: 115px;
   border: solid 1px #666;
