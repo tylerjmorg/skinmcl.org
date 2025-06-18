@@ -87,6 +87,14 @@ h3, h4, h5, h6 {
   font-size: 1rem;
 }
 
+.text-14 {
+  font-size: 0.875rem;
+}
+
+.text-12 {
+  font-size: 0.75rem;
+}
+
 @supports (hanging-punctuation: first) {
   .quote {
     text-indent: 0;
@@ -233,6 +241,11 @@ h3, h4, h5, h6 {
 
 .text-20 {
   font-size: 1.25rem;
+}
+
+.align-middle {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 @media (min-width: 768px) {
@@ -555,8 +568,7 @@ h3, h4, h5, h6 {
     column-gap: 20px;
     width: 100%;
   }
-
-  .instagram-embed {
+  .embed-50 {
     width: 50%;
   }
   .tiktok-div {
@@ -735,8 +747,8 @@ h3, h4, h5, h6 {
 }
 
 .bottom-about-back-button {
+  display: block !important;
   font-family: 'Jost', sans-serif;
-  display: flex;
   border-style: none;
   background-color: transparent;
   justify-content: center;
@@ -745,7 +757,8 @@ h3, h4, h5, h6 {
   text-decoration: none;
   cursor: pointer;
   width: fit-content;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   color: #666;
   transition: all 0.2s ease;
 }
