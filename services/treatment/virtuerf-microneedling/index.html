@@ -38,7 +38,7 @@
           <img class="service-background-img" src="/services/image/virtuerf_microneedling.avif" alt="VirtueRF Microneedling">
           <span class="service-background-img-backdrop"></span>
           <div class="services-top-bar">
-            <button class="service-clickable-back" onclick="goBackOrRedirect()"><div><div class="service-list-back-icon-top"></div><div class="service-list-back-icon-bottom"></div></div></button>
+            <a class="service-clickable-back" href="/services/"><div><div class="service-list-back-icon-top"></div><div class="service-list-back-icon-bottom"></div></div></a>
             <button class="service-share-link-button uppercase" data-share-link="https://skinmcl.org/services/treatment/virtuerf-microneedling/"><img class="share-link-img" src="/elements/utility/icon/ios_share_666.svg" width="20" height="20" alt="Share Icon">Share</button>
           </div>
         </div>
@@ -57,7 +57,7 @@
             </dialog>
           </div>
           <div class="top-20">
-            <button class="bottom-about-back-button uppercase text-center" onclick="goBackOrRedirect()">Back</button>
+            <a class="bottom-about-back-button uppercase text-center" href="/services/">Back</a>
           </div>
         </div>
       </div>
@@ -82,15 +82,6 @@
     closeButton.addEventListener('click', () => {
       modal.close();
     });
-  </script>
-  <script>
-    function goBackOrRedirect() {
-      if (document.referrer && document.referrer !== window.location.href) {
-        window.history.back();
-      } else {
-        window.location.href = '/services/';
-      }
-    }
   </script>
   <script src="/share_link.js"></script>
   <script src="/phone_platter.js"></script>
