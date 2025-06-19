@@ -1552,5 +1552,4 @@ dialog[open]:not([data-phone-platter]) {
 
 html {
   scroll-behavior: smooth !important;
-  overflow-x: hidden;
 }

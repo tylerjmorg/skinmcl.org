@@ -38,7 +38,7 @@
           <img class="service-background-img" src="/services/image/dysport.avif" alt="Dysport">
           <span class="service-background-img-backdrop"></span>
           <div class="services-top-bar">
-            <a class="service-clickable-back" href="/services/"><div><div class="service-list-back-icon-top"></div><div class="service-list-back-icon-bottom"></div></div></a>
+            <button class="service-clickable-back" onclick="goBackOrRedirect()"><div><div class="service-list-back-icon-top"></div><div class="service-list-back-icon-bottom"></div></div></button>
             <button class="service-share-link-button uppercase" data-share-link="https://skinmcl.org/services/treatment/dysport/"><img class="share-link-img" src="/elements/utility/icon/ios_share_666.svg" width="20" height="20" alt="Share Icon">Share</button>
           </div>
         </div>
@@ -57,7 +57,7 @@
             </dialog>
           </div>
           <div class="top-20">
-            <a class="bottom-about-back-button uppercase text-center" href="/services/">Back</a>
+            <button class="bottom-about-back-button uppercase text-center" onclick="goBackOrRedirect()">Back</button>
           </div>
         </div>
       </div>
@@ -71,17 +71,44 @@
   <script src="/back-to-top.js"></script>
   <script src="https://tylermorgan.co/copyright_year.js"></script>
   <script>
-    const openButton = document.querySelector('[data-open-rewards]');
-    const closeButton = document.querySelector('[data-close-rewards]');
+    const openBtn = document.querySelector('[data-open-rewards]');
+    const closeBtn = document.querySelector('[data-close-rewards]');
     const modal = document.querySelector('#rewards-dialog');
-    
-    openButton.addEventListener('click', () => {
+    const iframe = document.querySelector('.repeatmd-iframe');
+
+    const iframeUrl = 'https://loganmed.repeatmd.app/pdp/package/157a11b5-f03b-43ef-8c99-78eb59679797';
+
+    let iframeHistoryDelta = 0;
+    let iframeOpened = false;
+    let lastOpenHistoryLength = 0;
+
+    openBtn.addEventListener('click', () => {
+      iframeOpened = true;
+      lastOpenHistoryLength = window.history.length;
+      iframe.src = iframeUrl;
       modal.showModal();
     });
 
-    closeButton.addEventListener('click', () => {
+    closeBtn.addEventListener('click', () => {
+      const currentLength = window.history.length;
+      const delta = currentLength - (lastOpenHistoryLength - 1);
+      if (delta > 0) iframeHistoryDelta += delta;
+
+      iframe.src = '';
       modal.close();
     });
+
+    function goBackOrRedirect() {
+      if (document.referrer && document.referrer !== window.location.href) {
+        if (iframeOpened && iframeHistoryDelta > 0) {
+          window.history.go(-(iframeHistoryDelta + 1));
+        } else {
+          window.history.back();
+        }
+      } else {
+        window.location.href = '/services/';
+      }
+    }
   </script>
   <script src="/share_link.js"></script>
   <script src="/phone_platter.js"></script>

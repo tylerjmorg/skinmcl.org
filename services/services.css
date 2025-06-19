@@ -228,8 +228,8 @@
 
 .service-list-back-icon-top {
   position: relative;
-  top: 10px;
-  left: 15px;
+  top: 11px;
+  left: 21px;
   text-decoration: none;
   color: black;
   width: 15px;
@@ -237,12 +237,12 @@
   border-radius: 3px;
   background-color: #666;
   margin: 6px 0;
-  transform: rotate(-40deg) translate(-1.5px, 0px);
+  transform: rotate(-40deg) translate(2.5px, -12px);
 }
 .service-list-back-icon-bottom {
   position: relative;
-  top: 21.5px;
-  left: 15px;
+  top: 22.5px;
+  left: 21px;
   text-decoration: none;
   color: black;
   width: 15px;
@@ -250,7 +250,7 @@
   border-radius: 3px;
   background-color: #666;
   margin: 6px 0;
-  transform: rotate(40deg) translate(-7px, -7px);
+  transform: rotate(40deg) translate(-18.5px, -13px);
 }
 
 @media (hover: hover) {
