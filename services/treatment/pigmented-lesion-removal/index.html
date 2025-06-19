@@ -30,8 +30,9 @@
   <link rel="canonical" href="https://skinmcl.org/services/treatment/pigmented-lesion-removal/">
 </head>
 <body>
+  <a href="#main" class="skip-to-main">Skip to content.</a>
   <header><div data-promo-header></div><div data-nav-header></div></header>
-  <main>
+  <main id="main">
     <div class="inner-main">
       <div class="service-background">
         <div class="service-background-img-container">
@@ -96,6 +97,17 @@
 
       iframe.src = '';
       modal.close();
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && modal.open) {
+        const currentLength = window.history.length;
+        const delta = currentLength - (lastOpenHistoryLength - 1);
+        if (delta > 0) iframeHistoryDelta += delta;
+
+        iframe.src = '';
+        modal.close();
+      }
     });
 
     function goBackOrRedirect() {
