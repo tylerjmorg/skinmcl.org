@@ -185,11 +185,15 @@ function appendTextWithTrademark(parent, text) {
   mobileMenu.className = 'mobile-nav';
   topHeaderBarContainer.appendChild(mobileMenu);
 
+  const mobileMenuWrapper = document.createElement('div');
+  mobileMenuWrapper.className = 'mobile-menu-wrapper';
+  mobileMenuWrapper.setAttribute('data-mobile-menu', '');
+  mobileMenu.appendChild(mobileMenuWrapper);
+
   const mobileMenuList = document.createElement('ul');
   mobileMenuList.classList.add('mobile-menu');
   mobileMenuList.classList.add('uppercase');
-  mobileMenuList.setAttribute('data-mobile-menu', '');
-  mobileMenu.appendChild(mobileMenuList);
+  mobileMenuWrapper.appendChild(mobileMenuList);
 
   function createExternalMobileLinkIcon() {
     const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");

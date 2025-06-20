@@ -9,9 +9,15 @@
   { "text": "Services", "id": "services", "hidden": false,
     "dropdown_items": [
       { "text": "All Services", "href": "/services/", "id": "services-all" },
+      { "hidden": false, "text": "Featured", "href": "/services/#featured", "id": "services-featured" },
       { "text": "Facials", "href": "/services/facials/", "id": "services-facials" },
       { "text": "Skin Correction", "href": "/services/skin-correction/", "id": "services-skin-correction" },
-      { "text": "Skin Rejuvenation", "href": "/services/skin-rejuvenation/", "id": "services-skin-rejuvenation" }
+      { "text": "Skin Rejuvenation", "href": "/services/skin-rejuvenation/", "id": "services-skin-rejuvenation" },
+      { "hidden": false, "text": "Botox", "href": "/services/treatment/botox/", "id": "services-botox" },
+      { "hidden": false, "text": "Laser Hair Removal", "href": "/services/treatment/laser-hair-removal/", "id": "services-laser-hair-removal" },
+      { "hidden": false, "text": "Laser Tattoo Removal", "href": "/services/treatment/laser-tattoo-removal/", "id": "services-laser-tattoo-removal" },
+      { "hidden": true, "text": "TED Hair Restoration", "href": "/services/treatment/ted-hair-restoration/", "id": "services-ted-hair-restoration" },
+      { "hidden": true, "text": "PHYSIQ Body Contouring", "href": "/services/treatment/physiq-body-contouring/", "id": "services-physiq-body-contouring" }
     ]
   },
   { "text": "Products", "id": "products",
@@ -21,15 +27,16 @@
       { "text": "DMK SKincare", "href": "/products/dmk/", "id": "products-dmk" }
     ]
   },
+  { "hidden": true, "text": "Galentines", "href": "/galentines/", "id": "galentines" },
   { "text": "More", "id": "more",
     "dropdown_items": [
-      { "text": "Events", "href": "/events/", "id": "more-events", "hidden": true },
-      { "text": "Pride Month", "href": "/pride/", "id": "more-pride", "hidden": false },
-      { "text": "Inclusion & Diversity", "href": "/diversity/", "id": "more-diversity" },
-      { "text": "MyRepeat Rewards", "href": "https://loganmed.repeatmd.app/", "id": "more-myrepeat-rewards" },
-      { "text": "Semaglutide Sign-Up", "href": "https://loganmed.hint.com/signup/glp-1", "id": "more-semaglutide-signup" },
-      { "text": "Logan Medical Group", "href": "https://www.loganmed.org/", "id": "more-logan-medical-group" },
-      { "text": "Skin - MCL | South", "href": "https://skinmclsouth.square.site/", "id": "more-skinmclsouth" }
+      { "hidden": true, "text": "Events", "href": "/events/", "id": "more-events" },
+      { "hidden": false, "text": "Pride Month", "href": "/pride/", "id": "more-pride" },
+      { "hidden": false, "text": "Inclusion & Diversity", "href": "/diversity/", "id": "more-diversity" },
+      { "hidden": false, "text": "MyRepeat Rewards", "href": "https://loganmed.repeatmd.app/", "id": "more-myrepeat-rewards" },
+      { "hidden": false, "text": "Semaglutide Sign-Up", "href": "https://loganmed.hint.com/signup/glp-1", "id": "more-semaglutide-signup" },
+      { "hidden": true, "text": "Logan Medical Group", "href": "https://www.loganmed.org/", "id": "more-logan-medical-group" },
+      { "hidden": false, "text": "Skin - MCL | South", "href": "https://skinmclsouth.square.site/", "id": "more-skinmclsouth" }
     ]
   }
 ]
