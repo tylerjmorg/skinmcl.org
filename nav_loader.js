@@ -433,9 +433,9 @@ const nav = createEl("nav", {}, [navList]);
   const contactBlock = createEl("div", {}, [
     createEl("p", { class: "footer-start-p" }, [
       createEl("a", {
-        class: "white-link",
+        class: "white-link address",
         href: "/contact/#location",
-        html: "2150 N MAIN ST STE 4<br>NORTH LOGAN UT 84341-1740"
+        html: "2150 N MAIN ST STE 4<br>NORTH LOGAN UT  84341-1740"
       })
     ]),
     createEl("button", {

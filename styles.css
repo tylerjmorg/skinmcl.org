@@ -193,12 +193,16 @@ h3, h4, h5, h6 {
 .bottom-60 {
   margin-bottom: 60px;
 }
-
 .contact-address {
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
   text-wrap: none;
+  white-space: pre;
+}
+
+.address {
+  white-space: pre;
 }
 
 .pink-button {
