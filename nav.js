@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   const extraPadding = 3;
 
-  const dropdown = document.querySelector('.mobile-menu');
+  const dropdown = document.querySelector('.mobile-menu-wrapper');
   const main = document.querySelector('main');
   const desktopMenu = document.querySelector('.desktop-menu');
 
