@@ -477,6 +477,10 @@ h3, h4, h5, h6 {
   border-radius: 20px;
 }
 
+.privacy-policy-main p {
+  font-size: 1rem;
+}
+
 .privacy-policy-main ul {
   padding-left: 20px;
   list-style: disc;
