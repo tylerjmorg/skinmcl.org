@@ -98,6 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
         desktopDropdownToggle.type = 'button';
         desktopDropdownToggle.id = `desktop-${item.id}`;
         desktopDropdownToggle.className = 'desktop-dropdown-toggle';
+        desktopDropdownToggle.setAttribute('aria-expanded', 'false');
         appendTextWithTrademark(desktopDropdownToggle, item.text);
         desktopHeaderNavListItem.appendChild(desktopDropdownToggle);
 
@@ -115,6 +116,11 @@ document.addEventListener("DOMContentLoaded", function () {
         desktopDropdownToggle.addEventListener('keydown', (e) => {
           if (e.key === 'Enter') {
             desktopHeaderNavListItem.classList.toggle('open');
+            if (desktopHeaderNavListItem.classList.contains('open')) {
+              desktopDropdownToggle.setAttribute('aria-expanded', 'true');
+            } else {
+              desktopDropdownToggle.setAttribute('aria-expanded', 'false');
+            }
           }
         });
       }
@@ -247,6 +253,7 @@ function appendTextWithTrademark(parent, text) {
         mobileDropdownToggle.type = 'button';
         mobileDropdownToggle.id = `mobile-${item.id}`;
         mobileDropdownToggle.className = 'mobile-dropdown-toggle';
+        mobileDropdownToggle.setAttribute('aria-expanded', 'false');
         appendTextWithTrademark(mobileDropdownToggle, item.text);
         mobileHeaderNavListItem.appendChild(mobileDropdownToggle);
 
@@ -290,6 +297,11 @@ function appendTextWithTrademark(parent, text) {
           mobileDropdownToggle.addEventListener('click', () => {
             mobileHeaderNavListItem.classList.toggle('open');
             mobileDropdownMenu.classList.toggle('open');
+            if (mobileHeaderNavListItem.classList.contains('open')) {
+              mobileDropdownToggle.setAttribute('aria-expanded', 'true');
+            } else {
+              mobileDropdownToggle.setAttribute('aria-expanded', 'false');
+            }
           });
         }
       }
@@ -378,6 +390,7 @@ function appendTextWithTrademark(parent, text) {
         footerDropdownToggle.type = 'button';
         footerDropdownToggle.id = `footer-${item.id}`;
         footerDropdownToggle.className = 'footer-dropdown-toggle';
+        footerDropdownToggle.setAttribute('aria-expanded', 'false');
         appendTextWithTrademark(footerDropdownToggle, item.text);
         footerHeaderNavListItem.appendChild(footerDropdownToggle);
 
@@ -419,7 +432,11 @@ function appendTextWithTrademark(parent, text) {
           footerDropdownToggle.addEventListener('click', () => {
             footerHeaderNavListItem.classList.toggle('open');
             footerDropdownMenu.classList.toggle('open');
-            footerDropdownToggle.class
+            if (footerHeaderNavListItem.classList.contains('open')) {
+              footerDropdownToggle.setAttribute('aria-expanded', 'true');
+            } else {
+              footerDropdownToggle.setAttribute('aria-expanded', 'false');
+            }
           });
         }
       }
@@ -454,13 +471,13 @@ const nav = createEl("nav", {}, [navList]);
 
   // Hours
   const hours = [
-    "Sun:\u00A0<span class='italic'>Closed</span>",
-    "Mon:\u00A08AM\u00A0—\u00A06PM\u00A0MT",
-    "Tue:\u00A08AM\u00A0—\u00A06PM\u00A0MT",
-    "Wed:\u00A08AM\u00A0—\u00A06PM\u00A0MT",
-    "Thu:\u00A08AM\u00A0—\u00A06PM\u00A0MT",
-    "Fri:\u00A08AM\u00A0—\u00A06PM\u00A0MT",
-    "Sat:\u00A0<span class='italic'>Closed</span>",
+    "<span aria-label=\"Sunday\">Sun</span>:\u00A0<span class=\"italic\">Closed</span>",
+    "<span aria-label=\"Monday\">Mon</span>:\u00A08AM\u00A0—\u00A06PM\u00A0MT",
+    "<span aria-label=\"Tuesday\">Tue</span>:\u00A08AM\u00A0—\u00A06PM\u00A0MT",
+    "<span aria-label=\"Wednesday\">Wed</span>:\u00A08AM\u00A0—\u00A06PM\u00A0MT",
+    "<span aria-label=\"Thursday\">Thu</span>:\u00A08AM\u00A0—\u00A06PM\u00A0MT",
+    "<span aria-label=\"Friday\">Fri</span>:\u00A08AM\u00A0—\u00A06PM\u00A0MT",
+    "<span aria-label=\"Saturday\">Sat</span>:\u00A0<span class=\"italic\">Closed</span>",
     "Closed:\u00A012PM\u00A0—\u00A01PM\u00A0MT<br>Every\u00A0weekday",
     "Closed:\u00A0June\u00A020th\u00A0—\u00A024th",
     "Closed:\u00A0July\u00A04th\u00A0&\u00A024th"
