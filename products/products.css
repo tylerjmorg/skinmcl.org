@@ -70,7 +70,7 @@
 
 .product-brand-selector-text {
   text-align: center;
-  text-wrap: pretty;
+  text-wrap-style: balance;
 }
 
 .brand-h1-img {
@@ -131,6 +131,7 @@
   padding-top: 10px;
   padding-bottom: 20px;
   text-align: center;
+  text-wrap-style: balance;
   transform: all 0.2s ease;
 }
 
@@ -215,6 +216,7 @@
   font-weight: normal;
   font-size: 1.6rem;
   text-align: center;
+  text-wrap-style: balance;
 }
 
 .product-h2 {
@@ -224,6 +226,7 @@
   font-weight: normal;
   font-size: 1.2rem;
   text-align: center;
+  text-wrap-style: balance;
 }
 
 .brand-subtitle {
@@ -261,6 +264,7 @@
 
 .product-subtitle {
   text-align: center;
+  text-wrap-style: balance;
   font-size: 0.9rem;
   margin-left: auto;
   margin-right: auto;

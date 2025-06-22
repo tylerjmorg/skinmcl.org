@@ -36,6 +36,7 @@ h2 {
 h1, h2 {
   font-family: 'Dancing Script', cursive;
   text-align: center;
+  text-wrap-style: balance;
   color: #bd4d86;
 }
 
@@ -77,6 +78,7 @@ h3, h4, h5, h6 {
 
 .text-center {
   text-align: center;
+  text-wrap-style: balance;
 }
 
 .text-left {
@@ -170,6 +172,7 @@ h3, h4, h5, h6 {
   font-size: 1.5rem;
   font-weight: 400;
   text-align: center;
+  text-wrap-style: balance;
   margin-top: 20px;
 }
 
@@ -212,11 +215,11 @@ h3, h4, h5, h6 {
   border-radius: 25px;
   padding: 10px 20px;
   text-align: center;
+  text-wrap-style: balance;
   text-decoration: none;
   display: block;
   font-size: 1.2rem;
   transition: transform 0.4s cubic-bezier(.47,1.64,.41,.8), background-color 0.1s ease, border-color 0.1s ease;
-  text-align: center;
   width: 200px;
   border-style: solid;
   border-width: 1px;
@@ -302,10 +305,12 @@ h3, h4, h5, h6 {
   
   .contact-grid div h2 {
     text-align: center;
+    text-wrap-style: balance;
   }
 
   .contact-grid div p {
     text-align: center;
+    text-wrap-style: balance;
   }
 
   .contact-grid div:not(:first-child) {
@@ -314,6 +319,7 @@ h3, h4, h5, h6 {
 
   .contact-grid div ul {
     text-align: center;
+    text-wrap-style: balance;
   }
 
   .remove-margin-top {
@@ -355,6 +361,7 @@ h3, h4, h5, h6 {
 .contact-location {
   margin-top: 30px;
   text-align: center;
+  text-wrap-style: balance;
   background-color: #f4f3ef;
   border-radius: 20px;
   padding-top: 20px;
@@ -404,6 +411,7 @@ h3, h4, h5, h6 {
 .contact-payment-methods {
   margin-top: 30px;
   text-align: center;
+  text-wrap-style: balance;
   background-color: #f4f3ef;
   border-radius: 20px;
   padding-top: 20px;
@@ -655,6 +663,7 @@ h3, h4, h5, h6 {
   border-radius: 20px;
   padding: 40px 20px;
   text-align: center;
+  text-wrap-style: balance;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -682,6 +691,7 @@ h3, h4, h5, h6 {
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
+  text-wrap-style: balance;
   margin-top: -10px;
   color: black;
 }
@@ -690,6 +700,7 @@ h3, h4, h5, h6 {
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
+  text-wrap-style: balance;
   margin-top: -22px;
   color: black;
 }
@@ -698,6 +709,7 @@ h3, h4, h5, h6 {
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
+  text-wrap-style: balance;
   margin-top: 10px;
   color: #bd4d86;
 }
@@ -791,6 +803,7 @@ h3, h4, h5, h6 {
   align-items: center;
   row-gap: 5px;
   text-align: center;
+  text-wrap-style: balance;
 }
 @media (max-width: 767px) {
   .about-name {
@@ -832,6 +845,7 @@ h3, h4, h5, h6 {
   border-radius: 25px;
   padding: 5px 10px;
   text-align: center;
+  text-wrap-style: balance;
   display: block;
   font-size: 1.2rem;
   margin: auto;
@@ -906,6 +920,7 @@ h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  text-wrap-style: balance;
   column-gap: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -918,6 +933,7 @@ h3, h4, h5, h6 {
   align-items: center;
   margin-top: 10px;
   text-align: center;
+  text-wrap-style: balance;
   column-gap: 20px;
 }
 
@@ -995,6 +1011,7 @@ dialog[open]:not([data-phone-platter]) {
   border-radius: 25px;
   padding: 10px 20px;
   text-align: center;
+  text-wrap-style: balance;
   text-decoration: none;
   display: block;
   font-size: 1.2rem;
@@ -1068,6 +1085,7 @@ dialog[open]:not([data-phone-platter]) {
   font-weight: 300;
   font-size: 1rem;
   text-align: center;
+  text-wrap-style: balance;
 }
 
 .upper-about-arrow {
@@ -1280,9 +1298,11 @@ dialog[open]:not([data-phone-platter]) {
 @media (min-width: 668px) {
   .diversity-title {
     text-align: center;
+    text-wrap-style: balance;
   }
   .diversity-subtitle {
     text-align: center;
+    text-wrap-style: balance;
   }
   .diversity-grid {
     margin-top: 20px;
@@ -1371,6 +1391,7 @@ dialog[open]:not([data-phone-platter]) {
   margin-right: auto;
   text-decoration: none;
   text-align: center;
+  text-wrap-style: balance;
   transition: all 0.2s ease;
 }
 
@@ -1402,6 +1423,7 @@ dialog[open]:not([data-phone-platter]) {
 
 .about-pronouns {
   text-align: center;
+  text-wrap-style: balance;
   font-size: 0.9rem;
   color: #666;
   font-style: italic;
@@ -1415,6 +1437,7 @@ dialog[open]:not([data-phone-platter]) {
   color: black;
   font-weight: 400;
   text-align: center;
+  text-wrap-style: balance;
   margin-bottom: -15px;
   text-transform: uppercase;
 }
