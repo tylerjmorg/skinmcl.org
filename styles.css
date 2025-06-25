@@ -151,6 +151,7 @@ h3, h4, h5, h6 {
   margin-left: 10px;
   margin-top: 10px;
 }
+
 .google-review-icon {
   transform: translateY(3px);
 }
@@ -190,12 +191,21 @@ h3, h4, h5, h6 {
 }
 
 .top-60 {
-  margin-top: 60px;
+  margin-top: 60px !important;
+}
+
+.top-100 {
+  margin-top: 100px !important;
 }
 
 .bottom-60 {
-  margin-bottom: 60px;
+  margin-bottom: 60px !important;
 }
+
+.bottom-200 {
+  margin-bottom: 200px !important;
+}
+
 .contact-address {
   width: fit-content;
   margin-left: auto;
@@ -224,7 +234,8 @@ h3, h4, h5, h6 {
   border-style: solid;
   border-width: 1px;
   border-color: #9d2d66;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 0 0 30px rgba(50, 50, 50, 0.4);
 }
 
@@ -883,6 +894,7 @@ h3, h4, h5, h6 {
 .top-50 {
   margin-top: 50px;
 }
+
 
 .font-12 {
   font-size: 0.75rem;
@@ -1595,3 +1607,13 @@ html {
     scroll-behavior: auto;
   }
 }
+
+.redirect-text {
+  text-align: center;
+  text-wrap-style: balance;
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 450;
+  margin-top: 20px;
+}
+

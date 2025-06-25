@@ -532,6 +532,12 @@ const nav = createEl("nav", {}, [navList]);
     createEl("ul", {}, [
       createEl("li", {}, [
         createEl("a", {
+          href: "/intellectual-property/",
+          text: "Intellectual Property"
+        })
+      ]),
+      createEl("li", {}, [
+        createEl("a", {
           href: "/privacy-policy/",
           rel: "privacy-policy",
           text: "Privacy Policy"
