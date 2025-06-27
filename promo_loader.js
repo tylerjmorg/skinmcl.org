@@ -7,7 +7,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  const relativeJsPath = '/theme/pride-month-2025/pride_month_2025_promo.js';
+  const relativeJsPath = '';
 
   const script = document.createElement('script');
   script.src = relativeJsPath;

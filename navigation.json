@@ -31,7 +31,7 @@
   { "text": "More", "id": "more",
     "dropdown_items": [
       { "hidden": true, "text": "Events", "href": "/events/", "id": "more-events" },
-      { "hidden": false, "text": "Pride Month", "href": "/pride/", "id": "more-pride" },
+      { "hidden": true, "text": "Pride Month", "href": "/pride/", "id": "more-pride" },
       { "hidden": false, "text": "Inclusion & Diversity", "href": "/diversity/", "id": "more-diversity" },
       { "hidden": false, "text": "MyRepeat Rewards", "href": "https://loganmed.repeatmd.app/", "id": "more-myrepeat-rewards" },
       { "hidden": false, "text": "Semaglutide Sign-Up", "href": "https://loganmed.hint.com/signup/glp-1", "id": "more-semaglutide-signup" },
