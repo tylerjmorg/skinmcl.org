@@ -225,7 +225,6 @@ footer ul a {
 
   .footer-sections nav {
     justify-content: center;
-    width: fit-content;
     margin-left: auto;
     margin-right: auto;
   }
@@ -391,6 +390,8 @@ footer ul a {
   .footer-nav-list {
     max-height: 440px !important;
     overflow-y: auto;
+    width: calc(100% - 30px);
+    max-width: 300px;
     justify-content: start;
   }
   .footer-dropdown-toggle {

@@ -230,6 +230,8 @@ nav {
   margin-left: 10px;
   margin-right: 10px;
   z-index: 20;
+  width: calc(100% - 30px);
+  max-width: 400px;
 }
 }
 
