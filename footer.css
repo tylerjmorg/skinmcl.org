@@ -473,3 +473,26 @@ footer ul a {
     fill: #3b0320;
   }
 }
+
+.skip-footer {
+  position: fixed;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  padding: 10px 20px;
+  background-color: #a4055788;
+  backdrop-filter: blur(5px);
+  border: solid 1px white;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  text-transform: uppercase;
+  border-radius: 25px;
+  transition: all 0.2s ease;
+}
+.skip-footer:focus {
+  bottom: 5px;
+  opacity: 1;
+}
