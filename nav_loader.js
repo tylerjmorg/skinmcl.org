@@ -338,7 +338,7 @@ function appendTextWithTrademark(parent, text) {
   };
 
   // Logo
-  const logo = createEl("a", { class: "center-logo", href: "/" }, [
+  const logo = createEl("a", { class: "footer-logo", href: "/" }, [
     createEl("img", {
       width: "150",
       height: "100",

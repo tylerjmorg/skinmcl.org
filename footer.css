@@ -12,8 +12,8 @@ footer {
   backdrop-filter: blur(15px);
   border-radius: 35px;
   color: white;
-  margin-left: 10px;
-  margin-right: 10px;
+  width: calc(100% - 20px);
+  justify-self: center;
   margin-bottom: 10px;
   box-shadow: 0px 0px 8px rgb(252, 90, 176);
 }
@@ -45,10 +45,16 @@ footer li {
     padding-bottom: 10px;
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
-    max-width: 100%;
+    width: 100%;
     column-gap: 20px;
   }
-  
+  .footer-logo {
+    width: fit-content !important;
+    height: fit-content !important;
+    border-radius: 10px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+  }
   .disclaimer {
     text-align: center;
     display: flex;
@@ -121,6 +127,13 @@ footer ul a {
     row-gap: 25px;
     column-gap: 20px;
   }
+  .footer-logo {
+    width: fit-content !important;
+    height: fit-content !important;
+    border-radius: 10px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+  }
   .footer-dropdown-content {
     visibility: hidden;
     overflow-y: hidden;
@@ -161,6 +174,13 @@ footer ul a {
     row-gap: 25px;
     column-gap: 20px;
   }
+  .footer-logo {
+    width: fit-content !important;
+    height: fit-content !important;
+    border-radius: 10px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+  }
   .footer-dropdown-content {
     visibility: hidden;
     overflow-y: hidden;
@@ -193,10 +213,14 @@ footer ul a {
 }
 
 @media (max-width: 524px) {
-  .center-logo {
+  .footer-logo {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: fit-content !important;
+    height: fit-content !important;
+    justify-self: center;
+    padding: 10px;
   }
   footer ul {
     display: flex;

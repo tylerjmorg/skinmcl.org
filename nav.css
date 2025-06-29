@@ -25,14 +25,15 @@ header {
   margin-top: 10px;
   position: sticky;
   top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+  width: calc(100% - 20px);
+  max-width: 1500px;
   padding: 0 20px;
   background-color: #a4055788;
   border-radius: 27.5px;
   color: white;
   height: 55px;
   display: flex;
+  justify-self: center;
   justify-content: space-between;
   backdrop-filter: blur(15px);
   z-index: 20;
@@ -267,7 +268,7 @@ nav {
 }
 
 main {
-  width: 95%;
+  width: calc(100% - 20px);
   margin-left: auto;
   margin-right: auto;
 }

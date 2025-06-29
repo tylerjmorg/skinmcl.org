@@ -36,7 +36,8 @@
     row-gap: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
-    width: 90%;
+    width: calc(100% - 20px);
+    max-width: 500px;
     margin: auto;
     list-style: none;
   }
@@ -55,7 +56,8 @@
   .featured-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    max-width: 90%;
+    width: calc(100% - 20px);
+    max-width: 880px;
     column-gap: 25px;
     row-gap: 50px;
     padding-top: 20px;
@@ -73,7 +75,8 @@
   .featured-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    max-width: 90%;
+    width: calc(100% - 20px);
+    max-width: 1300px;
     column-gap: 25px;
     row-gap: 50px;
     padding-top: 20px;
@@ -323,7 +326,7 @@
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  width: 97%;
+  width: calc(100% - 10px);
   flex-direction: row;
 }
 
