@@ -116,6 +116,12 @@
   }
 }
 
+@media (hover: none) {
+  .services-card:active {
+    transform: scale(1.02);
+  }
+}
+
 .services-card-img {
   width: 100%;
   height: auto;
@@ -267,6 +273,15 @@
   }
 }
 
+@media (hover: none) {
+  .services-clickable-back:active {
+    transform: scale(1.1);
+  }
+  .service-clickable-back:active {
+    transform: scale(1.1);
+  }
+}
+
 .services-list-back-icon-top {
   position: relative;
   top: 10px;
@@ -280,6 +295,7 @@
   margin: 6px 0;
   transform: rotate(-40deg) translate(-8.5px, -8px);
 }
+
 .services-list-back-icon-bottom {
   position: relative;
   top: 21.5px;
@@ -350,6 +366,15 @@
     transform: scale(1.05);
   }
   .service-share-link-button:hover {
+    transform: scale(1.05);
+  }
+}
+
+@media (hover: none) {
+  .services-share-link-button:active {
+    transform: scale(1.05);
+  }
+  .service-share-link-button:active {
     transform: scale(1.05);
   }
 }

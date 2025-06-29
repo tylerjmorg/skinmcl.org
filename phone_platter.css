@@ -5,11 +5,11 @@
  * Tyler Morgan <git@tylerjm.org>
  */
 
- .phone-platter::backdrop {
+.phone-platter::backdrop {
   background-color: transparent;
- }
+}
 
- .close-phone-platter {
+.close-phone-platter {
   display: flex;
   justify-content: center;
   cursor: pointer;
@@ -19,9 +19,9 @@
   color: #666;
   width: fit-content;
   transition: all 0.2s ease;
- }
+}
 
- .close-phone-platter-text {
+.close-phone-platter-text {
   font-family: 'Jost', sans-serif;
   font-size: 1rem;
   color: #666;
@@ -31,30 +31,43 @@
   background-color: transparent;
   cursor: pointer;
   transition: all 0.2s ease;
- }
+}
 
-  @media (hover: hover) {
-    .close-phone-platter-text:hover {
-      color: #bd4d86;
-    }
+@media (hover: hover) {
+  .close-phone-platter-text:hover {
+    color: #bd4d86;
   }
+}
 
-  .call-phone-platter, .text-phone-platter {
-    display: flex;
-    justify-content: center;
-    border: solid 1px #bd4d86;
-    border-radius: 20px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    max-width: 350px;
-    width: 95%;
-    margin: auto;
+@media (hover: none) {
+  .close-phone-platter-text:active {
+    color: #bd4d86;
   }
-  @media (hover: hover) {
-    .call-phone-platter:hover, .text-phone-platter:hover {
-      background-color: #efb7d333;
-    }
+}
+
+.call-phone-platter, .text-phone-platter {
+  display: flex;
+  justify-content: center;
+  border: solid 1px #bd4d86;
+  border-radius: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  max-width: 350px;
+  width: 95%;
+  margin: auto;
+}
+
+@media (hover: hover) {
+  .call-phone-platter:hover, .text-phone-platter:hover {
+    background-color: #efb7d333;
   }
+}
+
+@media (hover: none) {
+  .call-phone-platter:active, .text-phone-platter:active {
+    background-color: #efb7d333;
+  }
+}
 
 @media (hover: hover) {
   .close-phone-platter:hover {
@@ -62,6 +75,16 @@
   }
 
   .text-phone-platter:hover .icon-platter-img {
+    fill: #bd4d86;
+  }
+}
+
+@media (hover: none) {
+  .close-phone-platter:active {
+    color: #bd4d86;
+  }
+
+  .text-phone-platter:active .icon-platter-img {
     fill: #bd4d86;
   }
 }
@@ -178,6 +201,16 @@ dialog[data-phone-platter].visible {
   }
 }
 
+@media (hover: none) {
+  .share-phone-buttons:active {
+    background-color: #efb7d333;
+    color: #bd4d86;
+  }
+  .share-phone-buttons:active .share-phone-img {
+    fill: #bd4d86;
+  }
+}
+
 .share-phone-img {
   min-width: 16px;
   transition: all 0.2s ease;
@@ -194,9 +227,9 @@ dialog[data-phone-platter].visible {
   .phone-platter-button-text {
     width: min-content;
     text-align: left;
+  }
 }
-}
- 
+
 #copyBtn {
   transition: all 0.2s ease;
 }
