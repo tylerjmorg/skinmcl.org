@@ -295,12 +295,12 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 500px;
-  width: 90%;
+  width: calc(100% - 20px);
 }
 
 .products-top-bar {
   display: flex;
-  justify-self: center;
+  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
   width: calc(100% - 10px);

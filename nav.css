@@ -22,7 +22,7 @@ header {
 .top-header-bar {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border: solid 1px #f787c0dd;
-  margin-top: 10px;
+  margin: 10px auto 0 auto;
   position: sticky;
   top: 10px;
   width: calc(100% - 20px);
@@ -33,7 +33,6 @@ header {
   color: white;
   height: 55px;
   display: flex;
-  justify-self: center;
   justify-content: space-between;
   backdrop-filter: blur(15px);
   z-index: 20;
@@ -224,10 +223,9 @@ nav {
     height: fit-content;
     max-height: 70dvh;
     overflow-y: auto;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: calc(100% - 20px);
+    margin: 3px auto 0 auto;
     top: 70px;
-    margin-top: 3px;
     background-color: #a4055788;
     backdrop-filter: blur(15px);
     border-radius: 27.5px;
