@@ -6,72 +6,72 @@
  */
 
 
- @media (min-width: 868px) {
-    .pride-hero-img {
-        max-height: 550px;
-    }
-    .pride-hero-logo-img {
-        max-width: 200px;
-        bottom: 60px;
-    }
-    .pride-hero-img-cover {
-      height: 105%
-    }
+@media (min-width: 868px) {
+  .pride-hero-img {
+    max-height: 550px;
   }
-
-  @media (max-width: 867px) and (min-width: 500px) {
-    .pride-hero-img {
-        max-height: 350px;
-    }
-    .pride-hero-logo-img {
-        max-width: 150px;
-        bottom: 40px;
-    }
-    .pride-hero-img-cover {
-      height: 113%
-    }
+  .pride-hero-logo-img {
+    max-width: 200px;
+    bottom: 60px;
   }
-
-  @media (max-width: 499px) {
-    .pride-hero-img {
-        max-height: 250px;
-    }
-    .pride-hero-logo-img {
-        max-width: 100px;
-        bottom: 30px;
-    }
-    .pride-hero-img-cover {
-      height: 120%
-    }
+  .pride-hero-img-cover {
+    height: 105%
   }
+}
 
- .pride-hero-img {
-    object-fit: cover;
-    margin-top: -65px;
-    width: 100%;
-    z-index: 1;
- }
+@media (max-width: 867px) and (min-width: 500px) {
+  .pride-hero-img {
+    max-height: 350px;
+  }
+  .pride-hero-logo-img {
+    max-width: 150px;
+    bottom: 40px;
+  }
+  .pride-hero-img-cover {
+    height: 113%
+  }
+}
 
- .pride-hero-logo-img {
-    width: 90%;
-    display: block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
- }
+@media (max-width: 499px) {
+  .pride-hero-img {
+    max-height: 250px;
+  }
+  .pride-hero-logo-img {
+    max-width: 100px;
+    bottom: 30px;
+  }
+  .pride-hero-img-cover {
+    height: 120%
+  }
+}
 
- .pride-hero-container {
-    position: relative;
- }
-
- .pride-title-container {
-  box-shadow: 0 0 50px #ffffffff;
- }
-
- main{
+.pride-hero-img {
+  object-fit: cover;
+  margin-top: -65px;
   width: 100%;
- }
+  z-index: 1;
+}
+
+.pride-hero-logo-img {
+  width: 90%;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.pride-hero-container {
+  position: relative;
+}
+
+.pride-title-container {
+  box-shadow: 0 0 50px #ffffffff;
+}
+
+main {
+  width: 100%;
+}
 
 .pride-hero-img-cover {
   position: absolute;
@@ -117,6 +117,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 @media (min-width: 668px) {
   .pride-grid {
     margin-top: 20px;
@@ -157,6 +158,7 @@
 .pride-grid-img-div {
   position: relative;
 }
+
 .pride-grid-img {
   border-radius: 20px;
   object-fit: cover;

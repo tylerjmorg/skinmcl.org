@@ -94,6 +94,12 @@
   }
 }
 
+@media (hover: none) {
+  .promo-pride-header-anchor:active {
+    opacity: 1;
+  }
+}
+
 .promo-pride-header-anchor-above {
   font-family: 'Jost';
   width: 240px;
@@ -107,6 +113,12 @@
 
 @media (hover: hover) {
   .promo-pride-header-anchor-wrapper:hover .promo-pride-header-anchor {
+    opacity: 1;
+  }
+}
+
+@media (hover: none) {
+  .promo-pride-header-anchor-wrapper:active .promo-pride-header-anchor {
     opacity: 1;
   }
 }
@@ -176,6 +188,12 @@
 
 @media (hover: hover) {
   .promo-pride-home-cta-anchor:hover {
+    transform: scale(1.05);
+  }
+}
+
+@media (hover: none) {
+  .promo-pride-home-cta-anchor:active {
     transform: scale(1.05);
   }
 }
