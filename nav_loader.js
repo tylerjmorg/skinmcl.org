@@ -500,7 +500,8 @@ const nav = createEl("nav", {}, [navList]);
     "<span aria-label=\"Friday\">Fri</span>:\u00A08AM\u00A0—\u00A06PM\u00A0MT",
     "<span aria-label=\"Saturday\">Sat</span>:\u00A0<span class=\"italic\">Closed</span>",
     "Closed:\u00A012PM\u00A0—\u00A01PM\u00A0MT<br>Every\u00A0weekday",
-    "Closed:\u00A0July\u00A04th\u00A0&\u00A024th"
+    "Closed:\u00A0July\u00A04th",
+    "Open:\u00A0July\u00A024th"
   ];
   const hoursList = createEl("ul", { class: "footer-hours uppercase" },
     hours.map((line, i) => {
