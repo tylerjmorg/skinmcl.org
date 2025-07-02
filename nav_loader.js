@@ -512,7 +512,7 @@ const nav = createEl("nav", {}, [navList]);
 
   // Social
   const socials = [
-    ["Facebook", "https://www.facebook.com/SkinMCL/", "/elements/social/facebook_white.svg"],
+    ["Facebook", "https://www.facebook.com/skinmcl/", "/elements/social/facebook_white.svg"],
     ["Google", "https://g.co/kgs/ZkBckvr", "/elements/social/google_white.svg"],
     ["Instagram", "https://www.instagram.com/skinmcl/", "/elements/social/instagram_white.svg"],
     ["TikTok", "https://www.tiktok.com/@skinmcl", "/elements/social/tiktok_white.svg"],
