@@ -47,6 +47,9 @@ footer li {
     width: 100%;
     column-gap: 20px;
   }
+  .footer-hours-container {
+    max-width: 160px;
+  }
   .footer-logo {
     width: fit-content !important;
     height: fit-content !important;
@@ -126,6 +129,9 @@ footer ul a {
     row-gap: 25px;
     column-gap: 20px;
   }
+  .footer-hours-container {
+    max-width: 160px;
+  }
   .footer-logo {
     width: fit-content !important;
     height: fit-content !important;
@@ -141,7 +147,6 @@ footer ul a {
     padding: 0 5px !important;
     transition: all 0.2s ease;
   }
-
   .footer-dropdown-content.open {
     visibility: visible;
     overflow-y: auto;
@@ -149,11 +154,9 @@ footer ul a {
     margin-top: 5px;
     margin-bottom: 5px;
   }
-
   .footer-dropdown-content li a {
     color: #ffffffbb;
   }
-
   .footer-dropdown {
     border: solid 1px #ffffffbb;
     border-radius: 15px;
@@ -172,6 +175,9 @@ footer ul a {
     max-width: 100%;
     row-gap: 25px;
     column-gap: 20px;
+  }
+  .footer-hours-container {
+    max-width: 160px;
   }
   .footer-logo {
     width: fit-content !important;
@@ -263,6 +269,7 @@ footer ul a {
   .footer-hours-container {
     margin-left: auto;
     margin-right: auto;
+    max-width: 225px;
   }
 
   .footer-special-hours {
@@ -574,7 +581,6 @@ footer ul a {
 .footer-hours-container {
   display: flex;
   flex-direction: column;
-  max-width: 160px;
   width: 100%;
 }
 
