@@ -264,6 +264,12 @@ footer ul a {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .footer-special-hours {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .footer-dropdown-content {
     font-size: 0.75rem;
     margin-left: 0px;
