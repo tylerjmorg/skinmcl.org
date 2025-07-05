@@ -492,17 +492,17 @@ const nav = createEl("nav", {}, [navList]);
 
   // Hours
   const hours = [
-    "<span aria-label=\"Sunday\">Sun</span>:\u00A0<span class=\"italic\">Closed</span>",
-    "<span aria-label=\"Monday\">Mon</span>:\u00A08AM\u00A0—\u00A06PM\u00A0MT",
-    "<span aria-label=\"Tuesday\">Tue</span>:\u00A08AM\u00A0—\u00A06PM\u00A0MT",
-    "<span aria-label=\"Wednesday\">Wed</span>:\u00A08AM\u00A0—\u00A06PM\u00A0MT",
-    "<span aria-label=\"Thursday\">Thu</span>:\u00A08AM\u00A0—\u00A06PM\u00A0MT",
-    "<span aria-label=\"Friday\">Fri</span>:\u00A08AM\u00A0—\u00A06PM\u00A0MT",
-    "<span aria-label=\"Saturday\">Sat</span>:\u00A0<span class=\"italic\">Closed</span>",
-    "Closed:\u00A012PM\u00A0—\u00A01PM\u00A0MT<br>Every\u00A0weekday",
+    "<span aria-label=\"Sunday\">Sun</span><span class=\"italic\">Closed</span>",
+    "<span aria-label=\"Monday\">Mon</span><span class=\"footer-time\">8\u00A0AM—6\u00A0PM</span>",
+    "<span aria-label=\"Tuesday\">Tue</span><span class=\"footer-time\">8\u00A0AM—6\u00A0PM</span>",
+    "<span aria-label=\"Wednesday\">Wed</span><span class=\"footer-time\">8\u00A0AM—6\u00A0PM</span>",
+    "<span aria-label=\"Thursday\">Thu</span><span class=\"footer-time\">8\u00A0AM—6\u00A0PM</span>",
+    "<span aria-label=\"Friday\">Fri</span><span class=\"footer-time\">8\u00A0AM—6\u00A0PM</span>",
+    "<span aria-label=\"Saturday\">Sat</span><span class=\"italic\">Closed</span>",
+    "Closed:\u00A012\u00A0PM—1\u00A0PM<br>Every\u00A0weekday",
     "Open:\u00A0July\u00A024th"
   ];
-  const hoursList = createEl("ul", { class: "footer-hours uppercase" },
+  const hoursList = createEl("ul", { class: "footer-hours uppercase footer-hours-container" },
     hours.map((line, i) => {
       const cls = i === 7 ? "lunch-closed" : "";
       return createEl("li", { class: cls, html: line });

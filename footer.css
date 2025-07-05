@@ -259,6 +259,11 @@ footer ul a {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .footer-hours-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .footer-dropdown-content {
     font-size: 0.75rem;
     margin-left: 0px;
@@ -558,4 +563,22 @@ footer ul a {
 .skip-footer:focus {
   bottom: 5px;
   opacity: 1;
+}
+
+.footer-hours-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 160px;
+  width: 100%;
+}
+
+.footer-hours-container li {
+  display: flex;
+  justify-content: space-between !important;
+  width: 100%;
+  align-items: center;
+}
+
+.footer-time {
+  text-align: right;
 }
