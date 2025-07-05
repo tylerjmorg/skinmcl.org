@@ -464,6 +464,11 @@ h3, h4, h5, h6 {
     max-width: 150px;
     list-style: none;
   }
+
+  .contact-hours-container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }
 
 .payment-grid {
@@ -959,6 +964,10 @@ h3, h4, h5, h6 {
 
 .font-12 {
   font-size: 0.75rem;
+}
+
+.font-14 {
+  font-size: 0.875rem;
 }
 
 .repeatmd-logo {
@@ -1736,5 +1745,27 @@ html {
   color: #666;
   font-weight: 450;
   margin-top: 20px;
+}
+
+.contact-hours-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  width: 100%;
+}
+
+.contact-hours-container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-time {
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+.color-666 {
+  color: #666;
 }
 
