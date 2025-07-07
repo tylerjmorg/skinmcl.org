@@ -20,11 +20,18 @@
   --dimmed-white: #ccc;
   --dropdown-light-pink-cc: #d97faecc;
   --dropdown-dark-pink-cc: #7b3b5ccc;
+  --white-pink-glow: #fcdcec88;
+  --black-pink-glow: #7b3b5ccc;
+  --pink: #bd4d86;
+  --purple: #3b0320;
+
   --body-background: light-dark(var(--white), var(--deep-purple));
+  --heading-color: light-dark(var(--purple), var(--white));
   --text-color: light-dark(var(--black), var(--white));
   --off-color-background: light-dark(var(--off-white), var(--off-deep-purple));
   --dimmed-color: light-dark(var(--dimmed-black), var(--dimmed-white));
   --desktop-dropdown-background: light-dark(var(--dropdown-light-pink-cc), var(--dropdown-dark-pink-cc));
+  --object-glow: light-dark(var(--black-pink-glow), var(--white-pink-glow));
 }
 
 *::selection {
