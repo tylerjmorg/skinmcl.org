@@ -16,7 +16,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5px;
-  color: #666;
+  color: var(--dimmed-color);
   width: fit-content;
   transition: all 0.2s ease;
 }
@@ -24,7 +24,7 @@
 .close-phone-platter-text {
   font-family: 'Jost', sans-serif;
   font-size: 1rem;
-  color: #666;
+  color: var(--dimmed-color);
   border-style: none;
   padding: 3px 20px;
   border-radius: 20px;
@@ -35,57 +35,58 @@
 
 @media (hover: hover) {
   .close-phone-platter-text:hover {
-    color: #bd4d86;
+    color: light-dark(#bd4d86, #f07bb7);
   }
 }
 
 @media (hover: none) {
   .close-phone-platter-text:active {
-    color: #bd4d86;
+    color: light-dark(#bd4d86, #f07bb7);
   }
 }
 
 .call-phone-platter, .text-phone-platter {
   display: flex;
   justify-content: center;
-  border: solid 1px #bd4d86;
+  border: solid 1px light-dark(#bd4d86, #f07bb7);
   border-radius: 20px;
   padding-top: 12px;
   padding-bottom: 12px;
   max-width: 350px;
   width: 95%;
+  fill: var(--text-color);
   margin: auto;
 }
 
 @media (hover: hover) {
   .call-phone-platter:hover, .text-phone-platter:hover {
-    background-color: #efb7d333;
+    background-color: light-dark(#efb7d333, #efb7d311);
   }
 }
 
 @media (hover: none) {
   .call-phone-platter:active, .text-phone-platter:active {
-    background-color: #efb7d333;
+    background-color: light-dark(#efb7d333, #efb7d311);
   }
 }
 
 @media (hover: hover) {
   .close-phone-platter:hover {
-    color: #bd4d86;
+    color: light-dark(#bd4d86, #f07bb7);
   }
 
   .text-phone-platter:hover .icon-platter-img {
-    fill: #bd4d86;
+    fill: light-dark(#bd4d86, #f07bb7);
   }
 }
 
 @media (hover: none) {
   .close-phone-platter:active {
-    color: #bd4d86;
+    color: light-dark(#bd4d86, #f07bb7);
   }
 
   .text-phone-platter:active .icon-platter-img {
-    fill: #bd4d86;
+    fill: light-dark(#bd4d86, #f07bb7);
   }
 }
 
@@ -107,6 +108,7 @@
   vertical-align: bottom;
   margin-top: 3px;
   margin-right: 4px;
+  fill: var(--text-color);
   transition: all 0.2s ease;
 }
 
@@ -121,7 +123,7 @@
   height: fit-content;
   display: none;
   flex-direction: column;
-  background-color: #ffedf688;
+  background-color: light-dark(#ffedf688, #5c2943bb);
   backdrop-filter: blur(20px);
   border: 2px solid #ffc7e355;
   border-radius: 35px;
@@ -132,6 +134,7 @@
   box-shadow: 0 0 8px #ad3d7655;
   overflow-x: hidden;
   overflow-y: auto;
+  fill: var(--text-color);
   z-index: 20;
 }
 
@@ -179,9 +182,9 @@ dialog[data-phone-platter].visible {
   column-gap: 5px;
   font-family: 'Jost', sans-serif;
   font-size: 0.8rem;
-  border: solid 1px #bd4d86;
+  border: solid 1px light-dark(#bd4d86, #f07bb7);
   background-color: transparent;
-  color: black;
+  color: var(--text-color);
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 20px;
@@ -193,21 +196,21 @@ dialog[data-phone-platter].visible {
 
 @media (hover: hover) {
   .share-phone-buttons:hover {
-    background-color: #efb7d333;
-    color: #bd4d86;
+    background-color: light-dark(#efb7d333, #efb7d311);
+    color: light-dark(#bd4d86, #f07bb7);
   }
   .share-phone-buttons:hover .share-phone-img {
-    fill: #bd4d86;
+    fill: light-dark(#bd4d86, #f07bb7);
   }
 }
 
 @media (hover: none) {
   .share-phone-buttons:active {
-    background-color: #efb7d333;
-    color: #bd4d86;
+    background-color: light-dark(#efb7d333, #efb7d311);
+    color: light-dark(#bd4d86, #f07bb7);
   }
   .share-phone-buttons:active .share-phone-img {
-    fill: #bd4d86;
+    fill: light-dark(#bd4d86, #f07bb7);
   }
 }
 
@@ -238,12 +241,16 @@ dialog[data-phone-platter].visible {
   margin: 0 auto;
   max-width: 150px;
   width: 100%;
-  background-color: #bd4d86;
+  background-color: light-dark(#bd4d86, #f07bb7);
   border-radius: 3px;
   height: 1px;
   margin-bottom: 20px;
 }
 
 .phone-platter-number-text {
-  color: #8d1d56aa;
+  color: light-dark(#8d1d56aa, #f78ec4);
+}
+
+.phone-platter-contacts:hover {
+  color: light-dark(#bd4d86, #f07bb7);
 }

@@ -35,11 +35,11 @@
   margin-right: auto;
   max-width: 800px;
   width: 97%;
-  background-color: #f4f3ef;
+  background-color: var(--off-color-background);
   border-radius: 20px;
   box-shadow: 0 0 30px rgba(50, 50, 50, 0.2);
   text-decoration: none;
-  color: black;
+  color: var(--text-color);
   transition: all 0.2s ease;
 }
 
@@ -127,10 +127,10 @@
 
 .products-grid a {
   text-decoration: none;
-  background-color: #fffafd;
+  background-color: light-dark(var(--pink-white), var(--off-deep-purple));
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(164, 63, 130, 0.2);
-  color: black;
+  color: var(--text-color);
   transition: all 0.2s ease;
   padding-left: 10px;
   padding-right: 10px;
@@ -144,7 +144,7 @@
 @media (hover: hover) {
   .products-grid a:hover {
     transform: scale(1.02);
-    background-color: #fff4fb;
+    background-color: light-dark(var(--pink-white-hover), var(--off-deep-purple-hover));
   }
 }
 
@@ -177,7 +177,6 @@
   border-style: none;
   font-size: 1.2rem;
   cursor: pointer;
-  color: black;
   transition: all 0.2s ease;
 }
 
@@ -202,7 +201,7 @@
   width: 20px;
   height: 2px;
   border-radius: 3px;
-  background-color: #666;
+  background-color: var(--dimmed-color);
   margin: 6px 0;
   transform: rotate(-40deg) translate(-8.5px, -8px);
 }
@@ -212,18 +211,17 @@
   top: 21.5px;
   left: 15px;
   text-decoration: none;
-  color: black;
   width: 20px;
   height: 2px;
   border-radius: 3px;
-  background-color: #666;
+  background-color: var(--dimmed-color);
   margin: 6px 0;
   transform: rotate(40deg) translate(-14.5px, 1px);
 }
 
 .products-top-back {
   margin-left: 40px;
-  color: #666;
+  color: var(--dimmed-color);
   text-decoration: none;
   transform: translate(-10px, -13px);
 }
@@ -231,7 +229,7 @@
 .product-h1 {
   font-family: 'Jost', sans-serif;
   text-transform: uppercase;
-  color: black;
+  color: var(--text-color);
   margin-top: 10px;
   font-weight: normal;
   font-size: 1.6rem;
@@ -242,7 +240,7 @@
 .product-h2 {
   font-family: 'Jost', sans-serif;
   text-transform: uppercase;
-  color: black;
+  color: var(--text-color);
   font-weight: normal;
   font-size: 1.2rem;
   text-align: center;
@@ -265,12 +263,12 @@
 .products-share-link-button {
   font-family: 'Jost', sans-serif;
   background-color: transparent;
-  color: #666;
+  color: var(--dimmed-color);
   text-decoration: none;
   cursor: pointer;
   font-size: 1.2rem;
   width: 115px;
-  border: solid 1px #666;
+  border: solid 1px var(--dimmed-color);
   padding: 5px 10px;
   border-radius: 10px;
   transition: all 0.2s ease;

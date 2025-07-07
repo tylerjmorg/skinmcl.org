@@ -43,7 +43,25 @@
     <header><div data-promo-header></div><div data-nav-header></div></header>
     <main id="main">
       <div class="inner-main">
-        <h1><img width="300" height="200" class="hero-img" src="/elements/logo/logo_wordmark_light.svg" alt="Skin - Medical Cosmetics & Laser"></h1>
+        <h1>
+          <picture>
+            <source
+              srcset="/elements/logo/logo_wordmark_dark.svg"
+              media="(prefers-color-scheme: dark)"
+            >
+            <source
+              srcset="/elements/logo/logo_wordmark_light.svg"
+              media="(prefers-color-scheme: light)"
+            >
+            <img
+              src="/elements/logo/logo_wordmark_light.svg"
+              width="300"
+              height="200"
+              class="hero-img"
+              alt="Skin - Medical Cosmetics & Laser"
+            >
+          </picture>
+        </h1>
         <p class="subtitle">Cache Valley's most affordable med spa!</p>
         <p class="text-center">Our locals love us for our painless laser hair removal!</p>
         <div class="top-20" data-nosnippet>
@@ -62,7 +80,7 @@
         </div>
         <div class="top-30">
           <h2><img class="rewards-stars" width="40" height="20" src="/elements/utility/icon/stars.svg" alt="Stars"> Rewards <img class="rewards-stars" width="40" height="20" src="/elements/utility/icon/stars.svg" alt="Stars"></h2>
-          <p class="text-center">Make every visit count on <img class="repeatmd-logo" width="96" height="21" src="/elements/social/repeatmd_logo_black.svg" alt="RepeatMD">.</p>
+          <p class="text-center">Make every visit count on <picture><source srcset="/elements/social/repeatmd_logo_white.svg" media="(prefers-color-scheme: dark)"><source srcset="/elements/social/repeatmd_logo_black.svg" media="(prefers-color-scheme: light)"><img src="/elements/social/repeatmd_logo_black.svg" height="21" class="repeatmd-logo" alt="RepeatMD"></picture>.</p>
           <p class="text-center">Earn Rewards with Us!</p>
           <p class="text-center">Join to receive $25 towards any service.</p>
           <div class="top-20">

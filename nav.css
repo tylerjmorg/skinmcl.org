@@ -76,13 +76,13 @@ header {
 
 @media (hover: hover) {
   .top-header-bar ul a:hover {
-    color: #3b0320;
+    color: light-dark(#3b0320, #ff92ca);
   }
 }
 
 @media (hover: none) {
   .top-header-bar ul a:active {
-    color: #3b0320;
+    color: light-dark(#3b0320, #ff92ca);
   }
 }
 
@@ -351,7 +351,7 @@ main {
   right: -20px;
   height: fit-content !important;
   text-align: right;
-  background-color: #d97faecc;
+  background-color: var(--desktop-dropdown-background);
   backdrop-filter: blur(10px);
   border-radius: 25px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -382,13 +382,13 @@ main {
 
 @media (hover: hover) { 
   .desktop-dropdown-content a:hover {
-    background-color: #5b234033;
+    background-color: light-dark(#5b234033, #3b032077);
   }
 }
 
 @media (hover: none) { 
   .desktop-dropdown-content a:active {
-    background-color: #5b234033;
+    background-color: light-dark(#5b234033, #3b032077);
   }
 }
 

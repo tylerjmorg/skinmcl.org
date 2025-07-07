@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const contactsDiv = document.createElement('div');
   const contactsP = document.createElement('p');
   const contactsLink = document.createElement('a');
-  contactsLink.className = 'normal-link text-phone-platter uppercase';
+  contactsLink.className = 'normal-link text-phone-platter uppercase phone-platter-contacts';
   contactsLink.href = '/elements/contact/skin.vcf';
   contactsLink.download = true;
   contactsLink.type = 'text/vcard';

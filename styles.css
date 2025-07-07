@@ -7,12 +7,36 @@
 
 :root {
   font-family: 'Jost', sans-serif;
+  color-scheme: light dark;
+  --white: #fff;
+  --black: #000;
+  --deep-purple: #221117;
+  --pink-white: #fffafd;
+  --pink-white-hover: #fff4fb;
+  --off-white: #f4f3ef; 
+  --off-deep-purple: #520d31;
+  --off-deep-purple-hover: #3b0320;
+  --dimmed-black: #666;
+  --dimmed-white: #ccc;
+  --dropdown-light-pink-cc: #d97faecc;
+  --dropdown-dark-pink-cc: #7b3b5ccc;
+  --body-background: light-dark(var(--white), var(--deep-purple));
+  --text-color: light-dark(var(--black), var(--white));
+  --off-color-background: light-dark(var(--off-white), var(--off-deep-purple));
+  --dimmed-color: light-dark(var(--dimmed-black), var(--dimmed-white));
+  --desktop-dropdown-background: light-dark(var(--dropdown-light-pink-cc), var(--dropdown-dark-pink-cc));
 }
 
 *::selection {
   background-color: #fcdcec88;
   color: #3b0320;
   border-radius: 20px;
+}
+
+body {
+  background-color: var(--body-background);
+  color: var(--text-color);
+  text-wrap: pretty;
 }
 
 @view-transition {
@@ -71,7 +95,7 @@ h3, h4, h5, h6 {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  background-color: #f4f3ef;
+  background-color: var(--off-color-background);
   border-radius: 25px;
   box-shadow: 0 0 30px rgba(50, 50, 50, 0.2);
 }
@@ -141,7 +165,7 @@ h3, h4, h5, h6 {
 
 .google-review {
   display: inline-block;
-  border: solid 1px #666;
+  border: solid 1px var(--dimmed-color);
   border-radius: 20px;
   padding: 2.5px 5px;
   margin-left: 10px;
@@ -179,7 +203,7 @@ h3, h4, h5, h6 {
 }
 
 .faded-text {
-  color: #666;
+  color: var(--dimmed-color);
 }
 
 .top-20 {
@@ -216,7 +240,7 @@ h3, h4, h5, h6 {
 
 .pink-button {
   font-family: 'Jost', sans-serif;
-  background-color: #bd4d86;
+  background-color: #bd4d86bb;
   color: white;
   border-radius: 25px;
   padding: 10px 20px;
@@ -348,7 +372,7 @@ h3, h4, h5, h6 {
 }
 
 .contact-background {
-  background-color: #f4f3ef;
+  background-color: var(--off-color-background);
   border-radius: 20px;
   padding: 20px;
   width: calc(100% - 20px);
@@ -365,7 +389,7 @@ h3, h4, h5, h6 {
 
 .contact-grid a {
   text-decoration: none;
-  color: black;
+  color: var(--text-color);
   transition: all 0.2s ease;
 }
 
@@ -384,7 +408,7 @@ h3, h4, h5, h6 {
 .contact-location {
   text-align: center;
   text-wrap-style: balance;
-  background-color: #f4f3ef;
+  background-color: var(--off-color-background);
   border-radius: 20px;
   padding-top: 20px;
   padding-bottom: 12px;
@@ -478,7 +502,7 @@ h3, h4, h5, h6 {
 
 .normal-link {
   text-decoration: none;
-  color: black;
+  color: var(--text-color);
   transition: all 0.2s ease;
 }
 
@@ -498,7 +522,7 @@ h3, h4, h5, h6 {
   font-family: 'Jost', sans-serif;
   background-color: transparent;
   font-size: 1rem;
-  color: black;
+  color: var(--text-color);
   border-style: none;
   text-decoration: none;
   cursor: pointer;
@@ -527,7 +551,7 @@ h3, h4, h5, h6 {
   justify-content: center;
   max-width: 900px;
   padding: 20px;
-  background-color: #f4f3ef;
+  background-color: var(--off-color-background);
   border-radius: 20px;
 }
 
@@ -543,14 +567,14 @@ h3, h4, h5, h6 {
 .privacy-policy-main h1 {
   font-family: 'Jost', sans-serif;
   font-weight: 550;
-  color: black;
+  color: var(--text-color);
 }
 
 .privacy-policy-main h2 {
   font-family: 'Jost', sans-serif;
   text-align: left;
   font-weight: 550;
-  color: black;
+  color: var(--text-color);
 }
 
 .margin-bottom-250 {
@@ -706,7 +730,7 @@ h3, h4, h5, h6 {
 }
 
 .about-card {
-  background-color: #f4f3ef;
+  background-color: var(--off-color-background);
   border-radius: 20px;
   padding: 40px 20px;
   text-align: center;
@@ -746,7 +770,7 @@ h3, h4, h5, h6 {
   text-align: center;
   text-wrap-style: balance;
   margin-top: -10px;
-  color: black;
+  color: var(--text-color);
 }
 
 .about-card-sub-subtitle {
@@ -755,7 +779,7 @@ h3, h4, h5, h6 {
   text-align: center;
   text-wrap-style: balance;
   margin-top: -22px;
-  color: black;
+  color: var(--text-color);
 }
 
 .about-card-name {
@@ -769,7 +793,7 @@ h3, h4, h5, h6 {
 
 .about-background {
   position: relative;
-  background-color: #f4f3ef;
+  background-color: var(--off-color-background);
   border-radius: 20px;
   padding: 20px;
   max-width: 700px;
@@ -787,7 +811,7 @@ h3, h4, h5, h6 {
   width: 20px;
   height: 2px;
   border-radius: 3px;
-  background-color: #666;
+  background-color: var(--dimmed-color);
   margin: 6px 0;
   transform: rotate(-40deg) translate(-0.5px, -15.5px);
 }
@@ -800,7 +824,7 @@ h3, h4, h5, h6 {
   width: 20px;
   height: 2px;
   border-radius: 3px;
-  background-color: #666;
+  background-color: var(--dimmed-color);
   margin: 6px 0;
   transform: rotate(40deg) translate(-20px, -8.3px);
 }
@@ -844,7 +868,7 @@ h3, h4, h5, h6 {
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  color: #666;
+  color: var(--dimmed-color);
   transition: all 0.2s ease;
 }
 
@@ -1061,11 +1085,6 @@ h3, h4, h5, h6 {
 
 body:has(dialog[open]:not([data-phone-platter])) {overflow: hidden}
 
-body {
-  background-color: white;
-  text-wrap: pretty;
-}
-
 .close-rewards-button {
   background-color: transparent;
   border-style: none;
@@ -1095,7 +1114,7 @@ dialog[open]:not([data-phone-platter]) {
 
 .open-rewards-button {
   font-family: 'Jost', sans-serif;
-  background-color: #bd4d86;
+  background-color: #bd4d86bb;
   color: white;
   border-radius: 25px;
   padding: 10px 20px;
@@ -1135,7 +1154,7 @@ dialog[open]:not([data-phone-platter]) {
 
 .certification-wrapper {
   margin-top: 10px;
-  background-color: #fff;
+  background-color: light-dark(#fff, #630636);
   border-radius: 20px;
   border: solid 1px #aaa;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -1179,7 +1198,7 @@ dialog[open]:not([data-phone-platter]) {
 
 .about-cta {
   margin-left: 8px;
-  color: #888;
+  color: var(--dimmed-color);
   font-weight: 300;
   font-size: 1rem;
   text-align: center;
@@ -1188,7 +1207,7 @@ dialog[open]:not([data-phone-platter]) {
 
 .upper-about-arrow {
   display: inline-block;
-  background-color: #888;
+  background-color: var(--dimmed-color);
   width: 13px;
   height: 1px;
   border-radius: 3px;
@@ -1197,7 +1216,7 @@ dialog[open]:not([data-phone-platter]) {
 
 .lower-about-arrow {
   display: inline-block;
-  background-color: #888;
+  background-color: var(--dimmed-color);
   width: 13px;
   height: 1px;
   border-radius: 3px;
@@ -1213,7 +1232,7 @@ dialog[open]:not([data-phone-platter]) {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  color: #666;
+  color: var(--dimmed-color);
   background-color: transparent;
   border-style: none;
   text-decoration: none;
@@ -1244,7 +1263,7 @@ dialog[open]:not([data-phone-platter]) {
 }
 
 .grey-border {
-  border: solid 1px #666;
+  border: solid 1px var(--dimmed-color);
   border-radius: 20px;
   padding: 10px 20px;
   width: fit-content;
@@ -1278,7 +1297,7 @@ dialog[open]:not([data-phone-platter]) {
 }
 
 .text-black {
-  color: black;
+  color: var(--text-color);
 }
 
 .align-center {
@@ -1293,14 +1312,14 @@ dialog[open]:not([data-phone-platter]) {
 .about-share-link-button {
   font-family: 'Jost', sans-serif;
   background-color: transparent;
-  color: #666;
+  color: var(--dimmed-color);
   text-decoration: none;
   cursor: pointer;
   font-size: 1.2rem;
   position: absolute;
   top: 30px;
   right: 30px;
-  border: solid 1px #666;
+  border: solid 1px var(--dimmed-color);
   padding: 5px 10px;
   border-radius: 10px;
   transition: all 0.2s ease;
@@ -1350,7 +1369,7 @@ dialog[open]:not([data-phone-platter]) {
 
 .small-row-line-break {
   margin: 10px auto;
-  background-color: #888;
+  background-color: var(--dimmed-color);
   max-width: 500px;
   width: calc(100% - 20px);
   height: 1px;
@@ -1387,7 +1406,7 @@ dialog[open]:not([data-phone-platter]) {
   font-size: 4rem;
   font-weight: 350;
   margin-top: -10px;
-  background-image: linear-gradient(to right, #bd4d86, #3b0320);
+  background-image: linear-gradient(to right, #bd4d86, light-dark(#3b0320, #ffdef3));
   margin-left: auto;
   margin-right: auto;
   color: transparent;
@@ -1399,7 +1418,7 @@ dialog[open]:not([data-phone-platter]) {
 
 .diversity-subtitle {
   font-size: 1.3rem;
-  color: #333;
+  color: light-dark(#333, #ccc);
   max-width: 600px;
   width: 90%;
   margin-left: auto;
@@ -1423,7 +1442,8 @@ dialog[open]:not([data-phone-platter]) {
     column-gap: 20px;
     row-gap: 30px;
     max-width: 1150px;
-    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
     list-style: none;
   }
 }
@@ -1450,7 +1470,7 @@ dialog[open]:not([data-phone-platter]) {
   font-size: 2rem;
   font-weight: 400;
   text-align: left;
-  color: black;
+  color: var(--text-color);
 }
 
 .basic-section {
@@ -1462,7 +1482,7 @@ dialog[open]:not([data-phone-platter]) {
 .diversity-grid li {
   height: 100%;
   width: 100%;
-  background-color: #f4f3ef;
+  background-color: var(--off-color-background);
   padding: 20px 30px;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(50, 50, 50, 0.2);
@@ -1475,13 +1495,13 @@ dialog[open]:not([data-phone-platter]) {
 .diversity-grid-title {
   font-family: 'Jost', sans-serif;
   font-size: 1.5rem;
-  color: black;
+  color: var(--text-color);
   font-weight: 400;
 }
 
 .diversity-grid-description {
   font-size: 1rem;
-  color: #666;
+  color: var(--dimmed-color);
 }
 
 .diversity-grid-img {
@@ -1490,7 +1510,7 @@ dialog[open]:not([data-phone-platter]) {
 
 .diversity-improvement {
   text-align: left;
-  color: #333;
+  color: light-dark(#333, #ccc);
   font-size: 1.3rem;
 }
 
@@ -1498,7 +1518,7 @@ dialog[open]:not([data-phone-platter]) {
   display: block;
   max-width: fit-content;
   width: 90%;
-  background-color: #f4f3ef;
+  background-color: var(--off-color-background);
   border-radius: 20px;
   padding: 20px 30px;
   margin-top: 20px;
@@ -1527,7 +1547,7 @@ dialog[open]:not([data-phone-platter]) {
 
 .diversity-cta-title-text {
   color: transparent;
-  background-image: linear-gradient(to right, #bd4d86, #3b0320);
+  background-image: linear-gradient(to right, #bd4d86, light-dark(#3b0320, #ffdef3));
   background-clip: text;
   font-size: 1.3rem;
 }
@@ -1539,7 +1559,7 @@ dialog[open]:not([data-phone-platter]) {
 
 .about-card-pronouns {
   font-size: 0.8rem;
-  color: #666;
+  color: var(--dimmed-color);
   margin-top: -20px;
   font-style: italic;
 }
@@ -1548,7 +1568,7 @@ dialog[open]:not([data-phone-platter]) {
   text-align: center;
   text-wrap-style: balance;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--dimmed-color);
   font-style: italic;
   margin-top: 0px;
   margin-bottom: 10px;
@@ -1557,7 +1577,7 @@ dialog[open]:not([data-phone-platter]) {
 .services-h3 {
   font-family: 'Jost', sans-serif;
   font-size: 1.1rem;
-  color: black;
+  color: var(--text-color);
   font-weight: 400;
   text-align: center;
   text-wrap-style: balance;
@@ -1655,9 +1675,9 @@ dialog[open]:not([data-phone-platter]) {
   margin-bottom: 10px;
   border-radius: 20px;
   text-decoration: none;
-  color: #666;
-  fill: #444;
-  border: solid 1px #666;
+  color: var(--dimmed-color);
+  fill: light-dark(#444, #eee);
+  border: solid 1px var(--dimmed-color);
   padding: 10px 20px;
   transition: all 0.2s ease;
 }
@@ -1668,7 +1688,7 @@ dialog[open]:not([data-phone-platter]) {
     border-color: #bd4d86;
     color: #bd4d86;
     fill: #bd4d86;
-    background-color: #fcdcec66
+    background-color: light-dark(#fcdcec66, #fcdcec11);
   }
 }
 
@@ -1678,7 +1698,7 @@ dialog[open]:not([data-phone-platter]) {
     border-color: #bd4d86;
     color: #bd4d86;
     fill: #bd4d86;
-    background-color: #fcdcec66
+    background-color: light-dark(#fcdcec66, #fcdcec11);
   }
 }
 

@@ -34,7 +34,23 @@
   <header><div data-promo-header></div><div data-nav-header></div></header>
   <main id="main">
     <div class="inner-main">
-      <img width="300" height="200" class="hero-img" src="/elements/logo/logo_wordmark_light.svg" alt="Skin - Medical Cosmetics & Laser">
+      <picture>
+        <source
+          srcset="/elements/logo/logo_wordmark_dark.svg"
+          media="(prefers-color-scheme: dark)"
+        >
+        <source
+          srcset="/elements/logo/logo_wordmark_light.svg"
+          media="(prefers-color-scheme: light)"
+        >
+        <img
+          src="/elements/logo/logo_wordmark_light.svg"
+          width="300"
+          height="200"
+          class="hero-img"
+          alt="Skin - Medical Cosmetics & Laser"
+        >
+      </picture>
       <br>
       <br>
       <h1>page not found</h1>
