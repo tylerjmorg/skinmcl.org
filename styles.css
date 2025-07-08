@@ -10,7 +10,7 @@
   color-scheme: light dark;
   --white: #fff;
   --black: #000;
-  --deep-purple: #221117;
+  --deep-purple: #1b1117;
   --pink-white: #fffafd;
   --pink-white-hover: #fff4fb;
   --off-white: #f4f3ef; 
@@ -756,7 +756,7 @@ h3, h4, h5, h6 {
 }
 
 .about-card:focus-visible {
-  outline: solid 2px #3b0320;
+  outline: solid 2px light-dark(#3b0320, #fcdcec);
 }
 
 @media (hover: hover) {
@@ -1398,7 +1398,7 @@ dialog[open]:not([data-phone-platter]) {
 .clinically-proven-text {
   text-transform: uppercase;
   font-size: 0.8rem;
-  color: #666;
+  color: var(--dimmed-color);
   margin-top: 1.5px;
 }
 

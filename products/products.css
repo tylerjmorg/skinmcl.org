@@ -44,7 +44,7 @@
 }
 
 .product-brand-selector:focus-visible {
-  outline: solid 2px #3b0320;
+  outline: solid 2px light-dark(#3b0320, #fcdcec);
 }
 
 @media (hover: hover) {
@@ -69,7 +69,8 @@
 }
 
 .product-brand-selector-img {
-  width: 98%;
+  max-width: 400px;
+  width: 100%;
   height: auto;
   padding: 20px;
 }
@@ -156,7 +157,7 @@
 }
 
 .products-grid a:focus-visible {
-  outline: solid 2px #3b0320;
+  outline: solid 2px light-dark(#3b0320, #fcdcec);
 }
 
 .product-img {
