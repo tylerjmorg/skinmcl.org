@@ -210,7 +210,7 @@ h3, h4, h5, h6 {
 }
 
 .faded-text {
-  color: var(--dimmed-color);
+  color: var(--dimmed-color) !important;
 }
 
 .top-20 {
@@ -1296,7 +1296,7 @@ dialog[open]:not([data-phone-platter]) {
 }
 
 .underline {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 .bold {
