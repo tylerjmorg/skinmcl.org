@@ -584,6 +584,14 @@ h3, h4, h5, h6 {
   color: var(--text-color);
 }
 
+.privacy-policy-main h3 {
+  font-family: 'Jost', sans-serif;
+  text-align: left;
+  font-weight: 550;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
 .margin-bottom-250 {
   margin-bottom: 250px;
 }
