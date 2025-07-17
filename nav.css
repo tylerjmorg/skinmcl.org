@@ -576,13 +576,13 @@ main {
 
 @media (hover: hover) {
   .desktop-dropdown-content a:hover .external-desktop-svg {
-    fill: #3b0320;
+    fill: light-dark(#3b0320, #ff92ca);
   }
 }
 
 @media (hover: none) {
   .desktop-dropdown-content a:active .external-desktop-svg {
-    fill: #3b0320;
+    fill: light-dark(#3b0320, #ff92ca);
   }
 }
 
