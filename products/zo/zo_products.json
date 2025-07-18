@@ -38,6 +38,21 @@
       "keywords": ["anti-aging", "anti aging", "sensitive skin"]
     },
     {
+      "id": "pigment-control-brightening-creme",
+      "name": "Pigment Control + Brightening Crème",
+      "rx_only": true,
+      "img": "/products/zo/product-image/pigment_control_brightening_creme.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["hydroquinone", "dark spots", "uneven skin tone"]
+    },
+    {
+      "id": "soothing-ointment",
+      "name": "Soothing Ointment",
+      "img": "/products/zo/product-image/soothing_ointment.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["dry skin", "sensitive skin", "irritation", "healing", "moisturizer", "moisturiser"]
+    },
+    {
       "id": "growth-factor-serum",
       "name": "Growth Factor Serum",
       "clinically_proven": true,
@@ -116,6 +131,13 @@
       "img": "/products/zo/product-image/wrinkle_texture_repair.avif",
       "brand": "ZO Skin Health",
       "keywords": ["retinol", "microemulsion"]
+    },
+    {
+      "id": "radical-night-repair",
+      "name": "Radical Night Repair",
+      "img": "/products/zo/product-image/radical_night_repair.avif",
+      "brand": "ZO Skin Health",
+      "keywords": ["retinol", "microemulsion", "anti-aging", "wrinkle", "sensitive skin"]
     },
     {
       "id": "retinol-acne-complex",
