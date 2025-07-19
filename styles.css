@@ -742,6 +742,10 @@ h3, h4, h5, h6 {
     margin: auto;
     list-style: none;
   }
+  .about-grid-2-item {
+    max-width: 860px !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
 }
 
 .about-card {
@@ -1777,7 +1781,7 @@ html {
   text-align: center;
   text-wrap-style: balance;
   font-size: 1.2rem;
-  color: #666;
+  color: var(--dimmed-color);
   font-weight: 450;
   margin-top: 20px;
 }
