@@ -555,15 +555,15 @@ main {
 
 @media (hover: hover) {
   .mobile-dropdown-content li a:hover {
-    color: #3b0320;
-    background-color: #5b234033;
+    background-color: light-dark(#5b234033,#270d1b5a);
+    color: light-dark(#3b0320, #ff92ca);
   }
 }
 
 @media (hover: none) {
   .mobile-dropdown-content li a:active {
-    color: #3b0320;
-    background-color: #5b234033;
+    background-color: light-dark(#5b234033,#270d1b5a);
+    color: light-dark(#3b0320, #ff92ca);
   }
 }
 
@@ -595,13 +595,13 @@ main {
 
 @media (hover: hover) {
   .mobile-dropdown-content a:hover .external-mobile-svg {
-    fill: #3b0320;
+    fill: light-dark(#3b0320, #ff92ca);
   }
 }
 
 @media (hover: none) {
   .mobile-dropdown-content a:active .external-mobile-svg {
-    fill: #3b0320;
+    fill: light-dark(#3b0320, #ff92ca);
   }
 }
 
