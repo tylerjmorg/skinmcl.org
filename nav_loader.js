@@ -5,7 +5,6 @@
 // Tyler Morgan <git@tylerjm.org>
 //
 
-document.addEventListener("DOMContentLoaded", function () {
   const topHeaderBarContainer = document.querySelector('[data-nav-header]');
 
   const topHeaderBar = document.createElement('div');
@@ -25,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
   brandImg.alt = 'Skin logo';
   brandImg.width = '60';
   brandImg.height = '35';
+  brandImg.setAttribute('fetchpriority', 'high');
   brandAnchor.appendChild(brandImg);
 
   const phoneDiv = document.createElement('div');
@@ -46,25 +46,41 @@ document.addEventListener("DOMContentLoaded", function () {
   desktopMenuList.className = 'uppercase';
   desktopMenu.appendChild(desktopMenuList);
 
+  // keep a global counter
+  let externalDesktopSvgCounter = 0;
+
   function createExternalDesktopLinkIcon() {
     const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+
+    // assign an incrementing id
+    const svgId = `external-desktop-svg-${externalDesktopSvgCounter++}`;
+    svg.setAttribute("id", svgId);
+
     svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
     svg.setAttribute("viewBox", "0 -960 960 960");
     svg.setAttribute("class", "external-desktop-svg");
     svg.setAttribute("height", "13");
     svg.setAttribute("role", "img");
-    svg.setAttribute("aria-labelledby", "external-link-title");
-    
+
+    // give each title a unique id too, to match aria-labelledby
+    const titleId = `${svgId}-title`;
+    svg.setAttribute("aria-labelledby", titleId);
+
     const title = document.createElementNS("http://www.w3.org/2000/svg", "title");
-    title.setAttribute("id", "external-link-title");
+    title.setAttribute("id", titleId);
     title.textContent = "External Link";
+
     const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-    path.setAttribute("d", "M206.78-100.78q-44.3 0-75.15-30.85-30.85-30.85-30.85-75.15v-546.44q0-44.3 30.85-75.15 30.85-30.85 75.15-30.85H427q22.09 0 37.54 15.46Q480-828.3 480-806.22q0 22.09-15.46 37.55-15.45 15.45-37.54 15.45H206.78v546.44h546.44V-427q0-22.09 15.45-37.54Q784.13-480 806.22-480q22.08 0 37.54 15.46 15.46 15.45 15.46 37.54v220.22q0 44.3-30.85 75.15-30.85 30.85-75.15 30.85H206.78Zm546.44-578.91L442-368.48q-14.96 14.96-36.48 14.68-21.52-.29-36.48-15.24-14.95-14.96-14.95-36.77 0-21.8 14.95-36.76l310.65-310.65H613q-22.09 0-37.54-15.45Q560-784.13 560-806.22q0-22.08 15.46-37.54 15.45-15.46 37.54-15.46h193.22q22.08 0 37.54 15.46t15.46 37.54V-613q0 22.09-15.46 37.54Q828.3-560 806.22-560q-22.09 0-37.55-15.46-15.45-15.45-15.45-37.54v-66.69Z");
+    path.setAttribute(
+      "d",
+      "M206.78-100.78q-44.3 0-75.15-30.85-30.85-30.85-30.85-75.15v-546.44q0-44.3 30.85-75.15 30.85-30.85 75.15-30.85H427q22.09 0 37.54 15.46Q480-828.3 480-806.22q0 22.09-15.46 37.55-15.45 15.45-37.54 15.45H206.78v546.44h546.44V-427q0-22.09 15.45-37.54Q784.13-480 806.22-480q22.08 0 37.54 15.46 15.46 15.45 15.46 37.54v220.22q0 44.3-30.85 75.15-30.85 30.85-75.15 30.85H206.78Zm546.44-578.91L442-368.48q-14.96 14.96-36.48 14.68-21.52-.29-36.48-15.24-14.95-14.96-14.95-36.77 0-21.8 14.95-36.76l310.65-310.65H613q-22.09 0-37.54-15.45Q560-784.13 560-806.22q0-22.08 15.46-37.54 15.45-15.46 37.54-15.46h193.22q22.08 0 37.54 15.46t15.46 37.54V-613q0 22.09-15.46 37.54Q828.3-560 806.22-560q-22.09 0-37.55-15.46-15.45-15.45-15.45-37.54v-66.69Z"
+    );
 
     svg.appendChild(title);
     svg.appendChild(path);
     return svg;
   }
+
 
   // Desktop menu items
   fetch('/navigation.json')
@@ -201,20 +217,35 @@ function appendTextWithTrademark(parent, text) {
   mobileMenuList.classList.add('uppercase');
   mobileMenuWrapper.appendChild(mobileMenuList);
 
+  // keep a global counter for mobile svgs
+  let externalMobileSvgCounter = 0;
+
   function createExternalMobileLinkIcon() {
     const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+
+    // assign an incrementing id
+    const svgId = `external-mobile-svg-${externalMobileSvgCounter++}`;
+    svg.setAttribute("id", svgId);
+
     svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
     svg.setAttribute("viewBox", "0 -960 960 960");
     svg.setAttribute("class", "external-mobile-svg");
     svg.setAttribute("height", "13");
     svg.setAttribute("role", "img");
-    svg.setAttribute("aria-labelledby", "external-link-title");
-    
+
+    // give each title a unique id too, to match aria-labelledby
+    const titleId = `${svgId}-title`;
+    svg.setAttribute("aria-labelledby", titleId);
+
     const title = document.createElementNS("http://www.w3.org/2000/svg", "title");
-    title.setAttribute("id", "external-link-title");
+    title.setAttribute("id", titleId);
     title.textContent = "External Link";
+
     const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-    path.setAttribute("d", "M206.78-100.78q-44.3 0-75.15-30.85-30.85-30.85-30.85-75.15v-546.44q0-44.3 30.85-75.15 30.85-30.85 75.15-30.85H427q22.09 0 37.54 15.46Q480-828.3 480-806.22q0 22.09-15.46 37.55-15.45 15.45-37.54 15.45H206.78v546.44h546.44V-427q0-22.09 15.45-37.54Q784.13-480 806.22-480q22.08 0 37.54 15.46 15.46 15.45 15.46 37.54v220.22q0 44.3-30.85 75.15-30.85 30.85-75.15 30.85H206.78Zm546.44-578.91L442-368.48q-14.96 14.96-36.48 14.68-21.52-.29-36.48-15.24-14.95-14.96-14.95-36.77 0-21.8 14.95-36.76l310.65-310.65H613q-22.09 0-37.54-15.45Q560-784.13 560-806.22q0-22.08 15.46-37.54 15.45-15.46 37.54-15.46h193.22q22.08 0 37.54 15.46t15.46 37.54V-613q0 22.09-15.46 37.54Q828.3-560 806.22-560q-22.09 0-37.55-15.46-15.45-15.45-15.45-37.54v-66.69Z");
+    path.setAttribute(
+      "d",
+      "M206.78-100.78q-44.3 0-75.15-30.85-30.85-30.85-30.85-75.15v-546.44q0-44.3 30.85-75.15 30.85-30.85 75.15-30.85H427q22.09 0 37.54 15.46Q480-828.3 480-806.22q0 22.09-15.46 37.55-15.45 15.45-37.54 15.45H206.78v546.44h546.44V-427q0-22.09 15.45-37.54Q784.13-480 806.22-480q22.08 0 37.54 15.46 15.46 15.45 15.46 37.54v220.22q0 44.3-30.85 75.15-30.85 30.85-75.15 30.85H206.78Zm546.44-578.91L442-368.48q-14.96 14.96-36.48 14.68-21.52-.29-36.48-15.24-14.95-14.96-14.95-36.77 0-21.8 14.95-36.76l310.65-310.65H613q-22.09 0-37.54-15.45Q560-784.13 560-806.22q0-22.08 15.46-37.54 15.45-15.46 37.54-15.46h193.22q22.08 0 37.54 15.46t15.46 37.54V-613q0 22.09-15.46 37.54Q828.3-560 806.22-560q-22.09 0-37.55-15.46-15.45-15.45-15.45-37.54v-66.69Z"
+    );
 
     svg.appendChild(title);
     svg.appendChild(path);
@@ -320,7 +351,7 @@ function appendTextWithTrademark(parent, text) {
   });
 
   const footer = document.querySelector('[data-main-footer]');
-  if (!footer) return;
+  if (footer) {
 
   footer.className = 'inner-footer';
 
@@ -347,20 +378,35 @@ function appendTextWithTrademark(parent, text) {
     })
   ]);
 
+  // keep a global counter for footer svgs
+  let externalFooterSvgCounter = 0;
+
   function createExternalFooterLinkIcon() {
     const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+
+    // assign an incrementing id
+    const svgId = `external-footer-svg-${externalFooterSvgCounter++}`;
+    svg.setAttribute("id", svgId);
+
     svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
     svg.setAttribute("viewBox", "0 -960 960 960");
     svg.setAttribute("class", "external-footer-svg");
     svg.setAttribute("height", "13");
     svg.setAttribute("role", "img");
-    svg.setAttribute("aria-labelledby", "external-link-title");
-    
+
+    // give each title a unique id too, to match aria-labelledby
+    const titleId = `${svgId}-title`;
+    svg.setAttribute("aria-labelledby", titleId);
+
     const title = document.createElementNS("http://www.w3.org/2000/svg", "title");
-    title.setAttribute("id", "external-link-title");
+    title.setAttribute("id", titleId);
     title.textContent = "External Link";
+
     const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-    path.setAttribute("d", "M206.78-100.78q-44.3 0-75.15-30.85-30.85-30.85-30.85-75.15v-546.44q0-44.3 30.85-75.15 30.85-30.85 75.15-30.85H427q22.09 0 37.54 15.46Q480-828.3 480-806.22q0 22.09-15.46 37.55-15.45 15.45-37.54 15.45H206.78v546.44h546.44V-427q0-22.09 15.45-37.54Q784.13-480 806.22-480q22.08 0 37.54 15.46 15.46 15.45 15.46 37.54v220.22q0 44.3-30.85 75.15-30.85 30.85-75.15 30.85H206.78Zm546.44-578.91L442-368.48q-14.96 14.96-36.48 14.68-21.52-.29-36.48-15.24-14.95-14.96-14.95-36.77 0-21.8 14.95-36.76l310.65-310.65H613q-22.09 0-37.54-15.45Q560-784.13 560-806.22q0-22.08 15.46-37.54 15.45-15.46 37.54-15.46h193.22q22.08 0 37.54 15.46t15.46 37.54V-613q0 22.09-15.46 37.54Q828.3-560 806.22-560q-22.09 0-37.55-15.46-15.45-15.45-15.45-37.54v-66.69Z");
+    path.setAttribute(
+      "d",
+      "M206.78-100.78q-44.3 0-75.15-30.85-30.85-30.85-30.85-75.15v-546.44q0-44.3 30.85-75.15 30.85-30.85 75.15-30.85H427q22.09 0 37.54 15.46Q480-828.3 480-806.22q0 22.09-15.46 37.55-15.45 15.45-37.54 15.45H206.78v546.44h546.44V-427q0-22.09 15.45-37.54Q784.13-480 806.22-480q22.08 0 37.54 15.46 15.46 15.45 15.46 37.54v220.22q0 44.3-30.85 75.15-30.85 30.85-75.15 30.85H206.78Zm546.44-578.91L442-368.48q-14.96 14.96-36.48 14.68-21.52-.29-36.48-15.24-14.95-14.96-14.95-36.77 0-21.8 14.95-36.76l310.65-310.65H613q-22.09 0-37.54-15.45Q560-784.13 560-806.22q0-22.08 15.46-37.54 15.45-15.46 37.54-15.46h193.22q22.08 0 37.54 15.46t15.46 37.54V-613q0 22.09-15.46 37.54Q828.3-560 806.22-560q-22.09 0-37.55-15.46-15.45-15.45-15.45-37.54v-66.69Z"
+    );
 
     svg.appendChild(title);
     svg.appendChild(path);
@@ -577,4 +623,4 @@ const nav = createEl("nav", {}, [navList]);
   // Append everything
   footer.appendChild(sections);
   footer.appendChild(disclaimer);
-});
+};

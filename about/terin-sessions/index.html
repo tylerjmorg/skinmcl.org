@@ -9,6 +9,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="preload" href="/nav_loader.js" as="script" fetchpriority="high">
+  <script defer fetchpriority="high" src="/nav_loader.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Terin Sessions - Skin</title>
   <meta name="description" content="All about Terin Sessions, our amazing nurse practitioner at Skin - Medical Cosmetics & Laser.">
@@ -37,7 +39,7 @@
       <div class="about-background">
         <button class="clickable-back" onclick="goBackOrRedirect()" title="Back"><div><div class="about-back-icon-top"></div><div class="about-back-icon-bottom"></div></div></button>
         <button class="about-share-link-button uppercase" data-share-link="https://skinmcl.org/about/terin-sessions/"><picture><source srcset="/elements/utility/icon/ios_share_ccc.svg" media="(prefers-color-scheme: dark)"><source srcset="/elements/utility/icon/ios_share_666.svg" media="(prefers-color-scheme: light)"><img src="/elements/utility/icon/ios_share_666.svg" width="20" height="20" class="share-link-img" alt="Share Icon"></picture>Share</button>
-        <img class="profile-img" src="/about/profile/terin-sessions/terin_sessions_x512.avif" alt="Terin Sessions">
+        <img fetchpriority="high" class="profile-img" src="/about/profile/terin-sessions/terin_sessions_x512.avif" alt="Terin Sessions">
         <h1 class="about-name">Terin&nbsp;Sessions, MSN,&nbsp;NP&#8209;C</h1>
         <p class="about-pronouns">she/her</p>
         <p class="text-center text-16">Nurse Practitioner</p>
@@ -83,7 +85,6 @@
   <footer><div data-main-footer></div></footer>
   <dialog data-phone-platter></dialog>
   <button class="top-button" id="to-top" data-back-to-top>Back to top<span class="left-up-arrow-arm"></span><span class="right-up-arrow-arm"></span></button>
-  <script src="/nav_loader.js"></script>
   <script src="/nav.js"></script>
   <script src="/back-to-top.js"></script>
   <script src="https://tylermorgan.co/copyright_year.js"></script>
