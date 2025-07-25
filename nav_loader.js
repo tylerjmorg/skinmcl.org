@@ -28,15 +28,39 @@
   brandAnchor.appendChild(brandImg);
 
   const phoneDiv = document.createElement('div');
-  phoneDiv.className = 'absolute-center';
+  phoneDiv.className = 'absolute-center middle-header';
   topHeaderBar.appendChild(phoneDiv);
 
-  const phoneButton = document.createElement('button');
-  phoneButton.classList.add('white-link');
-  phoneButton.classList.add('pointer');
-  phoneButton.setAttribute('data-phone-button', '');
-  phoneButton.textContent = '435-716-8765';
-  phoneDiv.appendChild(phoneButton);
+  const signInButton = document.createElement('a');
+  signInButton.classList.add('white-link', 'uppercase', 'middle-header-child');
+  signInButton.href = '#sign-in';
+  signInButton.textContent = 'Sign In';
+  phoneDiv.appendChild(signInButton);
+
+  const signInDialog = document.createElement('dialog');
+  signInDialog.id = 'rewards-dialog';
+  signInDialog.className = 'rewards-modal';
+
+  const signInDialogCloseButton = document.createElement('button');
+  signInDialogCloseButton.className = 'close-rewards-button';
+  signInDialogCloseButton.setAttribute('data-close-rewards', '');
+  signInDialogCloseButton.textContent = 'Close';
+  signInDialog.appendChild(signInDialogCloseButton);
+
+  const signInDialogIframe = document.createElement('iframe');
+  signInDialogIframe.className = 'blvd-iframe';
+  signInDialogIframe.title = 'Skin - MCL Sign-in';
+  signInDialogIframe.allow = 'camera; web-share; payment';
+  signInDialogIframe.src = 'https://blvd.app/@skinmcl/login';
+  signInDialog.appendChild(signInDialogIframe);
+
+  document.body.appendChild(signInDialog);
+
+  const bookNowButton = document.createElement('a');
+  bookNowButton.classList.add('white-link', 'uppercase', 'middle-header-child');
+  bookNowButton.href = '#book-now';
+  bookNowButton.textContent = 'Book Now';
+  phoneDiv.appendChild(bookNowButton);
 
   const desktopMenu = document.createElement('nav');
   desktopMenu.className = 'desktop-menu';
@@ -100,10 +124,12 @@
         const anchor = document.createElement('a');
         anchor.href = item.href;
         anchor.id = `desktop-${item.id}`;
+        anchor.setAttribute(item.custom_attr1_name, item.custom_attr1_value);
         appendTextWithTrademark(anchor, item.text);
         if (
           !item.href.startsWith("/") &&
-          !item.href.startsWith("https://skinmcl.org/")
+          !item.href.startsWith("https://skinmcl.org/") &&
+          !item.href.startsWith("#")
         ) {
           anchor.appendChild(createExternalDesktopLinkIcon());
           anchor.target = "_blank";
@@ -151,11 +177,13 @@
           const desktopDropdownListItem = document.createElement('li');
           const desktopDropdownAnchor = document.createElement('a');
           desktopDropdownAnchor.href = dropdownItem.href;
+          desktopDropdownAnchor.setAttribute(dropdownItem.custom_attr1_name, dropdownItem.custom_attr1_value);
           desktopDropdownAnchor.id = `desktop-${dropdownItem.id}`;
           appendTextWithTrademark(desktopDropdownAnchor, dropdownItem.text);
           if (
             !dropdownItem.href.startsWith("/") &&
-            !dropdownItem.href.startsWith("https://skinmcl.org/")
+            !dropdownItem.href.startsWith("https://skinmcl.org/") &&
+            !dropdownItem.href.startsWith("#")
           ) {
             desktopDropdownAnchor.appendChild(createExternalDesktopLinkIcon());
             desktopDropdownAnchor.target = "_blank";
@@ -270,10 +298,12 @@ function appendTextWithTrademark(parent, text) {
         const anchor = document.createElement('a');
         anchor.href = item.href;
         anchor.id = `mobile-${item.id}`;
+        anchor.setAttribute(item.custom_attr1_name, item.custom_attr1_value);
         appendTextWithTrademark(anchor, item.text);
         if (
           !item.href.startsWith("/") &&
-          !item.href.startsWith("https://skinmcl.org/")
+          !item.href.startsWith("https://skinmcl.org/") &&
+          !item.href.startsWith("#")
         ) {
           anchor.appendChild(createExternalMobileLinkIcon());
           anchor.target = "_blank";
@@ -312,10 +342,12 @@ function appendTextWithTrademark(parent, text) {
             const mobileDropdownAnchor = document.createElement('a');
             mobileDropdownAnchor.href = dropdownItem.href;
             mobileDropdownAnchor.id = `mobile-${dropdownItem.id}`;
+            mobileDropdownAnchor.setAttribute(dropdownItem.custom_attr1_name, dropdownItem.custom_attr1_value);
             appendTextWithTrademark(mobileDropdownAnchor, dropdownItem.text);
             if (
               !dropdownItem.href.startsWith("/") &&
-              !dropdownItem.href.startsWith("https://skinmcl.org/")
+              !dropdownItem.href.startsWith("https://skinmcl.org/") &&
+              !dropdownItem.href.startsWith("#")
             ) {
               mobileDropdownAnchor.appendChild(createExternalMobileLinkIcon());
               mobileDropdownAnchor.target = "_blank";
@@ -433,10 +465,12 @@ function appendTextWithTrademark(parent, text) {
         anchor.classList.add('footer-nav-no-nest');
         anchor.href = item.href;
         anchor.id = `footer-${item.id}`;
+        anchor.setAttribute(item.custom_attr1_name, item.custom_attr1_value);
         appendTextWithTrademark(anchor, item.text);
         if (
           !item.href.startsWith("/") &&
-          !item.href.startsWith("https://skinmcl.org/")
+          !item.href.startsWith("https://skinmcl.org/") &&
+          !item.href.startsWith("#")
         ) {
           anchor.appendChild(createExternalFooterLinkIcon());
           anchor.target = "_blank";
@@ -474,10 +508,12 @@ function appendTextWithTrademark(parent, text) {
             const footerDropdownAnchor = document.createElement('a');
             footerDropdownAnchor.href = dropdownItem.href;
             footerDropdownAnchor.id = `footer-${dropdownItem.id}`;
+            footerDropdownAnchor.setAttribute(dropdownItem.custom_attr1_name, dropdownItem.custom_attr1_value);
             appendTextWithTrademark(footerDropdownAnchor, dropdownItem.text);
             if (
               !dropdownItem.href.startsWith("/") &&
-              !dropdownItem.href.startsWith("https://skinmcl.org/")
+              !dropdownItem.href.startsWith("https://skinmcl.org/") &&
+              !dropdownItem.href.startsWith("#")
             ) {
               footerDropdownAnchor.appendChild(createExternalFooterLinkIcon());
               footerDropdownAnchor.target = "_blank";

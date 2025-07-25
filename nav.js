@@ -5,6 +5,27 @@
 // Tyler Morgan <git@tylerjm.org>
 //
 
+// Boulevard Self-Booking overlay
+(function (a) {
+  var b = {
+    businessId: 'b80dc0fe-2972-4363-b7b7-0ea0df0767fb',
+  };
+
+  var c = a.createElement('script');
+  var d = a.querySelector('script');
+
+  c.src = 'https://static.joinboulevard.com/injector.min.js';
+  c.async = true;
+  c.onload = function () {
+    blvd.init(b);
+  };
+
+  d.parentNode.insertBefore(c, d);
+})
+
+(document);
+// End Boulevard Self-Booking overlay
+
 document.addEventListener('DOMContentLoaded', () => {
   const button = document.querySelector('[data-mobile-menu-button]');
   const menu = document.querySelector('[data-mobile-menu]');
@@ -125,6 +146,98 @@ document.addEventListener('DOMContentLoaded', () => {
         updateHeader(window.scrollY);
       });
       ticking = true;
+    }
+  });
+
+  const closeButton = document.querySelector('[data-close-rewards]');
+  const modal = document.querySelector('#rewards-dialog');
+
+  // Close modal when close button is clicked
+  closeButton.addEventListener('click', () => {
+    modal.close();
+    if (document.referrer && document.referrer !== window.location.href) {
+        window.history.back();
+    } else {
+      window.location.href = '/';
+    }
+  });
+
+
+  // Open modal if URL hash is "#sign-in"
+  window.addEventListener('DOMContentLoaded', () => {
+    if (window.location.hash === '#sign-in' || window.location.hash === '#login') {
+      modal.showModal();
+    }
+  });
+
+  // Optional: if user navigates to "#sign-in" after load
+  window.addEventListener('hashchange', () => {
+    if (window.location.hash === '#sign-in' || window.location.hash === '#login') {
+      modal.showModal();
+    }
+  });
+
+  
+  
+  
+  window.addEventListener('load', () => {
+    if (window.location.hash === '#gift-card' || window.location.hash === '#gift-cards') {
+      if (window.blvd && typeof blvd.openBookingWidget === 'function') {
+        blvd.openBookingWidget({
+          urlParams: {
+            locationId: '1e429c6f-d454-4d4d-b838-82ddcaabe5df',
+            path: '/cart/menu/Gift%20Cards',
+            visitType: 'GIFT_CARD'
+          }
+        });
+      }
+    }
+  });
+
+  window.addEventListener('hashchange', () => {
+    if (window.location.hash === '#gift-card' || window.location.hash === '#gift-cards') {
+      if (window.blvd && typeof blvd.openBookingWidget === 'function') {
+        blvd.openBookingWidget({
+          urlParams: {
+            locationId: '1e429c6f-d454-4d4d-b838-82ddcaabe5df',
+            path: '/cart/menu/Gift%20Cards',
+            visitType: 'GIFT_CARD'
+          }
+        });
+      }
+    }
+  });
+
+
+
+
+  window.addEventListener('load', () => {
+    // Run once on page load
+    if (window.location.hash === '#package' || window.location.hash === '#packages') {
+      if (window.blvd && typeof blvd.openBookingWidget === 'function') {
+        blvd.openBookingWidget({
+          urlParams: {
+            locationId: '1e429c6f-d454-4d4d-b838-82ddcaabe5df',
+            path: '/cart/menu',
+            visitType: 'PACKAGE'
+          }
+        });
+      }
+    }
+  });
+
+  // Run every time hash changes
+  window.addEventListener('hashchange', () => {
+    if (window.location.hash === '#package' || window.location.hash === '#packages') {
+      if (window.blvd && typeof blvd.openBookingWidget === 'function') {
+        blvd.openBookingWidget({
+          urlParams: {
+            locationId: '1e429c6f-d454-4d4d-b838-82ddcaabe5df',
+            path: '/cart/menu',
+            visitType: 'PACKAGE'
+          }
+        });
+      }
     }
   });
 

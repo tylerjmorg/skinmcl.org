@@ -53,11 +53,7 @@
               <p class="uppercase text-center text-14">Call/Text</p>
               <p class="uppercase text-center text-12">435-716-8765</p>
             </button>
-            <button class="grey-border normal-button uppercase text-center service-cta-button" data-open-rewards>Book Online</button>
-            <dialog id="rewards-dialog" class="rewards-modal">
-              <button class="close-rewards-button" data-close-rewards>Close</button>
-              <iframe class="repeatmd-iframe" title="Laser Tattoo Removal - Skin - RepeatMD" allow="camera; web-share; payment"></iframe>
-            </dialog>
+            <a href="#" onclick="blvd.openBookingWidget({ urlParams: { locationId: '1e429c6f-d454-4d4d-b838-82ddcaabe5df', path: '/cart/menu/Laser%20Tattoo%20Removal', visitType: 'SELF_VISIT' }}); return false;" class="grey-border normal-button uppercase text-center service-cta-button">Book Online</a>
           </div>
           <div class="top-20">
             <button class="bottom-about-back-button uppercase text-center" onclick="goBackOrRedirect()">Back</button>
@@ -74,51 +70,9 @@
   <script src="/back-to-top.js"></script>
   <script src="https://tylermorgan.co/copyright_year.js"></script>
   <script>
-    const openBtn = document.querySelector('[data-open-rewards]');
-    const closeBtn = document.querySelector('[data-close-rewards]');
-    const modal = document.querySelector('#rewards-dialog');
-    const iframe = document.querySelector('.repeatmd-iframe');
-
-    const iframeUrl = 'https://loganmed.repeatmd.app/pdp/package/04649a2e-e1b6-42c0-98c9-8e980a5d367d';
-
-    let iframeHistoryDelta = 0;
-    let iframeOpened = false;
-    let lastOpenHistoryLength = 0;
-
-    openBtn.addEventListener('click', () => {
-      iframeOpened = true;
-      lastOpenHistoryLength = window.history.length;
-      iframe.src = iframeUrl;
-      modal.showModal();
-    });
-
-    closeBtn.addEventListener('click', () => {
-      const currentLength = window.history.length;
-      const delta = currentLength - (lastOpenHistoryLength - 1);
-      if (delta > 0) iframeHistoryDelta += delta;
-
-      iframe.src = '';
-      modal.close();
-    });
-
-    document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape' && modal.open) {
-        const currentLength = window.history.length;
-        const delta = currentLength - (lastOpenHistoryLength - 1);
-        if (delta > 0) iframeHistoryDelta += delta;
-
-        iframe.src = '';
-        modal.close();
-      }
-    });
-
     function goBackOrRedirect() {
       if (document.referrer && document.referrer !== window.location.href) {
-        if (iframeOpened && iframeHistoryDelta > 0) {
-          window.history.go(-(iframeHistoryDelta + 1));
-        } else {
-          window.history.back();
-        }
+        window.history.back();
       } else {
         window.location.href = '/services/';
       }
