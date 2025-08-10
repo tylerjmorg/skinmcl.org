@@ -1,5 +1,5 @@
 # 
-# robots.txt for https://skinmcl.org/. Generated on: 2025-07-19T23:19:00Z
+# robots.txt for https://skinmcl.org/. Generated on: 2025-08-10T05:00:00Z
 #
 # Copyright (c) 2025 Logan Medical Group, LLC. All rights reserved.
 #
@@ -173,6 +173,7 @@ Disallow: /
 User-agent: *
 Disallow: /elements/contact/skin.vcf
 Disallow: /about/anna-rosenbaum/*
+Disallow: /about/nicole-sadler/*
 Disallow: /pride/*
 
 Sitemap: https://skinmcl.org/sitemap.xml
