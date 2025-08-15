@@ -155,16 +155,35 @@
         desktopHeaderNavListItemDropdownArrow.appendChild(desktopHeaderNavListItemDropdownRightArrow);
 
         desktopDropdownToggle.appendChild(desktopHeaderNavListItemDropdownArrow);
+        // Detect if the device does not support hover
+        const noHoverSupport = window.matchMedia('(hover: none)').matches;
+
+        function toggleDropdown() {
+          desktopHeaderNavListItem.classList.toggle('open');
+          desktopDropdownToggle.setAttribute(
+            'aria-expanded',
+            desktopHeaderNavListItem.classList.contains('open') ? 'true' : 'false'
+          );
+        }
+
         desktopDropdownToggle.addEventListener('keydown', (e) => {
           if (e.key === 'Enter') {
-            desktopHeaderNavListItem.classList.toggle('open');
-            if (desktopHeaderNavListItem.classList.contains('open')) {
-              desktopDropdownToggle.setAttribute('aria-expanded', 'true');
-            } else {
-              desktopDropdownToggle.setAttribute('aria-expanded', 'false');
-            }
+            toggleDropdown();
           }
         });
+
+        // If no hover support
+        if (noHoverSupport) {
+          desktopDropdownToggle.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent focus loss or navigation if it's a link
+            toggleDropdown();
+          });
+          desktopDropdownToggle.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+              toggleDropdown();
+            }
+          });
+        }
       }
 
       if (item.dropdown_items) {
