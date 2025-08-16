@@ -1769,7 +1769,14 @@ dialog[open]:not([data-phone-platter]) {
 
 html {
   scroll-behavior: smooth;
+  /* cursor: url('/elements/cursor.svg'), auto; */
 }
+
+/*
+a, button, [role="button"] {
+  cursor: url('/elements/cursor_pointer.svg'), pointer !important;
+}
+*/
 
 @media (prefers-reduced-motion: reduce) {
   html {
