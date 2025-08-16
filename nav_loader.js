@@ -624,7 +624,8 @@ const nav = createEl("nav", {}, [navList]);
     "<span aria-label=\"Thursday\">Thu</span><span class=\"footer-time\">8\u00A0AM—6\u00A0PM</span>",
     "<span aria-label=\"Friday\">Fri</span><span class=\"footer-time\">8\u00A0AM—6\u00A0PM</span>",
     "<span aria-label=\"Saturday\">Sat</span><span class=\"italic\">Closed</span>",
-    "<span class=\"footer-special-hours\">Closed:\u00A012\u00A0PM—1\u00A0PM<br>Every\u00A0weekday</span>"
+    "<span class=\"footer-special-hours\">Closed:\u00A012\u00A0PM—1\u00A0PM<br>Every\u00A0weekday</span>",
+    "<span class=\"footer-special-hours\">Closed:\u00A0<span aria-label=\"Monday\">Mon</span>,\u00A0<span aria-label=\"September\">Sep</span>\u00A01st</span>"
   ];
   const hoursList = createEl("ul", { class: "footer-hours uppercase footer-hours-container" },
     hours.map((line, i) => {
