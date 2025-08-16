@@ -137,7 +137,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', () => {
     const mobileMenu = document.querySelector('.mobile-menu-wrapper');
+    const desktopDropdowns = document.querySelectorAll('.desktop-dropdown');
     if (mobileMenu && mobileMenu.classList.contains('open')) {
+      return;
+    }
+
+    let anyOpen = false;
+    desktopDropdowns.forEach(dropdown => {
+      if (dropdown.classList.contains('open')) {
+        anyOpen = true;
+      }
+    });
+
+    if (anyOpen) {
       return;
     }
 

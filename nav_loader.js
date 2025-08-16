@@ -158,7 +158,22 @@
         // Detect if the device does not support hover
         const noHoverSupport = window.matchMedia('(hover: none)').matches;
 
+        // Utility: close all dropdowns (or all except one)
+        function closeOtherDropdowns(currentItem = null) {
+          document.querySelectorAll('.desktop-doprdown.open').forEach(item => {
+            if (item !== currentItem) {
+              item.classList.remove('open');
+              const toggle = item.querySelector('.desktop-dropdown-toggle');
+              if (toggle) toggle.setAttribute('aria-expanded', 'false');
+            }
+          });
+        }
+
         function toggleDropdown() {
+          // Close the others first
+          closeOtherDropdowns(desktopHeaderNavListItem);
+
+          // Then toggle the one that was interacted with
           desktopHeaderNavListItem.classList.toggle('open');
           desktopDropdownToggle.setAttribute(
             'aria-expanded',
@@ -166,16 +181,17 @@
           );
         }
 
+        // Keyboard support (always)
         desktopDropdownToggle.addEventListener('keydown', (e) => {
           if (e.key === 'Enter') {
             toggleDropdown();
           }
         });
 
-        // If no hover support
+        // If no hover support → add click handler
         if (noHoverSupport) {
           desktopDropdownToggle.addEventListener('click', (e) => {
-            e.preventDefault(); // Prevent focus loss or navigation if it's a link
+            e.preventDefault(); // Prevent focus loss or link navigation
             toggleDropdown();
           });
           desktopDropdownToggle.addEventListener('keydown', (e) => {
@@ -184,6 +200,14 @@
             }
           });
         }
+
+        // Click outside → close all dropdowns
+        document.addEventListener('click', (e) => {
+          const isClickInside = desktopHeaderNavListItem.contains(e.target);
+          if (!isClickInside) {
+            closeOtherDropdowns();
+          }
+        });
       }
 
       if (item.dropdown_items) {
