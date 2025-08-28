@@ -253,5 +253,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  window.addEventListener('load', () => {
+    if (
+      window.location.hash === '#sign-in' ||
+      window.location.hash === '#signin' ||
+      window.location.hash === '#login' ||
+      window.location.hash === '#log-in'
+    ) {
+      window.location.href = "https://blvd.app/@skinmcl/login";
+    }
+  });
+
+  window.addEventListener('hashchange', () => {
+    if (
+      window.location.hash === '#sign-in' ||
+      window.location.hash === '#signin' ||
+      window.location.hash === '#login' ||
+      window.location.hash === '#log-in'
+    ) {
+      window.location.href = "https://blvd.app/@skinmcl/login";
+    }
+  });
 });
 

@@ -31,36 +31,37 @@
   phoneDiv.className = 'absolute-center middle-header';
   topHeaderBar.appendChild(phoneDiv);
 
-  const signInButton = document.createElement('a');
-  signInButton.classList.add('white-link', 'uppercase', 'middle-header-child');
-  signInButton.href = '#sign-in';
-  signInButton.textContent = 'Sign In';
-  phoneDiv.appendChild(signInButton);
-
-  const signInDialog = document.createElement('dialog');
-  signInDialog.id = 'rewards-dialog';
-  signInDialog.className = 'rewards-modal';
-
-  const signInDialogCloseButton = document.createElement('button');
-  signInDialogCloseButton.className = 'close-rewards-button';
-  signInDialogCloseButton.setAttribute('data-close-rewards', '');
-  signInDialogCloseButton.textContent = 'Close';
-  signInDialog.appendChild(signInDialogCloseButton);
-
-  const signInDialogIframe = document.createElement('iframe');
-  signInDialogIframe.className = 'blvd-iframe';
-  signInDialogIframe.title = 'Skin - MCL Sign-in';
-  signInDialogIframe.allow = 'camera; web-share; payment';
-  signInDialogIframe.src = 'https://blvd.app/@skinmcl/login';
-  signInDialog.appendChild(signInDialogIframe);
-
-  document.body.appendChild(signInDialog);
-
   const bookNowButton = document.createElement('a');
   bookNowButton.classList.add('white-link', 'uppercase', 'middle-header-child');
   bookNowButton.href = '#book-now';
   bookNowButton.textContent = 'Book Now';
   phoneDiv.appendChild(bookNowButton);
+
+  const signInButton = document.createElement('a');
+  signInButton.classList.add('white-link', 'uppercase', 'middle-header-child');
+  signInButton.href = 'https://blvd.app/@skinmcl/login';
+  signInButton.target = '_blank';
+  signInButton.textContent = 'Sign In';
+  phoneDiv.appendChild(signInButton);
+
+  // const signInDialog = document.createElement('dialog');
+  // signInDialog.id = 'rewards-dialog';
+  // signInDialog.className = 'rewards-modal';
+
+  // const signInDialogCloseButton = document.createElement('button');
+  // signInDialogCloseButton.className = 'close-rewards-button';
+  // signInDialogCloseButton.setAttribute('data-close-rewards', '');
+  // signInDialogCloseButton.textContent = 'Close';
+  // signInDialog.appendChild(signInDialogCloseButton);
+
+  // const signInDialogIframe = document.createElement('iframe');
+  // signInDialogIframe.className = 'blvd-iframe';
+  // signInDialogIframe.title = 'Skin - MCL Sign-in';
+  // signInDialogIframe.allow = 'camera; web-share; payment';
+  // signInDialogIframe.src = 'https://blvd.app/@skinmcl/login';
+  // signInDialog.appendChild(signInDialogIframe);
+
+  // document.body.appendChild(signInDialog);
 
   const desktopMenu = document.createElement('nav');
   desktopMenu.className = 'desktop-menu';
