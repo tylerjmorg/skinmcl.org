@@ -39,7 +39,7 @@
 
   const signInButton = document.createElement('a');
   signInButton.classList.add('white-link', 'uppercase', 'middle-header-child');
-  signInButton.href = 'https://blvd.app/@skinmcl/login';
+  signInButton.href = '#sign-in';
   signInButton.target = '_blank';
   signInButton.textContent = 'Sign In';
   phoneDiv.appendChild(signInButton);

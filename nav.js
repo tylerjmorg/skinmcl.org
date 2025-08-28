@@ -207,7 +207,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   window.addEventListener('hashchange', () => {
-    if (window.location.hash === '#gift-card' || window.location.hash === '#gift-cards') {
+    if (window.location.hash === '#gift-card' || 
+      window.location.hash === '#gift-cards' ||
+      window.location.hash === '#giftcard'
+    ) {
       if (window.blvd && typeof blvd.openBookingWidget === 'function') {
         blvd.openBookingWidget({
           urlParams: {
@@ -225,7 +228,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('load', () => {
     // Run once on page load
-    if (window.location.hash === '#package' || window.location.hash === '#packages') {
+    if (
+      window.location.hash === '#package' || 
+      window.location.hash === '#packages'
+    ) {
       if (window.blvd && typeof blvd.openBookingWidget === 'function') {
         blvd.openBookingWidget({
           urlParams: {
@@ -240,7 +246,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Run every time hash changes
   window.addEventListener('hashchange', () => {
-    if (window.location.hash === '#package' || window.location.hash === '#packages') {
+    if (
+      window.location.hash === '#package' || 
+      window.location.hash === '#packages'
+    ) {
       if (window.blvd && typeof blvd.openBookingWidget === 'function') {
         blvd.openBookingWidget({
           urlParams: {
