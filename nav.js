@@ -161,33 +161,33 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  const closeButton = document.querySelector('[data-close-rewards]');
-  const modal = document.querySelector('#rewards-dialog');
+  // const closeButton = document.querySelector('[data-close-rewards]');
+  // const modal = document.querySelector('#rewards-dialog');
 
   // Close modal when close button is clicked
-  closeButton.addEventListener('click', () => {
-    modal.close();
-    if (document.referrer && document.referrer !== window.location.href) {
-        window.history.back();
-    } else {
-      window.location.href = '/';
-    }
-  });
+  // closeButton.addEventListener('click', () => {
+  //   modal.close();
+  //   if (document.referrer && document.referrer !== window.location.href) {
+  //       window.history.back();
+  //   } else {
+  //     window.location.href = '/';
+  //   }
+  // });
 
 
   // Open modal if URL hash is "#sign-in"
-  window.addEventListener('DOMContentLoaded', () => {
-    if (window.location.hash === '#sign-in' || window.location.hash === '#login') {
-      modal.showModal();
-    }
-  });
+  // window.addEventListener('DOMContentLoaded', () => {
+  //   if (window.location.hash === '#sign-in' || window.location.hash === '#login') {
+  //     modal.showModal();
+  //   }
+  // });
 
   // Optional: if user navigates to "#sign-in" after load
-  window.addEventListener('hashchange', () => {
-    if (window.location.hash === '#sign-in' || window.location.hash === '#login') {
-      modal.showModal();
-    }
-  });
+  // window.addEventListener('hashchange', () => {
+  //   if (window.location.hash === '#sign-in' || window.location.hash === '#login') {
+  //     modal.showModal();
+  //   }
+  // });
 
   
   
