@@ -9,6 +9,7 @@
 (function (a) {
   var b = {
     businessId: 'b80dc0fe-2972-4363-b7b7-0ea0df0767fb',
+    gaMeasurementId: 'G-TDZ7SH7P0W',
   };
 
   var c = a.createElement('script');
