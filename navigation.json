@@ -18,7 +18,8 @@
       { "hidden": false, "text": "Laser Tattoo Removal", "href": "/services/treatment/laser-tattoo-removal/", "id": "services-laser-tattoo-removal" },
       { "hidden": true, "text": "TED Hair Restoration", "href": "/services/treatment/ted-hair-restoration/", "id": "services-ted-hair-restoration" },
       { "hidden": true, "text": "PHYSIQ Body Contouring", "href": "/services/treatment/physiq-body-contouring/", "id": "services-physiq-body-contouring" },
-      { "hidden": false, "text": "Packages", "href": "/services/#packages", "id": "services-packages" }
+      { "hidden": true, "text": "Packages", "href": "/services/#packages", "id": "services-packages" },
+      { "hidden": false, "text": "Free Consultation", "href": "/services/treatment/consultation/", "id": "services-consultation" }
     ]
   },
   { "text": "Products", "id": "products",

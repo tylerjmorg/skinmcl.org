@@ -269,19 +269,34 @@
     <loc>https://skinmcl.org/services/treatment/botox/</loc>
   </url>
   <url>
-    <loc>https://skinmcl.org/services/treatment/chemical-peel/</loc>
+    <loc>https://skinmcl.org/services/treatment/consultation/</loc>
   </url>
   <url>
     <loc>https://skinmcl.org/services/treatment/dermal-filler/</loc>
   </url>
   <url>
-    <loc>https://skinmcl.org/services/treatment/dermaplane-and-zo-glow/</loc>
+    <loc>https://skinmcl.org/services/treatment/dermaplane/</loc>
+  </url>
+  <url>
+    <loc>https://skinmcl.org/services/treatment/dmk-enzyme/</loc>
   </url>
   <url>
     <loc>https://skinmcl.org/services/treatment/dysport/</loc>
   </url>
   <url>
+    <loc>https://skinmcl.org/services/treatment/everesse/</loc>
+  </url>
+  <url>
+    <loc>https://skinmcl.org/services/treatment/eyebrows/</loc>
+  </url>
+  <url>
     <loc>https://skinmcl.org/services/treatment/hydrofacial/</loc>
+  </url>
+  <url>
+    <loc>https://skinmcl.org/services/treatment/juvederm/</loc>
+  </url>
+  <url>
+    <loc>https://skinmcl.org/services/treatment/laser-facial/</loc>
   </url>
   <url>
     <loc>https://skinmcl.org/services/treatment/laser-hair-removal/</loc>
@@ -302,7 +317,7 @@
     <loc>https://skinmcl.org/services/treatment/plasma-skin-resurfacing/</loc>
   </url>
   <url>
-    <loc>https://skinmcl.org/services/treatment/skin-revitalization-laser-facial/</loc>
+    <loc>https://skinmcl.org/services/treatment/stimulator-peel/</loc>
   </url>
   <url>
     <loc>https://skinmcl.org/services/treatment/ted-hair-restoration/</loc>
@@ -321,6 +336,12 @@
   </url>
   <url>
     <loc>https://skinmcl.org/services/treatment/virtuerf-microneedling/</loc>
+  </url>
+  <url>
+    <loc>https://skinmcl.org/services/treatment/vitamin-b12-injection/</loc>
+  </url>
+  <url>
+    <loc>https://skinmcl.org/services/treatment/zo-glow/</loc>
   </url>
   <url>
     <loc>https://skinmcl.org/terms-of-service/</loc>

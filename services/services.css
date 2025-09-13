@@ -448,3 +448,29 @@
   justify-content: center;
   align-items: center;
 }
+
+.service-price-top {
+  color: var( --dimmed-color);
+  text-align: center;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.service-price-bottom {
+  color: var( --dimmed-color);
+  text-align: center;
+  font-weight: 350;
+}
+
+.service-price-context {
+  color: var( --dimmed-color);
+  text-align: center;
+  text-wrap-style: balance;
+  font-weight: 350;
+  font-style: italic;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}

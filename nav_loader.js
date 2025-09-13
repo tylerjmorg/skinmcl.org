@@ -44,6 +44,8 @@
   signInButton.textContent = 'Sign In';
   phoneDiv.appendChild(signInButton);
 
+  // The commented area below used to be for creating the login dialog, but blvd's CSP no longer allows iframes from their domain.
+  
   // const signInDialog = document.createElement('dialog');
   // signInDialog.id = 'rewards-dialog';
   // signInDialog.className = 'rewards-modal';

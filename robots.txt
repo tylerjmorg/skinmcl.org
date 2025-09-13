@@ -1,5 +1,5 @@
 # 
-# robots.txt for https://skinmcl.org/. Generated on: 2025-08-10T05:00:00Z
+# robots.txt for https://skinmcl.org/. Generated on: 2025-09-13T05:34:00Z
 #
 # Copyright (c) 2025 Logan Medical Group, LLC. All rights reserved.
 #
@@ -171,9 +171,12 @@ User-agent: zyborg
 Disallow: /
 
 User-agent: *
-Disallow: /elements/contact/skin.vcf
 Disallow: /about/anna-rosenbaum/*
 Disallow: /about/nicole-sadler/*
+Disallow: /elements/contact/skin.vcf
 Disallow: /pride/*
+Disallow: /services/treatment/chemical-peel/*
+Disallow: /services/treatment/dermaplane-and-zo-glow/*
+Disallow: /services/treatment/skin-revitalization-laser-facial/*
 
 Sitemap: https://skinmcl.org/sitemap.xml
