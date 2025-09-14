@@ -6,7 +6,6 @@
  */
 
 footer {
-  margin-top: 30px;
   background-color: #a40557aa;
   background-image: url(/elements/utility/icon/spa_pattern.svg);
   background-position: top 30px left 30px;
@@ -16,7 +15,7 @@ footer {
   border-radius: 35px;
   color: white;
   width: calc(100% - 20px);
-  margin: 10px auto 10px auto;
+  margin: 30px auto 10px auto;
   box-shadow: 0px 0px 8px rgb(252, 90, 176);
 }
 

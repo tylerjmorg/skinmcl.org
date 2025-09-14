@@ -92,8 +92,8 @@
 .services-card {
   position: relative;
   background-color: var(--off-color-background);
-  border-radius: 20px;
-  padding: 15px 20px;
+  border-radius: 30px;
+  padding: 10px;
   text-align: center;
   text-wrap-style: balance;
   display: flex;
@@ -129,7 +129,7 @@
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 30px;
+  border-radius: 20px;
   box-shadow: 0 0 20px #bd4d8655;
 }
 
@@ -346,7 +346,7 @@
 }
 
 .service-share-link-button {
-  margin-top: 5px;
+  margin-top: 10px;
   font-family: 'Jost', sans-serif;
   background-color: transparent;
   color: #666;
@@ -357,8 +357,8 @@
   font-size: 1.2rem;
   width: 115px;
   border: solid 1px #66666699;
-  padding: 5px 10px;
-  border-radius: 15px;
+  padding: 10.25px 10px;
+  border-radius: 25px;
   box-shadow: 0 0 20px rgba(50, 50, 50, 0.5);
   z-index: 10;
   transition: all 0.2s ease;
@@ -385,7 +385,7 @@
 .service-background {
   position: relative;
   background-color: var(--off-color-background);
-  border-radius: 20px;
+  border-radius: 35px;
   width: 97%;
   max-width: 650px;
   margin-left: auto;
@@ -406,8 +406,8 @@
   top:0px;
   width: 100%;
   height: 300px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
   overflow-y: hidden;
 }
 
@@ -434,7 +434,7 @@
 .service-cta-container {
   max-width: 400px;
   margin-top: 40px;
-  width: 90%;
+  width: 100%;
   min-height: 65px;
   margin-left: auto;
   margin-right: auto;

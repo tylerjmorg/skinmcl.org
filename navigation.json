@@ -8,8 +8,8 @@
   },
   { "text": "Services", "id": "services", "hidden": false,
     "dropdown_items": [
-      { "hidden": true, "text": "All Services", "href": "/services/", "id": "services-all" },
-      { "hidden": false, "text": "Featured", "href": "/services/#featured", "id": "services-featured" },
+      { "hidden": false, "text": "All Services", "href": "/services/", "id": "services-all" },
+      { "hidden": true, "text": "Featured", "href": "/services/#featured", "id": "services-featured" },
       { "text": "Facials", "href": "/services/facials/", "id": "services-facials" },
       { "text": "Skin Correction", "href": "/services/skin-correction/", "id": "services-skin-correction" },
       { "text": "Skin Rejuvenation", "href": "/services/skin-rejuvenation/", "id": "services-skin-rejuvenation" },
