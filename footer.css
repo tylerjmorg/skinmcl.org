@@ -55,7 +55,7 @@ footer li {
   .footer-logo {
     width: fit-content !important;
     height: fit-content !important;
-    border-radius: 10px;
+    border-radius: 25px;
     padding-right: 50px;
     padding-bottom: 50px;
   }
@@ -96,7 +96,7 @@ footer li {
 
   .footer-dropdown {
     border: solid 1px #ffffffbb;
-    border-radius: 15px;
+    border-radius: 20px;
     padding: 5px !important;
     margin-bottom: 5px;
     margin-top: 3px;
@@ -137,7 +137,7 @@ footer ul a {
   .footer-logo {
     width: fit-content !important;
     height: fit-content !important;
-    border-radius: 10px;
+    border-radius: 25px;
     padding-right: 50px;
     padding-bottom: 50px;
   }
@@ -161,7 +161,7 @@ footer ul a {
   }
   .footer-dropdown {
     border: solid 1px #ffffffbb;
-    border-radius: 15px;
+    border-radius: 20px;
     padding: 5px !important;
     margin-bottom: 5px;
     margin-top: 3px;
@@ -184,7 +184,7 @@ footer ul a {
   .footer-logo {
     width: fit-content !important;
     height: fit-content !important;
-    border-radius: 10px;
+    border-radius: 25px;
     padding-right: 50px;
     padding-bottom: 50px;
   }
@@ -211,7 +211,7 @@ footer ul a {
 
   .footer-dropdown {
     border: solid 1px #ffffffbb;
-    border-radius: 15px;
+    border-radius: 20px;
     padding: 5px !important;
     margin-bottom: 5px;
     margin-top: 3px;
@@ -303,7 +303,7 @@ footer ul a {
 
   .footer-dropdown {
     border: solid 1px #ffffffbb;
-    border-radius: 15px;
+    border-radius: 20px;
     width: 100%;
     padding: 5px !important;
     margin-bottom: 5px;
@@ -415,7 +415,7 @@ footer ul a {
     font-weight: normal;
     font-size: 1rem;
     color: white;
-    border-radius: 15px;
+    border-radius: 25px;
     width: 100%;
     padding: 0 9px !important;
     margin-left: auto !important;
@@ -471,7 +471,7 @@ footer ul a {
     font-size: 1rem;
     color: white;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 25px;
     padding: 0 10px !important;
     margin-left: auto !important;
     margin-right: auto !important;
@@ -522,7 +522,7 @@ footer ul a {
   width: 100% !important;
   margin-right: auto;
   padding: 4px 10px !important;
-  border-radius: 10px;
+  border-radius: 25px;
 }
 
 @media (hover: hover) {

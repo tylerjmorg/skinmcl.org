@@ -27,7 +27,7 @@
   color: var(--dimmed-color);
   border-style: none;
   padding: 3px 20px;
-  border-radius: 20px;
+  border-radius: 25px;
   background-color: transparent;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -49,7 +49,7 @@
   display: flex;
   justify-content: center;
   border: solid 1px light-dark(#bd4d86, #f07bb7);
-  border-radius: 20px;
+  border-radius: 25px;
   padding-top: 12px;
   padding-bottom: 12px;
   max-width: 350px;
@@ -187,7 +187,7 @@ dialog[data-phone-platter].visible {
   color: var(--text-color);
   text-decoration: none;
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 25px;
   cursor: pointer;
   transition: all 0.2s ease;
   width: 100%;

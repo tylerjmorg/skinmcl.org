@@ -402,7 +402,7 @@ main {
   margin-left: auto !important;
   text-align: right;
   padding: 5px 10px;
-  border-radius: 10px;
+  border-radius: 25px;
   justify-content: right;
   text-wrap: nowrap;
 }
@@ -446,7 +446,7 @@ main {
 
 .mobile-dropdown-toggle {
   position: relative;
-  border-radius: 15px;
+  border-radius: 25px;
   width: 100%;
   font-family: 'Jost', sans-serif;
   font-weight: normal;
@@ -475,7 +475,7 @@ main {
 
 .mobile-dropdown {
   border: solid 1px #ffffffbb;
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 5px 5px;
   transition: all 0.2s ease;
   text-align: center;
@@ -545,7 +545,7 @@ main {
 .mobile-dropdown-content li a {
   display: block;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
   color: #ffffffbb;
   transition: all 0.2s ease;
   text-decoration: none;

@@ -37,7 +37,7 @@
 *::selection {
   background-color: #fcdcec88;
   color: #3b0320;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
 body {
@@ -105,7 +105,7 @@ h3, h4, h5, h6 {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--off-color-background);
-  border-radius: 25px;
+  border-radius: 35px;
   box-shadow: 0 0 30px rgba(50, 50, 50, 0.2);
 }
 
@@ -175,7 +175,7 @@ h3, h4, h5, h6 {
 .google-review {
   display: inline-block;
   border: solid 1px var(--dimmed-color);
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 2.5px 5px;
   margin-left: 10px;
   margin-top: 10px;
@@ -382,7 +382,7 @@ h3, h4, h5, h6 {
 
 .contact-background {
   background-color: var(--off-color-background);
-  border-radius: 20px;
+  border-radius: 35px;
   padding: 20px;
   width: calc(100% - 20px);
   margin: 20px auto 0 auto;
@@ -418,9 +418,9 @@ h3, h4, h5, h6 {
   text-align: center;
   text-wrap-style: balance;
   background-color: var(--off-color-background);
-  border-radius: 20px;
-  padding-top: 20px;
-  padding-bottom: 12px;
+  border-radius: 35px;
+  padding-top: 10px;
+  padding-bottom: 15px;
   width: calc(100% - 20px);
   margin: 30px auto 0 auto;
   box-shadow: 0 0 30px rgba(50, 50, 50, 0.2);
@@ -451,7 +451,7 @@ h3, h4, h5, h6 {
   width: 95%;
   height: 100%;
   margin-top: 30px;
-  border-radius: 20px;
+  border-radius: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin: auto;
   display: block;
@@ -469,7 +469,7 @@ h3, h4, h5, h6 {
   text-align: center;
   text-wrap-style: balance;
   background-color: #f4f3ef;
-  border-radius: 20px;
+  border-radius: 25px;
   padding-top: 20px;
   padding-bottom: 12px;
   box-shadow: 0 0 30px rgba(50, 50, 50, 0.2);
@@ -561,7 +561,7 @@ h3, h4, h5, h6 {
   max-width: 900px;
   padding: 20px;
   background-color: var(--off-color-background);
-  border-radius: 20px;
+  border-radius: 35px;
 }
 
 .privacy-policy-main p {
@@ -790,7 +790,7 @@ h3, h4, h5, h6 {
 
 .about-card {
   background-color: var(--off-color-background);
-  border-radius: 20px;
+  border-radius: 35px;
   padding: 40px 20px;
   text-align: center;
   text-wrap-style: balance;
@@ -853,7 +853,7 @@ h3, h4, h5, h6 {
 .about-background {
   position: relative;
   background-color: var(--off-color-background);
-  border-radius: 20px;
+  border-radius: 35px;
   padding: 20px;
   max-width: 700px;
   margin: auto;
@@ -863,11 +863,11 @@ h3, h4, h5, h6 {
 
 .about-back-icon-top {
   position: relative;
-  top: 10px;
-  left: 15px;
+  top: 11.5px;
+  left: 25px;
   text-decoration: none;
   color: black;
-  width: 20px;
+  width: 15px;
   height: 2px;
   border-radius: 3px;
   background-color: var(--dimmed-color);
@@ -876,11 +876,11 @@ h3, h4, h5, h6 {
 }
 .about-back-icon-bottom {
   position: relative;
-  top: 21.5px;
-  left: 15px;
+  top: 20px;
+  left: 25px;
   text-decoration: none;
   color: black;
-  width: 20px;
+  width: 15px;
   height: 2px;
   border-radius: 3px;
   background-color: var(--dimmed-color);
@@ -890,35 +890,35 @@ h3, h4, h5, h6 {
 
 .clickable-back {
   font-family: 'Jost', sans-serif;
-  margin-top: 7px;
-  margin-left: 5px;
+  top: -10px;
+  left: -10px;
   position: relative;
   display: inline-block;
-  border-style: none;
-  background-color: transparent;
   cursor: pointer;
-  width: 40px;
-  height: 40px;
+  background-color: color-mix(in srgb, var(--dimmed-color) 12.5%, transparent);
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
   transition: all 0.2s ease;
+  border: solid 1px var(--dimmed-color);
 }
 
 @media (hover: hover) {
   .clickable-back:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 
 @media (hover: none) {
   .clickable-back:active {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 
 .bottom-about-back-button {
   display: block !important;
   font-family: 'Jost', sans-serif;
-  border-style: none;
-  background-color: transparent;
+  border: solid 1px var(--dimmed-color);
   justify-content: center;
   font-size: 1.3rem;
   font-weight: 350;
@@ -929,18 +929,20 @@ h3, h4, h5, h6 {
   margin-right: auto;
   color: var(--dimmed-color);
   transition: all 0.2s ease;
+  height: 50px;
+  border-radius: 25px;
+  padding: 10px 30px;
+  background-color: color-mix(in srgb, var(--dimmed-color) 12.5%, transparent);
 }
 
 @media (hover: hover) {
   .bottom-about-back-button:hover {
-    color: #bd4d86;
     transform: scale(1.1);
   }
 }
 
 @media (hover: none) {
   .bottom-about-back-button:active {
-    color: #bd4d86;
     transform: scale(1.1);
   }
 }
@@ -1073,7 +1075,7 @@ h3, h4, h5, h6 {
 .blvd-iframe {
   width: 100%;
   max-width: 1000px;
-  border-radius: 20px;
+  border-radius: 25px;
   border-style: none;
   height: 88dvh;
   background-color: #fff;
@@ -1150,7 +1152,7 @@ body:has(dialog[open]:not([data-phone-platter])) {overflow: hidden}
   color: white;
   cursor: pointer;
   padding: 5px 10px;
-  border-radius: 10px;
+  border-radius: 25px;
   font-family: 'Jost', sans-serif;
   font-size: 1rem;
   margin-left: 6px;
@@ -1214,7 +1216,7 @@ dialog[open]:not([data-phone-platter]) {
 .certification-wrapper {
   margin-top: 10px;
   background-color: light-dark(#fff, #630636);
-  border-radius: 20px;
+  border-radius: 25px;
   border: solid 1px #aaa;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   display: flex;
@@ -1323,7 +1325,7 @@ dialog[open]:not([data-phone-platter]) {
 
 .grey-border {
   border: solid 1px var(--dimmed-color);
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 10px 20px;
   width: fit-content;
 }
@@ -1370,29 +1372,30 @@ dialog[open]:not([data-phone-platter]) {
 
 .about-share-link-button {
   font-family: 'Jost', sans-serif;
-  background-color: transparent;
+  background-color: color-mix(in srgb, var(--dimmed-color) 12.5%, transparent);
   color: var(--dimmed-color);
   text-decoration: none;
   cursor: pointer;
   font-size: 1.2rem;
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 10px;
+  right: 10px;
   border: solid 1px var(--dimmed-color);
-  padding: 5px 10px;
-  border-radius: 10px;
+  padding: 5px 14.885px;
+  border-radius: 25px;
+  height: 50px;
   transition: all 0.2s ease;
 }
 
 @media (hover: hover) {
   .about-share-link-button:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 }
 
 @media (hover: none) {
   .about-share-link-button:active {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 }
 
@@ -1542,8 +1545,11 @@ dialog[open]:not([data-phone-platter]) {
   height: 100%;
   width: 100%;
   background-color: var(--off-color-background);
-  padding: 20px 30px;
-  border-radius: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  border-radius: 35px;
   box-shadow: 0 0 20px rgba(50, 50, 50, 0.2);
   display: flex;
   flex-direction: column;
@@ -1564,7 +1570,7 @@ dialog[open]:not([data-phone-platter]) {
 }
 
 .diversity-grid-img {
-  border-radius: 20px
+  border-radius: 25px
 }
 
 .diversity-improvement {
@@ -1578,7 +1584,7 @@ dialog[open]:not([data-phone-platter]) {
   max-width: fit-content;
   width: 90%;
   background-color: var(--off-color-background);
-  border-radius: 20px;
+  border-radius: 35px;
   padding: 20px 30px;
   margin-top: 20px;
   box-shadow: 0 0 30px rgba(50, 50, 50, 0.2);
@@ -1732,7 +1738,7 @@ dialog[open]:not([data-phone-platter]) {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
-  border-radius: 20px;
+  border-radius: 25px;
   text-decoration: none;
   color: var(--dimmed-color);
   fill: light-dark(#444, #eee);
@@ -1947,7 +1953,7 @@ a, button, [role="button"] {
 .home-products-services a {
   position: relative;
   background-color: var(--off-color-background);
-  border-radius: 25px;
+  border-radius: 35px;
   box-shadow: 0 0 20px rgba(50, 50, 50, 0.2);
   width: 100%;
   transition: all 0.2s ease;
@@ -1957,7 +1963,7 @@ a, button, [role="button"] {
 .home-products-services img {
   width: 100%;
   height: 100%;
-  border-radius: 25px;
+  border-radius: 35px;
   z-index: 1;
 }
 
@@ -2015,7 +2021,7 @@ a, button, [role="button"] {
   margin-top: 20px;
   max-height: 300px;
   padding: 10px;
-  border-radius: 25px;
+  border-radius: 35px;
   box-shadow: 0 0 20px rgba(50, 50, 50, 0.2);
   margin-bottom: 30px;
   transition: all 0.2s ease;

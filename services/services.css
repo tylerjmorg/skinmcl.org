@@ -92,7 +92,7 @@
 .services-card {
   position: relative;
   background-color: var(--off-color-background);
-  border-radius: 30px;
+  border-radius: 35px;
   padding: 10px;
   text-align: center;
   text-wrap-style: balance;
@@ -129,7 +129,7 @@
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 20px;
+  border-radius: 25px;
   box-shadow: 0 0 20px #bd4d8655;
 }
 
@@ -150,7 +150,7 @@
   border: solid 1px light-dark(#bd4d86, #ffdef3);
   color: light-dark(#bd4d86, #ffdef3);
   box-shadow: 0 0 20px light-dark(#bd4d8655, #ffdef355);
-  border-radius: 10px;
+  border-radius: 25px;
   font-size: 0.7rem;
 }
 
@@ -163,7 +163,7 @@
   color: light-dark(#bd4d86, #ffdef3);
   margin-top: -20px;
   box-shadow: 0 0 20px light-dark(#bd4d8655, #ffdef355);
-  border-radius: 10px;
+  border-radius: 25px;
   font-size: 0.7rem;
 }
 
@@ -212,12 +212,17 @@
   font-family: 'Jost', sans-serif;
   display: inline-block;
   text-decoration: none;
-  background-color: transparent;
   border-style: none;
   font-size: 1.2rem;
   cursor: pointer;
   color: black;
   transition: all 0.2s ease;
+  border: solid 1px var(--dimmed-color);
+  background-color: color-mix(in srgb, var(--desktop-dropdown-background) 12.5%, transparent);
+  border-radius: 25px;
+  padding-left: 15px;
+  padding-right: 10px;
+  max-height: 50px;
 }
 
 .service-clickable-back {
@@ -287,11 +292,11 @@
 
 .services-list-back-icon-top {
   position: relative;
-  top: 10px;
-  left: 15px;
+  top: 14px;
+  left: 13px;
   text-decoration: none;
   color: var(--text-color);
-  width: 20px;
+  width: 13px;
   height: 2px;
   border-radius: 3px;
   background-color: var(--dimmed-color);
@@ -301,11 +306,11 @@
 
 .services-list-back-icon-bottom {
   position: relative;
-  top: 21.5px;
-  left: 15px;
+  top: 21px;
+  left: 13px;
   text-decoration: none;
   color: var(--text-color);
-  width: 20px;
+  width: 13px;
   height: 2px;
   border-radius: 3px;
   background-color: var(--dimmed-color);
@@ -314,7 +319,8 @@
 }
 
 .services-top-back {
-  margin-left: 40px;
+  margin-left: 30px;
+  margin-top: 7.5px;
   color: var(--dimmed-color);
   text-decoration: none;
   transform: translate(-10px, -13px);
@@ -328,19 +334,20 @@
   margin-right: auto;
   width: calc(100% - 20px);
   flex-direction: row;
+  margin-bottom: 10px;
 }
 
 .services-share-link-button {
   font-family: 'Jost', sans-serif;
-  background-color: transparent;
+  background-color: color-mix(in srgb, var(--desktop-dropdown-background) 12.5%, transparent);
   color: var(--dimmed-color);
   text-decoration: none;
   cursor: pointer;
   font-size: 1.2rem;
   width: 115px;
   border: solid 1px var(--dimmed-color);
-  padding: 5px 10px;
-  border-radius: 10px;
+  padding: 10.25px 10px;
+  border-radius: 25px;
   z-index: 10;
   transition: all 0.2s ease;
 }
@@ -387,7 +394,7 @@
   background-color: var(--off-color-background);
   border-radius: 35px;
   width: 97%;
-  max-width: 650px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   height: fit-content;
