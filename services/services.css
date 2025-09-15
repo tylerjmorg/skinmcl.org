@@ -373,19 +373,19 @@
 
 @media (hover: hover) {
   .services-share-link-button:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
   .service-share-link-button:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 }
 
 @media (hover: none) {
   .services-share-link-button:active {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
   .service-share-link-button:active {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 }
 
