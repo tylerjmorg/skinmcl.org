@@ -1,0 +1,11 @@
+<svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1.0165 0 0 1.0174 -46.909 -136.02)">
+    <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="81.521" y="168.51" width="106.95" height="106.95" stroke-width="10.5" style="paint-order:stroke fill markers"/>
+      <circle cx="135" cy="221.99" r="41.589" stroke-width="9.6971" style="paint-order:stroke fill markers"/>
+      <circle cx="135" cy="221.99" r="13.809" stroke-width="8.5477" style="paint-order:stroke fill markers"/>
+    </g>
+    <circle cx="135" cy="221.99" r="5.3528" style="paint-order:stroke fill markers"/>
+    <path d="m80.91 276.09-29.724-27.596v-109.77l29.724 29.302z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="10.069" style="paint-order:stroke fill markers"/>
+  </g>
+</svg>
