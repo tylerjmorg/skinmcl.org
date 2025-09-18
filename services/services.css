@@ -222,7 +222,7 @@
   border-radius: 25px;
   padding-left: 15px;
   padding-right: 10px;
-  max-height: 50px;
+  height: 50px;
 }
 
 .service-clickable-back {
@@ -345,6 +345,7 @@
   cursor: pointer;
   font-size: 1.2rem;
   width: 115px;
+  height: 50px;
   border: solid 1px var(--dimmed-color);
   padding: 10.25px 10px;
   border-radius: 25px;
@@ -363,6 +364,7 @@
   backdrop-filter: blur(2px);
   font-size: 1.2rem;
   width: 115px;
+  height: 50px;
   border: solid 1px #66666699;
   padding: 10.25px 10px;
   border-radius: 25px;

@@ -184,7 +184,7 @@
   border-radius: 25px;
   padding-left: 15px;
   padding-right: 10px;
-  max-height: 50px;
+  height: 50px;
 }
 
 @media (hover: hover) {
@@ -277,6 +277,7 @@
   cursor: pointer;
   font-size: 1.2rem;
   width: 115px;
+  height: 50px;
   border: solid 1px var(--dimmed-color);
   padding: 10.25px 10px;
   border-radius: 25px;
