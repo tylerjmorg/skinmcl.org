@@ -641,9 +641,6 @@
     background-color: light-dark(#f5eef000, #6e3b5700);
     backdrop-filter: blur(7px);
   }
-  .main-booking-button-intermediate {
-    background-color: light-dark(#f5eef0, #6e3b57);
-  }
 }
 
 .main-booking-button:hover {
@@ -756,7 +753,14 @@
   .secondary-booking-button-active .secondary-booking-button-background {
     opacity: 1;
   }
+  .secondary-booking-button-active .secondary-booking-button-intermediate {
+    background-color: var(--off-color-background);
+  }
+  .secondary-booking-button-foreground {
+    background-color: var(--off-color-background);
+  }
   .secondary-booking-button-active .secondary-booking-button-foreground {
+    background-color: light-dark(#f5eef000, #6e3b5700);
     backdrop-filter: blur(7px);
   }
   .secondary-booking-button-active {
