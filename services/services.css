@@ -571,3 +571,197 @@
   text-align: center;
   text-wrap-style: balance;
 }
+
+/* Start Main Booking Button */
+.main-booking-button {
+  width: 100%;
+  max-width: 400px;
+  min-height: 55px;
+  border: solid 1px var(--dimmed-color);
+  color: var(--dimmed-color);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 25px;
+  position: relative;
+  padding: 10px 20px;
+  overflow: hidden;
+  background-color: none;
+  background-image: none;
+  display: block;
+  transition: all 0.2s ease;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-booking-button-background {
+  position: absolute;
+  top: -450%;
+  left: -450%;
+  width: 1000%;
+  height: 1000%;
+  background-image: conic-gradient(from 180deg at 50% 50%, #bd4d8600, #bd4d86, #bd4d86, #bd4d8600, #bd4d8600, #bd4d8600, #bd4d8600, #bd4d86, #bd4d86, #bd4d8600, #bd4d8600, #bd4d8600, #bd4d8600);
+  animation: rotate 4s linear infinite;
+  transition: opacity 3s cubic-bezier(.1,.48,0,.84);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .main-booking-button-background {
+    animation: none;
+  }
+}
+
+@media (hover: hover) {
+  .main-booking-button-background {
+    opacity: 0;
+  }
+  .main-booking-button:hover .main-booking-button-background {
+    opacity: 1;
+  }
+}
+
+@media (hover: none) {
+  .main-booking-button-background {
+    opacity: 1;
+  }
+  .main-booking-button {
+    border-color: #bd4d8644;
+  }
+}
+
+.main-booking-button:hover {
+  border-color: #0000;
+  color: #bd4d86;
+  transform: scale(1.026);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main-booking-button-foreground {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 3px);
+  height: calc(100% - 3px);
+  min-height: 45px;
+  background-color: var(--off-color-background);
+  padding: 5px 15px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 23px;
+  transition: all 0.2s ease;
+}
+
+.main-booking-button:hover .main-booking-button-foreground {
+  background-color: light-dark(#f5eef0, #6e3b57);
+}
+/* End Main Booking Button */
+
+/* Start Secondary Booking Button */
+.secondary-booking-button {
+  width: 100%;
+  max-width: 400px;
+  min-height: 55px;
+  border: solid 1px var(--dimmed-color);
+  color: var(--dimmed-color);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 25px;
+  position: relative;
+  padding: 10px 20px;
+  overflow: hidden;
+  background-color: none;
+  background-image: none;
+  display: block;
+  transition: all 0.2s ease;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.secondary-booking-button-background {
+  position: absolute;
+  top: -450%;
+  left: -450%;
+  width: 1000%;
+  height: 1000%;
+  background-image: conic-gradient(from 180deg at 50% 50%, #bd4d8600, #bd4d86, #bd4d86, #bd4d8600, #bd4d8600, #bd4d8600, #bd4d8600, #bd4d86, #bd4d86, #bd4d8600, #bd4d8600, #bd4d8600, #bd4d8600);
+  animation: rotate 4s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .secondary-booking-button-background {
+    animation: none;
+  }
+}
+
+@media (hover: hover) {
+  .secondary-booking-button-background {
+    opacity: 0;
+    transition: opacity 3s cubic-bezier(.1,.48,0,.84);
+  }
+  .secondary-booking-button:hover .secondary-booking-button-background {
+    opacity: 1;
+  }
+}
+
+@media (hover: none) {
+  .secondary-booking-button-background {
+    opacity: 0;
+    transition: opacity 3s cubic-bezier(.1,.48,0,.84);
+  }
+  .secondary-booking-button-active .secondary-booking-button-background {
+    opacity: 1;
+  }
+  .secondary-booking-button-active {
+    border-color: #bd4d8644;
+  }
+}
+
+.secondary-booking-button:hover {
+  border-color: #0000;
+  color: #bd4d86;
+  transform: scale(1.026);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.secondary-booking-button-foreground {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 3px);
+  height: calc(100% - 3px);
+  min-height: 45px;
+  background-color: var(--off-color-background);
+  padding: 5px 15px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 23px;
+  transition: all 0.2s ease;
+}
+
+.secondary-booking-button:hover .secondary-booking-button-foreground {
+  background-color: light-dark(#f5eef0, #6e3b57);
+}
+/* End Secondary Booking Button */

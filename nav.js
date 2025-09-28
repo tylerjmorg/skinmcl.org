@@ -286,3 +286,17 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Select all buttons with the class "secondary-booking-button"
+const secondaryButtons = document.querySelectorAll('.secondary-booking-button');
+
+secondaryButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Add the active class
+    button.classList.add('secondary-booking-button-active');
+
+    // Remove the class after 3 seconds (3000ms)
+    setTimeout(() => {
+      button.classList.remove('secondary-booking-button-active');
+    }, 3000);
+  });
+});
