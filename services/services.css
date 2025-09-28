@@ -619,10 +619,10 @@
     opacity: 1;
   }
   .main-booking-button:hover .main-booking-button-intermediate {
-    background-color: light-dark(#f5eef0, #6e3b57);
+    background-color: var(--off-color-background);
   }
   .main-booking-button:hover .main-booking-button-foreground {
-    background-color: light-dark(#f5eef022, #6e3b5700);
+    background-color: light-dark(#f5eef000, #6e3b5700);
     backdrop-filter: blur(7px);
   }
   .main-booking-button-foreground {
@@ -639,7 +639,7 @@
   }
   .main-booking-button-foreground {
     background-color: light-dark(#f5eef000, #6e3b5700);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(7px);
   }
   .main-booking-button-intermediate {
     background-color: light-dark(#f5eef0, #6e3b57);
@@ -666,8 +666,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: calc(100% - 5px);
-  height: calc(100% - 5px);
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
   background-color: var(--off-color-background);
   border-radius: 22px;
 }
@@ -680,7 +680,6 @@
   width: calc(100% - 3px);
   height: calc(100% - 3px);
   min-height: 45px;
-  backdrop-filter: blur(10px);
   padding: 5px 15px;
   align-items: center;
   text-align: center;
@@ -738,10 +737,10 @@
     opacity: 1;
   }
   .secondary-booking-button:hover .secondary-booking-button-intermediate {
-    background-color: light-dark(#f5eef0, #6e3b57);
+    background-color: var(--off-color-background);
   }
   .secondary-booking-button:hover .secondary-booking-button-foreground {
-    background-color: light-dark(#f5eef022, #6e3b5700);
+    background-color: light-dark(#f5eef000, #6e3b5700);
     backdrop-filter: blur(7px);
   }
   .secondary-booking-button-foreground {
@@ -756,6 +755,9 @@
   }
   .secondary-booking-button-active .secondary-booking-button-background {
     opacity: 1;
+  }
+  .secondary-booking-button-active .secondary-booking-button-foreground {
+    backdrop-filter: blur(7px);
   }
   .secondary-booking-button-active {
     border-color: #bd4d8644;
@@ -782,8 +784,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: calc(100% - 5px);
-  height: calc(100% - 5px);
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
   background-color: var(--off-color-background);
   border-radius: 22px;
 }
@@ -796,7 +798,6 @@
   width: calc(100% - 3px);
   height: calc(100% - 3px);
   min-height: 45px;
-  backdrop-filter: blur(10px);
   padding: 5px 15px;
   align-items: center;
   text-align: center;
