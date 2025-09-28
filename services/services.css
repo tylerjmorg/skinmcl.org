@@ -585,10 +585,10 @@
   border-radius: 25px;
   position: relative;
   padding: 10px 20px;
-  overflow: hidden;
   background-color: none;
   background-image: none;
   display: block;
+  overflow: hidden;
   transition: all 0.2s ease;
   margin-left: auto;
   margin-right: auto;
@@ -618,6 +618,16 @@
   .main-booking-button:hover .main-booking-button-background {
     opacity: 1;
   }
+  .main-booking-button:hover .main-booking-button-intermediate {
+    background-color: light-dark(#f5eef0, #6e3b57);
+  }
+  .main-booking-button:hover .main-booking-button-foreground {
+    background-color: light-dark(#f5eef022, #6e3b5700);
+    backdrop-filter: blur(7px);
+  }
+  .main-booking-button-foreground {
+    background-color: var(--off-color-background);
+  }
 }
 
 @media (hover: none) {
@@ -626,6 +636,13 @@
   }
   .main-booking-button {
     border-color: #bd4d8644;
+  }
+  .main-booking-button-foreground {
+    background-color: light-dark(#f5eef000, #6e3b5700);
+    backdrop-filter: blur(3px);
+  }
+  .main-booking-button-intermediate {
+    background-color: light-dark(#f5eef0, #6e3b57);
   }
 }
 
@@ -644,6 +661,17 @@
   }
 }
 
+.main-booking-button-intermediate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
+  background-color: var(--off-color-background);
+  border-radius: 22px;
+}
+
 .main-booking-button-foreground {
   position: absolute;
   top: 50%;
@@ -652,7 +680,7 @@
   width: calc(100% - 3px);
   height: calc(100% - 3px);
   min-height: 45px;
-  background-color: var(--off-color-background);
+  backdrop-filter: blur(10px);
   padding: 5px 15px;
   align-items: center;
   text-align: center;
@@ -660,10 +688,6 @@
   justify-content: center;
   border-radius: 23px;
   transition: all 0.2s ease;
-}
-
-.main-booking-button:hover .main-booking-button-foreground {
-  background-color: light-dark(#f5eef0, #6e3b57);
 }
 /* End Main Booking Button */
 
@@ -713,6 +737,16 @@
   .secondary-booking-button:hover .secondary-booking-button-background {
     opacity: 1;
   }
+  .secondary-booking-button:hover .secondary-booking-button-intermediate {
+    background-color: light-dark(#f5eef0, #6e3b57);
+  }
+  .secondary-booking-button:hover .secondary-booking-button-foreground {
+    background-color: light-dark(#f5eef022, #6e3b5700);
+    backdrop-filter: blur(7px);
+  }
+  .secondary-booking-button-foreground {
+    background-color: var(--off-color-background);
+  }
 }
 
 @media (hover: none) {
@@ -743,6 +777,17 @@
   }
 }
 
+.secondary-booking-button-intermediate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
+  background-color: var(--off-color-background);
+  border-radius: 22px;
+}
+
 .secondary-booking-button-foreground {
   position: absolute;
   top: 50%;
@@ -751,7 +796,7 @@
   width: calc(100% - 3px);
   height: calc(100% - 3px);
   min-height: 45px;
-  background-color: var(--off-color-background);
+  backdrop-filter: blur(10px);
   padding: 5px 15px;
   align-items: center;
   text-align: center;
@@ -759,9 +804,5 @@
   justify-content: center;
   border-radius: 23px;
   transition: all 0.2s ease;
-}
-
-.secondary-booking-button:hover .secondary-booking-button-foreground {
-  background-color: light-dark(#f5eef0, #6e3b57);
 }
 /* End Secondary Booking Button */
