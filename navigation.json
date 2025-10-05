@@ -35,7 +35,7 @@
       { "hidden": true, "text": "Events", "href": "/events/", "id": "more-events" },
       { "hidden": true, "text": "Pride Month", "href": "/pride/", "id": "more-pride" },
       { "hidden": false, "text": "Inclusion & Diversity", "href": "/diversity/", "id": "more-diversity" },
-      { "hidden": false, "text": "Gift Cards", "href": "#gift-cards", "custom_attr1_name": "onclick", "custom_attr1_value": "blvd.openBookingWidget({ urlParams: { locationId: '1e429c6f-d454-4d4d-b838-82ddcaabe5df', path: '/cart/menu/Gift%20Cards', visitType: 'GIFT_CARD' }}); return false;", "id": "more-gift-cards" },
+      { "hidden": false, "text": "Gift Cards", "href": "https://blvd.me/skinmcl/gift-cards", "id": "more-gift-cards" },
       { "hidden": true, "text": "MyRepeat Rewards", "href": "https://loganmed.repeatmd.app/", "id": "more-myrepeat-rewards" },
       { "hidden": true, "text": "Semaglutide Sign-Up", "href": "https://loganmed.hint.com/signup/glp-1", "id": "more-semaglutide-signup" },
       { "hidden": true, "text": "Logan Medical Group", "href": "https://www.loganmed.org/", "id": "more-logan-medical-group" },

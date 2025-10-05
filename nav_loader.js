@@ -8,7 +8,7 @@
   const topHeaderBarContainer = document.querySelector('[data-nav-header]');
 
   const topHeaderBar = document.createElement('div');
-  topHeaderBar.className = 'top-header-bar';
+  topHeaderBar.classList.add('top-header-bar', 'no-print');
   topHeaderBarContainer.appendChild(topHeaderBar);
 
   const brandDiv = document.createElement('div');
@@ -282,7 +282,7 @@ function appendTextWithTrademark(parent, text) {
   topHeaderBarContainer.appendChild(mobileMenu);
 
   const mobileMenuWrapper = document.createElement('div');
-  mobileMenuWrapper.className = 'mobile-menu-wrapper';
+  mobileMenuWrapper.classList.add('mobile-menu-wrapper', 'no-print');
   mobileMenuWrapper.setAttribute('data-mobile-menu', '');
   mobileMenu.appendChild(mobileMenuWrapper);
 
@@ -431,7 +431,7 @@ function appendTextWithTrademark(parent, text) {
   const footer = document.querySelector('[data-main-footer]');
   if (footer) {
 
-  footer.className = 'inner-footer';
+  footer.classList.add('inner-footer', 'no-print');
 
   // Helper function to create elements
   const createEl = (tag, props = {}, children = []) => {

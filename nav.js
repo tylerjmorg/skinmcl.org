@@ -300,3 +300,56 @@ secondaryButtons.forEach(button => {
     }, 3000);
   });
 });
+
+const todaysDate = document.querySelectorAll('[data-todays-date]');
+if (todaysDate) {
+  const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+  const timeOptions = { 
+    hour: 'numeric', 
+    minute: '2-digit', 
+    second: '2-digit', 
+    timeZoneName: 'short' 
+  };
+  
+  const now = new Date();
+  
+  const formattedDate = now.toLocaleDateString(undefined, dateOptions);
+  const formattedTime = now.toLocaleTimeString(undefined, timeOptions);
+  
+  const formattedDateTime = `${formattedDate}, ${formattedTime}`;
+  
+  todaysDate.forEach(element => {
+    element.textContent = formattedDateTime;
+  });
+}
+
+const browserInfoElements = document.querySelectorAll('[data-browser-info]');
+if (browserInfoElements) {
+  const ua = navigator.userAgent;
+  let browserName = '';
+  let browserVersion = '';
+
+  if (/Chrome\/(\d+)/.test(ua) && !/Edg\//.test(ua) && !/OPR\//.test(ua)) {
+    browserName = 'Chrome';
+    browserVersion = ua.match(/Chrome\/(\d+)/)[1];
+  } else if (/Edg\/(\d+)/.test(ua)) {
+    browserName = 'Edge';
+    browserVersion = ua.match(/Edg\/(\d+)/)[1];
+  } else if (/Firefox\/(\d+)/.test(ua)) {
+    browserName = 'Firefox';
+    browserVersion = ua.match(/Firefox\/(\d+)/)[1];
+  } else if (/Safari\/(\d+)/.test(ua) && !/Chrome\//.test(ua)) {
+    browserName = 'Safari';
+    browserVersion = ua.match(/Version\/(\d+)/)?.[1] || '';
+  }
+
+  const browserText = `${browserName} ${browserVersion}`;
+  
+  browserInfoElements.forEach(element => {
+    if (browserName !== '' && browserVersion !== '') {
+      element.textContent = ` via ${browserText}`;
+    } else {
+      element.textContent = '';
+    }
+  });
+}
