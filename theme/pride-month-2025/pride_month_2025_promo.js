@@ -1,3 +1,10 @@
+//
+// Copyright (c) 2025 Skin - Medical Cosmetics & Laser. All rights reserved.
+//
+// Contributors
+// Tyler Morgan <git@tylerjm.org>
+//
+
 (function () {
   const link = document.createElement('link');
   link.rel = 'stylesheet';

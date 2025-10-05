@@ -1,7 +1,7 @@
 //
-// Copyright (c) 2025 Logan Medical Group, LLC. All rights reserved.
+// Copyright (c) 2025 Skin - Medical Cosmetics & Laser. All rights reserved.
 //
-// Contributers
+// Contributors
 // Tyler Morgan <git@tylerjm.org>
 //
 
@@ -681,8 +681,9 @@ const nav = createEl("nav", {}, [navList]);
     createEl("ul", {}, [
       createEl("li", {}, [
         createEl("a", {
-          href: "/intellectual-property/",
-          text: "Intellectual Property"
+          href: "/terms-of-service/",
+          rel: "terms-of-service",
+          text: "Terms of Service"
         })
       ]),
       createEl("li", {}, [
@@ -694,9 +695,8 @@ const nav = createEl("nav", {}, [navList]);
       ]),
       createEl("li", {}, [
         createEl("a", {
-          href: "/terms-of-service/",
-          rel: "terms-of-service",
-          text: "Terms of Service"
+          href: "/intellectual-property/",
+          text: "Intellectual Property"
         })
       ])
     ])

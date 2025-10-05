@@ -1,7 +1,7 @@
 # 
-# robots.txt for https://skinmcl.org/. Generated on: 2025-09-13T05:34:00Z
+# robots.txt for https://skinmcl.org/. Generated on: 2025-10-05T09:05:00Z
 #
-# Copyright (c) 2025 Logan Medical Group, LLC. All rights reserved.
+# Copyright (c) 2025 Skin - Medical Cosmetics & Laser. All rights reserved.
 #
 # Contributors
 # Tyler Morgan <git@tylerjm.org>
