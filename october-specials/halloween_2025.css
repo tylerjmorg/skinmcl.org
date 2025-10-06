@@ -104,7 +104,7 @@
 /* Start Secondary Booking Button */
 .secondary-booking-button {
   width: 100%;
-  max-width: 400px;
+  max-width: 550px;
   min-height: 55px;
   border: solid 1px var(--dimmed-color);
   color: var(--dimmed-color);

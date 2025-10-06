@@ -2214,6 +2214,9 @@ a, button, [role="button"] {
   .top-button {
     display: none !important;
   }
+  [data-promo-header] {
+    display: none !important;
+  }
   footer {
     display: none !important;
   }
