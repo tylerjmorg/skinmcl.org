@@ -1,0 +1,63 @@
+/*
+ * Copyright (c) 2025 Skin - Medical Cosmetics & Laser. All rights reserved.
+ *
+ * Contributors
+ * Tyler Morgan <git@tylerjm.org>
+ *
+ */
+
+[data-promo-header] {
+  position: relative;
+}
+
+.halloween-header-background {
+  background-image: linear-gradient(to right, #111e, #ff7100ee, #fd9702ee, #e6e6e6ee, #e6e6e6ee, #fd9702ee, #ff7100ee, #111e);
+  display: block;
+  height: 42px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  z-index: 20;
+  transition: all 0.2s ease;
+}
+
+.halloween-header-text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 42px;
+  backdrop-filter: blur(50px);
+  text-transform: uppercase;
+  background-color: #fff2;
+  transform: translate(-50%, -50%);
+  font-family: 'Jost', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  z-index: 26;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 0 0 15px #444a;
+  transition: all 0.2s ease;
+}
+
+@media (hover: hover) {
+  .halloween-header-text:hover {
+    background-color: #fff0;
+    backdrop-filter: blur(5px);
+  }
+}
+
+.left-promo-skull {
+  margin-right: 15px;
+}
+
+.right-promo-skull {
+  margin-left: 15px;
+}

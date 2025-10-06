@@ -1,0 +1,228 @@
+/*
+ * Copyright (c) 2025 Skin - Medical Cosmetics & Laser. All rights reserved.
+ *
+ * Contributors
+ * Tyler Morgan <git@tylerjm.org>
+ *
+ */
+
+.halloween-h1 {
+  color: #fd6b02;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.halloween-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  text-wrap-style: balance;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 860px) {
+  .halloween-specials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: calc(100% - 20px);
+    max-width: 1000px;
+    column-gap: 25px;
+    row-gap: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+  }
+}
+
+@media (max-width: 859px) {
+  .halloween-specials-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    width: calc(100% - 20px);
+    max-width: 550px;
+    row-gap: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+  }
+}
+
+.halloween-special-item {
+  background-color: light-dark(#fff2ed, #422300);
+  box-shadow: 0 0 15px #0002;
+  border-radius: 35px;
+  min-height: 400px;
+  padding: 15px 25px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.halloween-special-image {
+  border-radius: 25px;
+  position: absolute;
+  top: 10px;
+  right: 50%;
+  transform: translateX(50%);
+  width: calc(100% - 20px);
+  height: 250px;
+}
+
+.halloween-special-title {
+  position: absolute;
+  top: 270px;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.halloween-price {
+  position: absolute;
+  top: 310px;
+  color: var(--dimmed-color);
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.halloween-description {
+  margin-top: 320px;
+  font-size: 1rem;
+  text-wrap: pretty;
+  min-height: 140px;
+}
+
+/* Start Secondary Booking Button */
+.secondary-booking-button {
+  width: 100%;
+  max-width: 400px;
+  min-height: 55px;
+  border: solid 1px var(--dimmed-color);
+  color: var(--dimmed-color);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 25px;
+  position: relative;
+  margin-top: 20px;
+  padding: 10px 20px;
+  overflow: hidden;
+  background-color: none;
+  background-image: none;
+  display: block;
+  transition: all 0.2s ease;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.secondary-booking-button-background {
+  position: absolute;
+  top: -450%;
+  left: -450%;
+  width: 1000%;
+  height: 1000%;
+  background-image: conic-gradient(from 180deg at 50% 50%, #bd4d8600, #bd4d86, #bd4d86, #bd4d8600, #bd4d8600, #bd4d8600, #bd4d8600, #bd4d86, #bd4d86, #bd4d8600, #bd4d8600, #bd4d8600, #bd4d8600);
+  animation: rotate 4s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .secondary-booking-button-background {
+    animation: none;
+  }
+}
+
+@media (hover: hover) {
+  .secondary-booking-button-background {
+    opacity: 0;
+    transition: opacity 3s cubic-bezier(.1,.48,0,.84);
+  }
+  .secondary-booking-button:hover .secondary-booking-button-background {
+    opacity: 1;
+  }
+  .secondary-booking-button:hover .secondary-booking-button-intermediate {
+    background-color: light-dark(#fff2ed, #422300);
+  }
+  .secondary-booking-button:hover .secondary-booking-button-foreground {
+    background-color: light-dark(#f5eef000, #6e3b5700);
+    backdrop-filter: blur(7px);
+  }
+  .secondary-booking-button-foreground {
+    background-color: light-dark(#fff2ed, #422300);
+  }
+}
+
+@media (hover: none) {
+  .secondary-booking-button-background {
+    opacity: 0;
+    transition: opacity 3s cubic-bezier(.1,.48,0,.84);
+  }
+  .secondary-booking-button-active .secondary-booking-button-background {
+    opacity: 1;
+  }
+  .secondary-booking-button-active .secondary-booking-button-intermediate {
+    background-color: light-dark(#fff2ed, #422300);
+  }
+  .secondary-booking-button-foreground {
+    background-color: light-dark(#fff2ed, #422300);
+  }
+  .secondary-booking-button-active .secondary-booking-button-foreground {
+    background-color: light-dark(#f5eef000, #6e3b5700);
+    backdrop-filter: blur(7px);
+  }
+  .secondary-booking-button-active {
+    border-color: #bd4d8644;
+  }
+}
+
+.secondary-booking-button:hover {
+  border-color: #0000;
+  color: #bd4d86;
+  transform: scale(1.026);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.secondary-booking-button-intermediate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: light-dark(#fff2ed, #422300);
+  border-radius: 22px;
+}
+
+.secondary-booking-button-foreground {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 3px);
+  height: calc(100% - 3px);
+  min-height: 45px;
+  padding: 5px 15px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 23px;
+  transition: all 0.2s ease;
+}
+/* End Secondary Booking Button */

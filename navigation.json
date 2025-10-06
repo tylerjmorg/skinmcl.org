@@ -33,6 +33,7 @@
   { "text": "More", "id": "more",
     "dropdown_items": [
       { "hidden": true, "text": "Events", "href": "/events/", "id": "more-events" },
+      { "hidden": false, "text": "October Specials", "href": "/october-specials/", "id": "more-october-specials" },  
       { "hidden": true, "text": "Pride Month", "href": "/pride/", "id": "more-pride" },
       { "hidden": false, "text": "Inclusion & Diversity", "href": "/diversity/", "id": "more-diversity" },
       { "hidden": false, "text": "Gift Cards", "href": "https://blvd.me/skinmcl/gift-cards", "id": "more-gift-cards" },

@@ -2086,16 +2086,25 @@ a, button, [role="button"] {
   text-align: center;
   color: var(--dimmed-color);
   text-transform: uppercase;
-  font-size: 1.2rem;
+  text-decoration: none;
+  font-size: 1rem;
   font-weight: 350;
   background-color: color-mix(in srgb, var(--body-background) 30.5%, transparent);
   border: solid 1px var(--dimmed-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   border-radius: 25px;
-  padding: 10px 20px;
+  padding: 12px 20px;
+  min-height: 50px;
   z-index: 3;
   backdrop-filter: blur(7px);
   transition: all 0.2s ease;
+}
+
+@media (hover: hover) {
+  .home-first-cta:hover {
+    color: #fd6b02;
+    border-color: #fd6b02;
+  }
 }
 
 .home-first-cta-upper-arrow {
@@ -2154,15 +2163,15 @@ a, button, [role="button"] {
 
 @media (hover: hover) {
   .home-first-cta:hover {
-    box-shadow: 0 0 20px #bd4d8688;
+    box-shadow: 0 0 20px #fd6b0288;
     backdrop-filter: blur(4px);
     background-color: color-mix(in srgb, var(--body-background) 60.5%, transparent);
   }
   .home-first-cta:hover .home-first-cta-upper-arrow {
-    background-color: #bd4d86;
+    background-color: #fd6b02;
   }
   .home-first-cta:hover .home-first-cta-lower-arrow {
-    background-color: #bd4d86;
+    background-color: #fd6b02;
   }
 }
 

@@ -7,7 +7,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  const relativeJsPath = '';
+  const relativeJsPath = '/theme/halloween-2025/halloween_2025_promo.js';
 
   const script = document.createElement('script');
   script.src = relativeJsPath;
