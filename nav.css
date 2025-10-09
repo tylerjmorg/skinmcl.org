@@ -405,6 +405,7 @@ main {
   border-radius: 25px;
   justify-content: right;
   text-wrap: nowrap;
+  white-space: pre;
 }
 
 @media (hover: hover) {

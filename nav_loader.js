@@ -163,7 +163,7 @@
 
         // Utility: close all dropdowns (or all except one)
         function closeOtherDropdowns(currentItem = null) {
-          document.querySelectorAll('.desktop-doprdown.open').forEach(item => {
+          document.querySelectorAll('.desktop-dropdown.open').forEach(item => {
             if (item !== currentItem) {
               item.classList.remove('open');
               const toggle = item.querySelector('.desktop-dropdown-toggle');
@@ -194,20 +194,16 @@
         // If no hover support → add click handler
         if (noHoverSupport) {
           desktopDropdownToggle.addEventListener('click', (e) => {
-            e.preventDefault(); // Prevent focus loss or link navigation
+            e.preventDefault();
+            e.stopPropagation(); // prevent document click handler from firing after
             toggleDropdown();
-          });
-          desktopDropdownToggle.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter') {
-              toggleDropdown();
-            }
           });
         }
 
         // Click outside → close all dropdowns
         document.addEventListener('click', (e) => {
-          const isClickInside = desktopHeaderNavListItem.contains(e.target);
-          if (!isClickInside) {
+          // only close if it's not inside *any* open dropdown
+          if (!e.target.closest('.desktop-dropdown')) {
             closeOtherDropdowns();
           }
         });

@@ -13,7 +13,7 @@
       { "text": "Facials", "href": "/services/facials/", "id": "services-facials" },
       { "text": "Skin Correction", "href": "/services/skin-correction/", "id": "services-skin-correction" },
       { "text": "Skin Rejuvenation", "href": "/services/skin-rejuvenation/", "id": "services-skin-rejuvenation" },
-      { "hidden": false, "text": "Botox", "href": "/services/treatment/botox/", "id": "services-botox" },
+      { "hidden": false, "text": "BOTOX®", "href": "/services/treatment/botox/", "id": "services-botox" },
       { "hidden": false, "text": "Laser Hair Removal", "href": "/services/treatment/laser-hair-removal/", "id": "services-laser-hair-removal" },
       { "hidden": false, "text": "Laser Tattoo Removal", "href": "/services/treatment/laser-tattoo-removal/", "id": "services-laser-tattoo-removal" },
       { "hidden": true, "text": "TED Hair Restoration", "href": "/services/treatment/ted-hair-restoration/", "id": "services-ted-hair-restoration" },
@@ -25,7 +25,7 @@
   { "text": "Products", "id": "products",
     "dropdown_items": [
       { "hidden": true, "text": "All Products", "href": "/products/", "id": "products-all" },
-      { "text": "ZO Skin Health", "href": "/products/zo/", "id": "products-zo" },
+      { "text": "ZO® Skin Health", "href": "/products/zo/", "id": "products-zo" },
       { "text": "DMK SKincare", "href": "/products/dmk/", "id": "products-dmk" }
     ]
   },
