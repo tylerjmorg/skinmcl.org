@@ -27,3 +27,18 @@
 	padding: 0 .25rem;
 	margin: 0 -.5rem;
 }
+
+.about-us-main-h1 {
+  margin-bottom: 7px;
+  margin-top: 10px;
+}
+
+@media (max-width: 540px) {
+  .about-us-main-h1 {
+    text-align: left;
+    text-wrap: pretty;
+    width: calc(100% - 20px);
+    margin-left: auto;
+    margin-right: auto;
+}
+}

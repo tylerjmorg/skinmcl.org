@@ -170,10 +170,23 @@
 .services-h2 {
   font-family: 'Jost', sans-serif;
   font-weight: 400;
+  margin-bottom: 7px;
   font-size: 1.5rem;
   color: light-dark(#3b0320, #fff);
   text-align: center;
   text-wrap-style: balance;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.service-h2 {
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  margin-bottom: 7px;
+  font-size: 1.5rem;
+  color: light-dark(#3b0320, #fff);
+  text-align: left;
+  text-wrap: pretty;
   text-transform: uppercase;
   margin-top: 50px;
 }
@@ -193,8 +206,8 @@
   font-weight: 450;
   font-size: 2rem;
   color: light-dark(#3b0320, #fff);
-  text-align: center;
-  text-wrap-style: balance;
+  text-align: left;
+  text-wrap: pretty;
   text-transform: uppercase;
 }
 
@@ -204,8 +217,8 @@
   max-width: 750px;
   width: 90%;
   margin: 10px auto;
-  text-align: center;
-  text-wrap-style: balance;
+  text-align: left;
+  text-wrap: pretty;
 }
 
 .services-clickable-back {
@@ -564,12 +577,12 @@
 }
 
 .tattoo-size-main-desc {
-  max-width: 500px;
+  width: 100%;
   font-size: 0.95rem;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-  text-wrap-style: balance;
+  text-align: left;
+  text-wrap: pretty;
 }
 
 /* Start Main Booking Button */

@@ -9,7 +9,7 @@
     },
     {
       "id": "anti-aging-program",
-      "name": "Anti-Aging Program",
+      "name": "Anti\u2011Aging Program",
       "img": "/products/zo/product-image/anti_aging_program.avif",
       "brand": "ZO Skin Health",
       "keywords": ["Exfoliating Cleanser", "Exfoliating Polish", "Complexion Renewal Pads", "Daily Power Defense", "Growth Factor Serum", "Travel Size", "Anti Aging"]
@@ -179,7 +179,7 @@
     },
     {
       "id": "illuminating-aox-serum",
-      "name": "Illuminating AOX Serum (50\u00A0mL or\u00A030\u00A0mL)",
+      "name": "Illuminating AOX Serum (30 or\u00A050\u00A0mL)",
       "clinically_proven": true,
       "img": "/products/zo/product-image/illuminating_aox_serum.avif",
       "brand": "ZO Skin Health",
@@ -187,7 +187,7 @@
     },
     {
       "id": "10-vitamin-c-self-activating",
-      "name": "10% Vitamin C Self-Activating (50\u00A0mL or\u00A020\u00A0mL)",
+      "name": "10% Vitamin C Self\u2011Activating (20\u00A0or\u00A050\u00A0mL)",
       "img": "/products/zo/product-image/10_vitamin_c_self_activating.avif",
       "brand": "ZO Skin Health",
       "keywords": ["antioxidant", "brightening", "pollution", "anti-aging", "anti aging", "travel size"]
@@ -262,49 +262,49 @@
     },
     {
       "id": "broad-spectrum-sunscreen-spf-50",
-      "name": "Broad-Spectrum Sunscreen SPF 50",
+      "name": "Broad\u2011Spectrum Sunscreen SPF 50",
       "img": "/products/zo/product-image/broad_spectrum_sunscreen_spf_50.avif",
       "brand": "ZO Skin Health",
       "keywords": ["broad spectrum", "sunscreen", "spf 50"]
     },
     {
       "id": "daily-sheer-broad-spectrum-spf-50",
-      "name": "Daily Sheer Broad-Spectrum SPF 50",
+      "name": "Daily Sheer Broad\u2011Spectrum SPF 50",
       "img": "/products/zo/product-image/daily_sheer_broad_spectrum_spf_50.avif",
       "brand": "ZO Skin Health",
       "keywords": ["broad spectrum", "zox12", "uva", "uvb", "sun", "ira", "ir-a", "hev"]
     },
     {
       "id": "gel-sunscreen-broad-spectrum-spf-50",
-      "name": "Gel Sunscreen Broad-Spectrum SPF 50",
+      "name": "Gel Sunscreen Broad\u2011Spectrum SPF 50",
       "img": "/products/zo/product-image/gel_sunscreen_broad_spectrum_spf_50.avif",
       "brand": "ZO Skin Health",
       "keywords": ["broad spectrum", "zox12", "uva", "uvb", "sun", "ira", "ir-a", "hev"]
     },
     {
       "id": "sunscreen-primer-broad-spectrum-spf-30",
-      "name": "Sunscreen + Primer Broad-Spectrum SPF 30",
+      "name": "Sunscreen + Primer Broad\u2011Spectrum SPF 30",
       "img": "/products/zo/product-image/sunscreen_primer_broad_spectrum_spf_30.avif",
       "brand": "ZO Skin Health",
       "keywords": ["broad spectrum", "makeup", "zox12", "uva", "uvb", "sun", "ira", "ir-a", "hev"]
     },
     {
       "id": "sheer-fluid-broad-spectrum-sunscreen-spf-50",
-      "name": "Sheer Fluid Broad-Spectrum Sunscreen SPF 50",
+      "name": "Sheer Fluid Broad\u2011Spectrum Sunscreen SPF 50",
       "img": "/products/zo/product-image/sheer_fluid_broad_spectrum_sunscreen_spf_50.avif",
       "brand": "ZO Skin Health",
       "keywords": ["broad spectrum", "zox12", "uva", "uvb", "sun", "ira", "ir-a", "hev"]
     },
     {
       "id": "smart-tone-broad-spectrum-spf-50",
-      "name": "Smart Tone Broad-Spectrum SPF 50",
+      "name": "Smart Tone Broad\u2011Spectrum SPF 50",
       "img": "/products/zo/product-image/smart_tone_broad_spectrum_spf_50.avif",
       "brand": "ZO Skin Health",
       "keywords": ["broad spectrum", "zox12", "uva", "uvb", "sun", "ira", "ir-a", "hev", "sunscreen"]
     },
     {
       "id": "sunscreen-powder-broad-spectrum-spf-45",
-      "name": "Sunscreen + Powder Broad-Spectrum SPF 45",
+      "name": "Sunscreen + Powder Broad\u2011Spectrum SPF 45",
       "img": "/products/zo/product-image/sunscreen_powder_broad_spectrum_spf_45.avif",
       "brand": "ZO Skin Health",
       "keywords": ["broad spectrum", "zox12", "uva", "uvb", "sun", "ira", "ir-a", "hev", "powder", "light", "medium", "deep", "makeup"]
