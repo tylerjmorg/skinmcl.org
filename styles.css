@@ -244,7 +244,8 @@ h3, h4, h5, h6 {
 }
 
 .address {
-  white-space: pre;
+  white-space-collapse: preserve;
+  word-break: break-word;
 }
 
 .pink-button {
@@ -1970,6 +1971,9 @@ a, button, [role="button"] {
 
 .home-products-services span {
   position: absolute;
+  display: block;
+  width: 100%;
+  word-break: break-all;
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
@@ -2080,8 +2084,10 @@ a, button, [role="button"] {
 
 .home-first-cta {
   position: fixed;
-  top: 65%;
+  top: calc(50% + 90px);
   left: 50%;
+  width: 100%;
+  max-width: max-content;
   transform: translate(-50%, -50%);
   text-align: center;
   color: var(--dimmed-color);

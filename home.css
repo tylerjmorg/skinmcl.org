@@ -38,7 +38,7 @@
   background-color: #0000;
   background-position: 0 0;
   background-size: cover;
-  height: 75vh;
+  height: calc(100vh - 170px);
   position: relative;
   overflow: hidden;
   z-index: 0;
