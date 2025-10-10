@@ -2129,6 +2129,10 @@ a, button, [role="button"] {
   transition: all 0.2s ease;
 }
 
+.policy-contents {
+  line-height: 1.3rem;
+}
+
 @media (hover: hover) {
   .home-first-cta:hover {
     color: #fd6b02;
@@ -2229,10 +2233,14 @@ a, button, [role="button"] {
     visibility: visible !important;
     height: auto !important;
     width: auto !important;
-    margin-top: 100px !important;
+    margin-top: 30px !important;
     padding: initial !important;
-    line-height: normal !important;
+    line-height: 0.9rem !important;
     font-size: 0.7rem !important;
+  }
+  .privacy-policy-main {
+    max-width: 1200px;
+    width: 100%;
   }
   .print-info p {
     font-size: 0.7rem !important;
