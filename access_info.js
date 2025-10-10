@@ -15,7 +15,7 @@ if (dateTimeElements.length) {
     const now = new Date();
     const formattedDate = now.toLocaleDateString(undefined, dateOptions);
     const formattedTime = now.toLocaleTimeString(undefined, timeOptions);
-    const formattedDateTime = `${formattedDate}, ${formattedTime}`;
+    const formattedDateTime = `${formattedDate} • ${formattedTime}`;
     
     dateTimeElements.forEach(el => el.textContent = formattedDateTime);
   }
