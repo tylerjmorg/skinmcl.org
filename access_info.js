@@ -1,5 +1,6 @@
 // --- DATE & TIME ---
 const dateTimeElements = document.querySelectorAll('[data-datetime-info]');
+
 if (dateTimeElements.length) {
   const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
   const timeOptions = { 
@@ -8,12 +9,22 @@ if (dateTimeElements.length) {
     second: '2-digit', 
     timeZoneName: 'short' 
   };
-  const now = new Date();
-  const formattedDate = now.toLocaleDateString(undefined, dateOptions);
-  const formattedTime = now.toLocaleTimeString(undefined, timeOptions);
-  const formattedDateTime = `${formattedDate}, ${formattedTime}`;
 
-  dateTimeElements.forEach(el => el.textContent = formattedDateTime);
+  // Function to update date & time
+  function updateDateTime() {
+    const now = new Date();
+    const formattedDate = now.toLocaleDateString(undefined, dateOptions);
+    const formattedTime = now.toLocaleTimeString(undefined, timeOptions);
+    const formattedDateTime = `${formattedDate}, ${formattedTime}`;
+    
+    dateTimeElements.forEach(el => el.textContent = formattedDateTime);
+  }
+
+  // Initial call
+  updateDateTime();
+
+  // Refresh 5 times a second
+  setInterval(updateDateTime, 200);
 }
 
 // --- BROWSER, OS, AND IP INFO ---
@@ -81,5 +92,16 @@ if (browserElements.length || osElements.length || ipv4Elements.length || ipv6El
   .catch(() => {
     ipv4Elements.forEach(el => el.textContent = '');
     ipv6Elements.forEach(el => el.textContent = '');
+  });
+
+  // Select all elements with the attribute data-user-agent-info
+  const userAgentElements = document.querySelectorAll('[data-user-agent-info]');
+
+  // Get the client's full user agent string
+  const fullUserAgent = navigator.userAgent;
+
+  // Update each selected element with the user agent
+  userAgentElements.forEach(element => {
+    element.textContent = fullUserAgent;
   });
 }
