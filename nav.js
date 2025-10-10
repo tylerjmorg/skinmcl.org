@@ -328,7 +328,10 @@ if (browserInfoElements) {
   const ua = navigator.userAgent;
   let browserName = '';
   let browserVersion = '';
+  let osName = '';
+  let osVersion = '';
 
+  // --- Browser detection ---
   if (/Chrome\/(\d+)/.test(ua) && !/Edg\//.test(ua) && !/OPR\//.test(ua)) {
     browserName = 'Chrome';
     browserVersion = ua.match(/Chrome\/(\d+)/)[1];
@@ -343,13 +346,45 @@ if (browserInfoElements) {
     browserVersion = ua.match(/Version\/(\d+)/)?.[1] || '';
   }
 
-  const browserText = `${browserName} ${browserVersion}`;
-  
+  // --- OS detection ---
+  if (/Windows NT/.test(ua)) {
+    osName = 'Windows';
+    const versionMap = {
+      '10.0': '10 or 11',
+      '6.3': '8.1',
+      '6.2': '8',
+      '6.1': '7',
+      '6.0': 'Vista',
+      '5.1': 'XP'
+    };
+    const match = ua.match(/Windows NT ([0-9.]+)/);
+    osVersion = versionMap[match?.[1]] || match?.[1] || '';
+  } else if (/Mac OS X/.test(ua)) {
+    osName = 'macOS';
+    const match = ua.match(/Mac OS X ([0-9_]+)/);
+    osVersion = '';
+  } else if (/iPhone OS/.test(ua)) {
+    osName = 'iOS';
+    const match = ua.match(/iPhone OS ([0-9_]+)/);
+    osVersion = match ? match[1].replace(/_/g, '.') : '';
+  } else if (/iPad;.*CPU OS/.test(ua)) {
+    osName = 'iPadOS';
+    const match = ua.match(/CPU OS ([0-9_]+)/);
+    osVersion = match ? match[1].replace(/_/g, '.') : '';
+  } else if (/Android/.test(ua)) {
+    osName = 'Android';
+    const match = ua.match(/Android ([0-9.]+)/);
+    osVersion = match ? match[1] : '';
+  } else if (/Linux/.test(ua)) {
+    osName = 'Linux';
+  }
+
+  // --- Compose text ---
+  const browserText = browserName && browserVersion ? `${browserName} ${browserVersion}` : '';
+  const osText = osName ? `${osName}${osVersion ? ' ' + osVersion : ''}` : '';
+  const fullText = [osText, browserText].filter(Boolean).join(' on ');
+
   browserInfoElements.forEach(element => {
-    if (browserName !== '' && browserVersion !== '') {
-      element.textContent = ` via ${browserText}`;
-    } else {
-      element.textContent = '';
-    }
+    element.textContent = fullText ? ` via ${fullText}` : '';
   });
 }
