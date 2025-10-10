@@ -342,3 +342,35 @@
     margin-right: auto;
   }
 }
+
+.experts-border {
+  border: solid 1px var(--dimmed-color);
+  border-radius: 35px;
+  padding: 0 10px 10px 10px;
+  width: 100%;
+  max-width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-certification-wrapper {
+  margin-top: 10px;
+  background-color: light-dark(#fff, #630636);
+  border-radius: 25px;
+  border: solid 1px #aaa;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  width: 100%;
+  max-width: 270px;
+  padding: 10px;
+  flex-direction: row;
+  column-gap: 7px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.expert-border {
+  width: 100%;
+}

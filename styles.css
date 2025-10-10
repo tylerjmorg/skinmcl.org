@@ -1606,7 +1606,7 @@ dialog[open]:not([data-phone-platter]) {
 .basic-card {
   display: block;
   max-width: fit-content;
-  width: 90%;
+  width: calc(100% - 20px);
   background-color: var(--off-color-background);
   border-radius: 35px;
   padding: 20px 30px;
