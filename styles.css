@@ -2225,7 +2225,19 @@ a, button, [role="button"] {
   display: none;
 }
 
+.policy-id {
+  font-size: 0.65rem !important;
+  color: var(--dimmed-color);
+  margin-top: 30px;
+}
+
 @media print {
+  .policy-id {
+    line-height: 0.7rem !important;
+    font-size: 0.5rem !important;
+    font-style: italic !important;
+    margin-top: 0px !important;
+  }
   .print-only {
     display: block !important;
   }
@@ -2233,17 +2245,17 @@ a, button, [role="button"] {
     visibility: visible !important;
     height: auto !important;
     width: auto !important;
-    margin-top: 30px !important;
+    margin-top: 10px !important;
     padding: initial !important;
-    line-height: 0.9rem !important;
-    font-size: 0.7rem !important;
+    line-height: 0.7rem !important;
+    font-size: 0.5rem !important;
   }
   .privacy-policy-main {
     max-width: 1200px;
     width: 100%;
   }
   .print-info p {
-    font-size: 0.7rem !important;
+    font-size: 0.5rem !important;
   }
   .no-print, .no-print * {
     display: none !important;

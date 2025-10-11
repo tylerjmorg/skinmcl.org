@@ -86,8 +86,8 @@ if (browserElements.length || osElements.length || ipv4Elements.length || ipv6El
     const ipv4 = ipv4Data?.ip || '';
     const ipv6 = ipv6Data?.ip && ipv6Data.ip !== ipv4Data?.ip ? ipv6Data.ip : '';
 
-    ipv4Elements.forEach(el => el.textContent = ipv4 ? `IPv4 ${ipv4}` : '');
-    ipv6Elements.forEach(el => el.textContent = ipv6 ? `IPv6 ${ipv6}` : '');
+    ipv4Elements.forEach(el => el.textContent = ipv4 ? `IPv4 • ${ipv4}` : '');
+    ipv6Elements.forEach(el => el.textContent = ipv6 ? `IPv6 • ${ipv6}` : '');
   })
   .catch(() => {
     ipv4Elements.forEach(el => el.textContent = '');
@@ -105,3 +105,71 @@ if (browserElements.length || osElements.length || ipv4Elements.length || ipv6El
     element.textContent = fullUserAgent;
   });
 }
+
+(async () => {
+  const textEls = document.querySelectorAll('[data-policy-text]');
+  const sriEls = document.querySelectorAll('[data-policy-sri]');
+  const idEls = document.querySelectorAll('[data-policy-id]');
+
+  if (textEls.length !== sriEls.length || textEls.length !== idEls.length) {
+    console.warn(`⚠️ Mismatch: ${textEls.length} text, ${sriEls.length} SRI, ${idEls.length} ID elements.`);
+  }
+
+  for (let i = 0; i < textEls.length; i++) {
+    const el = textEls[i];
+    const sriTarget = sriEls[i];
+    const idTarget = idEls[i];
+
+    if (!sriTarget || !idTarget) {
+      console.warn(`⚠️ Missing matching SRI or ID target for index ${i}.`);
+      continue;
+    }
+
+    console.log(`🧩 Processing element #${i}:`, el);
+
+    const rawText = el.textContent;
+    console.log('📜 Original text content:', JSON.stringify(rawText));
+
+    const cleanedText = rawText.replace(/\s+/g, '').toLowerCase();
+    console.log('🧼 Cleaned text:', JSON.stringify(cleanedText));
+
+    try {
+      const encoder = new TextEncoder();
+      const data = encoder.encode(cleanedText);
+      console.log('🔢 Encoded data length:', data.length);
+
+      const hashBuffer = await crypto.subtle.digest('SHA-384', data);
+      console.log('⚙️ Hash computed successfully.');
+
+      const hashArray = Array.from(new Uint8Array(hashBuffer));
+      const base64Hash = btoa(String.fromCharCode(...hashArray));
+      const sri = `Cleaned SRI SHA384 • ${base64Hash}`;
+      console.log('✅ Generated SRI:', sri);
+
+      sriTarget.textContent = sri;
+      console.log('📍 SRI added as text content to:', sriTarget);
+
+      // === Convert to 10-hex-digit ID (first 5 bytes) ===
+      const base64Part = sri.replace(/^Cleaned SRI SHA384 • /, '');
+      let bytes;
+      try {
+        bytes = Uint8Array.from(atob(base64Part), c => c.charCodeAt(0));
+      } catch (err) {
+        console.error('❌ Failed to Base64 decode SRI:', err);
+        continue;
+      }
+
+      const first5 = bytes.slice(0, 5);
+      const id10hex = Array.from(first5)
+        .map(b => b.toString(16).padStart(2, '0'))
+        .join('');
+
+      console.log('🧮 Derived 10-hex-digit ID:', id10hex);
+      idTarget.textContent = id10hex;
+      console.log('📍 ID added as text content to:', idTarget);
+
+    } catch (err) {
+      console.error('❌ Error while generating SRI/ID:', err);
+    }
+  }
+})();

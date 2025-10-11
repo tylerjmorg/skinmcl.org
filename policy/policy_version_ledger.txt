@@ -1,0 +1,32 @@
+# Policy Version Ledger
+
+
+Starting 2025-10-11, all policies will now include an ID and SRI
+that updates automatically as changes are made. Policies refere-
+nced must always match the SRI and ID algorithm in `/access_inf-
+o.js` to this ledger or else it is not legitimate policy or has
+been tempered with.
+
+This text markdown file holds the official ledger with the IDs
+and SRIs that are recognized as legitimate.
+
+
+## Terms of Service
+
+* Release: 2025-10-11
+  * ID: 58b30f6632
+  * SRI: WLMPZjIkAz3o1xDYmTjxhWQK3wLfeiVum9fCKF0EH1wEqHo0Bat4YUWEgSoTZgBB
+
+
+## Privacy Policy
+
+* Release: 2025-10-11
+  * ID: 06a240a389
+  * SRI: BqJAo4nXNdgfbiZgYCMwjFI5iq7fyRaHLS1gDcw/Sp0GL7oicGSacCzZItk4LmfE
+
+
+## Intellectual Property
+
+* Release: 2025-10-11
+  * ID: fded3717e8
+  * SRI: /e03F+hw6LgshVZQwQgEe3DG4TtCPr7wnBlSquU2WU9O4kRZfUgOgBCXxZp77ZZi
