@@ -11,16 +11,16 @@ with their corresponding IDs and SRIs.
 
 ## Current Version IDs
 ---
-     Terms of Service 58b30f6632
-       Privacy Policy 06a240a389
-Intellectual Property fded3717e8
+     Terms of Service 58b30f663224
+       Privacy Policy 06a240a389d7
+Intellectual Property fded3717e870
 
 
 ## Terms of Service
 Source: <https://skinmcl.org/terms-of-service/>
 ---
 Release 2025-10-11
-     ID 58b30f6632
+     ID 58b30f663224
     SRI WLMPZjIkAz3o1xDYmTjxhWQK3wLfeiVum9fCKF0EH1wEqHo0Bat4YUWEgSoTZgBB
 
 
@@ -28,7 +28,7 @@ Release 2025-10-11
 Source: <https://skinmcl.org/privacy-policy/>
 ---
 Release 2025-10-11
-     ID 06a240a389
+     ID 06a240a389d7
     SRI BqJAo4nXNdgfbiZgYCMwjFI5iq7fyRaHLS1gDcw/Sp0GL7oicGSacCzZItk4LmfE
 
 
@@ -36,5 +36,5 @@ Release 2025-10-11
 Source: <https://skinmcl.org/intellectual-property/>
 ---
 Release 2025-10-11
-     ID fded3717e8
+     ID fded3717e870
     SRI /e03F+hw6LgshVZQwQgEe3DG4TtCPr7wnBlSquU2WU9O4kRZfUgOgBCXxZp77ZZi

@@ -149,7 +149,7 @@ if (browserElements.length || osElements.length || ipv4Elements.length || ipv6El
       sriTarget.textContent = sri;
       console.log('📍 SRI added as text content to:', sriTarget);
 
-      // === Convert to 10-hex-digit ID (first 5 bytes) ===
+      // === Convert to 12-hex-digit ID (first 6 bytes) ===
       const base64Part = sri.replace(/^Cleaned SRI SHA384 • /, '');
       let bytes;
       try {
@@ -159,13 +159,13 @@ if (browserElements.length || osElements.length || ipv4Elements.length || ipv6El
         continue;
       }
 
-      const first5 = bytes.slice(0, 5);
-      const id10hex = Array.from(first5)
+      const first6 = bytes.slice(0, 6);
+      const id12hex = Array.from(first6)
         .map(b => b.toString(16).padStart(2, '0'))
         .join('');
 
-      console.log('🧮 Derived 10-hex-digit ID:', id10hex);
-      idTarget.textContent = id10hex;
+      console.log('🧮 Derived 12-hex-digit ID:', id12hex);
+      idTarget.textContent = id12hex;
       console.log('📍 ID added as text content to:', idTarget);
 
     } catch (err) {

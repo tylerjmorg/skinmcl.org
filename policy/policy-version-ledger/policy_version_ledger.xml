@@ -5,9 +5,9 @@
     Starting October 11, 2025, all future policies will include an ID and SRI that update automatically whenever changes are made. Policies referenced must always match the SRI and ID algorithm in `/access_info.js` to this ledger; otherwise, the policy is not legitimate or has been tampered with. This text markdown file serves as the official ledger, listing all recognized legitimate policies along with their corresponding IDs and SRIs.
   </Description>
   <CurrentVersionIDs>
-    <Policy name="Terms of Service" id="58b30f6632"/>
-    <Policy name="Privacy Policy" id="06a240a389"/>
-    <Policy name="Intellectual Property" id="fded3717e8"/>
+    <Policy name="Terms of Service" id="58b30f663224"/>
+    <Policy name="Privacy Policy" id="06a240a389d7"/>
+    <Policy name="Intellectual Property" id="fded3717e870"/>
   </CurrentVersionIDs>
   <Policies>
     <Policy>
@@ -15,7 +15,7 @@
       <Source>https://skinmcl.org/terms-of-service/</Source>
         <Release>
           <ReleaseDate>2025-10-11</ReleaseDate>
-          <ID>58b30f6632</ID>
+          <ID>58b30f663224</ID>
           <SRI>WLMPZjIkAz3o1xDYmTjxhWQK3wLfeiVum9fCKF0EH1wEqHo0Bat4YUWEgSoTZgBB</SRI>
         </Release>
     </Policy>
@@ -24,7 +24,7 @@
       <Source>https://skinmcl.org/privacy-policy/</Source>
         <Release>
           <ReleaseDate>2025-10-11</ReleaseDate>
-          <ID>06a240a389</ID>
+          <ID>06a240a389d7</ID>
           <SRI>BqJAo4nXNdgfbiZgYCMwjFI5iq7fyRaHLS1gDcw/Sp0GL7oicGSacCzZItk4LmfE</SRI>
         </Release>
     </Policy>
@@ -33,7 +33,7 @@
       <Source>https://skinmcl.org/intellectual-property/</Source>
         <Release>
           <ReleaseDate>2025-10-11</ReleaseDate>
-          <ID>fded3717e8</ID>
+          <ID>fded3717e870</ID>
           <SRI>/e03F+hw6LgshVZQwQgEe3DG4TtCPr7wnBlSquU2WU9O4kRZfUgOgBCXxZp77ZZi</SRI>
         </Release>
     </Policy>
