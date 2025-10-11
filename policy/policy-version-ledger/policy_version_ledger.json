@@ -1,0 +1,28 @@
+{
+  "policy_version_ledger": {
+    "description": "Starting October 11, 2025, all future policies will include an ID and SRI that update automatically whenever changes are made. Policies referenced must always match the SRI and ID algorithm in `/access_info.js` to this ledger; otherwise, the policy is not legitimate or has been tampered with. This text markdown file serves as the official ledger, listing all recognized legitimate policies along with their corresponding IDs and SRIs.",
+    "policies": {
+      "terms_of_service": [
+        {
+          "release": "2025-10-11",
+          "id": "58b30f6632",
+          "sri": "WLMPZjIkAz3o1xDYmTjxhWQK3wLfeiVum9fCKF0EH1wEqHo0Bat4YUWEgSoTZgBB"
+        }
+      ],
+      "privacy_policy": [
+        {
+          "release": "2025-10-11",
+          "id": "06a240a389",
+          "sri": "BqJAo4nXNdgfbiZgYCMwjFI5iq7fyRaHLS1gDcw/Sp0GL7oicGSacCzZItk4LmfE"
+        }
+      ],
+      "intellectual_property": [
+        {
+          "release": "2025-10-11",
+          "id": "fded3717e8",
+          "sri": "/e03F+hw6LgshVZQwQgEe3DG4TtCPr7wnBlSquU2WU9O4kRZfUgOgBCXxZp77ZZi"
+        }
+      ]
+    }
+  }
+}
